@@ -1,7 +1,7 @@
 # 站点名称
 title = "Cecilia's blog"
 # 站点 URL
-baseURL = "http://localhost:1313/"
+baseURL = "https://Cecilia404404.github.io/blog/"
 # 使用 themes/ 中的哪个主题, 注意大小写
 theme = "Mainroad-master"
 
