@@ -101,6 +101,11 @@ cleanDestinationDir = true
         url = "/tags/"
         weight = 30
     [[menu.main]]
+        identifier = "photos"
+        name = "postcards相册"
+        url = "/photos/"
+        weight = 40
+    [[menu.main]]
         identifier = "about"
         name = "关于我"
         url = "/about/"
