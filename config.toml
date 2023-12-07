@@ -19,6 +19,8 @@ publishDir = "/d/blog/myblog/publish"
 # 是否清理发布文件夹中多余的文件
 cleanDestinationDir = true
 
+[[module.imports]]
+path = "github.com/Cecilia404404/Mainroad-master"
 
 # 页面底部的作者信息
 [Author]
