@@ -1,30 +1,22 @@
-name: Deploy Hugo
-
-on:
-  push:
-    branches:
-      - main  # 可以根据实际情况修改分支
-
+name: Auto Deploy hugo
+on: [push]
 jobs:
-  build:
+  Explore-GitHub-Actions:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v4.1.1
-      with:
-        hugo-version: 'latest'
-
-    - name: Build
-      run: hugo --minify
-
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        publish_dir: ./public
-
-
+      - name: Check out repository code
+        uses: actions/checkout@v4.1.1
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: latest
+      - name: Build 
+        run: hugo
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }} # secret 中设置好私钥
+          external_repository: Cecilia404404/blog.github.io  # Page 仓库
+          publish_branch: main  # Page 仓库的分支
+          publish_dir: ./public # 静态网页路径
+          commit_message: ${{ github.event.head_commit.message }}
