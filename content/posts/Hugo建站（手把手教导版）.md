@@ -70,8 +70,6 @@ tags:
 
 - 输入 hugo version 并按回车键。
 - 如果安装成功，你应该能够看到 Hugo 的版本信息。
-- ![Alt Text](/d/blog/myblog/static/img/hugo version.png) 
-- <imgsrc="/img/hugo version.png"alt="Alt Text"width="300"height="200">
 - 通过这些步骤，你就成功将 Hugo可执行文件的路径添加到系统的 PATH 变量中了。这样，你可以在任何地方使用命令提示符运行Hugo。如果有任何问题，记得检查路径是否正确，确保没有拼写错误。
 
 # 二.创建博客
