@@ -46,7 +46,7 @@ cleanDestinationDir = true
     # 如果觉得 Google 字体导致网站打开太慢, 可以用其它的替代 API
     googleFontsLink = "/res/font/opensans/opensans.css"
     # 自定义 CSS 和 JS
-    customCSS = ["/res/css/custom.css"]
+    customCSS = ["assets/style.css"]
     customJS = ["/res/js/custom.js"]
 
 [Params.Logo]
