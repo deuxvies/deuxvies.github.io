@@ -15,7 +15,7 @@ hasCJKLanguage = true
 paginate = "10"
 
 # hugo 发布设置, 发布生成的文件夹路径
-publishDir = "/d/blog/myblog/publish"
+publishDir = "public"
 # 是否清理发布文件夹中多余的文件
 cleanDestinationDir = true
 
@@ -109,3 +109,6 @@ cleanDestinationDir = true
         name = "关于我"
         url = "/about/"
         weight = 40
+
+
+
