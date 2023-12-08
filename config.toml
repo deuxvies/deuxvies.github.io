@@ -23,7 +23,7 @@ cleanDestinationDir = true
 [Author]
     name = "Cecilia"
     bio = "Humo sum, humani nihil ame alienum puton."
-    avatar = "/res/avatar.png"  # logo
+    avatar = "/static/img/avatar.png"  # logo
 
 [Params]
     # 站点描述
@@ -43,8 +43,7 @@ cleanDestinationDir = true
     post_meta = ["author", "date", "categories", "translations"]
     # 主页中显示哪些
     mainSections = ["posts",]
-    # 如果觉得 Google 字体导致网站打开太慢, 可以用其它的替代 API
-    googleFontsLink = "/res/font/opensans/opensans.css"
+    
     # 自定义 CSS 和 JS
     customCSS = ["assets/style.css"]
     customJS = ["/res/js/custom.js"]
