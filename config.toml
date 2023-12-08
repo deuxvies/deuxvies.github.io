@@ -4,6 +4,7 @@ title = "Cecilia's blog"
 baseURL = "https://Cecilia404404.github.io/"
 # 使用 themes/ 中的哪个主题, 注意大小写
 theme = "Mainroad-master"
+root：/Cecilia404404.github.io
 
 # 中文显示配置
 languageCode = "zh-cn"
