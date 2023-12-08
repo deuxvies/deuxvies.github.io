@@ -140,4 +140,5 @@ startLevel = 1
 [markup.highlight]
 noClasses = false
 
-
+customCSS = ["assets/css/style.css"]
+customJS = ["/assets/js/jsconfig.js"]
