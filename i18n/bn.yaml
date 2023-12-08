@@ -1,94 +1,73 @@
-# General
-- id: read_more
-  translation: "আরও পড়ুন…"
+toggleMenu:
+    other: টগল মেনু
 
-- id: menu_label
-  translation: "মেনু"
+darkMode:
+    other: ডার্ক মোড
 
-- id: sidemenu_title
-  translation: "মেনু"
+list:
+    page:
+        one: "{{ .Count }} পাতা"
+        other: "{{ .Count }} পাতা"
 
-# Post meta
-- id: meta_lastmod
-  translation: "সর্বশেষ পরিবর্তন"
+    section:
+        other: অনুচ্ছেদ
 
-- id: meta_translations
-  translation: "অনুবাদ"
+    subsection:
+        one: উপ-অনুচ্ছেদ
+        other: উপ-অনুচ্ছেদ
 
-# Table of Contents
-- id: toc_title
-  translation: "সূচী"
+article:
+    back:
+        other: পেছনে
 
-# Post nav
-- id: post_nav_prev
-  translation: "পূর্ববর্তী"
+    tableOfContents:
+        other: সূচিপত্র
 
-- id: post_nav_next
-  translation: "পরবর্তী"
+    relatedContent:
+        other: সম্পর্কিত বিষয়বস্তু
 
-# Authorbox
-- id: authorbox_name
-  translation: "{{ .Name }} সম্পর্কে"
+    lastUpdatedOn:
+        other: সর্বশেষ আপডেট করা হয়েছে
 
-# Sidebar
-- id: sidebar_warning
-  translation: "সতর্কবার্তা"
+    readingTime:
+        one: "{{ .Count }} মিনিটে পড়া যাবে"
+        other: "{{ .Count }} মিনিটে পড়া যাবে"
 
-- id: sidebar_recommendation
-  translation: "অনুগ্রহ করে কমপক্ষে একটি সাইডবার উইজেট সক্রিয় করুন।"
+notFound:
+    title:
+        other: পাওয়া যায়নি
 
-# Search widget
-- id: search_placeholder
-  translation: "অনুসন্ধান…"
+    subtitle:
+        other: এই পাতাটি বিদ্যমান নেই
 
-# Languages widget
-- id: languages_title
-  translation: "ভাষা"
+widget:
+    archives:
+        title:
+            other: আর্কাইভ
 
-# Categories widget
-- id: categories_title
-  translation: "বিভাগ"
+        more:
+            other: আরও
 
-# Recent Posts widget
-- id: recent_title
-  translation: "সাম্প্রতিক পোস্ট"
+    tagCloud:
+        title:
+            other: ট্যাগ
+    categoriesCloud:
+        title:
+            other: বিভাগ
 
-# Social widget
-- id: social_title
-  translation: "সোসিয়াল"
+search:
+    title:
+        other: অনুসন্ধান
 
-# Tags List widget
-- id: tags_title
-  translation: "ট্যাগ"
+    placeholder:
+        other: কিছু টাইপ করুন...
 
-# Footer
-- id: footer_credits
-  translation:
-    "<a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> এবং \
-    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> থিম দ্বারা তৈরি।"
+    resultTitle:
+        other: "#PAGES_COUNT পাতা (#TIME_SECONDS সেকেন্ড)"
 
-# 404
-- id: 404_title
-  translation: "404. পাতাটি পাওয়া যায়নি"
+footer:
+    builtWith:
+        other: "{{ .Generator }} দিয়ে নির্মিত"
 
-- id: 404_text
-  translation:
-    "আপনার কাংখিত পাতাটি মুছে ফেলা হয়েছে, সরানো হয়েছে বা পাতাটি নেই। অনুগ্রহ করে অনুসন্ধান করুন অথবা ফিরে যান"
-
-- id: 404_linktext
-  translation: "প্রধান পাতায়"
-
-# No posts empty state
-- id: noposts_warning_title
-  translation: "আপনার এখনও কোন পোস্ট নেই!"
-
-- id: noposts_warning_description
-  translation:
-    "যখনই আপনি content ফোল্ডারের ভেতর যেকোনো ফোল্ডারে (সেকশনে) কিছু পোস্ট করবেন, তা \
-    এখানে দেখা যাবে। প্রধান পাতায় শুধুমাত্র একটি সেকশন (যাতে সর্বাধিক পোস্ট রয়েছে) ডিফল্ট ভাবে প্রদর্শিত হবে।"
-
-- id: noposts_warning_tip
-  translation:
-    "<b>পরামর্শ:</b> আপনি \
-    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
-    কনফিগ প্যারামিটার দিয়ে যতগুলো সেকশন দেখাতে চান তা দেখাতে পারেন।"
+    designedBy:
+        other: "থিম {{ .Theme }} ডিজাইন করেছেন {{ .DesignedBy }}"

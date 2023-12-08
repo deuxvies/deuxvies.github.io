@@ -1,94 +1,73 @@
-# General
-- id: read_more
-  translation: "Continua a leggere…"
+toggleMenu:
+    other: Toggle Menu
 
-- id: menu_label
-  translation: "Menu"
+darkMode:
+    other: Dark Mode
 
-- id: sidemenu_title
-  translation: "Menu"
+list:
+    page:
+        one: "{{ .Count }} pagina"
+        other: "{{ .Count }} pagine"
 
-# Post meta
-- id: meta_lastmod
-  translation: "Ultima modifica"
+    section:
+        other: Sezione
 
-- id: meta_translations
-  translation: "Traduzioni"
+    subsection:
+        one: Sottosezione
+        other: Sottosezioni
 
-# Table of Contents
-- id: toc_title
-  translation: "Indice"
+article:
+    back:
+        other: Indietro
 
-# Post nav
-- id: post_nav_prev
-  translation: "Precedente"
+    tableOfContents:
+        other: Indice
 
-- id: post_nav_next
-  translation: "Prossimo"
+    relatedContent:
+        other: Contenuti correlati
 
-# Authorbox
-- id: authorbox_name
-  translation: "Riguardo {{ .Name }}"
+    lastUpdatedOn:
+        other: Aggiornato il
 
-# Sidebar
-- id: sidebar_warning
-  translation: "ATTENZIONE"
+    readingTime:
+        one: "{{ .Count }} min per leggere"
+        other: "{{ .Count }} min per leggere"
 
-- id: sidebar_recommendation
-  translation: "Si prega di attivare almeno un widget della barra laterale."
+notFound:
+    title:
+        other: Non trovato
+    subtitle:
+        other: Questa pagina non esiste.
 
-# Search widget
-- id: search_placeholder
-  translation: "CERCA…"
+widget:
+    archives:
+        title:
+            other: Archivi
 
-# Languages widget
-- id: languages_title
-  translation: "Lingue"
+        more:
+            other: Di più
 
-# Categories widget
-- id: categories_title
-  translation: "Categorie"
+    tagCloud:
+        title:
+            other: Tags
 
-# Recent Posts widget
-- id: recent_title
-  translation: "Post recenti"
+    categoriesCloud:
+        title:
+            other: Categorie
 
-# Social widget
-- id: social_title
-  translation: "Social"
+search:
+    title:
+        other: Cerca
 
-# Tags List widget
-- id: tags_title
-  translation: "Tag"
+    placeholder:
+        other: Scrivi qualcosa...
 
-# Footer
-- id: footer_credits
-  translation:
-    "Generato con <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> e il tema \
-    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a>."
+    resultTitle:
+        other: "#PAGES_COUNT pagine (#TIME_SECONDS secondi)"
 
-# 404
-- id: 404_title
-  translation: "404. Pagina non trovata"
+footer:
+    builtWith:
+        other: Realizzato con {{ .Generator }}
 
-- id: 404_text
-  translation:
-    "La pagina che stai cercando sembra essere stata spostata, rimossa o non esiste. Si prega di usare la ricerca o \
-    andare alla"
-
-- id: 404_linktext
-  translation: "pagina principale"
-
-# No posts empty state
-- id: noposts_warning_title
-  translation: "Non hai ancora nessun post!"
-
-- id: noposts_warning_description
-  translation:
-    "Una volta pubblicato qualcosa in una qualsiasi cartella (sezione) dentro la directory <b>content</b>, apparirà \
-    qui. Solo una sezione (quella con più post) verrà mostrata in modo predefinito nella pagina principale."
-
-- id: noposts_warning_tip
-  translation:
-    "<b>Suggerimento:</b> Puoi mostrare quante sezioni vuoi con il parametro \
-    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b>."
+    designedBy:
+        other: Tema {{ .Theme }} realizzato da {{ .DesignedBy }}

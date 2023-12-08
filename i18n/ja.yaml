@@ -1,95 +1,60 @@
-# General
-- id: read_more
-  translation: "続きを読む…"
+toggleMenu:
+    other: メニューを開く・閉じる
 
-- id: menu_label
-  translation: "メニュー"
+darkMode:
+    other: ダークモード
 
-- id: sidemenu_title
-  translation: "メニュー"
+article:
+    back:
+        other: 前のページ
 
-# Post meta
-- id: meta_lastmod
-  translation: "最終更新"
+    tableOfContents:
+        other: 目次
 
-- id: meta_translations
-  translation: "翻訳"
+    relatedContent:
+        other: 関連するコンテンツ
 
-# Table of Contents
-- id: toc_title
-  translation: "目次"
+    lastUpdatedOn:
+        other: 最終更新
 
-# Post nav
-- id: post_nav_prev
-  translation: "前の投稿"
+    readingTime:
+        other: "読了時間: {{ .Count }}分"
 
-- id: post_nav_next
-  translation: "次の投稿"
+notFound:
+    title:
+        other: 404 Not Found
+    subtitle:
+        other: 指定されたページは存在しません。
 
-# Authorbox
-- id: authorbox_name
-  translation: "{{ .Name }}について"
+widget:
+    archives:
+        title:
+            other: アーカイブ
 
-# Sidebar
-- id: sidebar_warning
-  translation: "警告"
+        more:
+            other: さらに見る
 
-- id: sidebar_recommendation
-  translation: "1つ以上のサイドバーウィジェットを有効にしてください。"
+    tagCloud:
+        title:
+            other: タグ
 
-# Search widget
-- id: search_placeholder
-  translation: "検索…"
+    categoriesCloud:
+        title:
+            other: カテゴリ
 
-# Languages widget
-- id: languages_title
-  translation: "言語"
+search:
+    title:
+        other: 検索
 
-# Categories widget
-- id: categories_title
-  translation: "カテゴリー"
+    placeholder:
+        other: 入力...
 
-# Recent Posts widget
-- id: recent_title
-  translation: "最近の投稿"
+    resultTitle:
+        other: "#PAGES_COUNT 件 （#TIME_SECONDS 秒）"
 
-# Social widget
-- id: social_title
-  translation: "ソーシャル"
+footer:
+    builtWith:
+        other: Built with {{ .Generator }}
 
-# Tags List widget
-- id: tags_title
-  translation: "タグ"
-
-# Footer
-- id: footer_credits
-  translation:
-    "このサイトは <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> と \
-    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> \
-    テーマで生成されています。"
-
-# 404
-- id: 404_title
-  translation: "404. ページが見つかりません"
-
-- id: 404_text
-  translation:
-    "お探しのページは移動されたか削除された、もしくは存在しないようです。検索するか、こちらのページに移動してください: "
-
-- id: 404_linktext
-  translation: "メインページ"
-
-# No posts empty state
-- id: noposts_warning_title
-  translation: "まだ何も投稿していません！"
-
-- id: noposts_warning_description
-  translation:
-    "<b>content</b> 以下のどこかのディレクトリに投稿を追加するとここに表示されます。デフォルトでは（最も投稿の多い）１つのセクション \
-    だけがメインページに表示されます。"
-
-- id: noposts_warning_tip
-  translation:
-    "<b>ヒント:</b> 設定のパラメーター \
-    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
-    を使って好きな数だけセクションを表示させることもできます。"
+    designedBy:
+        other: テーマ {{ .Theme }} は {{ .DesignedBy }} によって設計されています。

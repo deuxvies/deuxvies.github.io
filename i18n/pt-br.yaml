@@ -1,93 +1,67 @@
-# General
-- id: read_more
-  translation: "Leia mais…"
+toggleMenu:
+    other: Alternar Menu
 
-- id: menu_label
-  translation: "Menu"
+darkMode:
+    other: Modo Escuro
 
-- id: sidemenu_title
-  translation: "Menu"
+list:
+    page:
+        one: "{{ .Count }} página"
+        other: "{{ .Count }} páginas"
 
-# Post meta
-- id: meta_lastmod
-  translation: "Última modificação"
+    section:
+        other: Seção
 
-- id: meta_translations
-  translation: "Traduções"
+    subsection:
+        one: Subseção
+        other: Subseções
 
-# Table of Contents
-- id: toc_title
-  translation: "Conteúdo da página"
+article:
+    back:
+        other: Voltar
 
-# Post nav
-- id: post_nav_prev
-  translation: "Anterior"
+    tableOfContents:
+        other: Índice
 
-- id: post_nav_next
-  translation: "Próximo"
+    relatedContent:
+        other: Conteúdo relacionado
 
-# Authorbox
-- id: authorbox_name
-  translation: "Sobre {{ .Name }}"
+    lastUpdatedOn:
+        other: Última atualização em
 
-# Sidebar
-- id: sidebar_warning
-  translation: "ATENÇÃO"
+    readingTime:
+        one: "{{ .Count }} minuto de leitura"
+        other: "{{ .Count }} minutos de leitura"
 
-- id: sidebar_recommendation
-  translation: "Ative pelo menos um widget da barra lateral."
+notFound:
+    title:
+        other: Não Encontrado
+    subtitle:
+        other: Esta página não existe.
 
-# Search widget
-- id: search_placeholder
-  translation: "BUSCAR…"
+widget:
+    archives:
+        title:
+            other: Arquivos
+        more:
+            other: Mais
+    tagCloud:
+        title:
+            other: Tags
+    categoriesCloud:
+        title:
+            other: Categorias
 
-# Languages widget
-- id: languages_title
-  translation: "Línguas"
+search:
+    title:
+        other: Busca
+    placeholder:
+        other: Digite algo...
+    resultTitle:
+        other: "#PAGES_COUNT páginas (#TIME_SECONDS segundos)"
 
-# Categories widget
-- id: categories_title
-  translation: "Categorias"
-
-# Recent Posts widget
-- id: recent_title
-  translation: "Postagens recentes"
-
-# Social widget
-- id: social_title
-  translation: "Social"
-
-# Tags List widget
-- id: tags_title
-  translation: "Tags"
-
-# Footer
-- id: footer_credits
-  translation:
-    "Gerado com <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> com o tema \
-    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a>."
-
-# 404
-- id: 404_title
-  translation: "404. Página não encontrada"
-
-- id: 404_text
-  translation:
-    "A página que você estava procurando parece ter sido excluída ou não existe. Por favor, use a pesquisa ou vá para"
-
-- id: 404_linktext
-  translation: "página principal"
-
-# No posts empty state
-- id: noposts_warning_title
-  translation: "Você ainda não tem nenhuma postagem!"
-
-- id: noposts_warning_description
-  translation:
-    "Quando você criar uma postagem em qualquer pasta (seção) dentro do diretório <b>content</b>, ele vai aparecer aqui. \
-    Apenas uma seção (a que conter mais postagens) será exibida na página principal por padrão."
-
-- id: noposts_warning_tip
-  translation:
-    "<b>Dica:</b> Você pode mostrar quantas seções você quiser com o parâmetro de configuração \
-    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b>."
+footer:
+    builtWith:
+        other: Criado com {{ .Generator }}
+    designedBy:
+        other: Tema {{ .Theme }} desenvolvido por {{ .DesignedBy }}

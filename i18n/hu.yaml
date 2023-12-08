@@ -1,95 +1,73 @@
-# General
-- id: read_more
-  translation: "Tovább olvas…"
+toggleMenu:
+    other: Menü Kapcsolása
 
-- id: menu_label
-  translation: "Menu"
+darkMode:
+    other: Sötét Mód
 
-- id: sidemenu_title
-  translation: "Menu"
+list:
+    page:
+        one: "{{ .Count }} oldal"
+        other: "{{ .Count }} oldalak"
 
-# Post meta
-- id: meta_lastmod
-  translation: "Utoljára módosítva"
+    section:
+        other: Szekció
 
-- id: meta_translations
-  translation: "Fordítások"
+    subsection:
+        one: Alszekció
+        other: Alszekciók
 
-# Table of Contents
-- id: toc_title
-  translation: "Az oldal tartalma"
+article:
+    back:
+        other: Vissza
 
-# Post nav
-- id: post_nav_prev
-  translation: "Előző"
+    tableOfContents:
+        other: Tartalomjegyzék
 
-- id: post_nav_next
-  translation: "Következő"
+    relatedContent:
+        other: Kapcsolódó tartalom
 
-# Authorbox
-- id: authorbox_name
-  translation: "A {{ .Name }} -ról"
+    lastUpdatedOn:
+        other: Utolsó frissítés időpontja
 
-# Sidebar
-- id: sidebar_warning
-  translation: "FIGYELMEZTETÉS"
+    readingTime:
+        one: "{{ .Count }} percnyi olvasmány"
+        other: "{{ .Count }} percnyi olvasmány"
 
-- id: sidebar_recommendation
-  translation: "Kérjük, aktiváljon legalább egy oldalsáv-modult."
+notFound:
+    title:
+        other: Nem található
 
-# Search widget
-- id: search_placeholder
-  translation: "KERES…"
+    subtitle:
+        other: Ez az oldal nem létezik
 
-# Languages widget
-- id: languages_title
-  translation: "Nyelvek"
+widget:
+    archives:
+        title:
+            other: Archívum
 
-# Categories widget
-- id: categories_title
-  translation: "Kategóriák"
+        more:
+            other: Több
 
-# Recent Posts widget
-- id: recent_title
-  translation: "Legutóbbi bejegyzések"
+    tagCloud:
+        title:
+            other: Cimkék
+    categoriesCloud:
+        title:
+            other: Kategóriák
 
-# Social widget
-- id: social_title
-  translation: "Közösség"
+search:
+    title:
+        other: Keresés
 
-# Tags List widget
-- id: tags_title
-  translation: "Cimkék"
+    placeholder:
+        other: Írj valamit...
 
-# Footer
-- id: footer_credits
-  translation:
-    "Létrehozva <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> és \
-    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> témával."
+    resultTitle:
+        other: "#PAGES_COUNT oldal (#TIME_SECONDS másodperc alatt)"
 
-# 404
-- id: 404_title
-  translation: "404. Az oldal nem található"
+footer:
+    builtWith:
+        other: "{{ .Generator }} használatával készült"
 
-- id: 404_text
-  translation:
-    "Úgy tűnik, hogy a kívánt oldalt áthelyezték, törölték vagy nem létezik. Kérjük, használja a keresést, vagy lépjen \
-    ide"
-
-- id: 404_linktext
-  translation: "főoldal"
-
-# No posts empty state
-- id: noposts_warning_title
-  translation: "Még nincs bejegyzésed!"
-
-- id: noposts_warning_description
-  translation:
-    "Ha valamit a <b>content</b> könyvtár alatti mappába (szakaszba) közzéteszel, az itt jelenik meg. Csak egy szakasz \
-    (a legtöbb hozzászólással) jelenik meg a főoldalon alapértelmezés szerint."
-
-- id: noposts_warning_tip
-  translation:
-    "<b>Tipp:</b> Megjeleníthet annyi szakaszt, amennyit csak akar a \
-    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
-    konfigurációs paraméterrel."
+    designedBy:
+        other: A {{ .Theme }} dizájnt {{ .DesignedBy }} tervezte

@@ -1,6 +1,6 @@
 baseURL = 'https://Cecilia404404.github.io/'
 languageCode = 'zh-cn'
-title = 'Cecilia 的博客'
+title = 'Cecilia 的博客小站'
 theme = "hugo-theme-stack"
 summaryLength = 20
 paginate = 6
@@ -12,15 +12,15 @@ enableEmoji = true
 disablePathToLower = true
 timeZone = "Asia/Shanghai"
 
+[permalinks]
+post = "/:filename/"
+page = "/:slug/"
+
 [params]
 mainSections = 'post'
 featuredImageField = "image"
 rssFullContent = true
 favicon = "img/favicon.png"
-
-  [params.footer]
-  since = 2019
-  customText = ""
   
   [params.dateFormat]
   published = "2006-01-02"
@@ -34,16 +34,16 @@ favicon = "img/favicon.png"
     [params.sidebar.avatar]
     enabled = true
     local = true
-    src = "img/avatar.png"
+    src = "img/avatar.jpg"
     
   [params.article]
   math = false
   toc = true
   readingTime = true
-
+  
     [params.article.license]
     enabled = true
-    default = "Licensed under CC BY-NC-SA 4.0"
+    default = "Licensed under CC BY springceceilia"
   
   [[params.widgets.homepage]]
   type = "search"
@@ -93,12 +93,12 @@ weight = -100
   icon = "home"
 
 [[menu.social]]
-identifier = "github"
-name = "GitHub"
-url = "https://github.com/Cecilia404404"
+identifier = "Lofter"
+name = "Lofter"
+url = "https://www.lofter.com/blog/springcecilia"
 
   [menu.social.params]
-  icon = "brand-github"
+  icon = "Lofter"
 
 [[menu.social]]
 identifier = "AO3"
@@ -139,3 +139,5 @@ startLevel = 1
 
 [markup.highlight]
 noClasses = false
+
+

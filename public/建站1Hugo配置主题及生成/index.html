@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='说明：此为针对小白的傻瓜式教程。 一.前期'>
+<title>【建站1】Hugo配置主题及生成</title>
+
+<link rel='canonical' href='https://Cecilia404404.github.io/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/'>
+
+<link rel="stylesheet" href="/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css"><meta property='og:title' content='【建站1】Hugo配置主题及生成'>
+<meta property='og:description' content='说明：此为针对小白的傻瓜式教程。 一.前期'>
+<meta property='og:url' content='https://Cecilia404404.github.io/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/'>
+<meta property='og:site_name' content='Cecilia 的博客小站'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='建站' /><meta property='article:published_time' content='2023-12-08T17:34:26&#43;08:00'/><meta property='article:modified_time' content='2023-12-08T17:34:26&#43;08:00'/>
+<meta name="twitter:title" content="【建站1】Hugo配置主题及生成">
+<meta name="twitter:description" content="说明：此为针对小白的傻瓜式教程。 一.前期">
+    <link rel="shortcut icon" href="img/favicon.png" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hua6d550737578eadef789ef68679d61f7_88729_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Cecilia 的博客小站</a></h1>
+            
+            <h2 id="slogan" class="site-description">In libris libertas.</h2>
+            
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://archiveofourown.org/users/Springcecilia/works'
+                        target="_blank"
+                        title="AO3"
+                    >
+                        
+                        
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg fill="#ffebeb" width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#ffebeb">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier"> <path d="M24.557 13.177c-0.917 1.489-2.432 2.296-3.989 2.473-5.636 0.647-8.063-5.531-4.625-8.968 3.084-3.084 9.443-1.204 9.344 3.864-0.016 0.813-0.224 1.808-0.729 2.631zM15.943 10.473c0.193 4.792 6.355 4.907 7.584 1.401 1.088-3.093-1.496-5.593-4.256-5.192-2.025 0.291-3.401 1.88-3.328 3.791zM30.828 8.005c0.38-0.177 0.932-0.552 1.12-0.328 0.281 0.333-0.615 0.629-1 0.885-1.224 0.797-2.308 1.635-3.303 2.729-1.276 1.411-2.593 3.172-3.4 5.093 0.828 0.041 4.031 0.208 4.801 1.975 0.62 1.416-0.516 2.875-1.76 3.5 0.885 0.552 2.411 1.26 2.328 2.531-0.213 3.125-4.927 2.989-6.907 0.927-0.323-0.385-0.473-0.64-0.333-0.771 0.204-0.177 0.437 0.251 0.901 0.636 0.303 0.249 0.505 0.333 0.765 0.473 1.735 0.912 4.448 0.537 4.636-1.057 0.083-0.739-0.885-1.276-1.625-1.604-0.661-0.301-2.016-0.516-1.989-1.271 0.025-0.74 0.697-0.599 1.375-0.864 0.735-0.292 1.339-1.204 1.333-1.491-0.005-1.208-2.744-1.181-4.292-1.229-0.364 0.813-0.629 1.636-0.921 2.881-0.188 0.776-0.203 2.525-1 2.703-0.979 0.219-1.349-0.636-1.937-1.317-0.792-0.923-1.917-2.188-2.589-2.969-4.047 1.339-7.192 2.792-11.009 4.953-1.751 0.989-2.751 2.12-3.391 1.803-0.532-0.256-0.453-0.844-0.199-1.183 0.527-0.693 1.235-1.631 1.86-2.516 0.801-1.131 1.405-2.224 1.833-3.26 0.921-2.251 1.64-6.292 1.963-7.813 0.12-0.547 0.417-0.463 0.433-0.197 0.036 0.563-0.319 2.729-0.385 3.177-0.584 3.708-1.032 5.88-2.683 8.468 2.927-1.812 6.407-4.025 10.125-5.276-3.781-4.343-7.781-8.457-13.344-11.052-0.855-0.484-2.235-0.588-2.235-0.916 0-0.36 1.041-0.079 1.391 0.011 3.177 0.796 6.421 2.853 8.803 4.593 2.859 2.088 6.285 5.287 7.572 6.776 0.875-0.303 3.047-0.609 4.928-0.661 1-2.109 3.4-5.36 6.385-7.261 0.547-0.348 1.119-0.791 1.749-1.077zM19.369 18.765c0.568 0.573 0.991 1.245 1.485 1.865 0.228-0.787 0.536-1.62 0.853-2.344-0.823 0.109-1.708 0.271-2.339 0.479z"/> </g>
+</svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='springcecily@gmail.com'
+                        target="_blank"
+                        title="Email"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="3" y="5" width="18" height="14" rx="2" />
+  <polyline points="3 7 12 13 21 7" />
+</svg> 
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.lofter.com/blog/springcecilia'
+                        target="_blank"
+                        title="Lofter"
+                    >
+                        
+                        
+                            <!--?xml version="1.0" encoding="utf-8"?-->
+<!-- Svg Vector Icons : http://www.onlinewebfonts.com/icon -->
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve">
+<metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+<g><g><path fill="#42383c" data-title="Layer 0" xs="0" d="M212.2,246H43.8c-5,0-9-4-9-9V19c0-5,4-9,9-9h51.5c5,0,9,4,9,9v160.9h107.9c5,0,9,4,9,9V237C221.2,242,217.2,246,212.2,246z M52.8,228h150.4v-30.1H95.3c-5,0-9-4-9-9V28H52.8V228z"/></g></g>
+</svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' target="_blank">
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/tags/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+                
+                <span>Tags</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/Postcards/' >
+                
+                
+                
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier"> <g fill="none" fill-rule="evenodd" stroke="#757575" stroke-linecap="round" stroke-linejoin="round" transform="translate(3 4)"> <path d="m2.5.5h10c1.1045695 0 2 .8954305 2 2v8c0 1.1045695-.8954305 2-2 2h-10c-1.1045695 0-2-.8954305-2-2v-8c0-1.1045695.8954305-2 2-2z"/> <path d="m10.5 2.5h1c.5522847 0 1 .44771525 1 1v1c0 .55228475-.4477153 1-1 1h-1c-.55228475 0-1-.44771525-1-1v-1c0-.55228475.44771525-1 1-1z"/> <path d="m2.5 7.5h5"/> <path d="m2.5 9.5h5"/> </g> </g>
+</svg>
+                
+                <span>Postcards</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/Archives/' >
+                
+                
+                
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="131px" height="131px" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier">
+<defs>
+<style>.cls-1{fill:none;stroke:#707070;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+</defs>
+<rect class="cls-1" x="7.23" y="5.32" width="9.55" height="3.82"/>
+<path class="cls-1" d="M20.59,22.5H5.32A1.91,1.91,0,0,1,4,19.24a1.89,1.89,0,0,1,1.35-.56H20.59"/>
+<line class="cls-1" x1="19.64" y1="18.68" x2="19.64" y2="22.5"/>
+<path class="cls-1" d="M20.59,1.5V18.68H5.32a1.91,1.91,0,0,0-1.91,1.91V3.41A1.92,1.92,0,0,1,5.32,1.5Z"/>
+</g>
+</svg>
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#一前期准备">一.前期准备</a></li>
+    <li><a href="#二创建博客">二.创建博客</a></li>
+    <li><a href="#三配置hugo主题模板">三.配置Hugo主题模板</a></li>
+    <li><a href="#四运行-hugo">四.运行 Hugo</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/">【建站1】Hugo配置主题及生成</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2023-12-08</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    6 minute read
+                </time>
+            </div>      
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>说明：此为针对小白的傻瓜式教程。</p>
+<h1 id="一前期准备">一.前期准备</h1>
+<ol>
+<li>
+<p><strong>安装 Git:</strong>
+访问 <a class="link" href="https://git-scm.com/download/win"  target="_blank" rel="noopener"
+    >Git 官网</a> 下载 Git 的最新版本。
+执行下载的安装程序，并按照提示进行安装。在 &ldquo;Select Components&rdquo; 阶段，确保选中 &ldquo;Git Bash Here&rdquo; 选项。</p>
+</li>
+<li>
+<p><strong>安装 Hugo:</strong>
+访问 <a class="link" href="https://github.com/gohugoio/hugo/releases"  target="_blank" rel="noopener"
+    >Hugo GitHub Releases</a> 页面。
+在 Assets 下找到适合 Windows 的 ZIP 文件（通常是 hugo_extended_X.XX.X_windows-64bit.zip）。
+下载 ZIP 文件，并解压到一个你喜欢的目录中（比如 C:\Hugo）。</p>
+</li>
+<li>
+<p><strong>（重要！）添加环境变量:</strong></p>
+<p>将解压得到的 hugo.exe 文件的路径（比如 C:\Hugo\hugo.exe）添加到系统的 PATH 变量中，以便在任何地方都能够在命令提示符中访问 Hugo。</p>
+<p>在 Windows 上将 Hugo可执行文件的路径添加到系统的 PATH 变量中可以通过以下步骤完成：</p>
+<p>获取 Hugo 可执行文件路径：</p>
+<p>打开 File Explorer（资源管理器），导航到你解压 Hugo ZIP 文件的目录。
+找到 hugo.exe 文件。记住 hugo.exe 的完整路径，
+比如 C:\Hugo\hugo.exe。</p>
+<p>打开系统环境变量设置：</p>
+<p>右键点击计算机（桌面上或开始菜单中），选择 &ldquo;属性&rdquo;。
+在左侧面板中，点击 &ldquo;高级系统设置&rdquo;。
+在打开的窗口中，点击 &ldquo;环境变量&rdquo; 按钮。</p>
+<p>编辑系统 PATH 变量：</p>
+<p>在环境变量窗口中，找到 &ldquo;系统变量&rdquo; 部分，找到并选中 &ldquo;Path&rdquo; 变量，然后点击 &ldquo;编辑&rdquo; 按钮。</p>
+<p>添加 Hugo 可执行文件路径：</p>
+<p>在 &ldquo;编辑环境变量&rdquo; 窗口中，点击 &ldquo;新建&rdquo; 按钮。
+输入 Hugo 可执行文件的完整路径（例如，C:\Hugo）。
+确认并关闭所有打开的窗口。</p>
+<p>验证是否添加成功：</p>
+<p>打开命令提示符（Command Prompt）</p>
+<p>在Windows 操作系统中，你可以通过以下步骤打开命令提示符：</p>
+<p>在任务栏的搜索框中，键入
+&ldquo;cmd&rdquo; 或 &ldquo;命令提示符&rdquo;。</p>
+<p>从搜索结果中选择
+&ldquo;命令提示符&rdquo; 或 &ldquo;Command Prompt&rdquo;。</p>
+<pre><code>运行对话框。
+
+ **或**：按下 Win + R 组合键，打开运行对话框。  
+
+ 输入&quot;cmd&quot; 或 &quot;cmd.exe&quot;，然后按 Enter 键。
+</code></pre>
+<p>无论你使用哪种方法，都会打开一个命令提示符窗口，你可以在其中输入命令。在这个窗口中，你可以执行各种命令和操作系统交互。</p>
+<p>输入 hugo version 并按回车键。
+如果安装成功，你应该能够看到 Hugo 的版本信息，表示安装成功。</p>
+</li>
+</ol>
+<p>通过这些步骤，你就成功将 Hugo可执行文件的路径添加到系统的 PATH 变量中了。这样，你可以在任何地方使用命令提示符运行Hugo。如果有任何问题，记得检查路径是否正确，确保没有拼写错误。</p>
+<h1 id="二创建博客">二.创建博客</h1>
+<ol>
+<li><strong>打开Git Bash：</strong></li>
+</ol>
+<pre><code>在你想要创建博客的文件夹中，右键单击并选择 &quot;Git Bash Here&quot;。
+</code></pre>
+<ol start="2">
+<li>
+<p><strong>创建 Hugo 站点，输入代码：</strong>
+hugo new site myblog
+这将在当前目录创建一个名为 myblog 的新博客。</p>
+</li>
+<li>
+<p><strong>进入博客目录，输入代码：</strong>
+cd myblog</p>
+</li>
+</ol>
+<p><strong>Tips代码指令解释：</strong></p>
+<p>1.查看当前目录：
+在 Git Bash 终端中，可以输入以下命令来查看当前所在的目录：
+pwd
+这会显示当前工作目录的完整路径。</p>
+<p>2.进入博客目录：
+使用 cd 命令来进入博客目录。假设你的博客目录名为 myblog，你可以执行以下命令：
+cd myblog</p>
+<pre><code>如果博客目录不在当前工作目录，你需要替换成完整路径，例如：
+cd /d/blog/myblog
+这个就是根目录路径↑
+</code></pre>
+<p>3.验证是否成功进入博客目录：
+输入 pwd 命令确认当前工作目录是否为你的博客目录。
+使用 ls 命令查看博客目录中的文件和子目录：
+ls
+通过这些步骤，你就能够在 Git Bash 中成功进入 Hugo 博客的目录。</p>
+<p>*注：在 Bash 里，</p>
+<pre><code>  $： 一般用户的默认提示符。
+  #： 超级用户（root）的默认提示符。
+  对于默认用户，通常显示 $。
+  当你在 Bash 中输入 cd 命令时，你不需要管前面的 $。
+  你只需在 cd 后面加上目标目录的路径即可。
+</code></pre>
+<h1 id="三配置hugo主题模板">三.配置Hugo主题模板</h1>
+<ol>
+<li>
+<p><strong>选择主题：</strong></p>
+<p>在 Hugo 中，主题通常以 Git 存储库的形式存在。你可以从<a class="link" href="https://themes.gohugo.io/"  target="_blank" rel="noopener"
+    >Hugo Themes</a>网站上选择一个主题。</p>
+<p>在该主题的详情页面找到download跳转到 GitHub 界面，点击绿色的按键code便可复制git链接。</p>
+</li>
+<li>
+<p><strong>在博客目录中添加主题作为子模块：</strong></p>
+<p>方法1：直接连接github（坑：有时候因为防火墙问题会配置失败，不推荐！！）</p>
+<p>方法2：SSH密钥法链接（坑： .gitmodules 文件中的行尾符 (line endings) 与你的系统默认设置不一致，可能导致在 Windows 系统上的一些问题，所以也不推荐！！）</p>
+<p>（推荐）方法3：直接下载github仓库zip压缩包到themes文件夹解压（<strong>这个方法最保险</strong>）</p>
+<p>将下载的 ZIP 文件解压缩到你的 Hugo 项目的 themes 文件夹中。</p>
+<p>复制 themes 文件夹里的 exampleSite 中的文件：</p>
+<p>进入主题的文件夹，找到 exampleSite 文件夹。</p>
+<p>选择性复制文件：</p>
+<p>根据你的需要选择性地复制 exampleSite 文件夹中的文件到你的博客根目录。可能包括配置文件（如 config.toml、config.yaml 或 config.json）、内容文件、静态文件等。</p>
+<p>*注意文件路径：确保将文件复制到正确的位置。配置文件通常应该放在博客根目录，而内容文件可能需要根据主题的要求放在特定的文件夹中。</p>
+<p>*保留原有内容：在复制之前，建议备份你当前博客根目录中的重要文件，以免不小心覆盖。你可以将当前博客根目录的文件夹重命名或者备份到其他位置。</p>
+</li>
+<li>
+<p><strong>编辑主题配置文件：</strong></p>
+<p>打开博客根目录中的 config.toml 文件，这是 Hugo 的配置文件。</p>
+<p>在文件中找到或添加一个与主题相关的配置段。你可能需要根据主题的文档查看如何配置。</p>
+<p>查找示例配置文件：</p>
+<p>在主题目录中，通常会有一个示例配置文件，例如 exampleSite/config.toml 或 exampleSite/config.yaml，具体文件名可能会有所不同。</p>
+<p>复制示例配置文件到博客根目录：</p>
+<p>使用以下命令将示例配置文件复制到博客根目录。</p>
+<p>如果示例配置文件是 config.yaml，则相应地更改文件名。</p>
+<p>返回到博客根目录：</p>
+<p>使用以下命令返回到博客根目录：</p>
+<p>cd /d/blog/myblog</p>
+</li>
+<li>
+<p><strong>配置其他设置：</strong></p>
+<p>仍然在 config.toml 文件中，你可能需要配置其他与博客相关的设置，如标题、作者、语言等。根据主题文档和你自己的需求进行配置。</p>
+<p>*注：编辑config文件时，baseURL应该填什么？</p>
+<p>baseURL 是 Hugo 网站的基本 URL 地址，它用于生成网站中的链接。正确配置 baseURL 对于确保生成的网站链接的正确性非常重要。</p>
+<p>以下是设置 baseURL 的一些建议：</p>
+<p>本地开发：</p>
+<p>当你在本地开发时，可以将 baseURL 设置为本地服务器的地址，通常是 <a class="link" href="http://localhost:1313/%E3%80%82%E8%BF%99%E6%A0%B7%E5%8F%AF%E4%BB%A5%E7%A1%AE%E4%BF%9D%E5%9C%A8%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88%E6%97%B6%EF%BC%8C%E7%94%9F%E6%88%90%E7%9A%84%E9%93%BE%E6%8E%A5%E6%AD%A3%E7%A1%AE"  target="_blank" rel="noopener"
+    >http://localhost:1313/。这样可以确保在本地预览时，生成的链接正确</a>。</p>
+<p>code baseURL= &ldquo;<a class="link" href="http://localhost:1313/"  target="_blank" rel="noopener"
+    >http://localhost:1313/</a>&rdquo;</p>
+<p>线上发布：</p>
+<p>当你准备发布网站时，将 baseURL 设置为你实际的域名或者托管服务的地址。如果你使用自定义域名，确保包括协议（https 或 http）。</p>
+<p>code baseURL= &ldquo;<a class="link" href="https://www.yourdomain.com/"  target="_blank" rel="noopener"
+    >https://www.yourdomain.com/</a>&rdquo;</p>
+<p>子路径或子目录：</p>
+<p>如果你计划将网站发布到子路径或子目录下，确保在 baseURL 中包含子路径。
+例如，如果你将网站放在 <a class="link" href="https://www.yourdomain.com/blog/"  target="_blank" rel="noopener"
+    >https://www.yourdomain.com/blog/</a> 下：</p>
+<p>code baseURL= &ldquo;<a class="link" href="https://www.yourdomain.com/blog/"  target="_blank" rel="noopener"
+    >https://www.yourdomain.com/blog/</a>&rdquo;</p>
+<p>相对路径：</p>
+<p>在某些情况下，你可以使用相对路径。这对于将网站嵌套在其他网页中的情况可能有用。例如： code baseURL= &ldquo;/&rdquo;</p>
+<p>确保在设置 baseURL 时考虑到你的网站将来可能的发布位置以及你是否使用了 HTTPS。如果你的网站使用 HTTPS，请确保 baseURL 中的协议是 https://。</p>
+<p>总之，根据你的实际情况和计划，选择适当的 baseURL 设置。在网站发布之前，确保在本地测试环境中检查生成的链接是否正确。</p>
+</li>
+<li>
+<p><strong>保存配置文件：</strong></p>
+<p>Ctrl+S保存对 config.toml 文件的修改。</p>
+</li>
+</ol>
+<h1 id="四运行-hugo">四.运行 Hugo</h1>
+<pre><code>在博客根目录运行 Hugo，查看是否成功应用了主题的配置和样式。
+
+hugo server -D
+</code></pre>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E5%BB%BA%E7%AB%99/">建站</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY springceceilia</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2023 Cecilia 的博客小站
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.21.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://Cecilia404404.github.io/js/photoswipe.min.js"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://Cecilia404404.github.io/js/photoswipe-ui-default.min.js"crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://Cecilia404404.github.io/css/default-skin.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://Cecilia404404.github.io/css/photoswipe.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://Cecilia404404.github.io/js/vibrant.min.js"crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<script>
+    
+    function backToTop() {
+        
+        window.scrollTo(0, 0);
+    }
+
+    
+    window.onload = function() {
+        
+        let scrollTop = this.document.documentElement.scrollTop || this.document.body.scrollTop;
+        
+        let totopBtn = this.document.getElementById('back-to-top');
+        if (scrollTop > 0) {
+            
+            totopBtn.style.display = 'inline';
+        } else {
+            
+            totopBtn.style.display = 'none';
+        }
+    }
+
+    
+    window.onscroll = function() {
+        
+        let scrollTop = this.document.documentElement.scrollTop || this.document.body.scrollTop;
+        
+        let totopBtn = this.document.getElementById('back-to-top');
+        if (scrollTop < 200) {
+            
+            totopBtn.style.display = 'none';
+        } else {
+            
+            totopBtn.style.display = 'inline';
+            totopBtn.addEventListener('click', backToTop, false);
+        }
+    }
+</script>
+
+    </body>
+</html>

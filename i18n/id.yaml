@@ -1,93 +1,73 @@
-# General
-- id: read_more
-  translation: "Selanjutnya…"
+toggleMenu:
+    other: Tampilkan Menu
 
-- id: menu_label
-  translation: "Menu"
+darkMode:
+    other: Mode Gelap
 
-- id: sidemenu_title
-  translation: "Menu"
+list:
+    page:
+        one: "{{ .Count }} halaman"
+        other: "{{ .Count }} halaman"
 
-# Post meta
-- id: meta_lastmod
-  translation: "Terakhir Diubah"
+    section:
+        other: Bagian
 
-- id: meta_translations
-  translation: "Terjemahan"
+    subsection:
+        one: Subbagian
+        other: Subbagian
 
-# Table of Contents
-- id: toc_title
-  translation: "Konten Halaman"
+article:
+    back:
+        other: Kembali
 
-# Post nav
-- id: post_nav_prev
-  translation: "Sebelumnya"
+    tableOfContents:
+        other: Daftar Isi
 
-- id: post_nav_next
-  translation: "Selanjutnya"
+    relatedContent:
+        other: Konten terkait
 
-# Authorbox
-- id: authorbox_name
-  translation: "Tentang {{ .Name }}"
+    lastUpdatedOn:
+        other: Terakhir diperbarui pada
 
-# Sidebar
-- id: sidebar_warning
-  translation: "PERINGATAN"
+    readingTime:
+        one: "Waktu Membaca: {{ .Count }} menit"
+        other: "Waktu Membaca: {{ .Count }} menit"
 
-- id: sidebar_recommendation
-  translation: "Aktifkan setidaknya satu widget sidebar."
+notFound:
+    title:
+        other: Tidak ditemukan
+    subtitle:
+        other: Halaman yang Anda akses tidak ditemukan.
 
-# Search widget
-- id: search_placeholder
-  translation: "CARI…"
+widget:
+    archives:
+        title:
+            other: Arsip
 
-# Languages widget
-- id: languages_title
-  translation: "Bahasa"
+        more:
+            other: Lebih
 
-# Categories widget
-- id: categories_title
-  translation: "Kategori"
+    tagCloud:
+        title:
+            other: Tag
 
-# Recent Posts widget
-- id: recent_title
-  translation: "Postingan Terbaru"
+    categoriesCloud:
+        title:
+            other: Kategori
 
-# Social widget
-- id: social_title
-  translation: "Sosmed"
+search:
+    title:
+        other: Cari
 
-# Tags List widget
-- id: tags_title
-  translation: "Tag"
+    placeholder:
+        other: Ketik sesuatu...
 
-# Footer
-- id: footer_credits
-  translation:
-    "Dibuat dengan <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> dan Tema \
-    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a>."
+    resultTitle:
+        other: "#PAGES_COUNT halaman (#TIME_SECONDS detik)"
 
-# 404
-- id: 404_title
-  translation: "404. Halaman tidak ditemukan"
+footer:
+    builtWith:
+        other: Dibangun dengan {{ .Generator }}
 
-- id: 404_text
-  translation:
-    "Halaman yang Kamu cari tampaknya telah dipindahkan, dihapus atau tidak ada. Silakan gunakan pencarian atau pergi ke"
-
-- id: 404_linktext
-  translation: "Beranda"
-
-# No posts empty state
-- id: noposts_warning_title
-  translation: "Kamu belum memiliki postingan apa pun!"
-
-- id: noposts_warning_description
-  translation:
-    "Setelah kamu memposting sesuatu ke dalam folder manapun di folder <b>content</b>, Postingan itu akan muncul \
-    disini. Hanya satu bagian (dengan postingan terbanyak) yang akan ditampilkan di beranda secara default."
-
-- id: noposts_warning_tip
-  translation:
-    "<b>Tip:</b> Kamu dapat menampilkan sebanyak mungkin bagian dengan parameter konfigurasi \
-    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b>."
+    designedBy:
+        other: Tema {{ .Theme }} dirancang oleh {{ .DesignedBy }}

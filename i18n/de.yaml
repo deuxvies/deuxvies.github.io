@@ -1,94 +1,74 @@
-# General
-- id: read_more
-  translation: "Weiterlesen…"
+toggleMenu:
+    other: Menü umschalten
 
-- id: menu_label
-  translation: "Menü"
+darkMode:
+    other: Dunkler Modus
 
-- id: sidemenu_title
-  translation: "Menü"
+list:
+    page:
+        one: "{{ .Count }} Seite"
+        other: "{{ .Count }} Seiten"
 
-# Post meta
-- id: meta_lastmod
-  translation: "Zuletzt geändert"
+    section:
+        other: Abschnitt
 
-- id: meta_translations
-  translation: "Übersetzungen"
+    subsection:
+        one: Unterabschnitt
+        other: Unterabschnitte
 
-# Table of Contents
-- id: toc_title
-  translation: "Inhaltsverzeichnis"
+article:
+    back:
+        other: Zurück
 
-# Post nav
-- id: post_nav_prev
-  translation: "Zurück"
+    tableOfContents:
+        other: Inhaltsverzeichnis
 
-- id: post_nav_next
-  translation: "Weiter"
+    relatedContent:
+        other: Verwandte Inhalte
 
-# Authorbox
-- id: authorbox_name
-  translation: "Über {{ .Name }}"
+    lastUpdatedOn:
+        other: Zuletzt aktualisiert am
 
-# Sidebar
-- id: sidebar_warning
-  translation: "WARNUNG"
+    readingTime:
+        one: "{{ .Count }} Minute Lesezeit"
+        other: "{{ .Count }} Minuten Lesezeit"
 
-- id: sidebar_recommendation
-  translation: "Bitte aktivieren sie mindestens ein Widget."
+notFound:
+    title:
+        other: Seite nicht gefunden
 
-# Search widget
-- id: search_placeholder
-  translation: "Suche…"
+    subtitle:
+        other: Diese Seite existiert nicht
 
-# Languages widget
-- id: languages_title
-  translation: "Sprachen"
+widget:
+    archives:
+        title:
+            other: Archiv
 
-# Categories widget
-- id: categories_title
-  translation: "Kategorien"
+        more:
+            other: Weitere
 
-# Recent Posts widget
-- id: recent_title
-  translation: "Letzte Beiträge"
+    tagCloud:
+        title:
+            other: Schlagwörter
 
-# Social widget
-- id: social_title
-  translation: "Soziale Netzwerke"
+    categoriesCloud:
+        title:
+            other: Kategorien
 
-# Tags List widget
-- id: tags_title
-  translation: "Tags"
+search:
+    title:
+        other: Suche
 
-# Footer
-- id: footer_credits
-  translation:
-    "Erstellt mit <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> und \
-    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> Theme."
+    placeholder:
+        other: Etwas tippen...
 
-# 404
-- id: 404_title
-  translation: "404. Seite nicht gefunden"
+    resultTitle:
+        other: "#PAGES_COUNT Seiten (#TIME_SECONDS Sekunden)"
 
-- id: 404_text
-  translation:
-    "Die gesuchte Seite existiert nicht, wurde verschoben oder gelöscht. Bitte nutzen Sie die Suche oder gehen Sie zur"
+footer:
+    builtWith:
+        other: Erstellt mit {{ .Generator }}
 
-- id: 404_linktext
-  translation: "Startseite"
-
-# No posts empty state
-- id: noposts_warning_title
-  translation: "Es gibt noch keine Posts!"
-
-- id: noposts_warning_description
-  translation:
-    "Hier erscheinen Posts, die in einem Unterordner des <b>content/</b> Ordners abgelegt werden (z.B. in \
-    <b>content/post</b>). Standardmäßig werden nur Posts der Gruppe mit den meisten Einträgen angezeigt."
-
-- id: noposts_warning_tip
-  translation:
-    "<b>Tipp:</b> Mit dem \
-    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
-    Parameter lassen sich beliebig viele weitere Gruppen konfigurieren."
+    designedBy:
+        other: Theme {{ .Theme }} gestaltet von {{ .DesignedBy }}
