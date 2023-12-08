@@ -42,11 +42,11 @@ cleanDestinationDir = true
     # 博文元数据显示配置
     post_meta = ["author", "date", "categories", "translations"]
     # 主页中显示哪些
-    mainSections = ["posts",]
+    mainSections = ["posts", "post", "docs"]
     
     # 自定义 CSS 和 JS
     customCSS = ["assets/style.css"]
-    customJS = ["/res/js/custom.js"]
+    customJS = ["/static/js/meau.js"]
 
 [Params.Logo]
     subtitle = "In libris libertas."
@@ -77,7 +77,7 @@ cleanDestinationDir = true
         identifier = "posts"
         name = "所有文章"
         url = "/posts/"
-        weight = 20
+        weight = 10
     [[menu.main]]
         identifier = "categories"
         name = "合集"
