@@ -4,6 +4,7 @@
 
     .left-sidebar {
         max-width: var(--left-sidebar-max-width);
+        margin-right: 1%;
     }
 
     .right-sidebar {
@@ -11,7 +12,7 @@
 
         /// Display right sidebar when min-width: lg
         @include respond(lg) {
-            display: flex;
+            display: block;
         }
     }
 
