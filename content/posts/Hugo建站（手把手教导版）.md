@@ -178,19 +178,19 @@ $： 一般用户的默认提示符。
     
     当你在本地开发时，可以将 baseURL 设置为本地服务器的地址，通常是(http://localhost:1313/)。这样可以确保在本地预览时，生成的链接正确。  
     
-    tomlCopy code baseURL= "[http://localhost:1313/](http://localhost:1313/)"
+    code baseURL= "[http://localhost:1313/](http://localhost:1313/)"
     
     线上发布：
     
     当你准备发布网站时，将 baseURL 设置为你实际的域名或者托管服务的地址。如果你使用自定义域名，确保包括协议（https 或 http）。  
     
-    tomlCopy code baseURL= "[https://www.yourdomain.com/](https://www.yourdomain.com/)"
+    code baseURL= "[https://www.yourdomain.com/](https://www.yourdomain.com/)"
     
     子路径或子目录：
     
     如果你计划将网站发布到子路径或子目录下，确保在 baseURL 中包含子路径。例如，如果你将网站放在 [https://www.yourdomain.com/blog/](https://www.yourdomain.com/blog/) 下：  
     
-    tomlCopy code baseURL= "[https://www.yourdomain.com/blog/](https://www.yourdomain.com/blog/)"
+    code baseURL= "[https://www.yourdomain.com/blog/](https://www.yourdomain.com/blog/)"
     
     相对路径：
     
