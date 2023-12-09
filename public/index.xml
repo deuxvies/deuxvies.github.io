@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Cecilia 的博客小站</title>
+        <title>Cecilia的博客</title>
         <link>https://Cecilia404404.github.io/</link>
-        <description>Recent content on Cecilia 的博客小站</description>
+        <description>Recent content on Cecilia的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <lastBuildDate>Fri, 08 Dec 2023 17:34:26 +0800</lastBuildDate><atom:link href="https://Cecilia404404.github.io/index.xml" rel="self" type="application/rss+xml" /><item>

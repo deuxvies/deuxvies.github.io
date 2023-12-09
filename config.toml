@@ -1,9 +1,9 @@
-baseURL = 'https://Cecilia404404.github.io/'
+baseURL = "https://Cecilia404404.github.io/"
 languageCode = 'zh-cn'
-title = 'Cecilia 的博客小站'
+title = 'Cecilia的博客'
 theme = "hugo-theme-stack"
 summaryLength = 20
-paginate = 6
+paginate = 10
 disqusShortname = ''
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
@@ -52,7 +52,7 @@ favicon = "img/favicon.png"
   type = "archives"
   
     [params.widgets.homepage.params]
-    limit = 5
+    limit = 10
   
   [[params.widgets.homepage]]
   type = "tag-cloud"
@@ -89,7 +89,7 @@ url = "/"
 weight = -100
 
   [menu.main.params]
-  newTab = true
+  newTab = false
   icon = "home"
 
 [[menu.social]]

@@ -69,9 +69,12 @@
 
 .right-sidebar {
     width: 100%;
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: var(--widget-separation);
+    position: fixed;
+    right: 0;          // 位于屏幕右侧
+    top: 0;            // 位于屏幕顶部
 
     &.sticky {
         top: 0;
@@ -79,6 +82,7 @@
 
     @include respond(lg) {
         padding-top: var(--main-top-padding);
+        padding-bottom: var(--main-top-padding);
     }
 }
 

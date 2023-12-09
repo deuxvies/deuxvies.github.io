@@ -1,4 +1,12 @@
 {{ define "main" }}
+ <!--首页标注-->
+ <div class="welcome">
+  <p style="font-size: 2rem; text-align: center; font-weight: bold;">
+      <span class="jump-text1">My</span>
+      <span class="jump-text2">postcards</span>
+      <span class="jump-text3">Collection</span>
+  </p>
+</div>
 <div class="gallery-photos page">
   {{ range (sort (readDir "./static/photos") "Name" "desc")}}
     {{ if ( .Name | findRE "\\.(gif|jpg|jpeg|tiff|png|bmp|webp|avif|jxl)") }}
