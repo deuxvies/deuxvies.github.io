@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-    - uses: ./.github/actions/checkout@v4
+    - uses: ../my-notion
       with:
         # Workflows are only triggered when commits (and tags I think, but it would need to be tested) are created pushed using a Personal Access Token (PAT).
         # ref: https://github.com/EndBug/add-and-commit/issues/311#issuecomment-948749635
@@ -37,4 +37,4 @@ jobs:
       uses: EndBug/add-and-commit@v7
       with:
         branch: gh-pages
-        message: 'Notion CI'
+        message: 'notion-ci'
