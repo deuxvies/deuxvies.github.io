@@ -9,10 +9,6 @@
     .right-sidebar {
         max-width: var(--right-sidebar-max-width);
 
-        /// Display right sidebar when min-width: lg
-        @include respond(lg) {
-            display: flex;
-        }
     }
 
     &.extended {
@@ -94,11 +90,5 @@ main.main {
     
     @include respond(md) {
         padding: 0 20px;
-    }
-}
-
-@media screen and (min-width: 756px) {
-    .right-sidebar {
-        display: flex;
     }
 }
