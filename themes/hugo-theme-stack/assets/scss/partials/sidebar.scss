@@ -69,12 +69,11 @@
 
 .right-sidebar {
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: var(--widget-separation);
-    position: relative;
-    right: 0;          // 位于屏幕右侧
-    top: 0;            // 位于屏幕顶部
+    position: sticky;
+    
 
     &.sticky {
         top: 0;
@@ -199,4 +198,25 @@
             background-color: var(--card-background);
         }
     }
+}
+
+.language-select{
+    align-self: stretch;
+    color: var(--body-text-color);
+    align-items: center;
+}
+.language-select #selected{
+    font-weight: 500;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.language-select #to-select{
+    font-weight: 100;
+    display: flex;
+    a {
+        margin-left: 60px;
+    }
+    margin-top: 0px;
+    margin-bottom: 0px;
 }

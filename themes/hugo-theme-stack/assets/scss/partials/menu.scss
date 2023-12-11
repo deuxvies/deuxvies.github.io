@@ -131,7 +131,6 @@
     padding-left: 0;
     list-style: none;
     flex-direction: column;
-    overflow-y: auto;
     flex-grow: 1;
     font-size: 1.4rem;
     background-color: var(--card-background);
@@ -139,6 +138,17 @@
     box-shadow: var(--shadow-l1);
     display: none;
     margin: 0 calc(var(--container-padding) * -1);
+
+    /*菜单页面缩放*/
+    overflow-y: visible;    //把auto改为visible，为了图标放大溢出时不显示滚动条
+    li {
+	    transition:.5s ease;
+    }
+    li{
+        &:hover{
+        transform:scale(1.1,1.1);
+	    }
+    }
 
     padding: 30px 30px;
     @include respond(xl) {
@@ -176,8 +186,8 @@
         }
 
         svg {
+            stroke: currentColor;
             stroke-width: 1.33;
-
             width: 20px;
             height: 20px;
         }
@@ -225,3 +235,5 @@
         stroke-width: 1.33;
     }
 }
+
+

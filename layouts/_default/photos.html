@@ -1,12 +1,29 @@
 {{ define "main" }}
- <!--首页标注-->
- <div class="welcome">
-  <p style="font-size: 2rem; text-align: center; font-weight: bold;">
-      <span class="jump-text1">My</span>
-      <span class="jump-text2">postcards</span>
-      <span class="jump-text3">Collection</span>
-  </p>
-</div>
+  <!-- index.html or home.html -->
+<div id="text">
+    <p style="font-size: 4rem; text-align: center; font-weight: bold;"></p>  
+  </div>
+  <!-- ... other HTML content ... -->
+  
+  <script>
+    let divTyping = document.querySelector('#text p');
+    let i = 0,
+      timer = 50,  // 修改为适当的时间间隔，以控制打字速度
+      str = 'My postcards collection. Happy postcrossing!';  // 修改为自己想打的字
+  
+    function typing() {
+      if (i <= str.length) {
+        divTyping.innerHTML = str.slice(0, i++) + '_';
+        timer = setTimeout(typing, timer);
+      } else {
+        divTyping.innerHTML = str; // 结束打字，移除 _ 光标
+        clearTimeout(timer);
+      }
+    }
+  
+    typing();
+  </script>
+
 <div class="gallery-photos page">
   {{ range (sort (readDir "./static/photos") "Name" "desc")}}
     {{ if ( .Name | findRE "\\.(gif|jpg|jpeg|tiff|png|bmp|webp|avif|jxl)") }}

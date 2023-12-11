@@ -13,6 +13,9 @@ draft: true
 ---
 
 测试发布带图文章：
-![Alt Text](../../static/img/1.png)
 
-<img src="/images/1.png" alt="Alt Text" style="width: 200px; height: auto;">
+![图1](/blog/myblog/static/img/1.png)
+
+调整大小：
+
+<img src="/images/1.png" alt="Alt Text" style="width: 600px; height: auto;">

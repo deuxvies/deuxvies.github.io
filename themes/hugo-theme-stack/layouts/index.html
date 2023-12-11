@@ -1,14 +1,29 @@
 {{ define "main" }}
-    <!--首页欢迎横幅-->
-<div class="welcome">
-    <p style="font-size: 2rem; text-align: center; font-weight: bold;">
-        <span class="jump-text1">Welcome</span>
-        <span class="jump-text2"> To </span>
-        <span class="jump-text3"> Cecilia</span>
-        <span class="jump-text4">'s</span>
-        <span class="jump-text5">Blog</span>
-    </p>
-</div>
+  <!-- index.html or home.html -->
+<div id="text">
+    <p style="font-size: 3rem; text-align: center; font-weight: bold;"></p>   
+  </div>
+  <!-- ... other HTML content ... -->
+  
+  <script>
+    let divTyping = document.querySelector('#text p');
+    let i = 0,
+      timer = 50,  // 修改为适当的时间间隔，以控制打字速度
+      str = 'Humo sum, humani nihil ame alienum puton.';  // 修改为自己想打的字
+  
+    function typing() {
+      if (i <= str.length) {
+        divTyping.innerHTML = str.slice(0, i++) + '_';
+        timer = setTimeout(typing, timer);
+      } else {
+        divTyping.innerHTML = str; // 结束打字，移除 _ 光标
+        clearTimeout(timer);
+      }
+    }
+  
+    typing();
+  </script>
+
 
     {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
     {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
@@ -28,3 +43,4 @@
 {{ define "right-sidebar" }}
     {{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
 {{ end }}
+
