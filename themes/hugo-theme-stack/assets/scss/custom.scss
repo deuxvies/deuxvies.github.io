@@ -1,34 +1,34 @@
 /* 更换背景 */
 :root {
-  --body-background: #f3d6c8;
-  --accent-color: #1B365D;
+  --body-background: #f9f4ef;
+  --accent-color: #020826;
   --accent-color-darker: #3a2044;
   --accent-color-text: #FFF;
   --body-text-color: #001858;
 }
 
 :root {
-  --card-background: #fef6e4;
-  --card-background-selected: #fbdaf8;
-  --card-text-color-main: #202A44;
-  --card-text-color-secondary: #53565A;
-  --card-text-color-tertiary: #172c66;
+  --card-background: #fffffe;
+  --card-background-selected: #f3d2c1;
+  --card-text-color-main: #020826;
+  --card-text-color-secondary: #020826;
+  --card-text-color-tertiary: #020826;
 }
 
 .article-list article:nth-child(n) .article-category a {
-  background: #001858!important;
+  background: #020826!important;
   color: #fff;
 }
 
 .article-category a, .article-tags a {
-  background-color: #f582ae!important;
+  background-color: #8c7851!important;
   color: #fff;
 }
 
 
 :root {
   /* 亮色模式 */
-  --section-total-count-color-light: #001858; /* 设置亮色模式下的文本颜色 */
+  --section-total-count-color-light: #020826; /* 设置亮色模式下的文本颜色 */
 
   /* 暗色模式 */
   --section-total-count-color-dark: #fff; /* 设置暗色模式下的文本颜色 */
@@ -343,5 +343,14 @@ html{
     ::-webkit-scrollbar-thumb:hover {
       background-color: #a8bbbf;
     }
+}
+
+/*修改全站字体*/
+:root {
+  --sys-font-family: 'Noto Serif SC', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Droid Sans', 'Helvetica Neue';
+  --zh-font-family: 'Noto Serif SC', 'Hiragino Sans GB', 'Droid Sans Fallback',
+    'Microsoft YaHei';
+  --base-font-family: 'Noto Serif SC', var(--sys-font-family);
 }
 
