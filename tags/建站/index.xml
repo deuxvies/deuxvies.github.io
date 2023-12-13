@@ -1,226 +1,257 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>建站 on Cecilia的博客</title><link>https://Cecilia404404.github.io/tags/%E5%BB%BA%E7%AB%99/</link><description>Recent content in 建站 on Cecilia的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 09 Dec 2023 17:34:26 +0800</lastBuildDate><atom:link href="https://Cecilia404404.github.io/tags/%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml"/><item><title>【建站2】在Hugo中发布内容</title><link>https://Cecilia404404.github.io/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/</link><pubDate>Sat, 09 Dec 2023 17:34:26 +0800</pubDate><guid>https://Cecilia404404.github.io/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/</guid><description>&lt;h1 id="1发布纯文字的文章">1.发布纯文字的文章&lt;/h1>
-&lt;h3 id="11在命令行中创建新文章">1.1在命令行中创建新文章&lt;/h3>
-&lt;p>打开终端，导航到你的 Hugo 项目根目录，并运行以下命令：&lt;/p>
-&lt;p>hugo new posts/my-first-post.md&lt;/p>
-&lt;p>这会在 content/posts/ 目录下创建一个名为 my-first-post.md 的 Markdown 文件。&lt;/p>
-&lt;h3 id="12编辑文章内容">1.2编辑文章内容&lt;/h3>
-&lt;p>使用文本编辑器（比如VSCode）打开 content/posts/my-first-post.md 文件，然后编辑文章内容。&lt;/p>
-&lt;p>Markdown 文件的开头通常包括一些元数据，比如标题、日期、标签等。&lt;/p>
-&lt;p>&lt;strong>例如：&lt;/strong>&lt;/p>
-&lt;p>&amp;mdash; title: &amp;ldquo;我的第一篇博客&amp;rdquo;&lt;/p>
-&lt;p>date: 2023-11-30T09:00:00+00:00&lt;/p>
-&lt;p>draft: false&lt;/p>
-&lt;p>tags: [&amp;ldquo;Hugo&amp;rdquo;, &amp;ldquo;博客&amp;rdquo;]&lt;/p>
-&lt;p>categories: [&amp;ldquo;技术&amp;rdquo;]&lt;/p>
-&lt;hr>
-&lt;p>这是我的第一篇博客文章，使用 Hugo 搭建的博客系统。&lt;/p>
-&lt;p>其中，draft: false 表示这篇文章不是草稿，将被发布。你可以在编辑完文章后保存文件。&lt;/p>
-&lt;h3 id="13运行-hugo-本地服务器进行预览">1.3运行 Hugo 本地服务器进行预览&lt;/h3>
-&lt;p>在终端中运行以下命令：&lt;/p>
-&lt;p>hugo server -D  &lt;/p>
-&lt;p>-D 选项用于显示草稿（如果有）。&lt;/p>
-&lt;p>然后，打开浏览器，访问 &lt;a class="link" href="http://localhost:1313/" target="_blank" rel="noopener"
->http://localhost:1313/&lt;/a>&lt;/p>
-&lt;p>你应该能够在本地预览你的博客，包括新创建的文章。&lt;/p>
-&lt;p>如果在预览中一切正常，你可以停止 Hugo 服务器，并运行以下命令来生成静态文件：&lt;/p>
-&lt;p>hugo&lt;/p>
-&lt;p>这会在项目根目录生成一个 public/ 目录，里面包含了你整个博客的静态文件。&lt;/p>
-&lt;p>你可以将这些文件上传到你的 Web 服务器或者托管服务上，使其在互联网上可访问。&lt;/p>
-&lt;p>&lt;strong># 如果使用 Git，可以添加并提交生成的文件&lt;/strong>&lt;/p>
-&lt;p>git add .&lt;/p>
-&lt;p>git commit -m &amp;ldquo;Add my first post&amp;rdquo;&lt;/p>
-&lt;p>然后，再将 public/ 目录的内容部署到你的服务器上。&lt;/p>
-&lt;h1 id="2修改已经发布的-hugo-文章">2.修改已经发布的 Hugo 文章&lt;/h1>
-&lt;p>你需要编辑该文章的 Markdown 文件，然后重新生成静态文件并部署：&lt;/p>
-&lt;p>&lt;strong>2.1找到文章：&lt;/strong>&lt;/p>
-&lt;p>在 Hugo 项目的 content/posts/ 目录下找到你想修改的文章，以 .md 为扩展名。&lt;/p>
-&lt;p>&lt;strong>2.2编辑文章内容：&lt;/strong>&lt;/p>
-&lt;p>使用文本编辑器打开文章的 Markdown 文件，对内容进行修改。&lt;/p>
-&lt;p>你可以更新标题、正文、标签、日期等信息。保存文件。&lt;/p>
-&lt;p>&lt;strong>2.3运行 Hugo 本地服务器进行预览：&lt;/strong>&lt;/p>
-&lt;p>在终端中运行以下命令：&lt;/p>
-&lt;p>hugo server -D&lt;/p>
-&lt;p>打开浏览器，访问 &lt;a class="link" href="http://localhost:1313/" target="_blank" rel="noopener"
->http://localhost:1313/&lt;/a>&lt;/p>
-&lt;p>查看你的修改是否生效。在预览中确认无误后，你可以继续下一步部署。 &lt;/p>
-&lt;h1 id="3发布带图文章">3.发布带图文章&lt;/h1>
-&lt;p>在 Hugo 中发布带有图片的文章需要你在 Markdown 文件中使用正确的语法来插入图片。&lt;/p>
-&lt;p>&lt;strong>3.1准备图片：&lt;/strong>&lt;/p>
-&lt;p>确保你的图片已经放置在 Hugo 项目中的 static 目录下，或者在 Markdown 文件所在的目录中。
-例如，如果你有一张图片 my-image.jpg，可以将其放在 static/images/ 目录下。&lt;/p>
-&lt;p>&lt;strong>3.2使用 Markdown 插入图片：&lt;/strong>&lt;/p>
-&lt;p>在文章的 Markdown 文件中，使用以下语法插入图片：&lt;/p>
-&lt;p>（注：输入下列代码两边要加英文输入法状态下的&amp;lt;&amp;gt;）
-imgsrc=&amp;quot;/img/hugo version.png&amp;quot;alt=&amp;ldquo;Alt Text&amp;quot;width=&amp;ldquo;300&amp;quot;height=&amp;ldquo;200&amp;rdquo;&lt;/p>
-&lt;p>&lt;strong>运行 Hugo 本地服务器进行预览：&lt;/strong>&lt;/p>
-&lt;p>在终端中运行以下命令：
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>建站 on Cecilia的博客</title>
+        <link>https://Cecilia404404.github.io/tags/%E5%BB%BA%E7%AB%99/</link>
+        <description>Recent content in 建站 on Cecilia的博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sat, 09 Dec 2023 17:34:26 +0800</lastBuildDate><atom:link href="https://Cecilia404404.github.io/tags/%E5%BB%BA%E7%AB%99/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>【建站2】在Hugo中发布内容</title>
+        <link>https://Cecilia404404.github.io/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/</link>
+        <pubDate>Sat, 09 Dec 2023 17:34:26 +0800</pubDate>
+        
+        <guid>https://Cecilia404404.github.io/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/</guid>
+        <description>&lt;h1 id=&#34;1发布纯文字的文章&#34;&gt;1.发布纯文字的文章&lt;/h1&gt;
+&lt;h3 id=&#34;11在命令行中创建新文章&#34;&gt;1.1在命令行中创建新文章&lt;/h3&gt;
+&lt;p&gt;打开终端，导航到你的 Hugo 项目根目录，并运行以下命令：&lt;/p&gt;
+&lt;p&gt;hugo new posts/my-first-post.md&lt;/p&gt;
+&lt;p&gt;这会在 content/posts/ 目录下创建一个名为 my-first-post.md 的 Markdown 文件。&lt;/p&gt;
+&lt;h3 id=&#34;12编辑文章内容&#34;&gt;1.2编辑文章内容&lt;/h3&gt;
+&lt;p&gt;使用文本编辑器（比如VSCode）打开 content/posts/my-first-post.md 文件，然后编辑文章内容。&lt;/p&gt;
+&lt;p&gt;Markdown 文件的开头通常包括一些元数据，比如标题、日期、标签等。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;例如：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;mdash; title: &amp;ldquo;我的第一篇博客&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;date: 2023-11-30T09:00:00+00:00&lt;/p&gt;
+&lt;p&gt;draft: false&lt;/p&gt;
+&lt;p&gt;tags: [&amp;ldquo;Hugo&amp;rdquo;, &amp;ldquo;博客&amp;rdquo;]&lt;/p&gt;
+&lt;p&gt;categories: [&amp;ldquo;技术&amp;rdquo;]&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这是我的第一篇博客文章，使用 Hugo 搭建的博客系统。&lt;/p&gt;
+&lt;p&gt;其中，draft: false 表示这篇文章不是草稿，将被发布。你可以在编辑完文章后保存文件。&lt;/p&gt;
+&lt;h3 id=&#34;13运行-hugo-本地服务器进行预览&#34;&gt;1.3运行 Hugo 本地服务器进行预览&lt;/h3&gt;
+&lt;p&gt;在终端中运行以下命令：&lt;/p&gt;
+&lt;p&gt;hugo server -D  &lt;/p&gt;
+&lt;p&gt;-D 选项用于显示草稿（如果有）。&lt;/p&gt;
+&lt;p&gt;然后，打开浏览器，访问 &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://localhost:1313/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;你应该能够在本地预览你的博客，包括新创建的文章。&lt;/p&gt;
+&lt;p&gt;如果在预览中一切正常，你可以停止 Hugo 服务器，并运行以下命令来生成静态文件：&lt;/p&gt;
+&lt;p&gt;hugo&lt;/p&gt;
+&lt;p&gt;这会在项目根目录生成一个 public/ 目录，里面包含了你整个博客的静态文件。&lt;/p&gt;
+&lt;p&gt;你可以将这些文件上传到你的 Web 服务器或者托管服务上，使其在互联网上可访问。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;# 如果使用 Git，可以添加并提交生成的文件&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;git add .&lt;/p&gt;
+&lt;p&gt;git commit -m &amp;ldquo;Add my first post&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;然后，再将 public/ 目录的内容部署到你的服务器上。&lt;/p&gt;
+&lt;h1 id=&#34;2修改已经发布的-hugo-文章&#34;&gt;2.修改已经发布的 Hugo 文章&lt;/h1&gt;
+&lt;p&gt;你需要编辑该文章的 Markdown 文件，然后重新生成静态文件并部署：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.1找到文章：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在 Hugo 项目的 content/posts/ 目录下找到你想修改的文章，以 .md 为扩展名。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.2编辑文章内容：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;使用文本编辑器打开文章的 Markdown 文件，对内容进行修改。&lt;/p&gt;
+&lt;p&gt;你可以更新标题、正文、标签、日期等信息。保存文件。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.3运行 Hugo 本地服务器进行预览：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在终端中运行以下命令：&lt;/p&gt;
+&lt;p&gt;hugo server -D&lt;/p&gt;
+&lt;p&gt;打开浏览器，访问 &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://localhost:1313/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;查看你的修改是否生效。在预览中确认无误后，你可以继续下一步部署。 &lt;/p&gt;
+&lt;h1 id=&#34;3发布带图文章&#34;&gt;3.发布带图文章&lt;/h1&gt;
+&lt;p&gt;在 Hugo 中发布带有图片的文章需要你在 Markdown 文件中使用正确的语法来插入图片。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.1准备图片：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;确保你的图片已经放置在 Hugo 项目中的 static 目录下，或者在 Markdown 文件所在的目录中。
+例如，如果你有一张图片 my-image.jpg，可以将其放在 static/images/ 目录下。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.2使用 Markdown 插入图片：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在文章的 Markdown 文件中，使用以下语法插入图片：&lt;/p&gt;
+&lt;p&gt;（注：输入下列代码两边要加英文输入法状态下的&amp;lt;&amp;gt;）
+imgsrc=&amp;quot;/img/hugo version.png&amp;quot;alt=&amp;ldquo;Alt Text&amp;quot;width=&amp;ldquo;300&amp;quot;height=&amp;ldquo;200&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;运行 Hugo 本地服务器进行预览：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在终端中运行以下命令：
 hugo server -D
-打开浏览器，访问 &lt;a class="link" href="http://localhost:1313/" target="_blank" rel="noopener"
->http://localhost:1313/&lt;/a>&lt;/p>
-&lt;p>显示如下：&lt;/p>
-&lt;img src="https://Cecilia404404.github.io/images/1.png" alt="Alt Text" style="width: 300px; height: auto;">
-&lt;p>&lt;strong>3.3调整图片大小：&lt;/strong>&lt;/p>
-&lt;p>如果需要设置图片的大小，可以修改代码里 width 和 height 的数值。&lt;/p>
-&lt;p>显示如下：&lt;/p>
-&lt;img src="https://Cecilia404404.github.io/images/1.png" alt="Alt Text" style="width: 600px; height: auto;">
-&lt;p>查看你的修改是否生效。在预览中确认无误后，你可以继续下一步部署。&lt;/p></description></item><item><title>【建站1】Hugo配置主题及生成</title><link>https://Cecilia404404.github.io/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/</link><pubDate>Fri, 08 Dec 2023 17:34:26 +0800</pubDate><guid>https://Cecilia404404.github.io/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/</guid><description>&lt;p>说明：此为针对小白的傻瓜式教程。&lt;/p>
-&lt;h1 id="一前期准备">一.前期准备&lt;/h1>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>安装 Git:&lt;/strong>
-访问 &lt;a class="link" href="https://git-scm.com/download/win" target="_blank" rel="noopener"
->Git 官网&lt;/a> 下载 Git 的最新版本。
-执行下载的安装程序，并按照提示进行安装。在 &amp;ldquo;Select Components&amp;rdquo; 阶段，确保选中 &amp;ldquo;Git Bash Here&amp;rdquo; 选项。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>安装 Hugo:&lt;/strong>
-访问 &lt;a class="link" href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener"
->Hugo GitHub Releases&lt;/a> 页面。
+打开浏览器，访问 &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://localhost:1313/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;显示如下：&lt;/p&gt;
+&lt;img src=&#34;https://Cecilia404404.github.io/images/1.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 300px; height: auto;&#34;&gt;
+&lt;p&gt;&lt;strong&gt;3.3调整图片大小：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果需要设置图片的大小，可以修改代码里 width 和 height 的数值。&lt;/p&gt;
+&lt;p&gt;显示如下：&lt;/p&gt;
+&lt;img src=&#34;https://Cecilia404404.github.io/images/1.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 600px; height: auto;&#34;&gt;
+&lt;p&gt;查看你的修改是否生效。在预览中确认无误后，你可以继续下一步部署。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>【建站1】Hugo配置主题及生成</title>
+        <link>https://Cecilia404404.github.io/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/</link>
+        <pubDate>Fri, 08 Dec 2023 17:34:26 +0800</pubDate>
+        
+        <guid>https://Cecilia404404.github.io/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/</guid>
+        <description>&lt;p&gt;说明：此为针对小白的傻瓜式教程。&lt;/p&gt;
+&lt;h1 id=&#34;一前期准备&#34;&gt;一.前期准备&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;安装 Git:&lt;/strong&gt;
+访问 &lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/download/win&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Git 官网&lt;/a&gt; 下载 Git 的最新版本。
+执行下载的安装程序，并按照提示进行安装。在 &amp;ldquo;Select Components&amp;rdquo; 阶段，确保选中 &amp;ldquo;Git Bash Here&amp;rdquo; 选项。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;安装 Hugo:&lt;/strong&gt;
+访问 &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo GitHub Releases&lt;/a&gt; 页面。
 在 Assets 下找到适合 Windows 的 ZIP 文件（通常是 hugo_extended_X.XX.X_windows-64bit.zip）。
-下载 ZIP 文件，并解压到一个你喜欢的目录中（比如 C:\Hugo）。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>（重要！）添加环境变量:&lt;/strong>&lt;/p>
-&lt;p>将解压得到的 hugo.exe 文件的路径（比如 C:\Hugo\hugo.exe）添加到系统的 PATH 变量中，以便在任何地方都能够在命令提示符中访问 Hugo。&lt;/p>
-&lt;p>在 Windows 上将 Hugo可执行文件的路径添加到系统的 PATH 变量中可以通过以下步骤完成：&lt;/p>
-&lt;p>获取 Hugo 可执行文件路径：&lt;/p>
-&lt;p>打开 File Explorer（资源管理器），导航到你解压 Hugo ZIP 文件的目录。
+下载 ZIP 文件，并解压到一个你喜欢的目录中（比如 C:\Hugo）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;（重要！）添加环境变量:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;将解压得到的 hugo.exe 文件的路径（比如 C:\Hugo\hugo.exe）添加到系统的 PATH 变量中，以便在任何地方都能够在命令提示符中访问 Hugo。&lt;/p&gt;
+&lt;p&gt;在 Windows 上将 Hugo可执行文件的路径添加到系统的 PATH 变量中可以通过以下步骤完成：&lt;/p&gt;
+&lt;p&gt;获取 Hugo 可执行文件路径：&lt;/p&gt;
+&lt;p&gt;打开 File Explorer（资源管理器），导航到你解压 Hugo ZIP 文件的目录。
 找到 hugo.exe 文件。记住 hugo.exe 的完整路径，
-比如 C:\Hugo\hugo.exe。&lt;/p>
-&lt;p>打开系统环境变量设置：&lt;/p>
-&lt;p>右键点击计算机（桌面上或开始菜单中），选择 &amp;ldquo;属性&amp;rdquo;。
+比如 C:\Hugo\hugo.exe。&lt;/p&gt;
+&lt;p&gt;打开系统环境变量设置：&lt;/p&gt;
+&lt;p&gt;右键点击计算机（桌面上或开始菜单中），选择 &amp;ldquo;属性&amp;rdquo;。
 在左侧面板中，点击 &amp;ldquo;高级系统设置&amp;rdquo;。
-在打开的窗口中，点击 &amp;ldquo;环境变量&amp;rdquo; 按钮。&lt;/p>
-&lt;p>编辑系统 PATH 变量：&lt;/p>
-&lt;p>在环境变量窗口中，找到 &amp;ldquo;系统变量&amp;rdquo; 部分，找到并选中 &amp;ldquo;Path&amp;rdquo; 变量，然后点击 &amp;ldquo;编辑&amp;rdquo; 按钮。&lt;/p>
-&lt;p>添加 Hugo 可执行文件路径：&lt;/p>
-&lt;p>在 &amp;ldquo;编辑环境变量&amp;rdquo; 窗口中，点击 &amp;ldquo;新建&amp;rdquo; 按钮。
+在打开的窗口中，点击 &amp;ldquo;环境变量&amp;rdquo; 按钮。&lt;/p&gt;
+&lt;p&gt;编辑系统 PATH 变量：&lt;/p&gt;
+&lt;p&gt;在环境变量窗口中，找到 &amp;ldquo;系统变量&amp;rdquo; 部分，找到并选中 &amp;ldquo;Path&amp;rdquo; 变量，然后点击 &amp;ldquo;编辑&amp;rdquo; 按钮。&lt;/p&gt;
+&lt;p&gt;添加 Hugo 可执行文件路径：&lt;/p&gt;
+&lt;p&gt;在 &amp;ldquo;编辑环境变量&amp;rdquo; 窗口中，点击 &amp;ldquo;新建&amp;rdquo; 按钮。
 输入 Hugo 可执行文件的完整路径（例如，C:\Hugo）。
-确认并关闭所有打开的窗口。&lt;/p>
-&lt;p>验证是否添加成功：&lt;/p>
-&lt;p>打开命令提示符（Command Prompt）&lt;/p>
-&lt;p>在Windows 操作系统中，你可以通过以下步骤打开命令提示符：&lt;/p>
-&lt;p>在任务栏的搜索框中，键入
-&amp;ldquo;cmd&amp;rdquo; 或 &amp;ldquo;命令提示符&amp;rdquo;。&lt;/p>
-&lt;p>从搜索结果中选择
-&amp;ldquo;命令提示符&amp;rdquo; 或 &amp;ldquo;Command Prompt&amp;rdquo;。&lt;/p>
-&lt;pre>&lt;code>运行对话框。
-**或**：按下 Win + R 组合键，打开运行对话框。  
-输入&amp;quot;cmd&amp;quot; 或 &amp;quot;cmd.exe&amp;quot;，然后按 Enter 键。
-&lt;/code>&lt;/pre>
-&lt;p>无论你使用哪种方法，都会打开一个命令提示符窗口，你可以在其中输入命令。在这个窗口中，你可以执行各种命令和操作系统交互。&lt;/p>
-&lt;p>输入 hugo version 并按回车键。
-如果安装成功，你应该能够看到 Hugo 的版本信息，表示安装成功。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>通过这些步骤，你就成功将 Hugo可执行文件的路径添加到系统的 PATH 变量中了。这样，你可以在任何地方使用命令提示符运行Hugo。如果有任何问题，记得检查路径是否正确，确保没有拼写错误。&lt;/p>
-&lt;h1 id="二创建博客">二.创建博客&lt;/h1>
-&lt;ol>
-&lt;li>&lt;strong>打开Git Bash：&lt;/strong>&lt;/li>
-&lt;/ol>
-&lt;pre>&lt;code>在你想要创建博客的文件夹中，右键单击并选择 &amp;quot;Git Bash Here&amp;quot;。
-&lt;/code>&lt;/pre>
-&lt;ol start="2">
-&lt;li>
-&lt;p>&lt;strong>创建 Hugo 站点，输入代码：&lt;/strong>
+确认并关闭所有打开的窗口。&lt;/p&gt;
+&lt;p&gt;验证是否添加成功：&lt;/p&gt;
+&lt;p&gt;打开命令提示符（Command Prompt）&lt;/p&gt;
+&lt;p&gt;在Windows 操作系统中，你可以通过以下步骤打开命令提示符：&lt;/p&gt;
+&lt;p&gt;在任务栏的搜索框中，键入
+&amp;ldquo;cmd&amp;rdquo; 或 &amp;ldquo;命令提示符&amp;rdquo;。&lt;/p&gt;
+&lt;p&gt;从搜索结果中选择
+&amp;ldquo;命令提示符&amp;rdquo; 或 &amp;ldquo;Command Prompt&amp;rdquo;。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;运行对话框。
+
+ **或**：按下 Win + R 组合键，打开运行对话框。  
+
+ 输入&amp;quot;cmd&amp;quot; 或 &amp;quot;cmd.exe&amp;quot;，然后按 Enter 键。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;无论你使用哪种方法，都会打开一个命令提示符窗口，你可以在其中输入命令。在这个窗口中，你可以执行各种命令和操作系统交互。&lt;/p&gt;
+&lt;p&gt;输入 hugo version 并按回车键。
+如果安装成功，你应该能够看到 Hugo 的版本信息，表示安装成功。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;通过这些步骤，你就成功将 Hugo可执行文件的路径添加到系统的 PATH 变量中了。这样，你可以在任何地方使用命令提示符运行Hugo。如果有任何问题，记得检查路径是否正确，确保没有拼写错误。&lt;/p&gt;
+&lt;h1 id=&#34;二创建博客&#34;&gt;二.创建博客&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;打开Git Bash：&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;在你想要创建博客的文件夹中，右键单击并选择 &amp;quot;Git Bash Here&amp;quot;。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;创建 Hugo 站点，输入代码：&lt;/strong&gt;
 hugo new site myblog
-这将在当前目录创建一个名为 myblog 的新博客。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>进入博客目录，输入代码：&lt;/strong>
-cd myblog&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;p>&lt;strong>Tips代码指令解释：&lt;/strong>&lt;/p>
-&lt;p>1.查看当前目录：
+这将在当前目录创建一个名为 myblog 的新博客。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;进入博客目录，输入代码：&lt;/strong&gt;
+cd myblog&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Tips代码指令解释：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1.查看当前目录：
 在 Git Bash 终端中，可以输入以下命令来查看当前所在的目录：
 pwd
-这会显示当前工作目录的完整路径。&lt;/p>
-&lt;p>2.进入博客目录：
+这会显示当前工作目录的完整路径。&lt;/p&gt;
+&lt;p&gt;2.进入博客目录：
 使用 cd 命令来进入博客目录。假设你的博客目录名为 myblog，你可以执行以下命令：
-cd myblog&lt;/p>
-&lt;pre>&lt;code>如果博客目录不在当前工作目录，你需要替换成完整路径，例如：
+cd myblog&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;如果博客目录不在当前工作目录，你需要替换成完整路径，例如：
 cd /d/blog/myblog
 这个就是根目录路径↑
-&lt;/code>&lt;/pre>
-&lt;p>3.验证是否成功进入博客目录：
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;3.验证是否成功进入博客目录：
 输入 pwd 命令确认当前工作目录是否为你的博客目录。
 使用 ls 命令查看博客目录中的文件和子目录：
 ls
-通过这些步骤，你就能够在 Git Bash 中成功进入 Hugo 博客的目录。&lt;/p>
-&lt;p>*注：在 Bash 里，&lt;/p>
-&lt;pre>&lt;code> $： 一般用户的默认提示符。
-#： 超级用户（root）的默认提示符。
-对于默认用户，通常显示 $。
-当你在 Bash 中输入 cd 命令时，你不需要管前面的 $。
-你只需在 cd 后面加上目标目录的路径即可。
-&lt;/code>&lt;/pre>
-&lt;h1 id="三配置hugo主题模板">三.配置Hugo主题模板&lt;/h1>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>选择主题：&lt;/strong>&lt;/p>
-&lt;p>在 Hugo 中，主题通常以 Git 存储库的形式存在。你可以从&lt;a class="link" href="https://themes.gohugo.io/" target="_blank" rel="noopener"
->Hugo Themes&lt;/a>网站上选择一个主题。&lt;/p>
-&lt;p>在该主题的详情页面找到download跳转到 GitHub 界面，点击绿色的按键code便可复制git链接。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>在博客目录中添加主题作为子模块：&lt;/strong>&lt;/p>
-&lt;p>方法1：直接连接github（坑：有时候因为防火墙问题会配置失败，不推荐！！）&lt;/p>
-&lt;p>方法2：SSH密钥法链接（坑： .gitmodules 文件中的行尾符 (line endings) 与你的系统默认设置不一致，可能导致在 Windows 系统上的一些问题，所以也不推荐！！）&lt;/p>
-&lt;p>（推荐）方法3：直接下载github仓库zip压缩包到themes文件夹解压（&lt;strong>这个方法最保险&lt;/strong>）&lt;/p>
-&lt;p>将下载的 ZIP 文件解压缩到你的 Hugo 项目的 themes 文件夹中。&lt;/p>
-&lt;p>复制 themes 文件夹里的 exampleSite 中的文件：&lt;/p>
-&lt;p>进入主题的文件夹，找到 exampleSite 文件夹。&lt;/p>
-&lt;p>选择性复制文件：&lt;/p>
-&lt;p>根据你的需要选择性地复制 exampleSite 文件夹中的文件到你的博客根目录。可能包括配置文件（如 config.toml、config.yaml 或 config.json）、内容文件、静态文件等。&lt;/p>
-&lt;p>*注意文件路径：确保将文件复制到正确的位置。配置文件通常应该放在博客根目录，而内容文件可能需要根据主题的要求放在特定的文件夹中。&lt;/p>
-&lt;p>*保留原有内容：在复制之前，建议备份你当前博客根目录中的重要文件，以免不小心覆盖。你可以将当前博客根目录的文件夹重命名或者备份到其他位置。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>编辑主题配置文件：&lt;/strong>&lt;/p>
-&lt;p>打开博客根目录中的 config.toml 文件，这是 Hugo 的配置文件。&lt;/p>
-&lt;p>在文件中找到或添加一个与主题相关的配置段。你可能需要根据主题的文档查看如何配置。&lt;/p>
-&lt;p>查找示例配置文件：&lt;/p>
-&lt;p>在主题目录中，通常会有一个示例配置文件，例如 exampleSite/config.toml 或 exampleSite/config.yaml，具体文件名可能会有所不同。&lt;/p>
-&lt;p>复制示例配置文件到博客根目录：&lt;/p>
-&lt;p>使用以下命令将示例配置文件复制到博客根目录。&lt;/p>
-&lt;p>如果示例配置文件是 config.yaml，则相应地更改文件名。&lt;/p>
-&lt;p>返回到博客根目录：&lt;/p>
-&lt;p>使用以下命令返回到博客根目录：&lt;/p>
-&lt;p>cd /d/blog/myblog&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>配置其他设置：&lt;/strong>&lt;/p>
-&lt;p>仍然在 config.toml 文件中，你可能需要配置其他与博客相关的设置，如标题、作者、语言等。根据主题文档和你自己的需求进行配置。&lt;/p>
-&lt;p>*注：编辑config文件时，baseURL应该填什么？&lt;/p>
-&lt;p>baseURL 是 Hugo 网站的基本 URL 地址，它用于生成网站中的链接。正确配置 baseURL 对于确保生成的网站链接的正确性非常重要。&lt;/p>
-&lt;p>以下是设置 baseURL 的一些建议：&lt;/p>
-&lt;p>本地开发：&lt;/p>
-&lt;p>当你在本地开发时，可以将 baseURL 设置为本地服务器的地址，通常是 &lt;a class="link" href="http://localhost:1313/%E3%80%82%E8%BF%99%E6%A0%B7%E5%8F%AF%E4%BB%A5%E7%A1%AE%E4%BF%9D%E5%9C%A8%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88%E6%97%B6%EF%BC%8C%E7%94%9F%E6%88%90%E7%9A%84%E9%93%BE%E6%8E%A5%E6%AD%A3%E7%A1%AE" target="_blank" rel="noopener"
->http://localhost:1313/。这样可以确保在本地预览时，生成的链接正确&lt;/a>。&lt;/p>
-&lt;p>code baseURL= &amp;ldquo;&lt;a class="link" href="http://localhost:1313/" target="_blank" rel="noopener"
->http://localhost:1313/&lt;/a>&amp;rdquo;&lt;/p>
-&lt;p>线上发布：&lt;/p>
-&lt;p>当你准备发布网站时，将 baseURL 设置为你实际的域名或者托管服务的地址。如果你使用自定义域名，确保包括协议（https 或 http）。&lt;/p>
-&lt;p>code baseURL= &amp;ldquo;&lt;a class="link" href="https://www.yourdomain.com/" target="_blank" rel="noopener"
->https://www.yourdomain.com/&lt;/a>&amp;rdquo;&lt;/p>
-&lt;p>子路径或子目录：&lt;/p>
-&lt;p>如果你计划将网站发布到子路径或子目录下，确保在 baseURL 中包含子路径。
-例如，如果你将网站放在 &lt;a class="link" href="https://www.yourdomain.com/blog/" target="_blank" rel="noopener"
->https://www.yourdomain.com/blog/&lt;/a> 下：&lt;/p>
-&lt;p>code baseURL= &amp;ldquo;&lt;a class="link" href="https://www.yourdomain.com/blog/" target="_blank" rel="noopener"
->https://www.yourdomain.com/blog/&lt;/a>&amp;rdquo;&lt;/p>
-&lt;p>相对路径：&lt;/p>
-&lt;p>在某些情况下，你可以使用相对路径。这对于将网站嵌套在其他网页中的情况可能有用。例如： code baseURL= &amp;ldquo;/&amp;rdquo;&lt;/p>
-&lt;p>确保在设置 baseURL 时考虑到你的网站将来可能的发布位置以及你是否使用了 HTTPS。如果你的网站使用 HTTPS，请确保 baseURL 中的协议是 https://。&lt;/p>
-&lt;p>总之，根据你的实际情况和计划，选择适当的 baseURL 设置。在网站发布之前，确保在本地测试环境中检查生成的链接是否正确。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>保存配置文件：&lt;/strong>&lt;/p>
-&lt;p>Ctrl+S保存对 config.toml 文件的修改。&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h1 id="四运行-hugo">四.运行 Hugo&lt;/h1>
-&lt;pre>&lt;code>在博客根目录运行 Hugo，查看是否成功应用了主题的配置和样式。
+通过这些步骤，你就能够在 Git Bash 中成功进入 Hugo 博客的目录。&lt;/p&gt;
+&lt;p&gt;*注：在 Bash 里，&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  $： 一般用户的默认提示符。
+  #： 超级用户（root）的默认提示符。
+  对于默认用户，通常显示 $。
+  当你在 Bash 中输入 cd 命令时，你不需要管前面的 $。
+  你只需在 cd 后面加上目标目录的路径即可。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;三配置hugo主题模板&#34;&gt;三.配置Hugo主题模板&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;选择主题：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在 Hugo 中，主题通常以 Git 存储库的形式存在。你可以从&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo Themes&lt;/a&gt;网站上选择一个主题。&lt;/p&gt;
+&lt;p&gt;在该主题的详情页面找到download跳转到 GitHub 界面，点击绿色的按键code便可复制git链接。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;在博客目录中添加主题作为子模块：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;方法1：直接连接github（坑：有时候因为防火墙问题会配置失败，不推荐！！）&lt;/p&gt;
+&lt;p&gt;方法2：SSH密钥法链接（坑： .gitmodules 文件中的行尾符 (line endings) 与你的系统默认设置不一致，可能导致在 Windows 系统上的一些问题，所以也不推荐！！）&lt;/p&gt;
+&lt;p&gt;（推荐）方法3：直接下载github仓库zip压缩包到themes文件夹解压（&lt;strong&gt;这个方法最保险&lt;/strong&gt;）&lt;/p&gt;
+&lt;p&gt;将下载的 ZIP 文件解压缩到你的 Hugo 项目的 themes 文件夹中。&lt;/p&gt;
+&lt;p&gt;复制 themes 文件夹里的 exampleSite 中的文件：&lt;/p&gt;
+&lt;p&gt;进入主题的文件夹，找到 exampleSite 文件夹。&lt;/p&gt;
+&lt;p&gt;选择性复制文件：&lt;/p&gt;
+&lt;p&gt;根据你的需要选择性地复制 exampleSite 文件夹中的文件到你的博客根目录。可能包括配置文件（如 config.toml、config.yaml 或 config.json）、内容文件、静态文件等。&lt;/p&gt;
+&lt;p&gt;*注意文件路径：确保将文件复制到正确的位置。配置文件通常应该放在博客根目录，而内容文件可能需要根据主题的要求放在特定的文件夹中。&lt;/p&gt;
+&lt;p&gt;*保留原有内容：在复制之前，建议备份你当前博客根目录中的重要文件，以免不小心覆盖。你可以将当前博客根目录的文件夹重命名或者备份到其他位置。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;编辑主题配置文件：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;打开博客根目录中的 config.toml 文件，这是 Hugo 的配置文件。&lt;/p&gt;
+&lt;p&gt;在文件中找到或添加一个与主题相关的配置段。你可能需要根据主题的文档查看如何配置。&lt;/p&gt;
+&lt;p&gt;查找示例配置文件：&lt;/p&gt;
+&lt;p&gt;在主题目录中，通常会有一个示例配置文件，例如 exampleSite/config.toml 或 exampleSite/config.yaml，具体文件名可能会有所不同。&lt;/p&gt;
+&lt;p&gt;复制示例配置文件到博客根目录：&lt;/p&gt;
+&lt;p&gt;使用以下命令将示例配置文件复制到博客根目录。&lt;/p&gt;
+&lt;p&gt;如果示例配置文件是 config.yaml，则相应地更改文件名。&lt;/p&gt;
+&lt;p&gt;返回到博客根目录：&lt;/p&gt;
+&lt;p&gt;使用以下命令返回到博客根目录：&lt;/p&gt;
+&lt;p&gt;cd /d/blog/myblog&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;配置其他设置：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;仍然在 config.toml 文件中，你可能需要配置其他与博客相关的设置，如标题、作者、语言等。根据主题文档和你自己的需求进行配置。&lt;/p&gt;
+&lt;p&gt;*注：编辑config文件时，baseURL应该填什么？&lt;/p&gt;
+&lt;p&gt;baseURL 是 Hugo 网站的基本 URL 地址，它用于生成网站中的链接。正确配置 baseURL 对于确保生成的网站链接的正确性非常重要。&lt;/p&gt;
+&lt;p&gt;以下是设置 baseURL 的一些建议：&lt;/p&gt;
+&lt;p&gt;本地开发：&lt;/p&gt;
+&lt;p&gt;当你在本地开发时，可以将 baseURL 设置为本地服务器的地址，通常是 &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/%E3%80%82%E8%BF%99%E6%A0%B7%E5%8F%AF%E4%BB%A5%E7%A1%AE%E4%BF%9D%E5%9C%A8%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88%E6%97%B6%EF%BC%8C%E7%94%9F%E6%88%90%E7%9A%84%E9%93%BE%E6%8E%A5%E6%AD%A3%E7%A1%AE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://localhost:1313/。这样可以确保在本地预览时，生成的链接正确&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;code baseURL= &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://localhost:1313/&lt;/a&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;线上发布：&lt;/p&gt;
+&lt;p&gt;当你准备发布网站时，将 baseURL 设置为你实际的域名或者托管服务的地址。如果你使用自定义域名，确保包括协议（https 或 http）。&lt;/p&gt;
+&lt;p&gt;code baseURL= &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;https://www.yourdomain.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.yourdomain.com/&lt;/a&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;子路径或子目录：&lt;/p&gt;
+&lt;p&gt;如果你计划将网站发布到子路径或子目录下，确保在 baseURL 中包含子路径。
+例如，如果你将网站放在 &lt;a class=&#34;link&#34; href=&#34;https://www.yourdomain.com/blog/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.yourdomain.com/blog/&lt;/a&gt; 下：&lt;/p&gt;
+&lt;p&gt;code baseURL= &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;https://www.yourdomain.com/blog/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.yourdomain.com/blog/&lt;/a&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;相对路径：&lt;/p&gt;
+&lt;p&gt;在某些情况下，你可以使用相对路径。这对于将网站嵌套在其他网页中的情况可能有用。例如： code baseURL= &amp;ldquo;/&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;确保在设置 baseURL 时考虑到你的网站将来可能的发布位置以及你是否使用了 HTTPS。如果你的网站使用 HTTPS，请确保 baseURL 中的协议是 https://。&lt;/p&gt;
+&lt;p&gt;总之，根据你的实际情况和计划，选择适当的 baseURL 设置。在网站发布之前，确保在本地测试环境中检查生成的链接是否正确。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;保存配置文件：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Ctrl+S保存对 config.toml 文件的修改。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;四运行-hugo&#34;&gt;四.运行 Hugo&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;在博客根目录运行 Hugo，查看是否成功应用了主题的配置和样式。
+
 hugo server -D
-&lt;/code>&lt;/pre></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

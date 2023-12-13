@@ -51,19 +51,22 @@
 &lt;p>&lt;strong>3.2使用 Markdown 插入图片：&lt;/strong>&lt;/p>
 &lt;p>在文章的 Markdown 文件中，使用以下语法插入图片：&lt;/p>
 &lt;p>（注：输入下列代码两边要加英文输入法状态下的&amp;lt;&amp;gt;）
-imgsrc=&amp;quot;/img/hugo version.png&amp;quot;alt=&amp;ldquo;Alt Text&amp;quot;width=&amp;ldquo;300&amp;quot;height=&amp;ldquo;200&amp;rdquo;&lt;/p>
+imgsrc=&amp;quot;/img/hugo version.png&amp;quot;alt=&amp;ldquo;Alt Text&amp;quot;width=&amp;ldquo;50&amp;quot;height=&amp;ldquo;auto&amp;rdquo;&lt;/p>
 &lt;p>&lt;strong>运行 Hugo 本地服务器进行预览：&lt;/strong>&lt;/p>
 &lt;p>在终端中运行以下命令：
 hugo server -D
 打开浏览器，访问 &lt;a class="link" href="http://localhost:1313/" target="_blank" rel="noopener"
 >http://localhost:1313/&lt;/a>&lt;/p>
 &lt;p>显示如下：&lt;/p>
-&lt;img src="https://Cecilia404404.github.io/images/1.png" alt="Alt Text" style="width: 300px; height: auto;">
+&lt;img src="https://Cecilia404404.github.io/images/1.png" alt="Alt Text" style="width: 50px; height: auto;">
 &lt;p>&lt;strong>3.3调整图片大小：&lt;/strong>&lt;/p>
 &lt;p>如果需要设置图片的大小，可以修改代码里 width 和 height 的数值。&lt;/p>
 &lt;p>显示如下：&lt;/p>
 &lt;img src="https://Cecilia404404.github.io/images/1.png" alt="Alt Text" style="width: 600px; height: auto;">
-&lt;p>查看你的修改是否生效。在预览中确认无误后，你可以继续下一步部署。&lt;/p></description></item><item><title>【建站1】Hugo配置主题及生成</title><link>https://Cecilia404404.github.io/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/</link><pubDate>Fri, 08 Dec 2023 17:34:26 +0800</pubDate><guid>https://Cecilia404404.github.io/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/</guid><description>&lt;p>说明：此为针对小白的傻瓜式教程。&lt;/p>
+&lt;p>查看你的修改是否生效。在预览中确认无误后，你可以继续下一步部署。&lt;/p></description></item><item><title>【建站1】Hugo配置主题及生成</title><link>https://Cecilia404404.github.io/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/</link><pubDate>Fri, 08 Dec 2023 17:34:26 +0800</pubDate><guid>https://Cecilia404404.github.io/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/</guid><description>&lt;p>hugo和其他各类博客类型了解：
+&lt;a class="link" href="https://cloud.tencent.com/developer/article/1917500" target="_blank" rel="noopener"
+>https://cloud.tencent.com/developer/article/1917500&lt;/a>
+这里我选的是hugo。&lt;/p>
 &lt;h1 id="一前期准备">一.前期准备&lt;/h1>
 &lt;ol>
 &lt;li>
@@ -196,8 +199,7 @@ ls
 &lt;p>baseURL 是 Hugo 网站的基本 URL 地址，它用于生成网站中的链接。正确配置 baseURL 对于确保生成的网站链接的正确性非常重要。&lt;/p>
 &lt;p>以下是设置 baseURL 的一些建议：&lt;/p>
 &lt;p>本地开发：&lt;/p>
-&lt;p>当你在本地开发时，可以将 baseURL 设置为本地服务器的地址，通常是 &lt;a class="link" href="http://localhost:1313/%E3%80%82%E8%BF%99%E6%A0%B7%E5%8F%AF%E4%BB%A5%E7%A1%AE%E4%BF%9D%E5%9C%A8%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88%E6%97%B6%EF%BC%8C%E7%94%9F%E6%88%90%E7%9A%84%E9%93%BE%E6%8E%A5%E6%AD%A3%E7%A1%AE" target="_blank" rel="noopener"
->http://localhost:1313/。这样可以确保在本地预览时，生成的链接正确&lt;/a>。&lt;/p>
+&lt;p>当你在本地开发时，可以将 baseURL 设置为本地服务器的地址，通常是 http://localhost:1313/，这样可确保本地预览。&lt;/p>
 &lt;p>code baseURL= &amp;ldquo;&lt;a class="link" href="http://localhost:1313/" target="_blank" rel="noopener"
 >http://localhost:1313/&lt;/a>&amp;rdquo;&lt;/p>
 &lt;p>线上发布：&lt;/p>
@@ -210,9 +212,6 @@ ls
 >https://www.yourdomain.com/blog/&lt;/a> 下：&lt;/p>
 &lt;p>code baseURL= &amp;ldquo;&lt;a class="link" href="https://www.yourdomain.com/blog/" target="_blank" rel="noopener"
 >https://www.yourdomain.com/blog/&lt;/a>&amp;rdquo;&lt;/p>
-&lt;p>相对路径：&lt;/p>
-&lt;p>在某些情况下，你可以使用相对路径。这对于将网站嵌套在其他网页中的情况可能有用。例如： code baseURL= &amp;ldquo;/&amp;rdquo;&lt;/p>
-&lt;p>确保在设置 baseURL 时考虑到你的网站将来可能的发布位置以及你是否使用了 HTTPS。如果你的网站使用 HTTPS，请确保 baseURL 中的协议是 https://。&lt;/p>
 &lt;p>总之，根据你的实际情况和计划，选择适当的 baseURL 设置。在网站发布之前，确保在本地测试环境中检查生成的链接是否正确。&lt;/p>
 &lt;/li>
 &lt;li>
