@@ -20,8 +20,8 @@
             {{- end -}}
             <main class="main full-width">
                 {{- block "main" . }}{{- end }}
-            {{- block "right-sidebar" . -}}{{ end }}
             </main>
+            {{- block "right-sidebar" . -}}{{ end }}
         </div>
         {{ partial "footer/include.html" . }}
     </body>

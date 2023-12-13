@@ -1,6 +1,6 @@
 ---
 title: "【建站1】Hugo配置主题及生成"
-description: 
+description: 此为针对不懂代码的小白的懒人版教程。
 date: 2023-12-08T17:34:26+08:00
 image: 
 hidden: false
@@ -8,11 +8,15 @@ comments: true
 draft: false
 toc: true
 tags: 
-  - 建站
+  - 建站记录
 
 ---
 
-说明：此为针对小白的傻瓜式教程。
+
+hugo和其他各类博客类型了解：
+https://cloud.tencent.com/developer/article/1917500
+这里我选的是hugo。
+
 
 # 一.前期准备
 
@@ -183,18 +187,22 @@ tags:
     
       以下是设置 baseURL 的一些建议：
     
+      
       本地开发：
     
-      当你在本地开发时，可以将 baseURL 设置为本地服务器的地址，通常是 [http://localhost:1313/。这样可以确保在本地预览时，生成的链接正确](http://localhost:1313/%E3%80%82%E8%BF%99%E6%A0%B7%E5%8F%AF%E4%BB%A5%E7%A1%AE%E4%BF%9D%E5%9C%A8%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88%E6%97%B6%EF%BC%8C%E7%94%9F%E6%88%90%E7%9A%84%E9%93%BE%E6%8E%A5%E6%AD%A3%E7%A1%AE)。  
+      当你在本地开发时，可以将 baseURL 设置为本地服务器的地址，通常是 http://localhost:1313/，这样可确保本地预览。
+
     
       code baseURL= "[http://localhost:1313/](http://localhost:1313/)"
     
+      
       线上发布：
     
       当你准备发布网站时，将 baseURL 设置为你实际的域名或者托管服务的地址。如果你使用自定义域名，确保包括协议（https 或 http）。  
     
       code baseURL= "[https://www.yourdomain.com/](https://www.yourdomain.com/)"
     
+      
       子路径或子目录：
     
       如果你计划将网站发布到子路径或子目录下，确保在 baseURL 中包含子路径。
@@ -202,12 +210,7 @@ tags:
     
       code baseURL= "[https://www.yourdomain.com/blog/](https://www.yourdomain.com/blog/)"
     
-      相对路径：
-    
-      在某些情况下，你可以使用相对路径。这对于将网站嵌套在其他网页中的情况可能有用。例如： code baseURL= "/"
-    
-      确保在设置 baseURL 时考虑到你的网站将来可能的发布位置以及你是否使用了 HTTPS。如果你的网站使用 HTTPS，请确保 baseURL 中的协议是 https://。
-    
+      
     总之，根据你的实际情况和计划，选择适当的 baseURL 设置。在网站发布之前，确保在本地测试环境中检查生成的链接是否正确。
     
 5. **保存配置文件：**

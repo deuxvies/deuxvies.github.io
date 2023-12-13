@@ -12,12 +12,12 @@
         <pubDate>Sat, 09 Dec 2023 17:34:26 +0800</pubDate>
         
         <guid>https://Cecilia404404.github.io/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/</guid>
-        <description>&lt;h1 id=&#34;发布纯文字的文章&#34;&gt;发布纯文字的文章&lt;/h1&gt;
-&lt;h3 id=&#34;在命令行中创建新文章&#34;&gt;在命令行中创建新文章&lt;/h3&gt;
+        <description>&lt;h1 id=&#34;1发布纯文字的文章&#34;&gt;1.发布纯文字的文章&lt;/h1&gt;
+&lt;h3 id=&#34;11在命令行中创建新文章&#34;&gt;1.1在命令行中创建新文章&lt;/h3&gt;
 &lt;p&gt;打开终端，导航到你的 Hugo 项目根目录，并运行以下命令：&lt;/p&gt;
 &lt;p&gt;hugo new posts/my-first-post.md&lt;/p&gt;
 &lt;p&gt;这会在 content/posts/ 目录下创建一个名为 my-first-post.md 的 Markdown 文件。&lt;/p&gt;
-&lt;h3 id=&#34;编辑文章内容&#34;&gt;编辑文章内容&lt;/h3&gt;
+&lt;h3 id=&#34;12编辑文章内容&#34;&gt;1.2编辑文章内容&lt;/h3&gt;
 &lt;p&gt;使用文本编辑器（比如VSCode）打开 content/posts/my-first-post.md 文件，然后编辑文章内容。&lt;/p&gt;
 &lt;p&gt;Markdown 文件的开头通常包括一些元数据，比如标题、日期、标签等。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;例如：&lt;/strong&gt;&lt;/p&gt;
@@ -29,7 +29,7 @@
 &lt;hr&gt;
 &lt;p&gt;这是我的第一篇博客文章，使用 Hugo 搭建的博客系统。&lt;/p&gt;
 &lt;p&gt;其中，draft: false 表示这篇文章不是草稿，将被发布。你可以在编辑完文章后保存文件。&lt;/p&gt;
-&lt;h3 id=&#34;运行-hugo-本地服务器进行预览&#34;&gt;运行 Hugo 本地服务器进行预览&lt;/h3&gt;
+&lt;h3 id=&#34;13运行-hugo-本地服务器进行预览&#34;&gt;1.3运行 Hugo 本地服务器进行预览&lt;/h3&gt;
 &lt;p&gt;在终端中运行以下命令：&lt;/p&gt;
 &lt;p&gt;hugo server -D  &lt;/p&gt;
 &lt;p&gt;-D 选项用于显示草稿（如果有）。&lt;/p&gt;
@@ -44,63 +44,39 @@
 &lt;p&gt;git add .&lt;/p&gt;
 &lt;p&gt;git commit -m &amp;ldquo;Add my first post&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;然后，再将 public/ 目录的内容部署到你的服务器上。&lt;/p&gt;
-&lt;h1 id=&#34;修改已经发布的-hugo-文章&#34;&gt;修改已经发布的 Hugo 文章&lt;/h1&gt;
+&lt;h1 id=&#34;2修改已经发布的-hugo-文章&#34;&gt;2.修改已经发布的 Hugo 文章&lt;/h1&gt;
 &lt;p&gt;你需要编辑该文章的 Markdown 文件，然后重新生成静态文件并部署：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;找到文章：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.1找到文章：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;在 Hugo 项目的 content/posts/ 目录下找到你想修改的文章，以 .md 为扩展名。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;编辑文章内容：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.2编辑文章内容：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;使用文本编辑器打开文章的 Markdown 文件，对内容进行修改。&lt;/p&gt;
 &lt;p&gt;你可以更新标题、正文、标签、日期等信息。保存文件。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;运行 Hugo 本地服务器进行预览：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.3运行 Hugo 本地服务器进行预览：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;在终端中运行以下命令：&lt;/p&gt;
 &lt;p&gt;hugo server -D&lt;/p&gt;
 &lt;p&gt;打开浏览器，访问 &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://localhost:1313/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;查看你的修改是否生效。在预览中确认无误后，你可以继续下一步部署。 &lt;/p&gt;
-&lt;h1 id=&#34;发布带图文章&#34;&gt;发布带图文章&lt;/h1&gt;
+&lt;h1 id=&#34;3发布带图文章&#34;&gt;3.发布带图文章&lt;/h1&gt;
 &lt;p&gt;在 Hugo 中发布带有图片的文章需要你在 Markdown 文件中使用正确的语法来插入图片。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;准备图片：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.1准备图片：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;确保你的图片已经放置在 Hugo 项目中的 static 目录下，或者在 Markdown 文件所在的目录中。
 例如，如果你有一张图片 my-image.jpg，可以将其放在 static/images/ 目录下。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;使用 Markdown 插入图片：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在文章的 Markdown 文件中，使用以下语法插入图片：
-&lt;img src=&#34;https://Cecilia404404.github.io/blog/myblog/static/img/%e4%bd%a0%e7%9a%84%e5%9b%be%e7%89%87%e5%90%8d.%e5%9b%be%e7%89%87%e6%a0%bc%e5%bc%8f%e5%90%8e%e7%bc%80&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Alt Text&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;在这里，Alt Text 是图片的替代文本，括号里是图片的路径。请根据实际情况调整路径。
-如果你的图片位于 Markdown 文件所在目录，可以直接使用相对路径。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;指定图片大小（可选）：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;如果需要指定图片的大小，可以使用 HTML 的 width 和 height 属性。&lt;/p&gt;
-&lt;p&gt;例如：（注：输入下列代码两边要加英文输入法状态下的&amp;lt;&amp;gt;）
-imgsrc=&amp;quot;/img/hugo version.png&amp;quot;alt=&amp;ldquo;Alt Text&amp;quot;width=&amp;ldquo;300&amp;quot;height=&amp;ldquo;200&amp;rdquo;
-或者相对路径的情况下：
-imgsrc=&amp;ldquo;my-image.jpg&amp;quot;alt=&amp;ldquo;Alt Text&amp;quot;width=&amp;ldquo;300&amp;quot;height=&amp;ldquo;200&amp;rdquo;
-这将使图片显示为指定的宽度和高度。&lt;/p&gt;
-&lt;p&gt;显示如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Cecilia404404.github.io/blog/myblog/static/img/1.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;图1&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;调整大小：&lt;/p&gt;
-&lt;img src=&#34;https://Cecilia404404.github.io/images/1.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 600px; height: auto;&#34;&gt;
+&lt;p&gt;&lt;strong&gt;3.2使用 Markdown 插入图片：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在文章的 Markdown 文件中，使用以下语法插入图片：&lt;/p&gt;
+&lt;p&gt;（注：输入下列代码两边要加英文输入法状态下的&amp;lt;&amp;gt;）
+imgsrc=&amp;quot;/img/hugo version.png&amp;quot;alt=&amp;ldquo;Alt Text&amp;quot;width=&amp;ldquo;50&amp;quot;height=&amp;ldquo;auto&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;运行 Hugo 本地服务器进行预览：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;在终端中运行以下命令：
 hugo server -D
 打开浏览器，访问 &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://localhost:1313/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;显示如下：&lt;/p&gt;
+&lt;img src=&#34;https://Cecilia404404.github.io/images/1.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 50px; height: auto;&#34;&gt;
+&lt;p&gt;&lt;strong&gt;3.3调整图片大小：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果需要设置图片的大小，可以修改代码里 width 和 height 的数值。&lt;/p&gt;
+&lt;p&gt;显示如下：&lt;/p&gt;
+&lt;img src=&#34;https://Cecilia404404.github.io/images/1.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 600px; height: auto;&#34;&gt;
 &lt;p&gt;查看你的修改是否生效。在预览中确认无误后，你可以继续下一步部署。&lt;/p&gt;
 </description>
         </item>
@@ -110,7 +86,10 @@ hugo server -D
         <pubDate>Fri, 08 Dec 2023 17:34:26 +0800</pubDate>
         
         <guid>https://Cecilia404404.github.io/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/</guid>
-        <description>&lt;p&gt;说明：此为针对小白的傻瓜式教程。&lt;/p&gt;
+        <description>&lt;p&gt;hugo和其他各类博客类型了解：
+&lt;a class=&#34;link&#34; href=&#34;https://cloud.tencent.com/developer/article/1917500&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cloud.tencent.com/developer/article/1917500&lt;/a&gt;
+这里我选的是hugo。&lt;/p&gt;
 &lt;h1 id=&#34;一前期准备&#34;&gt;一.前期准备&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -245,8 +224,7 @@ ls
 &lt;p&gt;baseURL 是 Hugo 网站的基本 URL 地址，它用于生成网站中的链接。正确配置 baseURL 对于确保生成的网站链接的正确性非常重要。&lt;/p&gt;
 &lt;p&gt;以下是设置 baseURL 的一些建议：&lt;/p&gt;
 &lt;p&gt;本地开发：&lt;/p&gt;
-&lt;p&gt;当你在本地开发时，可以将 baseURL 设置为本地服务器的地址，通常是 &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/%E3%80%82%E8%BF%99%E6%A0%B7%E5%8F%AF%E4%BB%A5%E7%A1%AE%E4%BF%9D%E5%9C%A8%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88%E6%97%B6%EF%BC%8C%E7%94%9F%E6%88%90%E7%9A%84%E9%93%BE%E6%8E%A5%E6%AD%A3%E7%A1%AE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;http://localhost:1313/。这样可以确保在本地预览时，生成的链接正确&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;当你在本地开发时，可以将 baseURL 设置为本地服务器的地址，通常是 http://localhost:1313/，这样可确保本地预览。&lt;/p&gt;
 &lt;p&gt;code baseURL= &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://localhost:1313/&lt;/a&gt;&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;线上发布：&lt;/p&gt;
@@ -259,9 +237,6 @@ ls
     &gt;https://www.yourdomain.com/blog/&lt;/a&gt; 下：&lt;/p&gt;
 &lt;p&gt;code baseURL= &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;https://www.yourdomain.com/blog/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.yourdomain.com/blog/&lt;/a&gt;&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;相对路径：&lt;/p&gt;
-&lt;p&gt;在某些情况下，你可以使用相对路径。这对于将网站嵌套在其他网页中的情况可能有用。例如： code baseURL= &amp;ldquo;/&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;确保在设置 baseURL 时考虑到你的网站将来可能的发布位置以及你是否使用了 HTTPS。如果你的网站使用 HTTPS，请确保 baseURL 中的协议是 https://。&lt;/p&gt;
 &lt;p&gt;总之，根据你的实际情况和计划，选择适当的 baseURL 设置。在网站发布之前，确保在本地测试环境中检查生成的链接是否正确。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;

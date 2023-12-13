@@ -23,7 +23,7 @@ article:
     tableOfContents:
         other: جدول المحتويات
 
-    relatedContent:
+    relatedContents:
         other: محتوى مشابهه
         
     lastUpdatedOn:
@@ -51,10 +51,6 @@ widget:
     tagCloud:
         title:
             other: وسوم
-            
-    categoriesCloud:
-        title:
-            other: التصنيفات
 
 search:
     title:

@@ -23,7 +23,7 @@ article:
     tableOfContents:
         other: 목차
         
-    relatedContent:
+    relatedContents:
         other: 관련 글
         
     lastUpdatedOn:
@@ -46,10 +46,6 @@ widget:
             other: 보관함
         more:
             other: 더보기
-            
-    categoriesCloud:
-        title:
-            other: 카테고리
             
     tagCloud:
         title:

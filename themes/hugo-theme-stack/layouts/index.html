@@ -1,7 +1,8 @@
+
 {{ define "main" }}
   <!-- index.html or home.html -->
-<div id="text">
-    <p style="font-size: 3rem; text-align: center; font-weight: bold;"></p>   
+  <div id="text">
+    <p style="font-size: 3rem; text-align: center; font-weight: bold; color: var(--card-text-color-secondary);"></p> 
   </div>
   <!-- ... other HTML content ... -->
   
@@ -25,11 +26,12 @@
   </script>
 
 
+
     {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
     {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
     {{ $filtered := ($pages | intersect $notHidden) }}
     {{ $pag := .Paginate ($filtered) }}
-    
+
     <section class="article-list">
         {{ range $index, $element := $pag.Pages }}
             {{ partial "article-list/default" . }}

@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=''>
-<title>Tags</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=''><title>Tags</title>
 
 <link rel='canonical' href='https://Cecilia404404.github.io/tags/'>
 
-<link rel="stylesheet" href="/scss/style.min.a879ba83fb08ce142eee0242517f4b54d742f9cc079b07dd748b27d96f0f5f32.css"><meta property='og:title' content='Tags'>
+<link rel="stylesheet" href="/scss/style.min.db1c1cf127a73c9b073d7d15b316b157a92c899b4a77e70398bfa56fe31245b2.css"><meta property='og:title' content='Tags'>
 <meta property='og:description' content=''>
 <meta property='og:url' content='https://Cecilia404404.github.io/tags/'>
 <meta property='og:site_name' content='Cecilia的博客'>
@@ -68,9 +67,7 @@
         
         <div class="site-meta">
             <h1 class="site-name"><a href="/">Cecilia的博客</a></h1>
-            
-            <h2 id="slogan" class="site-description">In libris libertas.</h2>
-            
+            <h2 class="site-description">In libris libertas.</h2>
         </div>
     </header><ol class="social-menu">
             
@@ -253,9 +250,9 @@
     <section class="article-list--compact">
         
             <article>
-    <a href="/tags/%E5%BB%BA%E7%AB%99/">
+    <a href="/tags/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/">
         <div class="article-details">
-            <h2 class="article-title">建站</h2>
+            <h2 class="article-title">建站记录</h2>
             <footer class="article-time">
                 <time datetime='2023-12-09T17:34:26&#43;08:00'>2023-12-09</time>
             </footer>
@@ -270,8 +267,8 @@
         
         2023 Cecilia的博客
     </section>
-   
-      
+    
+  
 
 <section class="totalcount">
     
@@ -293,9 +290,14 @@
         
     
     发表了2篇文章 · 
-    总计4.01k字
+    总计3.84k字
 </section>
 
+
+</footer>
+
+
+            </main>
     <aside class="sidebar right-sidebar sticky">
         
             
@@ -359,8 +361,8 @@
 
     <div class="tagCloud-tags">
         
-            <a href="/tags/%E5%BB%BA%E7%AB%99/" class="font_size_2">
-                建站
+            <a href="/tags/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/" class="font_size_2">
+                建站记录
             </a>
         
     </div>
@@ -370,7 +372,6 @@
     </aside>
 
 
-            </main>
         </div>
         <script 
                 src="https://Cecilia404404.github.io/js/vibrant.min.js"crossorigin="anonymous"
@@ -389,43 +390,110 @@
     }());
 </script>
 
+
+
+<a href="#" id="back-to-top" title="返回顶部"></a>
+
+
+<style>
+  #back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 55px;
+    width: 55px;
+    height: 55px;
+    border-radius: 7px;
+    background-color: var(--body-background);
+    box-shadow: var(--shadow-l2);
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+  }
+
+  #back-to-top:before {
+    content: ' ';
+    display: inline-block;
+    position: relative;
+    top: 0;
+    transform: rotate(135deg);
+    height: 10px;
+    width: 10px;
+    border-width: 0 0 2px 2px;
+    border-color: var(--back-to-top-color);
+    border-style: solid;
+  }
+
+  #back-to-top:hover:before {
+    border-color: var(--body-background);
+  }
+
+   
+  @media screen and (max-width: 768px) {
+    #back-to-top {
+      bottom: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      font-size: 10px;
+    }
+  }
+
+   
+  @media screen and (min-width: 1024px) {
+    #back-to-top {
+      bottom: 20px;
+      right: 40px;
+    }
+  }
+
+   
+  @media screen and (min-width: 1280px) {
+    #back-to-top {
+      bottom: 20px;
+      right: 55px;
+    }
+  }
+
+   
+  @media screen and (min-width: 1536px) {
+    #back-to-top {
+      visibility: hidden;
+    }
+  }
+</style>
+
+
 <script>
-    
-    function backToTop() {
-        
-        window.scrollTo(0, 0);
-    }
+  function backToTop() {
+    document.documentElement.scrollIntoView({
+      behavior: 'smooth',
+    })
+  }
 
-    
-    window.onload = function() {
-        
-        let scrollTop = this.document.documentElement.scrollTop || this.document.body.scrollTop;
-        
-        let totopBtn = this.document.getElementById('back-to-top');
-        if (scrollTop > 0) {
-            
-            totopBtn.style.display = 'inline';
-        } else {
-            
-            totopBtn.style.display = 'none';
-        }
+  window.onload = function () {
+    let scrollTop =
+      this.document.documentElement.scrollTop || this.document.body.scrollTop
+    let totopBtn = this.document.getElementById('back-to-top')
+    if (scrollTop > 0) {
+      totopBtn.style.display = 'inline'
+    } else {
+      totopBtn.style.display = 'none'
     }
+  }
 
-    
-    window.onscroll = function() {
-        
-        let scrollTop = this.document.documentElement.scrollTop || this.document.body.scrollTop;
-        
-        let totopBtn = this.document.getElementById('back-to-top');
-        if (scrollTop < 200) {
-            
-            totopBtn.style.display = 'none';
-        } else {
-            
-            totopBtn.style.display = 'inline';
-            totopBtn.addEventListener('click', backToTop, false);
-        }
+  window.onscroll = function () {
+    let scrollTop =
+      this.document.documentElement.scrollTop || this.document.body.scrollTop
+    let totopBtn = this.document.getElementById('back-to-top')
+    if (scrollTop < 200) {
+      totopBtn.style.display = 'none'
+    } else {
+      totopBtn.style.display = 'inline'
+      totopBtn.addEventListener('click', backToTop, false)
     }
+  }
 </script>
 
     </body>

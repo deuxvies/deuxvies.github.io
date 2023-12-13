@@ -8,7 +8,7 @@ comments: true
 draft: false
 toc: true
 tags: 
-  - 建站
+  - 建站记录
 
 ---
 
@@ -112,7 +112,7 @@ hugo server -D
  在文章的 Markdown 文件中，使用以下语法插入图片：
  
  （注：输入下列代码两边要加英文输入法状态下的<>）
-imgsrc="/img/hugo version.png"alt="Alt Text"width="300"height="200"
+imgsrc="/img/hugo version.png"alt="Alt Text"width="50"height="auto"
 
 
 **运行 Hugo 本地服务器进行预览：**
@@ -124,7 +124,7 @@ hugo server -D
 
 显示如下：
 
-<img src="/images/1.png" alt="Alt Text" style="width: 300px; height: auto;">
+<img src="/images/1.png" alt="Alt Text" style="width: 50px; height: auto;">
 
 
 **3.3调整图片大小：** 

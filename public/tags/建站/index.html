@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://Cecilia404404.github.io/tags/%E5%BB%BA%E7%AB%99/'>
 
-<link rel="stylesheet" href="/scss/style.min.a879ba83fb08ce142eee0242517f4b54d742f9cc079b07dd748b27d96f0f5f32.css"><meta property='og:title' content='Tag: 建站 - Cecilia的博客'>
+<link rel="stylesheet" href="/scss/style.min.93936550d58dc4c36efdaacc782ab726c4d0f2a71973d8e22578649b746f3280.css"><meta property='og:title' content='Tag: 建站 - Cecilia的博客'>
 <meta property='og:description' content='In libris libertas.'>
 <meta property='og:url' content='https://Cecilia404404.github.io/tags/%E5%BB%BA%E7%AB%99/'>
 <meta property='og:site_name' content='Cecilia的博客'>
@@ -261,6 +261,9 @@
         </div>
     </a>
 </article>
+
+
+
         
             <article>
     <a href="/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/">
@@ -272,6 +275,9 @@
         </div>
     </a>
 </article>
+
+
+
         
     </section>
 <footer class="site-footer">
@@ -303,8 +309,9 @@
         
     
     发表了2篇文章 · 
-    总计4.01k字
+    总计3.95k字
 </section>
+
 
     <aside class="sidebar right-sidebar sticky">
         
@@ -398,45 +405,113 @@
         document.head.appendChild(customFont);
     }());
 </script>
+# /layouts/partials/footer/custom.html
+
+
+<a href="#" id="back-to-top" title="返回顶部"></a>
+
+
+<style>
+  #back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 55px;
+    width: 55px;
+    height: 55px;
+    border-radius: 7px;
+    background-color: var(--body-background);
+    box-shadow: var(--shadow-l2);
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+  }
+
+  #back-to-top:before {
+    content: ' ';
+    display: inline-block;
+    position: relative;
+    top: 0;
+    transform: rotate(135deg);
+    height: 10px;
+    width: 10px;
+    border-width: 0 0 2px 2px;
+    border-color: var(--back-to-top-color);
+    border-style: solid;
+  }
+
+  #back-to-top:hover:before {
+    border-color: var(--body-background);
+  }
+
+   
+  @media screen and (max-width: 768px) {
+    #back-to-top {
+      bottom: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      font-size: 10px;
+    }
+  }
+
+   
+  @media screen and (min-width: 1024px) {
+    #back-to-top {
+      bottom: 20px;
+      right: 40px;
+    }
+  }
+
+   
+  @media screen and (min-width: 1280px) {
+    #back-to-top {
+      bottom: 20px;
+      right: 55px;
+    }
+  }
+
+   
+  @media screen and (min-width: 1536px) {
+    #back-to-top {
+      visibility: hidden;
+    }
+  }
+</style>
+
 
 <script>
-    
-    function backToTop() {
-        
-        window.scrollTo(0, 0);
-    }
+  function backToTop() {
+    document.documentElement.scrollIntoView({
+      behavior: 'smooth',
+    })
+  }
 
-    
-    window.onload = function() {
-        
-        let scrollTop = this.document.documentElement.scrollTop || this.document.body.scrollTop;
-        
-        let totopBtn = this.document.getElementById('back-to-top');
-        if (scrollTop > 0) {
-            
-            totopBtn.style.display = 'inline';
-        } else {
-            
-            totopBtn.style.display = 'none';
-        }
+  window.onload = function () {
+    let scrollTop =
+      this.document.documentElement.scrollTop || this.document.body.scrollTop
+    let totopBtn = this.document.getElementById('back-to-top')
+    if (scrollTop > 0) {
+      totopBtn.style.display = 'inline'
+    } else {
+      totopBtn.style.display = 'none'
     }
+  }
 
-    
-    window.onscroll = function() {
-        
-        let scrollTop = this.document.documentElement.scrollTop || this.document.body.scrollTop;
-        
-        let totopBtn = this.document.getElementById('back-to-top');
-        if (scrollTop < 200) {
-            
-            totopBtn.style.display = 'none';
-        } else {
-            
-            totopBtn.style.display = 'inline';
-            totopBtn.addEventListener('click', backToTop, false);
-        }
+  window.onscroll = function () {
+    let scrollTop =
+      this.document.documentElement.scrollTop || this.document.body.scrollTop
+    let totopBtn = this.document.getElementById('back-to-top')
+    if (scrollTop < 200) {
+      totopBtn.style.display = 'none'
+    } else {
+      totopBtn.style.display = 'inline'
+      totopBtn.addEventListener('click', backToTop, false)
     }
+  }
 </script>
+
 
     </body>
 </html>

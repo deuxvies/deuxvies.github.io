@@ -44,17 +44,18 @@
         text-transform: uppercase;
     }
 }
+
 .subsection-list {
     overflow-x: auto;
 
     .article-list--tile {
         display: flex;
-        padding-bottom: 15px;
+        padding-bottom: 0px; // Narrow the spacing
 
         article {
-            width: 250px;
-            height: 150px;
-            margin-right: 20px;
+            width: 150px; // Make category cards smaller
+            height: 90px;
+            margin-right: 5px; // Make cards spacing narrower
             flex-shrink: 0;
 
             .article-title {
@@ -64,34 +65,6 @@
 
             .article-details {
                 padding: 20px;
-            }
-        }
-    }
-
-    .article-list--tagtile {
-        display: flex;
-        padding-bottom: 10px;
-        flex-wrap: wrap; //实现Archive中的Tag卡片自动换行
-        
-        article {
-            width: auto; //改爲200px
-            height: auto; //改爲50px
-            margin-left: 7px; 
-            margin-right: 5px; //改爲5px
-            margin-top: 7px; //新增一行
-            flex-shrink: 0;
-            border-radius: 15px;
-            background: #f097b9;
-            color: #fff;
-            box-shadow: var(--shadow-6); //改个卡片阴影
-
-            .article-title {
-                margin: 0;
-                font-size: 1.4rem;
-            }
-
-            .article-details {
-                padding: 15px 22px;
             }
         }
     }

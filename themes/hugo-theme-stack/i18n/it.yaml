@@ -23,7 +23,7 @@ article:
     tableOfContents:
         other: Indice
 
-    relatedContent:
+    relatedContents:
         other: Contenuti correlati
 
     lastUpdatedOn:
@@ -50,10 +50,6 @@ widget:
     tagCloud:
         title:
             other: Tags
-
-    categoriesCloud:
-        title:
-            other: Categorie
 
 search:
     title:

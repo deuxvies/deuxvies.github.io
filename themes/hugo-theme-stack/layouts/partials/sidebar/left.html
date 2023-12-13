@@ -45,7 +45,6 @@
                         href='{{ .URL }}'
                         {{ if eq (default true .Params.newTab) true }}target="_blank"{{ end }}
                         {{ with .Name }}title="{{ . }}"{{ end }}
-                        rel="me"
                     >
                         {{ $icon := default "link" .Params.Icon }}
                         {{ with $icon }}
@@ -57,32 +56,13 @@
         </ol>
     {{- end -}}
 
-    {{ if .Site.IsMultiLingual }}
-    
-{{ $siteLanguages := .Site.Languages}}
-{{ $pageLang := .Page.Lang}}
-{{ range .Page.AllTranslations }}
-    {{ $translation := .}}
-    {{ range $siteLanguages }}
-        {{ if eq $translation.Lang .Lang }}
-            {{ $selected := false }}
-            {{ if eq $pageLang .Lang}}
-            {{ else }}
-                <div class="language-select">
-                    <li id="selected">{{ partial "helper/icon" "trans" }}<a href="{{ $translation.RelPermalink }}"><span>{{ .LanguageName }}</span></a></li>
-                </div>
-            {{ end }}
-        {{ end }}
-    {{ end }}
-{{ end }}
-{{ end }}
-
     <ol class="menu" id="main-menu">
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
         {{ $active := or (eq $currentPage.Title .Name) (or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .)) }}
+
         <li {{ if $active }} class='current' {{ end }}>
-            <a href='{{ .URL }}' {{ if eq .Params.newTab true }}target="_blank"{{ end }}>
+            <a href='{{ .URL | relLangURL }}' {{ if eq .Params.newTab true }}target="_blank"{{ end }}>
                 {{ $icon := default .Pre .Params.Icon }}
                 {{ if .Pre }}
                     {{ warnf "Menu item [%s] is using [pre] field to set icon, please use [params.icon] instead.\nMore information: https://docs.stack.jimmycai.com/configuration/custom-menu.html" .URL }}
@@ -118,5 +98,3 @@
         </div>
     </ol>
 </aside>
-
-

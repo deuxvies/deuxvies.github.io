@@ -17,9 +17,8 @@
 
     {{- $TOCManuallyDisabled := eq .Params.toc false -}}
     {{- $TOCEnabled := and (not $TOCManuallyDisabled) $TOCWidgetEnabled -}}
-    {{- $hasTOC := and $TOCEnabled (ge (len .TableOfContents) 1) -}}
-    {{- .Scratch.Set "TOCEnabled" $hasTOC -}}
-
+    {{- $hasTOC := ge (len .TableOfContents) 100 -}}
+    {{- .Scratch.Set "TOCEnabled" (and $TOCEnabled $hasTOC) -}}
     
     {{- .Scratch.Set "hasWidget" (or $HasWidgetNotTOC (and $TOCEnabled $hasTOC)) -}}
 {{ end }}
@@ -31,7 +30,7 @@
         {{ partial "article/components/links" . }}
     {{ end }}
 
-    {{ partial "article/components/related-content" . }}
+    {{ partial "article/components/related-contents" . }}
      
     {{ if not (eq .Params.comments false) }}
         {{ partial "comments/include" . }}
@@ -43,9 +42,5 @@
 {{ end }}
 
 {{ define "right-sidebar" }}
-    {{ with $.Site.Params.hasWidget }}
-        {{ if . }}
-            {{ partial "sidebar/right.html" (dict "Context" . "Scope" "page") }}
-        {{ end }}
-    {{ end }}
+    {{ if .Scratch.Get "hasWidget" }}{{ partial "sidebar/right.html" (dict "Context" . "Scope" "page") }}{{ end}}
 {{ end }}

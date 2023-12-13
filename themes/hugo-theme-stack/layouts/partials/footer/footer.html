@@ -1,14 +1,14 @@
-{{- $ThemeVersion := "3.21.0" -}}
+{{- $ThemeVersion := "3.11.0" -}}
 <footer class="site-footer">
     <section class="copyright">
         &copy; 
         {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
             {{ .Site.Params.footer.since }} - 
         {{ end }}
-        {{ now.Format "2006" }} {{ default .Site.Title .Site.Copyright }}
+        {{ now.Format "2006" }} {{ .Site.Title }}
     </section>
-   
-      
+    
+  
 <!-- Add total page and word count time -->
 <section class="totalcount">
     {{$scratch := .Scratch}}
@@ -18,3 +18,6 @@
     发表了{{ len (where .Site.RegularPages "Section" "post") }}篇文章 · 
     总计{{ div ($scratch.Get "total") 1000.0 | lang.FormatNumber 2 }}k字
 </section>
+
+
+</footer>

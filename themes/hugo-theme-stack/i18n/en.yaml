@@ -23,8 +23,8 @@ article:
     tableOfContents:
         other: Table of contents
 
-    relatedContent:
-        other: Related content
+    relatedContents:
+        other: Related contents
 
     lastUpdatedOn:
         other: Last updated on
@@ -71,6 +71,3 @@ footer:
 
     designedBy:
         other: Theme {{ .Theme }} designed by {{ .DesignedBy }}
-
-wordCount:
-    other: "{{.Count}} words"
