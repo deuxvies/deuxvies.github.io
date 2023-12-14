@@ -1,14 +1,6 @@
 <div class="article-details">
-    {{ if .Params.categories }}
-    <header class="article-category">
-        {{ range (.GetTerms "categories") }}
-            <a href="{{ .RelPermalink }}" {{ with .Params.style }}style="background-color: {{ .background }}; color: {{ .color }};"{{ end }}>
-                {{ .LinkTitle }}
-            </a>
-        {{ end }}
-    </header>
-    {{ end }}
-
+   
+    
     <div class="article-title-wrapper">
         <h2 class="article-title">
             <a href="{{ .RelPermalink }}">
@@ -35,13 +27,37 @@
         {{ end }}
 
         {{ if .Site.Params.article.readingTime }}
-            <div>
-                {{ partial "helper/icon" "clock" }}
-                <time class="article-time--reading">
-                    {{ T "article.readingTime" .ReadingTime }}
-                </time>
-            </div>
+        <div>
+            {{ partial "helper/icon" "save" }}
+            <time class="article-words">
+            约{{ .WordCount }}字，阅读大约需 {{ div .WordCount 400}} 分钟
+            </time>
+        </div>
+    {{ end }}
+
+
+    {{ if .Params.categories }}
+    <header class="article-category">
+        {{ range (.GetTerms "categories") }}
+            <a href="{{ .RelPermalink }}" {{ with .Params.style }}style="background-color: {{ .background }}; color: {{ .color }};"{{ end }}>
+                {{ .LinkTitle }}
+            </a>
         {{ end }}
+    </header>
+    {{ end }}
+
+    
+    {{ if .Params.tags }}
+    <div class="article-tags">
+        {{ range (.GetTerms "tags") }}
+            <a href="{{ .RelPermalink }}" {{ with .Params.style }}style="background-color: {{ .background }}; color: {{ .color }};"{{ end }}>
+                {{ .LinkTitle }}
+            </a>
+        {{ end }}
+    </div>
+{{ end }}
+
+
     </footer>
     {{ end }}
 

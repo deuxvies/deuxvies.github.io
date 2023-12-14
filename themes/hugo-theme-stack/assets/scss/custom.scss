@@ -188,21 +188,21 @@ $image-scale: 1.2;
   transform: scale(1.03, 1.03);
 }
 
-// 归档页面四栏
+// 归档页面2栏
 @media (min-width: 1024px) {
   .article-list--compact {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       background: none;
       box-shadow: none;
-      gap: 1rem;
+      gap: 2rem;
 
       article {
           background: var(--card-background);
           border: none;
           box-shadow: var(--shadow-l2);
           margin-bottom: 8px;
-          border-radius: 16px;
+          border-radius: 10px;
       }
   }
 }
@@ -301,8 +301,8 @@ $image-scale: 1.2;
       /* range: 1024-1280 */
       @include respond(lg) {
           max-width: 1280px;
-          --left-sidebar-max-width: 25%;
-          --right-sidebar-max-width: 22%;
+          --left-sidebar-max-width: 20%;
+          --right-sidebar-max-width: 20%;
       }
   }
 
@@ -354,3 +354,60 @@ html{
   --base-font-family: 'Noto Serif SC', var(--sys-font-family);
 }
 
+
+
+/* 行内代码颜色 */
+:root {
+  // 行内代码背景色
+  --code-background-color: #f8f8f8;
+  // 行内代码前景色
+  --code-text-color: #e96900;
+}
+
+
+/* 分类页面隐藏文章图片，也会隐藏友链图片 */
+.article-list--compact>article .article-image img,
+.section-card .section-image img {
+    display: none;
+}
+
+
+/*修复代码出框*/
+code {
+  color: var(--code-text-color);
+  background-color: var(--code-background-color);
+  padding: 2px 4px;
+  border-radius: var(--tag-border-radius);
+  font-family: var(--code-font-family);
+  word-wrap: break-word; //允许长单词或 URL 地址换行到下一行
+  
+}
+
+/* search栏默认样式，用于大屏幕 */
+
+/* 移动屏幕样式，屏幕宽度小于某个阈值时显示搜索栏 */
+@media (max-width: 800px) {
+  .right-sidebar {
+      top: 0; /* 顶部距离 */
+      display: block; /* 显示搜索栏 */
+      z-index: 9999; /* 确保搜索栏在其他元素之上 */
+      margin-top: 10px; /* 可根据需要调整上边距 */
+      overflow-y: auto; /* 允许纵向滚动 */
+      padding: 10px; /* 可根据需要调整内边距 */
+  }
+
+  /* 设置搜索栏与其他元素的底部间距 */
+  .search-form {
+    margin-bottom: 20px; /* 根据需要调整间距 */
+  }
+
+  /* 设置标签栏与分类之间的间距 */
+  .tagCloud {
+    margin-bottom: 20px; /* 根据需要调整间距 */
+  }
+
+  /* 设置分类与其他元素的间距 */
+  .categories {
+    margin-bottom: 20px; /* 根据需要调整间距 */
+  }
+}

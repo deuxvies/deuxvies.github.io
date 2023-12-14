@@ -17,7 +17,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --accent-color-darker: #2c3e50;
     --accent-color-text: #fff;
     --body-text-color: #bababa;
-
+    --emphasize-text-color: #34495e; // Add emphasize font color
     --tag-border-radius: 4px;
 
     --section-separation: 40px;
@@ -33,6 +33,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
         --body-text-color: rgba(255, 255, 255, 0.7);
         --scrollbar-thumb: hsl(0, 0%, 40%);
         --scrollbar-track: var(--body-background);
+        --emphasize-text-color: #d5cfc4; // Add emphasize font color for dark scheme
     }
 }
 
@@ -62,6 +63,8 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --card-border-radius: 10px;
 
     --card-padding: 20px;
+    --tag-border-radius: 24px; // Change from 4px to make it round corner
+    --category-border-radius: 4px; // Add category border setting
 
     @include respond(md) {
         --card-padding: 25px;
@@ -163,3 +166,4 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --container-padding: 15px;
     --widget-separation: var(--section-separation);
 }
+

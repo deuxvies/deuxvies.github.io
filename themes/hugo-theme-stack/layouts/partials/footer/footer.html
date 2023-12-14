@@ -8,7 +8,8 @@
         {{ now.Format "2006" }} {{ .Site.Title }}
     </section>
     
-  
+
+    
 <!-- Add total page and word count time -->
 <section class="totalcount">
     {{$scratch := .Scratch}}
@@ -17,7 +18,13 @@
     {{ end }}
     发表了{{ len (where .Site.RegularPages "Section" "post") }}篇文章 · 
     总计{{ div ($scratch.Get "total") 1000.0 | lang.FormatNumber 2 }}k字
+
 </section>
 
 
+<!-- Add blog running time -->
+<section class="running-time">
+    本博客已稳定运行
+    <span id="runningdays" class="running-days"></span>
+    </section>
 </footer>

@@ -117,7 +117,26 @@
     }
 }
 
-.article-category,
+.article-category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    a {
+        background: var(--card-background);
+        box-shadow: var(--shadow-l1);
+        border-radius: var(--category-border-radius);
+        padding: 8px 20px;
+        color: var(--card-text-color-main);
+        font-size: 1.4rem;
+        transition: box-shadow 0.3s ease;
+
+        &:hover {
+            box-shadow: var(--shadow-l2);
+        }
+    }
+}
+
 .article-tags {
     display: flex;
     gap: 10px;
@@ -265,3 +284,26 @@
         }
     }
 }
+
+
+/*固定块高度*/
+.article-content {
+    .highlight {
+        padding: var(--card-padding);
+        pre {
+            margin: initial;
+            padding: var(--card-padding);
+            margin: 0;
+            width: auto;
+            max-height: 20em;
+            scrollbar-width: none;
+            /* Firefox */
+            &::-webkit-scrollbar {
+                display: none;
+                /* Chrome Safari */
+            }
+        }
+    }
+  }
+  
+  

@@ -56,6 +56,7 @@
         </ol>
     {{- end -}}
 
+
     <ol class="menu" id="main-menu">
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
@@ -74,6 +75,8 @@
             </a>
         </li>
         {{ end }}
+
+
 
         <div class="menu-bottom-section">
             {{- $currentLanguageCode := .Language.Lang -}}
@@ -96,5 +99,13 @@
                 </li>
             {{ end }}
         </div>
+
+          <!-- Ko-fi sponsorship widget code -->
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+<script type='text/javascript'>
+    kofiwidget2.init('Buy me a coffee', '#8c7851', 'W7W3S654O');
+    kofiwidget2.draw();
+</script>
+
     </ol>
 </aside>

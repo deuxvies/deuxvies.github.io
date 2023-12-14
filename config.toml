@@ -53,7 +53,8 @@ favicon = "img/favicon.png"
   
     [params.widgets.homepage.params]
     limit = 10
-  
+ 
+
   [[params.widgets.homepage]]
   type = "tag-cloud"
   
@@ -102,7 +103,7 @@ url = "https://www.lofter.com/blog/springcecilia"
 
 [[menu.social]]
 identifier = "AO3"
-name = "AO3"
+name = "AO3（要挂梯）"
 url = "https://archiveofourown.org/users/Springcecilia/works"
 
   [menu.social.params]
@@ -110,8 +111,8 @@ url = "https://archiveofourown.org/users/Springcecilia/works"
 
 [[menu.social]]
 identifier = "email"
-name = "Email"
-url = "springcecily@gmail.com"
+name = "提问箱"
+url = "https://peing.net/zh-CN/91e8000a0af399"
 
   [menu.social.params]
   icon = "mail"
@@ -139,6 +140,3 @@ startLevel = 1
 
 [markup.highlight]
 noClasses = false
-
-customCSS = ["assets/css/style.css"]
-customJS = ["/assets/js/jsconfig.js"]

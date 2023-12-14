@@ -7,6 +7,7 @@ hidden: false
 comments: true
 draft: false
 toc: true
+categories: 技能
 tags: 
   - 建站记录
 
