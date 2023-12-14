@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on Cecilia的博客</title>
-        <link>https://Cecilia404404.github.io/page/</link>
+        <link>https://springcecilia.blog/page/</link>
         <description>Recent content in Pages on Cecilia的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sun, 28 Apr 2019 00:00:00 +0800</lastBuildDate><atom:link href="https://Cecilia404404.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 28 Apr 2019 00:00:00 +0800</lastBuildDate><atom:link href="https://springcecilia.blog/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>About</title>
-        <link>https://Cecilia404404.github.io/about/</link>
+        <link>https://springcecilia.blog/about/</link>
         <pubDate>Sun, 28 Apr 2019 00:00:00 +0800</pubDate>
         
-        <guid>https://Cecilia404404.github.io/about/</guid>
+        <guid>https://springcecilia.blog/about/</guid>
         <description>&lt;h1 id=&#34;about-me&#34;&gt;About me&lt;/h1&gt;
 &lt;p&gt;Hello, world! &lt;br&gt;
 这里是Cecilia的赛博存档地。有同人文存档，也有一些资料、记录。&lt;/p&gt;
@@ -19,46 +19,46 @@
         </item>
         <item>
         <title>Tags</title>
-        <link>https://Cecilia404404.github.io/tags/</link>
+        <link>https://springcecilia.blog/tags/</link>
         <pubDate>Sun, 07 Apr 2019 00:00:00 +0800</pubDate>
         
-        <guid>https://Cecilia404404.github.io/tags/</guid>
+        <guid>https://springcecilia.blog/tags/</guid>
         <description></description>
         </item>
         <item>
         <title>Archives</title>
-        <link>https://Cecilia404404.github.io/Archives/</link>
+        <link>https://springcecilia.blog/Archives/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://Cecilia404404.github.io/Archives/</guid>
+        <guid>https://springcecilia.blog/Archives/</guid>
         <description>&lt;p&gt;这里存放其他资料和记录。&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>Links</title>
-        <link>https://Cecilia404404.github.io/links/</link>
+        <link>https://springcecilia.blog/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://Cecilia404404.github.io/links/</guid>
+        <guid>https://springcecilia.blog/links/</guid>
         <description>&lt;p&gt;这里存搜书链接，部分已被墙掉需要挂梯。&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>Postcards</title>
-        <link>https://Cecilia404404.github.io/Postcards/</link>
+        <link>https://springcecilia.blog/Postcards/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://Cecilia404404.github.io/Postcards/</guid>
+        <guid>https://springcecilia.blog/Postcards/</guid>
         <description>&lt;p&gt;这里存放了我收到的外国明信片和有意思的邮票。
 不分先后排序。&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>Search</title>
-        <link>https://Cecilia404404.github.io/search/</link>
+        <link>https://springcecilia.blog/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://Cecilia404404.github.io/search/</guid>
+        <guid>https://springcecilia.blog/search/</guid>
         <description></description>
         </item>
         

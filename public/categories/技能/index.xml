@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on Cecilia的博客</title>
-        <link>https://springcecilia.blog/post/</link>
-        <description>Recent content in Posts on Cecilia的博客</description>
+        <title>技能 on Cecilia的博客</title>
+        <link>https://springcecilia.blog/categories/%E6%8A%80%E8%83%BD/</link>
+        <description>Recent content in 技能 on Cecilia的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sat, 09 Dec 2023 17:34:26 +0800</lastBuildDate><atom:link href="https://springcecilia.blog/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 09 Dec 2023 17:34:26 +0800</lastBuildDate><atom:link href="https://springcecilia.blog/categories/%E6%8A%80%E8%83%BD/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>【建站2】在Hugo中发布内容</title>
         <link>https://springcecilia.blog/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/</link>
         <pubDate>Sat, 09 Dec 2023 17:34:26 +0800</pubDate>
