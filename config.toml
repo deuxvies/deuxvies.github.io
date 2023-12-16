@@ -48,6 +48,7 @@ favicon = "img/favicon.png"
   [[params.widgets.homepage]]
   type = "search"
   
+
   [[params.widgets.homepage]]
   type = "archives"
   
@@ -103,7 +104,7 @@ url = "https://www.lofter.com/blog/springcecilia"
 
 [[menu.social]]
 identifier = "AO3"
-name = "AO3（要挂梯）"
+name = "AO3（需魔法）"
 url = "https://archiveofourown.org/users/Springcecilia/works"
 
   [menu.social.params]
@@ -111,7 +112,7 @@ url = "https://archiveofourown.org/users/Springcecilia/works"
 
 [[menu.social]]
 identifier = "email"
-name = "提问箱"
+name = "提问箱（需魔法）"
 url = "https://peing.net/zh-CN/91e8000a0af399"
 
   [menu.social.params]
@@ -140,3 +141,17 @@ startLevel = 1
 
 [markup.highlight]
 noClasses = false
+
+
+[outputFormats.ENCRYPT]
+    mediatype = "text/html"
+    baseName = "index"
+    isPlainText = true
+    notAlternative = true
+    isHTML = true
+
+[twikoo]
+  envId = "https://my-twikoo-sigma-ochre.vercel.app/"
+  region = "ap-shanghai"
+  path = "your-custom-path"
+  lang = "zh-cn"

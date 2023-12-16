@@ -391,7 +391,7 @@ code {
       top: 0; /* 顶部距离 */
       display: block; /* 显示搜索栏 */
       z-index: 9999; /* 确保搜索栏在其他元素之上 */
-      margin-top: 10px; /* 可根据需要调整上边距 */
+      margin-top: 20px; /* 可根据需要调整上边距 */
       overflow-y: auto; /* 允许纵向滚动 */
       padding: 10px; /* 可根据需要调整内边距 */
   }
@@ -408,6 +408,6 @@ code {
 
   /* 设置分类与其他元素的间距 */
   .categories {
-    margin-bottom: 20px; /* 根据需要调整间距 */
+    margin-bottom: 40px; /* 根据需要调整间距 */
   }
 }

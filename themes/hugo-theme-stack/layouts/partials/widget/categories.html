@@ -12,5 +12,22 @@
                 {{ .Page.Title }}
             </a>
         {{ end }}
-    </div>
+    </div>e
 </section>
+
+<section class="widget categories">
+    <div class="widget-icon">
+        {{ partial "helper/icon" "category" }}
+    </div>
+    <h2 class="widget-title section-title">{{ T "widget.categoriesCloud.title" }}</h2>
+
+    <div class="category-label">
+        {{ range first $limit $context.Site.Taxonomies.categories.ByCount }}
+            {{ with .Page }}
+                <a href="{{ .Page.Permalink }}" class="font_size_{{ .Count }}">
+                    {{ .Title }}<span class="category-count">{{ .Count }}</span>
+                </a>
+            {{ end }}
+        {{ end }}
+    </div>
+    </section> 

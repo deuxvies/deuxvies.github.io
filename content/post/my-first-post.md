@@ -9,8 +9,14 @@ license: springcecilia
 hidden: false
 comments: true
 toc: true
-draft: true
+draft: false
+password: "hana"
+encrypted: ["encrypted_content"]
+
 ---
+
+{{< hugo-encryptor password="hana" >}}
+<!-- 这里放置需要加密的内容 -->
 
 测试发布带图文章：
 
@@ -19,3 +25,6 @@ draft: true
 调整大小：
 
 <img src="/images/1.png" alt="Alt Text" style="width: 600px; height: auto;">
+
+
+{{< /hugo-encryptor >}}

@@ -5,7 +5,7 @@
 
 <link rel='canonical' href='https://springcecilia.blog/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/'>
 
-<link rel="stylesheet" href="/scss/style.min.be0d10d128a18f0a3a360de172d856e98b22adc1c1c4d045e482c52dde923ad2.css"><meta property='og:title' content='【建站2】在Hugo中发布内容'>
+<link rel="stylesheet" href="/scss/style.min.22c0c55c29fcddc6229d5df1acd3c46feb59fcb30f6d597b2f6a6469191a6ba3.css"><meta property='og:title' content='【建站2】在Hugo中发布内容'>
 <meta property='og:description' content='1.发布纯文字的文章 1.1在命令行中创建'>
 <meta property='og:url' content='https://springcecilia.blog/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/'>
 <meta property='og:site_name' content='Cecilia的博客'>
@@ -98,7 +98,7 @@
                     <a 
                         href='https://archiveofourown.org/users/Springcecilia/works'
                         target="_blank"
-                        title="AO3（要挂梯）"
+                        title="AO3（需魔法）"
                     >
                         
                         
@@ -130,7 +130,7 @@
                     <a 
                         href='https://peing.net/zh-CN/91e8000a0af399'
                         target="_blank"
-                        title="提问箱"
+                        title="提问箱（需魔法）"
                     >
                         
                         
@@ -468,10 +468,12 @@ hugo server -D
     </footer>
 
 
+
     
 </article>
 
 
+    
     
 
     
@@ -493,6 +495,18 @@ hugo server -D
     </a>
 </article>
             
+                
+<article class="">
+    <a href="/my-first-post/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">发布文章测试帖</h2>
+        </div>
+    </a>
+</article>
+            
         </div>
     </div>
 </aside>
@@ -500,6 +514,42 @@ hugo server -D
      
     
         
+    <script src="//cdn.jsdelivr.net/npm/twikoo@1.6.27/dist/twikoo.all.min.js"></script>
+<div id="tcomment"></div>
+<style>
+    .twikoo {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+    :root[data-scheme="dark"] {
+        --twikoo-body-text-color-main: rgba(255, 255, 255, 0.9);
+        --twikoo-body-text-color: rgba(255, 255, 255, 0.7);
+    }
+    .twikoo .el-input-group__prepend,
+    .twikoo .tk-action-icon,
+    .twikoo .tk-time,
+    .twikoo .tk-comments-count {
+        color: var(--twikoo-body-text-color);
+    }
+    .twikoo .el-input__inner,
+    .twikoo .el-textarea__inner,
+    .twikoo .tk-preview-container,
+    .twikoo .tk-content,
+    .twikoo .tk-nick,
+    .twikoo .tk-send {
+        color: var(--twikoo-body-text-color-main);
+    }
+    .twikoo .el-button{
+        color: var(--twikoo-body-text-color)!important;
+    }
+</style><script>
+    twikoo.init({
+        envId: 'https:\/\/my-twikoo-sigma-ochre.vercel.app\/',
+        el: '#tcomment',region: 'ap-shanghai',path: 'your-custom-path',lang: 'zh-cn',})
+</script>
+
     
 
     <footer class="site-footer">
@@ -509,7 +559,7 @@ hugo server -D
         2023 Cecilia的博客
     </section>
     
-
+    
     
 
 <section class="totalcount">
@@ -531,8 +581,10 @@ hugo server -D
     
         
     
-    发表了2篇文章 · 
-    总计3.84k字
+        
+    
+    发表了3篇文章 · 
+    总计3.91k字
 
 </section>
 
@@ -543,6 +595,9 @@ hugo server -D
     <span id="runningdays" class="running-days"></span>
     </section>
 </footer>
+
+
+
 
 
     

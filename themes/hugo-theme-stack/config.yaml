@@ -35,8 +35,8 @@ params:
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: false
-        provider: disqus
+        enabled: true
+        provider: twikoo
 
         disqusjs:
             shortname:
@@ -80,10 +80,12 @@ params:
                 admin: Admin
 
         twikoo:
-            envId:
-            region:
-            path:
-            lang:
+            envId: https://my-twikoo-sigma-ochre.vercel.app/
+            region: "ap-shanghai"
+            path: "your-custom-path"
+            lang: "zh-cn"
+            emoji:
+                - "https://raw.githubusercontent.com/cecilia404404/emoji/main/waline-blobcatemojis-main/"
 
         giscus:
             repo:

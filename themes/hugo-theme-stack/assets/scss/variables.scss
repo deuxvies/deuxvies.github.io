@@ -165,5 +165,8 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --menu-icon-separation: 40px;
     --container-padding: 15px;
     --widget-separation: var(--section-separation);
+    --tag-border-radius: 24px; // Change from 4px to make it round corner
+    --category-border-radius: 4px; // Add category border setting
+
 }
 

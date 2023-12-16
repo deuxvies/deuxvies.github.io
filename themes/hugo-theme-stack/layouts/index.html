@@ -10,7 +10,7 @@
     let divTyping = document.querySelector('#text p');
     let i = 0,
       timer = 50,  // 修改为适当的时间间隔，以控制打字速度
-      str = 'Humo sum, humani nihil ame alienum puton.';  // 修改为自己想打的字
+      str = 'Welcome to my blog!';  // 修改为自己想打的字
   
     function typing() {
       if (i <= str.length) {
@@ -51,3 +51,4 @@
 {{ define "right-sidebar" }}
     {{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
 {{ end }}
+

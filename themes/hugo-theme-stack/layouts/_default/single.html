@@ -12,9 +12,12 @@
             {{ $HasWidgetNotTOC = true -}}
         {{- else -}}
             {{ $TOCWidgetEnabled = true -}}
+
+        
         {{- end -}}
     {{- end -}}
 
+    
     {{- $TOCManuallyDisabled := eq .Params.toc false -}}
     {{- $TOCEnabled := and (not $TOCManuallyDisabled) $TOCWidgetEnabled -}}
     {{- $hasTOC := ge (len .TableOfContents) 100 -}}
@@ -28,6 +31,7 @@
     {{ partial "article/article.html" . }}
 
 
+    
     {{ if .Params.links }}
         {{ partial "article/components/links" . }}
     {{ end }}
@@ -44,5 +48,4 @@
 
     
 {{ end }}
-
 
