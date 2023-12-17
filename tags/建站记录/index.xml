@@ -298,29 +298,26 @@ fill="currentColor">
 &lt;h1 id="四运行-hugo">四.运行 Hugo&lt;/h1>
 &lt;pre>&lt;code>在博客根目录运行 Hugo，查看是否成功应用了主题的配置和样式。
 hugo server -D
-&lt;/code>&lt;/pre></description></item><item><title>发布文章测试帖</title><link>https://springcecilia.blog/my-first-post/</link><pubDate>Fri, 08 Dec 2023 17:19:10 +0800</pubDate><guid>https://springcecilia.blog/my-first-post/</guid><description>
-&lt;div class="hugo-encryptor-container">
-&lt;div class="hugo-encryptor-prompt">
-&lt;p>文章的部分内容被密码保护：&lt;/p>
+&lt;/code>&lt;/pre></description></item><item><title>发布文章测试帖</title><link>https://springcecilia.blog/my-first-post/</link><pubDate>Fri, 08 Dec 2023 17:19:10 +0800</pubDate><guid>https://springcecilia.blog/my-first-post/</guid><description>&lt;p>密码：花的日语罗马音（四个字母）&lt;/p>
+&lt;div id="verification" style=" display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 20vh;">
+&lt;div id="entry-box">
+&lt;div id="secret-word" style=" font-size: 1.5rem;
+margin-bottom: 1rem;">Unlock to view this content.&lt;/div>
+&lt;form id="password-form" onsubmit="checkPassword(); return false;" style=" display: flex;
+flex-direction: column;
+width: auto;">
+&lt;input type="password" name="password" id="password" placeholder="Please enter password" required style="margin-bottom: 1.5rem;
+padding: 10px 20px;">
+&lt;input type="hidden" name="encryptedPassword" id="encrypted-password">
+&lt;input type="submit" value="Submit" name="submit" id="secret-submit" style=" padding: 10px 20px;
+cursor: pointer;" onmouseover="this.style.backgroundColor='#FAB005';"
+onmouseout="this.style.backgroundColor='';">
+&lt;/form>
 &lt;/div>
-&lt;div class="hugo-encryptor-form">
-&lt;input
-class="hugo-encryptor-input"
-placeholder='请输入密码'
-/>
-&lt;input
-class="hugo-encryptor-button"
-type="button"
-value='点击验证'
-onclick="_click_handler(this)"
-/>
-&lt;/div>
-&lt;div
-class="hugo-encryptor-cipher-text"
-data-password=""
-style="display: none;"
->
-&lt;span style="display: none;">--- DON'T MODIFY THIS LINE ---&lt;/span>
+&lt;div id="secret" style="display: none" password="hana">
 &lt;!-- 这里放置需要加密的内容 -->
 测试发布带图文章：
 ![图1](/blog/myblog/static/img/1.png)

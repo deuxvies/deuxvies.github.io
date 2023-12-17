@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Cecilia的博客</title><link>https://springcecilia.blog/page/</link><description>Recent content in Pages on Cecilia的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 28 Apr 2019 00:00:00 +0800</lastBuildDate><atom:link href="https://springcecilia.blog/page/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://springcecilia.blog/about/</link><pubDate>Sun, 28 Apr 2019 00:00:00 +0800</pubDate><guid>https://springcecilia.blog/about/</guid><description>&lt;h1 id="about-me">About me&lt;/h1>
-&lt;p>Hello, world! &lt;br>
-这里是Cecilia的赛博存档地。有同人文存档，也有一些资料、记录。&lt;/p></description></item><item><title>Tags</title><link>https://springcecilia.blog/tags/</link><pubDate>Sun, 07 Apr 2019 00:00:00 +0800</pubDate><guid>https://springcecilia.blog/tags/</guid><description/></item><item><title>Archives</title><link>https://springcecilia.blog/Archives/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://springcecilia.blog/Archives/</guid><description>&lt;p>这里存放其他资料和记录。&lt;/p></description></item><item><title>Links</title><link>https://springcecilia.blog/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://springcecilia.blog/links/</guid><description>&lt;p>这里存搜书链接，部分已被墙掉需要挂梯。&lt;/p></description></item><item><title>Postcards</title><link>https://springcecilia.blog/Postcards/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://springcecilia.blog/Postcards/</guid><description>&lt;p>这里存放了我收到的外国明信片和有意思的邮票。
-不分先后排序。&lt;/p></description></item><item><title>Search</title><link>https://springcecilia.blog/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://springcecilia.blog/search/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Cecilia的博客</title><link>https://springcecilia.blog/page/</link><description>Recent content in Pages on Cecilia的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 28 Apr 2019 00:00:00 +0800</lastBuildDate><atom:link href="https://springcecilia.blog/page/index.xml" rel="self" type="application/rss+xml"/><item><title>Guestbook</title><link>https://springcecilia.blog/about/</link><pubDate>Sun, 28 Apr 2019 00:00:00 +0800</pubDate><guid>https://springcecilia.blog/about/</guid><description> &lt;!-- index.html or home.html -->
+&lt;div id="text">
+&lt;p style="font-size: 2rem; text-align: center; font-weight: bold; color: var(--card-text-color-secondary);">&lt;/p>
+&lt;/div>
+&lt;!-- ... other HTML content ... -->
+&lt;script>
+let divTyping = document.querySelector('#text p');
+let i = 0,
+timer = 50, // 修改为适当的时间间隔，以控制打字速度
+str = 'Hello! 如想和我交流，点击头像下的图标可跳转私人匿名提问箱（需魔法），或在下方评论区留言 ↓ ';
+function typing() {
+if (i &lt;= str.length) {
+divTyping.innerHTML = str.slice(0, i++) + '_';
+timer = setTimeout(typing, timer);
+} else {
+divTyping.innerHTML = str; // 结束打字，移除 _ 光标
+clearTimeout(timer);
+}
+}
+typing();
+&lt;/script></description></item><item><title>Archives</title><link>https://springcecilia.blog/Archives/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://springcecilia.blog/Archives/</guid><description>&lt;p>这里存放其他资料和记录。&lt;/p></description></item><item><title>Postcards</title><link>https://springcecilia.blog/Postcards/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://springcecilia.blog/Postcards/</guid><description>&lt;p>这里存放了我收到的外国明信片和有意思的邮票。
+不分先后排序。&lt;/p></description></item><item><title>Search</title><link>https://springcecilia.blog/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://springcecilia.blog/search/</guid><description/></item><item><title>Tools</title><link>https://springcecilia.blog/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://springcecilia.blog/links/</guid><description>&lt;p>这里存搜书链接，部分已被墙掉需要魔法。&lt;/p></description></item></channel></rss>
