@@ -12,10 +12,12 @@ toc: true
 draft: false
 password: "hana"
 encrypted: ["encrypted_content"]
+slug: "发布文章测试帖"
+
 
 ---
 
-{{< hugo-encryptor password="hana" >}}
+{{< hugo-encryptor password= hana >}}
 <!-- 这里放置需要加密的内容 -->
 
 测试发布带图文章：

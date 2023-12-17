@@ -10,6 +10,7 @@ toc: true
 categories: 技能
 tags: 
   - 建站记录
+slug: "【建站2】在Hugo中发布内容"
 
 ---
 

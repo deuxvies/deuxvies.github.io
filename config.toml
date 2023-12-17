@@ -150,8 +150,11 @@ noClasses = false
     notAlternative = true
     isHTML = true
 
-[twikoo]
-  envId = "https://my-twikoo-sigma-ochre.vercel.app/"
-  region = "ap-shanghai"
-  path = "your-custom-path"
-  lang = "zh-cn"
+
+
+[[params.widgets.page]]
+type = "categories"
+
+  [params.widgets.page.params]
+  limit = 10
+

@@ -4,12 +4,28 @@
     .waline-container {
         background-color: var(--card-background);
         border-radius: var(--card-border-radius);
-        box-shadow: var(--shadow-l1);
+        box-shadow: var(--shadow-10);
         padding: var(--card-padding);
     }
     .waline-container .vcount {
         color: var(--card-text-color-main);
     }
+
+    .waline-form button {
+    background-color: #8c7851; /* 你想要的颜色 */
+    color: #fff; /* 文字颜色，根据背景颜色选择合适的文字颜色 */
+}
+    
+:root {
+  /* 评论区字体大小 */
+  --waline-font-size: 20px;
+}
+
+.vmeta {
+  display: none;
+}   /* 隐藏用户浏览器ip信息 */
+
+
 </style>
 
 {{- with .Site.Params.comments.waline -}}
