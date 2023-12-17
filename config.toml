@@ -118,6 +118,15 @@ url = "https://peing.net/zh-CN/91e8000a0af399"
   [menu.social.params]
   icon = "mail"
 
+[[menu.social]]
+identifier = "rss"
+name = "rss订阅"
+url = "https://springcecilia.blog/index.xml"
+
+  [menu.social.params]
+  icon = "rss"
+
+
 [related]
 includeNewer = true
 threshold = 90

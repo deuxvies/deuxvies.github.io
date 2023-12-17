@@ -1,6 +1,7 @@
 ---
-title: Links
+title: Tools
 slug: links
+comments: false  # 添加这一行，表示关闭评论
 links:
   - title: Zlibrary
     description: 各国电子书下载途径1
@@ -78,7 +79,7 @@ menu:
   main:
     weight: -70
     params:
-      icon: link
+      icon: bookmark
 ---
 
-这里存搜书链接，部分已被墙掉需要挂梯。
+这里存搜书链接，部分已被墙掉需要魔法。

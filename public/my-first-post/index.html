@@ -5,7 +5,7 @@
 
 <link rel='canonical' href='https://springcecilia.blog/my-first-post/'>
 
-<link rel="stylesheet" href="/scss/style.min.22c0c55c29fcddc6229d5df1acd3c46feb59fcb30f6d597b2f6a6469191a6ba3.css"><meta property='og:title' content='发布文章测试帖'>
+<link rel="stylesheet" href="/scss/style.min.29b361d23c14bd843d1eff4acc35dd5ca6484cb1f5e69e55904d2342192849cb.css"><meta property='og:title' content='发布文章测试帖'>
 <meta property='og:description' content='建站测试'>
 <meta property='og:url' content='https://springcecilia.blog/my-first-post/'>
 <meta property='og:site_name' content='Cecilia的博客'>
@@ -310,7 +310,7 @@
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-save"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
             <time class="article-words">
-            约69字，阅读大约需 0 分钟
+            约71字，阅读大约需 0 分钟
             </time>
         </div>
     
@@ -340,35 +340,28 @@
     <section class="article-content">
     
     
-    
+    <p>密码：花的日语罗马音（四个字母）</p>
+<div id="verification" style=" display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20vh;">
+    <div id="entry-box">
+        
+        <div id="secret-word" style="  font-size: 1.5rem;
+    margin-bottom: 1rem;">Unlock to view this content.</div>
+        <form id="password-form" onsubmit="checkPassword(); return false;" style=" display: flex;
+    flex-direction: column;
+    width: auto;">
+            <input type="password" name="password" id="password" placeholder="Please enter password" required style="margin-bottom: 1.5rem;
+      padding: 10px 20px;">
+            <input type="hidden" name="encryptedPassword" id="encrypted-password">
+            <input type="submit" value="Submit" name="submit" id="secret-submit" style=" padding: 10px 20px;
+      cursor: pointer;" onmouseover="this.style.backgroundColor='#FAB005';"
+                   onmouseout="this.style.backgroundColor='';">
+        </form>
+    </div>
+    <div id="secret" style="display: none" password="hana">
 
-
-
-<div class="hugo-encryptor-container">
-  <div class="hugo-encryptor-prompt">
-    
-      <p>文章的部分内容被密码保护：</p>
-    
-  </div>
-  <div class="hugo-encryptor-form">
-    <input
-      class="hugo-encryptor-input"
-      placeholder='请输入密码'
-    />
-    <input
-      class="hugo-encryptor-button"
-      type="button"
-      value='点击验证'
-      onclick="_click_handler(this)"
-    />
-  </div>
-  <div
-    class="hugo-encryptor-cipher-text"
-    data-password=""
-    style="display: none;"
-  >
-    <span style="display: none;">--- DON'T MODIFY THIS LINE ---</span>
-    
 <!-- 这里放置需要加密的内容 -->
 
 测试发布带图文章：
@@ -380,11 +373,8 @@
 <img src="/images/1.png" alt="Alt Text" style="width: 600px; height: auto;">
 
 
-
-  </div>
 </div>
-
-
+</div>
 </section>
 
 
@@ -458,40 +448,37 @@
      
     
         
-    <script src="//cdn.jsdelivr.net/npm/twikoo@1.6.27/dist/twikoo.all.min.js"></script>
-<div id="tcomment"></div>
+    <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+<div id="waline" class="waline-container"></div>
 <style>
-    .twikoo {
+    .waline-container {
         background-color: var(--card-background);
         border-radius: var(--card-border-radius);
-        box-shadow: var(--shadow-l1);
+        box-shadow: var(--shadow-10);
         padding: var(--card-padding);
     }
-    :root[data-scheme="dark"] {
-        --twikoo-body-text-color-main: rgba(255, 255, 255, 0.9);
-        --twikoo-body-text-color: rgba(255, 255, 255, 0.7);
+    .waline-container .vcount {
+        color: var(--card-text-color-main);
     }
-    .twikoo .el-input-group__prepend,
-    .twikoo .tk-action-icon,
-    .twikoo .tk-time,
-    .twikoo .tk-comments-count {
-        color: var(--twikoo-body-text-color);
-    }
-    .twikoo .el-input__inner,
-    .twikoo .el-textarea__inner,
-    .twikoo .tk-preview-container,
-    .twikoo .tk-content,
-    .twikoo .tk-nick,
-    .twikoo .tk-send {
-        color: var(--twikoo-body-text-color-main);
-    }
-    .twikoo .el-button{
-        color: var(--twikoo-body-text-color)!important;
-    }
+
+    .waline-form button {
+    background-color: #8c7851;  
+    color: #fff;  
+}
+    
+:root {
+   
+  --waline-font-size: 20px;
+}
+
+.vmeta {
+  display: none;
+}    
+
+
 </style><script>
-    twikoo.init({
-        envId: 'https:\/\/my-twikoo-sigma-ochre.vercel.app\/',
-        el: '#tcomment',region: 'ap-shanghai',path: 'your-custom-path',lang: 'zh-cn',})
+    
+    new Waline({"admin":"博主","anonymous":"匿名","avatar":"https://www.gravatar.com/avatar/monsterid","dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs"],"lang":["en","zh-cn","zh-tw","jp","fr"],"locale":{"link":"你的网站(非必填)","mail":"邮箱(非必填)","mailerror":"请填写正确的邮件地址","nick":"昵称(非必填)","placeholder":"注： 如填写邮箱地址，博主回复时您可以获得邮箱通知（您的邮箱不会公开）； 评论框自带表情是外接植入，左下方第四个放大镜按钮可预览您发出去前的评论效果； 右下方的登录键为评论系统默认自带功能，并非必选项； 如想要连续评论，第二条发太快可能会提交不了，等一会再点提交就好~"},"preview":"预览","serverURL":"https://my-waline-8mit71nhd-hanas-projects-4c182b9b.vercel.app/"});
 </script>
 
     
