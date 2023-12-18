@@ -1,10 +1,10 @@
 ---
-title: Archives
+title: 归档
 layout: archives
 
 menu:
     main:
-        weight: 160
+        weight: -80
         params:
             icon: library
 ---

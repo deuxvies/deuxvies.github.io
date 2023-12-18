@@ -1,5 +1,5 @@
 ---
-title: Tools
+title: 收藏夹
 slug: links
 comments: false  # 添加这一行，表示关闭评论
 links:
@@ -77,7 +77,7 @@ links:
 
 menu:
   main:
-    weight: -70
+    weight: 120
     params:
       icon: bookmark
 ---

@@ -1,9 +1,9 @@
 ---
-title: Postcards
+title: 相册
 layout: "photos"
 menu:
     main:
-        weight: 120
+        weight: -70
         params:
             icon: photo
 

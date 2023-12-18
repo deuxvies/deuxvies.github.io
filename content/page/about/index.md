@@ -1,5 +1,5 @@
 ---
-title: Guestbook
+title: 留言板
 description: 
 slug: about
 date: '2019-04-28'
@@ -7,7 +7,7 @@ aliases:
   - contact
 menu:
     main: 
-        weight: -80
+        weight: 160
         params:
             icon: coffee
 ---
@@ -22,7 +22,7 @@ menu:
     let divTyping = document.querySelector('#text p');
     let i = 0,
       timer = 50,  // 修改为适当的时间间隔，以控制打字速度
-      str = 'Hello! 如想和我交流，点击头像下的图标可跳转私人匿名提问箱（需魔法），或在下方评论区留言 ↓ ';  
+      str = 'Hello! 如想和我交流，点击头像下第四个邮件图标可跳转私人匿名提问箱，或在下方评论区留言 ↓ 如果看不到，可能需要魔法';  
   
     function typing() {
       if (i <= str.length) {

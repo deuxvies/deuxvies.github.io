@@ -36,7 +36,7 @@ params:
 
     comments:
         enabled: true
-        provider: waline
+        provider: twikoo
 
         disqusjs:
             shortname:
@@ -100,10 +100,12 @@ params:
         twikoo:
             envId: https://my-twikoo-sigma-ochre.vercel.app/
             region: "ap-shanghai"
-            path: "location.pathname, "
+            admin: '博主'
+            path: 
             lang: ['zh-cn', 'zh-tw', 'en', 'jp', 'fr']
             emoji:
-                - https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs
+                - https://cdn.jsdelivr.net/gh/eallion/twemoji/emoji.owo.json
+
         giscus:
             repo:
             repoID:
