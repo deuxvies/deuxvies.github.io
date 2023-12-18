@@ -35,8 +35,8 @@ params:
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: true
-        provider: twikoo
+        enabled: false
+        provider: waline
 
         disqusjs:
             shortname:

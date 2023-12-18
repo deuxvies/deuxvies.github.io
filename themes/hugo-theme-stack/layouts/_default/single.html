@@ -12,8 +12,6 @@
             {{ $HasWidgetNotTOC = true -}}
         {{- else -}}
             {{ $TOCWidgetEnabled = true -}}
-
-        
         {{- end -}}
     {{- end -}}
 
@@ -27,9 +25,7 @@
 {{ end }}
 
 {{ define "main" }}
-    
     {{ partial "article/article.html" . }}
-
 
     
     {{ if .Params.links }}

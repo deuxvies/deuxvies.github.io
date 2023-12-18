@@ -7,50 +7,27 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <lastBuildDate>Sun, 28 Apr 2019 00:00:00 +0800</lastBuildDate><atom:link href="https://springcecilia.blog/page/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>About</title>
+        <title>关于本站</title>
         <link>https://springcecilia.blog/about/</link>
         <pubDate>Sun, 28 Apr 2019 00:00:00 +0800</pubDate>
         
         <guid>https://springcecilia.blog/about/</guid>
-        <description>&lt;h1 id=&#34;about-me&#34;&gt;About me&lt;/h1&gt;
-&lt;p&gt;Hello, world! &lt;br&gt;
-这里是Cecilia的赛博存档地。有同人文存档，也有一些资料、记录。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Tags</title>
-        <link>https://springcecilia.blog/tags/</link>
-        <pubDate>Sun, 07 Apr 2019 00:00:00 +0800</pubDate>
-        
-        <guid>https://springcecilia.blog/tags/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Archives</title>
-        <link>https://springcecilia.blog/Archives/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://springcecilia.blog/Archives/</guid>
-        <description>&lt;p&gt;这里存放其他资料和记录。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Links</title>
-        <link>https://springcecilia.blog/links/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://springcecilia.blog/links/</guid>
-        <description>&lt;p&gt;这里存搜书链接，部分已被墙掉需要挂梯。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Postcards</title>
-        <link>https://springcecilia.blog/Postcards/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://springcecilia.blog/Postcards/</guid>
-        <description>&lt;p&gt;这里存放了我收到的外国明信片和有意思的邮票。
-不分先后排序。&lt;/p&gt;
+        <description>&lt;p&gt;Hello! 这里是Cecilia，称呼随意。&lt;/p&gt;
+&lt;h1&gt;关于博主&lt;/h1&gt;
+&lt;/p&gt;很懒很佛，脑洞混沌，享乐主义。&lt;/p&gt;
+&lt;p&gt;当读者的时刻比当作者的时刻要长，同人是探索生活的方式之一但不是全部。&lt;/p&gt;
+&lt;p&gt;没啥技术含量，您看到的此静态博客是博主照葫芦画瓢搞出来的（抹泪&lt;/p&gt;
+&lt;h1&gt;此站内容&lt;/h1&gt;
+&lt;p&gt;本站为博主的赛博存档地。&lt;p&gt;
+&lt;p&gt;大部分为文章存档(博主AO3发文三创和二创是分两个号发的)。&lt;p&gt;
+&lt;p&gt;会存一些博主自己的笔记、工具链接和收到的明信片。&lt;p&gt;
+&lt;p&gt;如有内容无法显示，很可能是需要魔法上网。&lt;/p&gt;
+&lt;h1&gt;联系方式&lt;/h1&gt;
+&lt;p&gt;博主建站时本想接入评论系统的，但因vercel的部署问题弄崩了好几次，遂放弃。&lt;p&gt;
+&lt;p&gt;So，如想和我交流，只能选择传统的方式，有以下2种↓&lt;p&gt;
+&lt;p&gt;匿名：点击博客头像下第四个邮件图标可跳转提问箱（需魔法）&lt;p&gt;
+&lt;p&gt;邮件：springcecily@gmail.com&lt;p&gt;
+&lt;p&gt;有空时会回复~ &lt;img src=&#34;https://springcecilia.blog/images/blobcatflower.png&#34; width=50px height=50px &gt; &lt;/p&gt;
 </description>
         </item>
         <item>
@@ -60,6 +37,35 @@
         
         <guid>https://springcecilia.blog/search/</guid>
         <description></description>
+        </item>
+        <item>
+        <title>归档</title>
+        <link>https://springcecilia.blog/%E5%BD%92%E6%A1%A3/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://springcecilia.blog/%E5%BD%92%E6%A1%A3/</guid>
+        <description>&lt;p&gt;这里存放其他资料和记录。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>收藏夹</title>
+        <link>https://springcecilia.blog/links/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://springcecilia.blog/links/</guid>
+        <description>&lt;img src=&#34;https://springcecilia.blog/images/blobcatgooglytrash.png&#34; width=50px height=50px&gt;
+这里存搜书链接，部分已被墙掉需要魔法。
+</description>
+        </item>
+        <item>
+        <title>相册</title>
+        <link>https://springcecilia.blog/%E7%9B%B8%E5%86%8C/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://springcecilia.blog/%E7%9B%B8%E5%86%8C/</guid>
+        <description>&lt;p&gt;这里存放了我收到的外国明信片和有意思的邮票。
+不分先后排序。&lt;/p&gt;
+</description>
         </item>
         
     </channel>

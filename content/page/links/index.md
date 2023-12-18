@@ -68,12 +68,37 @@ links:
     website: https://m.volmoe.com/l/all,%E6%97%A5%E6%9C%AC,%E5%AE%8C%E7%B5%90,score,all,s,BL,0,0/
 
   - title: 其他电子书搜索导航
-    description: 聚合型网址
+    description: 聚合型搜书网址1
     website: http://shu.ziyuandi.cn/
 
   - title: AO3扫盲手册
     description: AO3教程指南
     website: https://bai-fan-inc.gitbook.io/ao3guideforeveryone/mu-lu
+
+  - title: 书图汇
+    description: 聚合型搜书网址2
+    website: http://shutu.icu/dh/?continueFlag=41c4edfd11e4d41ef351f4e4043343a4%20%E2%80%8B%E2%80%8B%E2%80%8B%E2%80%8B
+
+  - title: 中国哲学书电子化计划
+    description: 中国历代传世文献
+    website: https://ctext.org/zhs
+
+  - title: 寻找谢烨
+    description: 谢烨作品不完全整理
+    website: https://shimo.im/docs/W86hYcgRdwhvc9CV
+
+  - title: 中国诗人资料馆
+    description: 内含国际诗歌库
+    website: http://www.shiren.org/?dt_dapp=1&continueFlag=cfea3c776e207d6956d714f592542618
+
+  - title: THEOI GREEK MYTHOLOGY
+    description: 希腊百科
+    website: https://www.theoi.com/
+
+  - title: 加勒里克斯在线博物馆
+    description: 世界著名画作速查
+    website: https://gallerix.asia/
+
 
 menu:
   main:
@@ -82,4 +107,5 @@ menu:
       icon: bookmark
 ---
 
+<img src="/images/blobcatgooglytrash.png" width=50px height=50px>
 这里存搜书链接，部分已被墙掉需要魔法。
