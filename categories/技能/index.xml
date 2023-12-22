@@ -20,14 +20,7 @@
 &lt;p>hugo server -D  &lt;/p>
 &lt;p>-D 选项用于显示草稿（如果有）。&lt;/p>
 &lt;p>然后，打开浏览器，访问 &lt;a class="link" href="http://localhost:1313/" target="_blank" rel="noopener"
->http://localhost:1313/&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>http://localhost:1313/&lt;/a>&lt;/p>
 &lt;p>你应该能够在本地预览你的博客，包括新创建的文章。&lt;/p>
 &lt;p>如果在预览中一切正常，你可以停止 Hugo 服务器，并运行以下命令来生成静态文件：&lt;/p>
 &lt;p>hugo&lt;/p>
@@ -48,14 +41,7 @@ fill="currentColor">
 &lt;p>在终端中运行以下命令：&lt;/p>
 &lt;p>hugo server -D&lt;/p>
 &lt;p>打开浏览器，访问 &lt;a class="link" href="http://localhost:1313/" target="_blank" rel="noopener"
->http://localhost:1313/&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>http://localhost:1313/&lt;/a>&lt;/p>
 &lt;p>查看你的修改是否生效。在预览中确认无误后，你可以继续下一步部署。 &lt;/p>
 &lt;h1 id="3发布带图文章">3.发布带图文章&lt;/h1>
 &lt;p>在 Hugo 中发布带有图片的文章需要你在 Markdown 文件中使用正确的语法来插入图片。&lt;/p>
@@ -70,14 +56,7 @@ imgsrc=&amp;quot;/img/hugo version.png&amp;quot;alt=&amp;ldquo;Alt Text&amp;quot
 &lt;p>在终端中运行以下命令：
 hugo server -D
 打开浏览器，访问 &lt;a class="link" href="http://localhost:1313/" target="_blank" rel="noopener"
->http://localhost:1313/&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&lt;/p>
+>http://localhost:1313/&lt;/a>&lt;/p>
 &lt;p>显示如下：&lt;/p>
 &lt;img src="https://springcecilia.blog/images/1.png" alt="Alt Text" style="width: 50px; height: auto;">
 &lt;p>&lt;strong>3.3调整图片大小：&lt;/strong>&lt;/p>
@@ -87,39 +66,19 @@ fill="currentColor">
 &lt;p>查看你的修改是否生效。在预览中确认无误后，你可以继续下一步部署。&lt;/p></description></item><item><title>【建站1】Hugo配置主题及生成</title><link>https://springcecilia.blog/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/</link><pubDate>Fri, 08 Dec 2023 17:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/</guid><description>&lt;p>hugo和其他各类博客类型了解：
 &lt;a class="link" href="https://cloud.tencent.com/developer/article/1917500" target="_blank" rel="noopener"
 >https://cloud.tencent.com/developer/article/1917500&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
 这里我选的是hugo。&lt;/p>
 &lt;h1 id="一前期准备">一.前期准备&lt;/h1>
 &lt;ol>
 &lt;li>
 &lt;p>&lt;strong>安装 Git:&lt;/strong>
 访问 &lt;a class="link" href="https://git-scm.com/download/win" target="_blank" rel="noopener"
->Git 官网&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-下载 Git 的最新版本。
+>Git 官网&lt;/a> 下载 Git 的最新版本。
 执行下载的安装程序，并按照提示进行安装。在 &amp;ldquo;Select Components&amp;rdquo; 阶段，确保选中 &amp;ldquo;Git Bash Here&amp;rdquo; 选项。&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>安装 Hugo:&lt;/strong>
 访问 &lt;a class="link" href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener"
->Hugo GitHub Releases&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-页面。
+>Hugo GitHub Releases&lt;/a> 页面。
 在 Assets 下找到适合 Windows 的 ZIP 文件（通常是 hugo_extended_X.XX.X_windows-64bit.zip）。
 下载 ZIP 文件，并解压到一个你喜欢的目录中（比如 C:\Hugo）。&lt;/p>
 &lt;/li>
@@ -204,14 +163,7 @@ ls
 &lt;li>
 &lt;p>&lt;strong>选择主题：&lt;/strong>&lt;/p>
 &lt;p>在 Hugo 中，主题通常以 Git 存储库的形式存在。你可以从&lt;a class="link" href="https://themes.gohugo.io/" target="_blank" rel="noopener"
->Hugo Themes&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-网站上选择一个主题。&lt;/p>
+>Hugo Themes&lt;/a>网站上选择一个主题。&lt;/p>
 &lt;p>在该主题的详情页面找到download跳转到 GitHub 界面，点击绿色的按键code便可复制git链接。&lt;/p>
 &lt;/li>
 &lt;li>
@@ -249,45 +201,17 @@ fill="currentColor">
 &lt;p>本地开发：&lt;/p>
 &lt;p>当你在本地开发时，可以将 baseURL 设置为本地服务器的地址，通常是 http://localhost:1313/，这样可确保本地预览。&lt;/p>
 &lt;p>code baseURL= &amp;ldquo;&lt;a class="link" href="http://localhost:1313/" target="_blank" rel="noopener"
->http://localhost:1313/&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&amp;rdquo;&lt;/p>
+>http://localhost:1313/&lt;/a>&amp;rdquo;&lt;/p>
 &lt;p>线上发布：&lt;/p>
 &lt;p>当你准备发布网站时，将 baseURL 设置为你实际的域名或者托管服务的地址。如果你使用自定义域名，确保包括协议（https 或 http）。&lt;/p>
 &lt;p>code baseURL= &amp;ldquo;&lt;a class="link" href="https://www.yourdomain.com/" target="_blank" rel="noopener"
->https://www.yourdomain.com/&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&amp;rdquo;&lt;/p>
+>https://www.yourdomain.com/&lt;/a>&amp;rdquo;&lt;/p>
 &lt;p>子路径或子目录：&lt;/p>
 &lt;p>如果你计划将网站发布到子路径或子目录下，确保在 baseURL 中包含子路径。
 例如，如果你将网站放在 &lt;a class="link" href="https://www.yourdomain.com/blog/" target="_blank" rel="noopener"
->https://www.yourdomain.com/blog/&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-下：&lt;/p>
+>https://www.yourdomain.com/blog/&lt;/a> 下：&lt;/p>
 &lt;p>code baseURL= &amp;ldquo;&lt;a class="link" href="https://www.yourdomain.com/blog/" target="_blank" rel="noopener"
->https://www.yourdomain.com/blog/&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-&amp;rdquo;&lt;/p>
+>https://www.yourdomain.com/blog/&lt;/a>&amp;rdquo;&lt;/p>
 &lt;p>总之，根据你的实际情况和计划，选择适当的 baseURL 设置。在网站发布之前，确保在本地测试环境中检查生成的链接是否正确。&lt;/p>
 &lt;/li>
 &lt;li>
@@ -298,4 +222,30 @@ fill="currentColor">
 &lt;h1 id="四运行-hugo">四.运行 Hugo&lt;/h1>
 &lt;pre>&lt;code>在博客根目录运行 Hugo，查看是否成功应用了主题的配置和样式。
 hugo server -D
-&lt;/code>&lt;/pre></description></item></channel></rss>
+&lt;/code>&lt;/pre></description></item><item><title>发布文章测试帖</title><link>https://springcecilia.blog/my-first-post/</link><pubDate>Fri, 08 Dec 2023 17:19:10 +0800</pubDate><guid>https://springcecilia.blog/my-first-post/</guid><description>&lt;p>密码：花的日语罗马音（四个字母）&lt;/p>
+&lt;div id="verification" style=" display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 20vh;">
+&lt;div id="entry-box">
+&lt;div id="secret-word" style=" font-size: 1.5rem;
+margin-bottom: 1rem;">Unlock to view this content.&lt;/div>
+&lt;form id="password-form" onsubmit="checkPassword(); return false;" style=" display: flex;
+flex-direction: column;
+width: auto;">
+&lt;input type="password" name="password" id="password" placeholder="Please enter password" required style="margin-bottom: 1.5rem;
+padding: 10px 20px;">
+&lt;input type="hidden" name="encryptedPassword" id="encrypted-password">
+&lt;input type="submit" value="Submit" name="submit" id="secret-submit" style=" padding: 10px 20px;
+cursor: pointer;" onmouseover="this.style.backgroundColor='#FAB005';"
+onmouseout="this.style.backgroundColor='';">
+&lt;/form>
+&lt;/div>
+&lt;div id="secret" style="display: none" password="hana">
+&lt;!-- 这里放置需要加密的内容 -->
+测试发布带图文章：
+![图1](/blog/myblog/static/img/1.png)
+调整大小：
+&lt;img src="https://springcecilia.blog/images/1.png" alt="Alt Text" style="width: 600px; height: auto;">
+&lt;/div>
+&lt;/div></description></item></channel></rss>
