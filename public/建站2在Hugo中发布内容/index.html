@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='1.发布纯文字的文章 1.1在命令行中创建'><title>【建站2】在Hugo中发布内容</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='1.发布纯文字的文章 1.1在命令行中创建'>
+<title>【建站2】在Hugo中发布内容</title>
 
 <link rel='canonical' href='https://springcecilia.blog/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/'>
 
-<link rel="stylesheet" href="/scss/style.min.29b361d23c14bd843d1eff4acc35dd5ca6484cb1f5e69e55904d2342192849cb.css"><meta property='og:title' content='【建站2】在Hugo中发布内容'>
+<link rel="stylesheet" href="/scss/style.min.966e31134c016829fab768fa323dc0ba9f3b19a60676bb9fd5ff6179f297bae3.css"><meta property='og:title' content='【建站2】在Hugo中发布内容'>
 <meta property='og:description' content='1.发布纯文字的文章 1.1在命令行中创建'>
 <meta property='og:url' content='https://springcecilia.blog/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/'>
 <meta property='og:site_name' content='Cecilia的博客'>
@@ -282,7 +283,53 @@
 
     </ol>
 </aside>
-<main class="main full-width">
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#1发布纯文字的文章">1.发布纯文字的文章</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#11在命令行中创建新文章">1.1在命令行中创建新文章</a></li>
+            <li><a href="#12编辑文章内容">1.2编辑文章内容</a></li>
+            <li><a href="#13运行-hugo-本地服务器进行预览">1.3运行 Hugo 本地服务器进行预览</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#2修改已经发布的-hugo-文章">2.修改已经发布的 Hugo 文章</a></li>
+    <li><a href="#3发布带图文章">3.发布带图文章</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
     <article class="main-article">
     <header class="article-header">
 
@@ -352,7 +399,7 @@
     
 </div>
 </header>
-    
+
     <section class="article-content">
     
     
@@ -378,17 +425,7 @@
 <p>hugo server -D  </p>
 <p>-D 选项用于显示草稿（如果有）。</p>
 <p>然后，打开浏览器，访问 <a class="link" href="http://localhost:1313/"  target="_blank" rel="noopener"
-    >http://localhost:1313/</a>
-
-    
-<span style="white-space: nowrap;"><svg width=".7em"
-    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-        fill="currentColor">
-</svg></span>
-
-</p>
+    >http://localhost:1313/</a></p>
 <p>你应该能够在本地预览你的博客，包括新创建的文章。</p>
 <p>如果在预览中一切正常，你可以停止 Hugo 服务器，并运行以下命令来生成静态文件：</p>
 <p>hugo</p>
@@ -409,17 +446,7 @@
 <p>在终端中运行以下命令：</p>
 <p>hugo server -D</p>
 <p>打开浏览器，访问 <a class="link" href="http://localhost:1313/"  target="_blank" rel="noopener"
-    >http://localhost:1313/</a>
-
-    
-<span style="white-space: nowrap;"><svg width=".7em"
-    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-        fill="currentColor">
-</svg></span>
-
-</p>
+    >http://localhost:1313/</a></p>
 <p>查看你的修改是否生效。在预览中确认无误后，你可以继续下一步部署。 </p>
 <h1 id="3发布带图文章">3.发布带图文章</h1>
 <p>在 Hugo 中发布带有图片的文章需要你在 Markdown 文件中使用正确的语法来插入图片。</p>
@@ -434,17 +461,7 @@ imgsrc=&quot;/img/hugo version.png&quot;alt=&ldquo;Alt Text&quot;width=&ldquo;50
 <p>在终端中运行以下命令：
 hugo server -D
 打开浏览器，访问 <a class="link" href="http://localhost:1313/"  target="_blank" rel="noopener"
-    >http://localhost:1313/</a>
-
-    
-<span style="white-space: nowrap;"><svg width=".7em"
-    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-        fill="currentColor">
-</svg></span>
-
-</p>
+    >http://localhost:1313/</a></p>
 <p>显示如下：</p>
 <img src="/images/1.png" alt="Alt Text" style="width: 50px; height: auto;">
 <p><strong>3.3调整图片大小：</strong></p>
@@ -480,18 +497,16 @@ hugo server -D
     </footer>
 
 
-
     
 </article>
 
     
-    
 
     
 
-<aside class="related-contents--wrapper">
-    <h2 class="section-title">Related contents</h2>
-    <div class="related-contents">
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
         <div class="flex article-list--tile">
             
                 
@@ -505,6 +520,7 @@ hugo server -D
         </div>
     </a>
 </article>
+
             
                 
 <article class="">
@@ -517,6 +533,7 @@ hugo server -D
         </div>
     </a>
 </article>
+
             
         </div>
     </div>
@@ -559,7 +576,7 @@ hugo server -D
         
     
     发表了3篇文章 · 
-    总计4.19k字
+    总计4.37k字
 
 </section>
 
@@ -648,8 +665,6 @@ hugo server -D
                 rel="stylesheet" 
                 href="https://Cecilia404404.github.io/css/photoswipe.css"crossorigin="anonymous"
             >
-
-    
 
             </main>
         </div>

@@ -19,6 +19,7 @@ params:
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
+        compact: false
         emoji:
         subtitle:
         avatar:
@@ -36,7 +37,7 @@ params:
 
     comments:
         enabled: false
-        provider: waline
+        provider: disqus
 
         disqusjs:
             shortname:
@@ -64,47 +65,25 @@ params:
             autoCreateIssue: false
 
         # Waline client configuration see: https://waline.js.org/en/reference/client.html
-        # Waline client configuration, see: https://waline.js.org/en/reference/client.html
         waline:
-            serverURL: https://my-waline-8mit71nhd-hanas-projects-4c182b9b.vercel.app/
-            lang: ['en', 'zh-cn', 'zh-tw', 'jp', 'fr']
-            visitor: false
-            avatar: 'https://www.gravatar.com/avatar/monsterid' # 请将 avatar 的值设置为 null，或者指定你的头像配置
+            serverURL:
+            lang:
+            visitor:
+            avatar:
             emoji:
-                - https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs
-
-            #requiredMeta:
-             #   - name
-             #   - email
-             #   - url
+                - https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo
+            requiredMeta:
+                - nick
+                - mail
+            placeholder:
             locale:
-                nick: '昵称(非必填)'
-                mail: '邮箱(非必填)'
-                mailError: '请填写正确的邮件地址'
-                link: '你的网站(非必填)'
-                placeholder: 
-                           注：
-                            如填写邮箱地址，博主回复时您可以获得邮箱通知（您的邮箱不会公开）；
-                            评论框自带表情是外接植入，左下方第四个放大镜按钮可预览您发出去前的评论效果；
-                            右下方的登录键为评论系统默认自带功能，并非必选项；
-                            如想要连续评论，第二条发太快可能会提交不了，等一会再点提交就好~
-
-
-            preview: '预览'
-            admin: '博主'
-            anonymous: '匿名'
-
-
-
+                admin: Admin
 
         twikoo:
-            envId: https://my-twikoo-sigma-ochre.vercel.app/
-            region: "ap-shanghai"
-            admin: '博主'
-            path: 
-            lang: ['zh-cn', 'zh-tw', 'en', 'jp', 'fr']
-            emoji:
-                - https://cdn.jsdelivr.net/gh/eallion/twemoji/emoji.owo.json
+            envId:
+            region:
+            path:
+            lang:
 
         giscus:
             repo:
@@ -112,10 +91,13 @@ params:
             category:
             categoryID:
             mapping:
+            strict:
             lightTheme:
             darkTheme:
             reactionsEnabled: 1
             emitMetadata: 0
+            inputPosition:
+            lang:
 
         gitalk:
             owner:
@@ -129,16 +111,8 @@ params:
             id:
 
     widgets:
-        enabled:
-            - search
-            - archives
-            - tag-cloud
-
-        archives:
-            limit: 5
-
-        tagCloud:
-            limit: 10
+        homepage: []
+        page: []
 
     opengraph:
         twitter:

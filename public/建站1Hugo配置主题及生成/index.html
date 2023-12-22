@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='此为针对不懂代码的小白的懒人版教程。'><title>【建站1】Hugo配置主题及生成</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='此为针对不懂代码的小白的懒人版教程。'>
+<title>【建站1】Hugo配置主题及生成</title>
 
 <link rel='canonical' href='https://springcecilia.blog/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/'>
 
-<link rel="stylesheet" href="/scss/style.min.29b361d23c14bd843d1eff4acc35dd5ca6484cb1f5e69e55904d2342192849cb.css"><meta property='og:title' content='【建站1】Hugo配置主题及生成'>
+<link rel="stylesheet" href="/scss/style.min.966e31134c016829fab768fa323dc0ba9f3b19a60676bb9fd5ff6179f297bae3.css"><meta property='og:title' content='【建站1】Hugo配置主题及生成'>
 <meta property='og:description' content='此为针对不懂代码的小白的懒人版教程。'>
 <meta property='og:url' content='https://springcecilia.blog/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/'>
 <meta property='og:site_name' content='Cecilia的博客'>
@@ -282,7 +283,44 @@
 
     </ol>
 </aside>
-<main class="main full-width">
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#一前期准备">一.前期准备</a></li>
+    <li><a href="#二创建博客">二.创建博客</a></li>
+    <li><a href="#三配置hugo主题模板">三.配置Hugo主题模板</a></li>
+    <li><a href="#四运行-hugo">四.运行 Hugo</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
     <article class="main-article">
     <header class="article-header">
 
@@ -322,7 +360,7 @@
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-save"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
             <time class="article-words">
-            约2732字，阅读大约需 6 分钟
+            约2734字，阅读大约需 6 分钟
             </time>
         </div>
     
@@ -356,56 +394,26 @@
     
 </div>
 </header>
-    
+
     <section class="article-content">
     
     
     <p>hugo和其他各类博客类型了解：
 <a class="link" href="https://cloud.tencent.com/developer/article/1917500"  target="_blank" rel="noopener"
     >https://cloud.tencent.com/developer/article/1917500</a>
-
-    
-<span style="white-space: nowrap;"><svg width=".7em"
-    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-        fill="currentColor">
-</svg></span>
-
-
 这里我选的是hugo。</p>
 <h1 id="一前期准备">一.前期准备</h1>
 <ol>
 <li>
 <p><strong>安装 Git:</strong>
 访问 <a class="link" href="https://git-scm.com/download/win"  target="_blank" rel="noopener"
-    >Git 官网</a>
-
-    
-<span style="white-space: nowrap;"><svg width=".7em"
-    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-        fill="currentColor">
-</svg></span>
-
- 下载 Git 的最新版本。
+    >Git 官网</a> 下载 Git 的最新版本。
 执行下载的安装程序，并按照提示进行安装。在 &ldquo;Select Components&rdquo; 阶段，确保选中 &ldquo;Git Bash Here&rdquo; 选项。</p>
 </li>
 <li>
 <p><strong>安装 Hugo:</strong>
 访问 <a class="link" href="https://github.com/gohugoio/hugo/releases"  target="_blank" rel="noopener"
-    >Hugo GitHub Releases</a>
-
-    
-<span style="white-space: nowrap;"><svg width=".7em"
-    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-        fill="currentColor">
-</svg></span>
-
- 页面。
+    >Hugo GitHub Releases</a> 页面。
 在 Assets 下找到适合 Windows 的 ZIP 文件（通常是 hugo_extended_X.XX.X_windows-64bit.zip）。
 下载 ZIP 文件，并解压到一个你喜欢的目录中（比如 C:\Hugo）。</p>
 </li>
@@ -492,17 +500,7 @@ ls
 <li>
 <p><strong>选择主题：</strong></p>
 <p>在 Hugo 中，主题通常以 Git 存储库的形式存在。你可以从<a class="link" href="https://themes.gohugo.io/"  target="_blank" rel="noopener"
-    >Hugo Themes</a>
-
-    
-<span style="white-space: nowrap;"><svg width=".7em"
-    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-        fill="currentColor">
-</svg></span>
-
-网站上选择一个主题。</p>
+    >Hugo Themes</a>网站上选择一个主题。</p>
 <p>在该主题的详情页面找到download跳转到 GitHub 界面，点击绿色的按键code便可复制git链接。</p>
 </li>
 <li>
@@ -540,57 +538,17 @@ ls
 <p>本地开发：</p>
 <p>当你在本地开发时，可以将 baseURL 设置为本地服务器的地址，通常是 http://localhost:1313/，这样可确保本地预览。</p>
 <p>code baseURL= &ldquo;<a class="link" href="http://localhost:1313/"  target="_blank" rel="noopener"
-    >http://localhost:1313/</a>
-
-    
-<span style="white-space: nowrap;"><svg width=".7em"
-    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-        fill="currentColor">
-</svg></span>
-
-&rdquo;</p>
+    >http://localhost:1313/</a>&rdquo;</p>
 <p>线上发布：</p>
 <p>当你准备发布网站时，将 baseURL 设置为你实际的域名或者托管服务的地址。如果你使用自定义域名，确保包括协议（https 或 http）。</p>
 <p>code baseURL= &ldquo;<a class="link" href="https://www.yourdomain.com/"  target="_blank" rel="noopener"
-    >https://www.yourdomain.com/</a>
-
-    
-<span style="white-space: nowrap;"><svg width=".7em"
-    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-        fill="currentColor">
-</svg></span>
-
-&rdquo;</p>
+    >https://www.yourdomain.com/</a>&rdquo;</p>
 <p>子路径或子目录：</p>
 <p>如果你计划将网站发布到子路径或子目录下，确保在 baseURL 中包含子路径。
 例如，如果你将网站放在 <a class="link" href="https://www.yourdomain.com/blog/"  target="_blank" rel="noopener"
-    >https://www.yourdomain.com/blog/</a>
-
-    
-<span style="white-space: nowrap;"><svg width=".7em"
-    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-        fill="currentColor">
-</svg></span>
-
- 下：</p>
+    >https://www.yourdomain.com/blog/</a> 下：</p>
 <p>code baseURL= &ldquo;<a class="link" href="https://www.yourdomain.com/blog/"  target="_blank" rel="noopener"
-    >https://www.yourdomain.com/blog/</a>
-
-    
-<span style="white-space: nowrap;"><svg width=".7em"
-    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
-    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-        fill="currentColor">
-</svg></span>
-
-&rdquo;</p>
+    >https://www.yourdomain.com/blog/</a>&rdquo;</p>
 <p>总之，根据你的实际情况和计划，选择适当的 baseURL 设置。在网站发布之前，确保在本地测试环境中检查生成的链接是否正确。</p>
 </li>
 <li>
@@ -631,18 +589,16 @@ hugo server -D
     </footer>
 
 
-
     
 </article>
 
     
-    
 
     
 
-<aside class="related-contents--wrapper">
-    <h2 class="section-title">Related contents</h2>
-    <div class="related-contents">
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
         <div class="flex article-list--tile">
             
                 
@@ -656,6 +612,7 @@ hugo server -D
         </div>
     </a>
 </article>
+
             
                 
 <article class="">
@@ -668,6 +625,7 @@ hugo server -D
         </div>
     </a>
 </article>
+
             
         </div>
     </div>
@@ -710,7 +668,7 @@ hugo server -D
         
     
     发表了3篇文章 · 
-    总计4.19k字
+    总计4.37k字
 
 </section>
 
@@ -799,8 +757,6 @@ hugo server -D
                 rel="stylesheet" 
                 href="https://Cecilia404404.github.io/css/photoswipe.css"crossorigin="anonymous"
             >
-
-    
 
             </main>
         </div>

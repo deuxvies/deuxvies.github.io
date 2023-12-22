@@ -34,17 +34,7 @@
 &lt;p&gt;hugo server -D  &lt;/p&gt;
 &lt;p&gt;-D 选项用于显示草稿（如果有）。&lt;/p&gt;
 &lt;p&gt;然后，打开浏览器，访问 &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;http://localhost:1313/&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
+    &gt;http://localhost:1313/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;你应该能够在本地预览你的博客，包括新创建的文章。&lt;/p&gt;
 &lt;p&gt;如果在预览中一切正常，你可以停止 Hugo 服务器，并运行以下命令来生成静态文件：&lt;/p&gt;
 &lt;p&gt;hugo&lt;/p&gt;
@@ -65,17 +55,7 @@
 &lt;p&gt;在终端中运行以下命令：&lt;/p&gt;
 &lt;p&gt;hugo server -D&lt;/p&gt;
 &lt;p&gt;打开浏览器，访问 &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;http://localhost:1313/&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
+    &gt;http://localhost:1313/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;查看你的修改是否生效。在预览中确认无误后，你可以继续下一步部署。 &lt;/p&gt;
 &lt;h1 id=&#34;3发布带图文章&#34;&gt;3.发布带图文章&lt;/h1&gt;
 &lt;p&gt;在 Hugo 中发布带有图片的文章需要你在 Markdown 文件中使用正确的语法来插入图片。&lt;/p&gt;
@@ -90,17 +70,7 @@ imgsrc=&amp;quot;/img/hugo version.png&amp;quot;alt=&amp;ldquo;Alt Text&amp;quot
 &lt;p&gt;在终端中运行以下命令：
 hugo server -D
 打开浏览器，访问 &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;http://localhost:1313/&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
+    &gt;http://localhost:1313/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;显示如下：&lt;/p&gt;
 &lt;img src=&#34;https://springcecilia.blog/images/1.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 50px; height: auto;&#34;&gt;
 &lt;p&gt;&lt;strong&gt;3.3调整图片大小：&lt;/strong&gt;&lt;/p&gt;
@@ -119,49 +89,19 @@ hugo server -D
         <description>&lt;p&gt;hugo和其他各类博客类型了解：
 &lt;a class=&#34;link&#34; href=&#34;https://cloud.tencent.com/developer/article/1917500&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://cloud.tencent.com/developer/article/1917500&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
 这里我选的是hugo。&lt;/p&gt;
 &lt;h1 id=&#34;一前期准备&#34;&gt;一.前期准备&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;安装 Git:&lt;/strong&gt;
 访问 &lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/download/win&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Git 官网&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
- 下载 Git 的最新版本。
+    &gt;Git 官网&lt;/a&gt; 下载 Git 的最新版本。
 执行下载的安装程序，并按照提示进行安装。在 &amp;ldquo;Select Components&amp;rdquo; 阶段，确保选中 &amp;ldquo;Git Bash Here&amp;rdquo; 选项。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;安装 Hugo:&lt;/strong&gt;
 访问 &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo GitHub Releases&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
- 页面。
+    &gt;Hugo GitHub Releases&lt;/a&gt; 页面。
 在 Assets 下找到适合 Windows 的 ZIP 文件（通常是 hugo_extended_X.XX.X_windows-64bit.zip）。
 下载 ZIP 文件，并解压到一个你喜欢的目录中（比如 C:\Hugo）。&lt;/p&gt;
 &lt;/li&gt;
@@ -248,17 +188,7 @@ ls
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;选择主题：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;在 Hugo 中，主题通常以 Git 存储库的形式存在。你可以从&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo Themes&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-网站上选择一个主题。&lt;/p&gt;
+    &gt;Hugo Themes&lt;/a&gt;网站上选择一个主题。&lt;/p&gt;
 &lt;p&gt;在该主题的详情页面找到download跳转到 GitHub 界面，点击绿色的按键code便可复制git链接。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -296,57 +226,17 @@ ls
 &lt;p&gt;本地开发：&lt;/p&gt;
 &lt;p&gt;当你在本地开发时，可以将 baseURL 设置为本地服务器的地址，通常是 http://localhost:1313/，这样可确保本地预览。&lt;/p&gt;
 &lt;p&gt;code baseURL= &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;http://localhost:1313/&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&amp;rdquo;&lt;/p&gt;
+    &gt;http://localhost:1313/&lt;/a&gt;&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;线上发布：&lt;/p&gt;
 &lt;p&gt;当你准备发布网站时，将 baseURL 设置为你实际的域名或者托管服务的地址。如果你使用自定义域名，确保包括协议（https 或 http）。&lt;/p&gt;
 &lt;p&gt;code baseURL= &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;https://www.yourdomain.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.yourdomain.com/&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&amp;rdquo;&lt;/p&gt;
+    &gt;https://www.yourdomain.com/&lt;/a&gt;&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;子路径或子目录：&lt;/p&gt;
 &lt;p&gt;如果你计划将网站发布到子路径或子目录下，确保在 baseURL 中包含子路径。
 例如，如果你将网站放在 &lt;a class=&#34;link&#34; href=&#34;https://www.yourdomain.com/blog/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.yourdomain.com/blog/&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
- 下：&lt;/p&gt;
+    &gt;https://www.yourdomain.com/blog/&lt;/a&gt; 下：&lt;/p&gt;
 &lt;p&gt;code baseURL= &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;https://www.yourdomain.com/blog/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.yourdomain.com/blog/&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&amp;rdquo;&lt;/p&gt;
+    &gt;https://www.yourdomain.com/blog/&lt;/a&gt;&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;总之，根据你的实际情况和计划，选择适当的 baseURL 设置。在网站发布之前，确保在本地测试环境中检查生成的链接是否正确。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -402,6 +292,77 @@ hugo server -D
 
 &lt;/div&gt;
 &lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>关于本站</title>
+        <link>https://springcecilia.blog/about/</link>
+        <pubDate>Sun, 28 Apr 2019 00:00:00 +0800</pubDate>
+        
+        <guid>https://springcecilia.blog/about/</guid>
+        <description>&lt;p&gt;Hello! 这里是Cecilia，称呼随意。&lt;/p&gt;
+&lt;h1&gt;关于博主&lt;/h1&gt;
+&lt;/p&gt;很懒很佛，脑洞混沌，享乐主义，不可知论者。&lt;/p&gt;
+&lt;p&gt;当读者的时刻比当作者的时刻要长，同人是探索生活的方式之一但不是全部。&lt;/p&gt;
+&lt;p&gt;非文科专业出身，瞎看看瞎写写，写文全靠三分钟热度，悟性不高，技巧永在摸索中......
+&lt;p&gt;&#34;In libris libertas.&#34;为博主喜爱的一句拉丁谚语，意为“在书中可拥有自由”。&lt;/p&gt;
+&lt;p&gt;祝大家不必在话语建构的世界里过分焦虑，进一步有一步的欢喜，退一步有退一步的从容。&lt;/p&gt;
+&lt;h1&gt;此站内容&lt;/h1&gt;
+&lt;p&gt;本站为博主的赛博存档地，大部分为文章存档，少量为博主自己的笔记、工具链接和收到的明信片。&lt;p&gt;
+&lt;p&gt;建站没啥技术含量，您看到的此博客是博主照葫芦画瓢搞出来的（。零基础的您也可以！&lt;/p&gt;
+&lt;p&gt;如有内容无法显示，很可能是需要魔法上网。&lt;/p&gt;
+&lt;p&gt;如想订阅，推荐使用RSS订阅。若您不熟悉传统的RSS订阅，可参考此教程&lt;a href=&#34;https://sspai.com/post/56391&#34;target=&#34;_blank&#34;&gt; 《高效获取信息，你需要这份 RSS 入门指南》&lt;/a&gt;，其他相关教程和工具也很多，博主自己用来订阅RSS的工具为Feedly。&lt;p&gt;
+&lt;h1&gt;联系方式&lt;/h1&gt;
+&lt;p&gt;博主建站时本想接入评论系统的，但因vercel的部署失败了好几次，遂放弃&lt;p&gt;
+&lt;p&gt;如想和我交流，有两种途径 ↓&lt;p&gt;
+&lt;p&gt; &lt;a href=&#34;https://peing.net/zh-CN/91e8000a0af399&#34; target=&#34;_blank&#34;&gt;（需魔法）匿名提问箱&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;（不需魔法）邮箱：springcecily@gmail.com&lt;p&gt;
+&lt;p&gt;有空时会回复~ &lt;img src=&#34;https://springcecilia.blog/images/blobcatflower.png&#34; width=50px height=50px &gt; &lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>标签</title>
+        <link>https://springcecilia.blog/tags/</link>
+        <pubDate>Sun, 07 Apr 2019 00:00:00 +0800</pubDate>
+        
+        <guid>https://springcecilia.blog/tags/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://springcecilia.blog/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://springcecilia.blog/search/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>归档</title>
+        <link>https://springcecilia.blog/%E5%BD%92%E6%A1%A3/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://springcecilia.blog/%E5%BD%92%E6%A1%A3/</guid>
+        <description>&lt;p&gt;这里存放其他资料和记录。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>收藏夹</title>
+        <link>https://springcecilia.blog/links/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://springcecilia.blog/links/</guid>
+        <description>&lt;img src=&#34;https://springcecilia.blog/images/blobcatgooglytrash.png&#34; width=50px height=50px&gt;
+这里存搜书链接，部分已被墙掉需要魔法。
+</description>
+        </item>
+        <item>
+        <title>相册</title>
+        <link>https://springcecilia.blog/%E7%9B%B8%E5%86%8C/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://springcecilia.blog/%E7%9B%B8%E5%86%8C/</guid>
+        <description>&lt;p&gt;这里存放了我收到的外国明信片和有意思的邮票。
+不分先后排序。&lt;/p&gt;
+</description>
         </item>
         
     </channel>

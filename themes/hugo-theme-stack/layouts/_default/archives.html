@@ -1,6 +1,7 @@
 {{ define "body-class" }}template-archives{{ end }}
 {{ define "main" }}
     <header>
+       
         {{- $taxonomy := $.Site.GetPage "taxonomyTerm" "categories" -}}
         {{- $terms := $taxonomy.Pages -}}
         {{ if $terms }}
@@ -13,10 +14,8 @@
             </div>
         </div>
         {{ end }}
+    </header>
 
-     
-  
-     </header>
     {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
     {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
     {{ $filtered := ($pages | intersect $notHidden) }}
@@ -35,5 +34,3 @@
 
     {{ partialCached "footer/footer" . }}
 {{ end }}
-
-

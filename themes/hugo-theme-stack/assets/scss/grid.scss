@@ -3,10 +3,12 @@
     margin-right: auto;
 
     .left-sidebar {
+        order: -3;
         max-width: var(--left-sidebar-max-width);
     }
 
     .right-sidebar {
+        order: -1;
         max-width: var(--right-sidebar-max-width);
 
         /// Display right sidebar when min-width: lg
@@ -24,8 +26,8 @@
 
         @include respond(lg) {
             max-width: 1280px;
-            --left-sidebar-max-width: 14%;
-            --right-sidebar-max-width: 22%;
+            --left-sidebar-max-width: 20%;
+            --right-sidebar-max-width: 30%;
         }
 
         @include respond(xl) {
@@ -73,6 +75,7 @@
 }
 
 main.main {
+    order: -2;
     min-width: 0;
     max-width: 100%;
     flex-grow: 1;

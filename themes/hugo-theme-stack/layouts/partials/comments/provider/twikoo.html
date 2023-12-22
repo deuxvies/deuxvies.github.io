@@ -1,4 +1,4 @@
-<script src="//cdn.jsdelivr.net/npm/twikoo@1.6.27/dist/twikoo.all.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/twikoo@1.6.21/dist/twikoo.all.min.js"></script>
 <div id="tcomment"></div>
 <style>
     .twikoo {
@@ -13,7 +13,9 @@
     }
     .twikoo .el-input-group__prepend,
     .twikoo .tk-action-icon,
+    .twikoo .tk-submit-action-icon,
     .twikoo .tk-time,
+    .twikoo .tk-comments-no,
     .twikoo .tk-comments-count {
         color: var(--twikoo-body-text-color);
     }
@@ -28,9 +30,13 @@
     .twikoo .el-button{
         color: var(--twikoo-body-text-color)!important;
     }
-
-    
-
+    .twikoo .el-input__count {
+        color: var(--twikoo-body-text-color) !important;
+    }
+    .OwO .OwO-body {
+        background-color: var(--body-background) !important;
+        color: var(--body-text-color) !important;
+    }
 </style>
 
 {{- with .Site.Params.comments.twikoo -}}
@@ -50,19 +56,3 @@
     })
 </script>
 {{- end -}}
-
-
-<style>
-    .twikoo {
-        /* 更改评论框大小 */
-        width: 100%!important; /* 设置评论框宽度为100% */
-
-        /* 更改评论框按键颜色 */
-        --twikoo-btn-background: #8c7851!important; /* 设置评论按钮背景颜色为绿色 */
-        --twikoo-btn-color: #fff!important; /* 设置评论按钮文字颜色为白色 */
-    }
-
-    /* 其他样式设置 */
-    /* ... */
-</style>
-

@@ -161,9 +161,3 @@ noClasses = false
 
 
 
-[[params.widgets.page]]
-type = "categories"
-
-  [params.widgets.page.params]
-  limit = 10
-

@@ -3,6 +3,7 @@ title: "发布文章测试帖"
 description: 建站测试
 date: 2023-12-08T17:19:10+08:00
 image: 
+categories: 技能
 tags: 
     - 建站记录
 license: springcecilia

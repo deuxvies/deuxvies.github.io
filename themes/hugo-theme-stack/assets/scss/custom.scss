@@ -1,79 +1,163 @@
 /* 更换背景 */
 :root {
-  --body-background: #f9f4ef;
-  --accent-color: #020826;
-  --accent-color-darker: #3a2044;
-  --accent-color-text: #FFF;
-  --body-text-color: #001858;
-}
-
-:root {
-  --card-background: #fffffe;
-  --card-background-selected: #f3d2c1;
-  --card-text-color-main: #01061d;
-  --card-text-color-secondary: #020826;
-  --card-text-color-tertiary: #020826;
-}
-
-.article-list article:nth-child(n) .article-category a {
-  background: #020826!important;
-  color: #fff;
-}
-
-.article-category a, .article-tags a {
-  background-color: #8c7851!important;
-  color: #fff;
-}
-
-
-:root {
-  /* 亮色模式 */
-  --section-total-count-color-light: #020826; /* 设置亮色模式下的文本颜色 */
-
-  /* 暗色模式 */
-  --section-total-count-color-dark: #fff; /* 设置暗色模式下的文本颜色 */
-
-  /* 其他样式变量... */
-}
-
-/* 在需要使用 section total count 的地方，使用以下代码 */
-.section-total-count {
-  color: var(--section-total-count-color-light); /* 默认为亮色模式下的颜色 */
-
-  /* 在暗色模式下，覆盖颜色为暗色模式下的颜色 */
-  &[data-scheme="dark"] {
-      color: var(--section-total-count-color-dark);
+    --body-background: #f9f4ef;
+    --accent-color: #020826;
+    --accent-color-darker: #3a2044;
+    --accent-color-text: #FFF;
+    --body-text-color: #001858;
   }
-}
-
-/* -------------------------动画部分--------------------------------------------- */
-
-/* 头像旋转动画 */
-.sidebar header .site-avatar .site-logo {
-  transition: transform 1.65s ease-in-out; /* 旋转时间 */
-}
-
-.sidebar header .site-avatar .site-logo:hover {
-  transform: rotate(360deg); /* 旋转角度为360度 */
-}
-
-
-
-/* 主页布局间距调整 */
-.main-container {
-  gap: 40px; // 文章宽度
-  @include respond(md) {
-      padding: 0 30px;
-      gap: 40px; // 中等屏幕时的文章宽度
+  
+  :root {
+    --card-background: #fffffe;
+    --card-background-selected: #f3d2c1;
+    --card-text-color-main: #020826;
+    --card-text-color-secondary: #020826;
+    --card-text-color-tertiary: #020826;
   }
-}
+  
+  .article-list article:nth-child(n) .article-category a {
+    background: #020826!important;
+    color: #fff;
+  }
+  
+  .article-category a, .article-tags a {
+    background-color: #8c7851!important;
+    color: #fff;
+  }
+  
+  
+  :root {
+    /* 亮色模式 */
+    --section-total-count-color-light: #020826; /* 设置亮色模式下的文本颜色 */
+  
+    /* 暗色模式 */
+    --section-total-count-color-dark: #fff; /* 设置暗色模式下的文本颜色 */
+  
+    /* 其他样式变量... */
+  }
+  
+  /* 在需要使用 section total count 的地方，使用以下代码 */
+  .section-total-count {
+    color: var(--section-total-count-color-light); /* 默认为亮色模式下的颜色 */
+  
+    /* 在暗色模式下，覆盖颜色为暗色模式下的颜色 */
+    &[data-scheme="dark"] {
+        color: var(--section-total-count-color-dark);
+    }
+  }
+  
+  /* -------------------------动画部分--------------------------------------------- */
+  
+  /* 头像旋转动画 */
+  .sidebar header .site-avatar .site-logo {
+    transition: transform 1.65s ease-in-out; /* 旋转时间 */
+  }
+  
+  .sidebar header .site-avatar .site-logo:hover {
+    transform: rotate(360deg); /* 旋转角度为360度 */
+  }
+  
+  
+  
+  /* 主页布局间距调整 */
+  .main-container {
+    gap: 40px; // 文章宽度
+    @include respond(md) {
+        padding: 0 30px;
+        gap: 40px; // 中等屏幕时的文章宽度
+    }
+  }
+  
+  .related-contents {
+    overflow-x: visible; // 显示隐藏的图标
+    padding-bottom: 15px;
+  }
 
-.related-contents {
-  overflow-x: visible; // 显示隐藏的图标
-  padding-bottom: 15px;
-}
+  
+/* ---------------------------------------右侧导航栏----------------------------------- */
+/* 搜索菜单动画 */
+.search-form.widget {
+    transition: transform 0.6s ease;
+  }
+  
+  .search-form.widget:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  /* 归档小图标放大动画 */
+  .widget.archives .widget-archive--list {
+    transition: transform 0.3s ease;
+  }
+  
+  .widget.archives .widget-archive--list:hover {
+    transform: scale(1.05, 1.05);
+  }
+  
+  /* 右侧标签放大动画 */
+  .tagCloud .tagCloud-tags a {
+    border-radius: 10px;
+    font-size: 1.4rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .tagCloud .tagCloud-tags a:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  /* -------------------------------------归档页面-------------------------------------- */
+  /* 归档页面卡片缩放 */
+  .article-list--tile article {
+    transition: 0.6s ease;
+  }
+  
+  .article-list--tile article:hover {
+    transform: scale(1.03, 1.03);
+  }
+  
+  // 归档页面2栏
+  @media (min-width: 1024px) {
+    .article-list--compact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: none;
+        box-shadow: none;
+        gap: 2rem;
+  
+        article {
+            background: var(--card-background);
+            border: none;
+            box-shadow: var(--shadow-l2);
+            margin-bottom: 8px;
+            border-radius: 10px;
+        }
+    }
+  }
+  
+  /* ----------------------------------------*-链接页面------------------------------------------ */
+  /* 友情链接设置成三栏样式 */
+  @media (min-width: 1024px) {
+    .article-list--compact.links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background: none;
+        box-shadow: none;
+        gap: 1rem;
+  
+        article {
+            background: var(--card-background);
+            border: none;
+            box-shadow: var(--shadow-l2);
+            margin-bottom: 8px;
+            border-radius: var(--card-border-radius);
+  
+            &:nth-child(odd) {
+                margin-right: 8px;
+            }
+        }
+    }
+  }
 
-/* ----------------------------------主页文章图片样式------------------------------------ */
+  /* ----------------------------------主页文章图片样式------------------------------------ */
 $image-scale: 1.2;
 .article-list article .article-image img {
   width: 100%;
@@ -148,215 +232,190 @@ $image-scale: 1.2;
 
 
 
-/* ---------------------------------------右侧导航栏----------------------------------- */
-/* 搜索菜单动画 */
-.search-form.widget {
-  transition: transform 0.6s ease;
-}
-
-.search-form.widget:hover {
-  transform: scale(1.1, 1.1);
-}
-
-/* 归档小图标放大动画 */
-.widget.archives .widget-archive--list {
-  transition: transform 0.3s ease;
-}
-
-.widget.archives .widget-archive--list:hover {
-  transform: scale(1.05, 1.05);
-}
-
-/* 右侧标签放大动画 */
-.tagCloud .tagCloud-tags a {
-  border-radius: 10px;
-  font-size: 1.4rem;
-  transition: transform 0.3s ease;
-}
-
-.tagCloud .tagCloud-tags a:hover {
-  transform: scale(1.1, 1.1);
-}
-
-/* -------------------------------------归档页面-------------------------------------- */
-/* 归档页面卡片缩放 */
-.article-list--tile article {
-  transition: 0.6s ease;
-}
-
-.article-list--tile article:hover {
-  transform: scale(1.03, 1.03);
-}
-
-// 归档页面2栏
-@media (min-width: 1024px) {
-  .article-list--compact {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      background: none;
-      box-shadow: none;
-      gap: 2rem;
-
-      article {
-          background: var(--card-background);
-          border: none;
-          box-shadow: var(--shadow-l2);
-          margin-bottom: 8px;
-          border-radius: 10px;
-      }
-  }
-}
-
-/* ----------------------------------------*-链接页面------------------------------------------ */
-/* 友情链接设置成三栏样式 */
-@media (min-width: 1024px) {
-  .article-list--compact.links {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      background: none;
-      box-shadow: none;
-      gap: 1rem;
-
-      article {
-          background: var(--card-background);
-          border: none;
-          box-shadow: var(--shadow-l2);
-          margin-bottom: 8px;
-          border-radius: var(--card-border-radius);
-
-          &:nth-child(odd) {
-              margin-right: 8px;
-          }
-      }
-  }
-}
-
-
-/* ------------------------------------调整目录&菜单---------------------------------- */
-/* toc style */
-.toc {
-  position: fixed;
-  top: 50%;
-  right: 10%;
-  width: 10%;
-  transform: translateY(-50%);
-  /*background-color: #f6f6f6;*/
-  /*border: solid 1px #c9c9c9;*/
-  border-radius: 5px;
-  padding-bottom: 1rem;
-}
-
-.toc .page-header {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.toc-nav ul {
-  overflow:hidden;
-  white-space:nowrap;
-  line-height: 1rem;
-}
-
-/* ignore h1 header */
-.toc-nav ul ul ul {
-  margin-left: 2rem;
-}
-
-.toc-nav .nav-link {
-  text-overflow:ellipsis;
-  overflow:hidden;
-  color: #333;
-}
-
-.toc-nav li.active .nav-link {
-  background-color: #f6f6f6;
-  color: var(--accent);
-  border-left: solid 2px var(--accent);
-}
-
-/* Media Queries */
-@media (max-width: 1080px) {
-  main {
-      max-width: 100%;
-  }
-  .toc {
-      display: none;
-  }
-}
-
-
 /*------------------------------修改页面布局--------------------------*/
 .container {
-  margin-left: auto;
-  margin-right: auto;
-
-  &.extended {
-      /* range: 768-1024 */
-      @include respond(md) {
-          max-width: 1024px;
-          --left-sidebar-max-width: 25%;
-          --right-sidebar-max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  
+    &.extended {
+        /* range: 768-1024 */
+        @include respond(md) {
+            max-width: 1024px;
+            --left-sidebar-max-width: 25%;
+            --right-sidebar-max-width: 30%;
+        }
+  
+        /* range: 1024-1280 */
+        @include respond(lg) {
+            max-width: 1280px;
+            --left-sidebar-max-width: 20%;
+            --right-sidebar-max-width: 20%;
+        }
+    }
+  
+    &.compact {
+        @include respond(md) {
+            --left-sidebar-max-width: 25%;
+            max-width: 768px;
+        }
+  
+        @include respond(lg) {
+            max-width: 1024px;
+            --left-sidebar-max-width: 20%;
+        }
+  
+        @include respond(xl) {
+            max-width: 1280px;
+        }
+    }
+  }
+  
+  /*--------------------------滚动条修改--------------------------*/
+  html{
+    ::-webkit-scrollbar {
+        width: 20px;
       }
-
-      /* range: 1024-1280 */
-      @include respond(lg) {
-          max-width: 1280px;
-          --left-sidebar-max-width: 20%;
-          --right-sidebar-max-width: 20%;
+      
+      ::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background-color: #d6dee1;
+        border-radius: 20px;
+        border: 6px solid transparent;
+        background-clip: content-box;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #a8bbbf;
       }
   }
-
-  &.compact {
-      @include respond(md) {
-          --left-sidebar-max-width: 25%;
-          max-width: 768px;
-      }
-
-      @include respond(lg) {
-          max-width: 1024px;
-          --left-sidebar-max-width: 20%;
-      }
-
-      @include respond(xl) {
-          max-width: 1280px;
-      }
+  
+  /*修改全站字体*/
+  :root {
+    --sys-font-family: 'Noto Serif SC', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      'Droid Sans', 'Helvetica Neue';
+    --zh-font-family: 'Noto Serif SC', 'Hiragino Sans GB', 'Droid Sans Fallback',
+      'Microsoft YaHei';
+    --base-font-family: 'Noto Serif SC', var(--sys-font-family);
   }
-}
-
-/*--------------------------滚动条修改--------------------------*/
-html{
-  ::-webkit-scrollbar {
-      width: 20px;
-    }
+  
+  
+  
+  /* 行内代码颜色 */
+  :root {
+    // 行内代码背景色
+    --code-background-color: #f8f8f8;
+    // 行内代码前景色
+    --code-text-color: #e96900;
+  }
+  
+  
+  /* 分类页面隐藏文章图片，也会隐藏友链图片 */
+  .article-list--compact>article .article-image img,
+  .section-card .section-image img {
+      display: none;
+  }
+  
+  
+  /*修复代码出框*/
+  code {
+    color: var(--code-text-color);
+    background-color: var(--code-background-color);
+    padding: 2px 4px;
+    border-radius: var(--tag-border-radius);
+    font-family: var(--code-font-family);
+    word-wrap: break-word; //允许长单词或 URL 地址换行到下一行
     
-    ::-webkit-scrollbar-track {
-      background-color: transparent;
+  }
+  
+
+  /* search栏默认样式，用于大屏幕 */
+
+/* 移动屏幕样式，屏幕宽度小于某个阈值时显示搜索栏 */
+@media (max-width: 800px) {
+    .right-sidebar {
+        top: 0; /* 顶部距离 */
+        display: block; /* 显示搜索栏 */
+        z-index: 9999; /* 确保搜索栏在其他元素之上 */
+        margin-top: 20px; /* 可根据需要调整上边距 */
+        overflow-y: auto; /* 允许纵向滚动 */
+        padding: 10px; /* 可根据需要调整内边距 */
     }
-    
-    ::-webkit-scrollbar-thumb {
-      background-color: #d6dee1;
-      border-radius: 20px;
-      border: 6px solid transparent;
-      background-clip: content-box;
+  
+    /* 设置搜索栏与其他元素的底部间距 */
+    .search-form {
+      margin-bottom: 20px; /* 根据需要调整间距 */
     }
-    
-    ::-webkit-scrollbar-thumb:hover {
-      background-color: #a8bbbf;
+  
+    /* 设置标签栏与分类之间的间距 */
+    .tagCloud {
+      margin-bottom: 20px; /* 根据需要调整间距 */
     }
-}
+  
+    /* 设置分类与其他元素的间距 */
+    .categories {
+      margin-bottom: 40px; /* 根据需要调整间距 */
+    }
+  }
 
-/*修改全站字体*/
-:root {
-  --sys-font-family: 'Noto Serif SC', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    'Droid Sans', 'Helvetica Neue';
-  --zh-font-family: 'Noto Serif SC', 'Hiragino Sans GB', 'Droid Sans Fallback',
-    'Microsoft YaHei';
-  --base-font-family: 'Noto Serif SC', var(--sys-font-family);
-}
+  
+  /* ------------------------------------调整目录&菜单---------------------------------- */
+/* toc style */
+.toc {
+    position: fixed;
+    top: 50%;
+    right: 10%;
+    width: 10%;
+    transform: translateY(-50%);
+    /*background-color: #f6f6f6;*/
+    /*border: solid 1px #c9c9c9;*/
+    border-radius: 5px;
+    padding-bottom: 1rem;
+  }
+  
+  .toc .page-header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .toc-nav ul {
+    overflow:hidden;
+    white-space:nowrap;
+    line-height: 1rem;
+  }
+  
+  /* ignore h1 header */
+  .toc-nav ul ul ul {
+    margin-left: 2rem;
+  }
+  
+  .toc-nav .nav-link {
+    text-overflow:ellipsis;
+    overflow:hidden;
+    color: #333;
+  }
+  
+  .toc-nav li.active .nav-link {
+    background-color: #f6f6f6;
+    color: var(--accent);
+    border-left: solid 2px var(--accent);
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1080px) {
+    main {
+        max-width: 100%;
+    }
+    .toc {
+        display: none;
+    }
+  }
+  
 
 
-
-/* 行内代码颜色 */
+  /* 行内代码颜色 */
 :root {
   // 行内代码背景色
   --code-background-color: #f8f8f8;
@@ -364,51 +423,4 @@ html{
   --code-text-color: #e96900;
 }
 
-
-/* 分类页面隐藏文章图片，也会隐藏友链图片 */
-.article-list--compact>article .article-image img,
-.section-card .section-image img {
-    display: none;
-}
-
-
-/*修复代码出框*/
-code {
-  color: var(--code-text-color);
-  background-color: var(--code-background-color);
-  padding: 2px 4px;
-  border-radius: var(--tag-border-radius);
-  font-family: var(--code-font-family);
-  word-wrap: break-word; //允许长单词或 URL 地址换行到下一行
   
-}
-
-/* search栏默认样式，用于大屏幕 */
-
-/* 移动屏幕样式，屏幕宽度小于某个阈值时显示搜索栏 */
-@media (max-width: 800px) {
-  .right-sidebar {
-      top: 0; /* 顶部距离 */
-      display: block; /* 显示搜索栏 */
-      z-index: 9999; /* 确保搜索栏在其他元素之上 */
-      margin-top: 20px; /* 可根据需要调整上边距 */
-      overflow-y: auto; /* 允许纵向滚动 */
-      padding: 10px; /* 可根据需要调整内边距 */
-  }
-
-  /* 设置搜索栏与其他元素的底部间距 */
-  .search-form {
-    margin-bottom: 20px; /* 根据需要调整间距 */
-  }
-
-  /* 设置标签栏与分类之间的间距 */
-  .tagCloud {
-    margin-bottom: 20px; /* 根据需要调整间距 */
-  }
-
-  /* 设置分类与其他元素的间距 */
-  .categories {
-    margin-bottom: 40px; /* 根据需要调整间距 */
-  }
-}
-
