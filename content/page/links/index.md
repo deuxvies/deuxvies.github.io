@@ -1,6 +1,5 @@
 ---
 title: 收藏夹
-slug: links
 comments: false  # 添加这一行，表示关闭评论
 
 

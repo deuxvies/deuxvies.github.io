@@ -197,3 +197,37 @@
         }
     }
 }
+
+
+.site-avatar {
+    position: relative;
+    margin-right: auto; // 站点头像居中
+    margin-left: auto; // 站点头像居中
+    width: var(--sidebar-avatar-size);
+    height: var(--sidebar-avatar-size);
+    text-align: center; // 确保站点头像居中
+
+    .site-name,
+    .site-description {
+        text-align: center; // 确保站点名称和站点描述也居中
+    }
+}
+
+.site-name {
+    color: var(--accent-color);
+    font-size: 1.8rem;
+
+    @include respond(2xl) {
+        font-size: 2rem;
+    }
+}
+
+.site-description {
+    color: var(--body-text-color);
+    font-weight: normal;
+    font-size: 1.6rem;
+
+    @include respond(2xl) {
+        font-size: 1.7rem;
+    }
+}

@@ -97,7 +97,7 @@ weight = -100
 [[menu.social]]
 identifier = "Lofter"
 name = "Lofter"
-url = "https://www.lofter.com/blog/springcecilia"
+url = "https://springcecilia.lofter.com/"
 
   [menu.social.params]
   icon = "Lofter"

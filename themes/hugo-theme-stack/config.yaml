@@ -37,7 +37,7 @@ params:
 
     comments:
         enabled: false
-        provider: disqus
+        provider: waline
 
         disqusjs:
             shortname:
@@ -66,22 +66,22 @@ params:
 
         # Waline client configuration see: https://waline.js.org/en/reference/client.html
         waline:
-            serverURL:
-            lang:
-            visitor:
+            serverURL: www.springcecilia.blog
+            lang: 
+            visitor: 
             avatar:
             emoji:
-                - https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo
-            requiredMeta:
-                - nick
-                - mail
-            placeholder:
+                - https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs
+            placeholder: 欢迎评论。昵称、邮箱、网址皆为非必填项，如留下邮箱，博主回复可收到通知~
             locale:
-                admin: Admin
+                admin: 博主
+
+            
+
 
         twikoo:
-            envId:
-            region:
+            envId: https://my-twikoo-sigma-ochre.vercel.app/
+            region: ap-shanghai
             path:
             lang:
 

@@ -9,7 +9,7 @@
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 55px;
+    right: 70px;
     width: 55px;
     height: 55px;
     border-radius: 7px;
@@ -41,8 +41,8 @@
   /* 在屏幕宽度小于 768 像素时，钮位置调整 */
   @media screen and (max-width: 768px) {
     #back-to-top {
-      bottom: 20px;
-      right: 20px;
+      bottom: 80px;
+      right: 15px;
       width: 40px;
       height: 40px;
       font-size: 10px;
@@ -52,16 +52,16 @@
   /* 在屏幕宽度大于等于 1024 像素时，按钮位置调整 */
   @media screen and (min-width: 1024px) {
     #back-to-top {
-      bottom: 20px;
-      right: 40px;
+      bottom: 80px;
+      right: 15px;
     }
   }
 
   /* 在屏幕宽度大于等于 1280 像素时，按钮位置调整 */
   @media screen and (min-width: 1280px) {
     #back-to-top {
-      bottom: 20px;
-      right: 55px;
+      bottom: 100px;
+      right: 20px;
     }
   }
 
@@ -119,4 +119,12 @@
 
   let result = days + "天" + hours + "小时" + minutes + "分钟";
   document.getElementById('runningdays').innerHTML = result;
+</script>
+
+<script>
+  (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+
+  ChannelIO('boot', {
+    "pluginKey": "1f6a9957-560f-42a2-aaf5-ffe3e9d046b8"
+  });
 </script>

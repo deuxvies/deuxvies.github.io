@@ -17,6 +17,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --accent-color-darker: #2c3e50;
     --accent-color-text: #fff;
     --body-text-color: #707070;
+    --emphasize-text-color: #34495e; // Add emphasize font color
 
     --tag-border-radius: 24px;
     --category-border-radius: 4px;
@@ -27,12 +28,13 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 
     &[data-scheme="dark"] {
         --body-background: #303030;
-        --accent-color: #ecf0f1;
-        --accent-color-darker: #bdc3c7;
+        --accent-color: #ffffff;
+        --accent-color-darker: #fcfeff;
         --accent-color-text: #000;
         --body-text-color: rgba(255, 255, 255, 0.7);
         --scrollbar-thumb: hsl(0, 0%, 40%);
         --scrollbar-track: var(--body-background);
+        --emphasize-text-color: #ffffff; // Add emphasize font color for dark scheme
     }
 }
 

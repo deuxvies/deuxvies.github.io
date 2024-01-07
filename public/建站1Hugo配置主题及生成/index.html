@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='此为针对不懂代码的小白的懒人版教程。'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='hugo和其他各类博客类型了解： https://cloud.tencent.com/developer/article/1917500 这里我'>
 <title>【建站1】Hugo配置主题及生成</title>
 
 <link rel='canonical' href='https://springcecilia.blog/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/'>
 
-<link rel="stylesheet" href="/scss/style.min.966e31134c016829fab768fa323dc0ba9f3b19a60676bb9fd5ff6179f297bae3.css"><meta property='og:title' content='【建站1】Hugo配置主题及生成'>
-<meta property='og:description' content='此为针对不懂代码的小白的懒人版教程。'>
+<link rel="stylesheet" href="/scss/style.min.253a82192c5aa272da71f3f5defacbbcd9f5dac3482d81997bad6810e81005d7.css"><meta property='og:title' content='【建站1】Hugo配置主题及生成'>
+<meta property='og:description' content='hugo和其他各类博客类型了解： https://cloud.tencent.com/developer/article/1917500 这里我'>
 <meta property='og:url' content='https://springcecilia.blog/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/'>
 <meta property='og:site_name' content='Cecilia的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='建站记录' /><meta property='article:published_time' content='2023-12-08T17:34:26&#43;08:00'/><meta property='article:modified_time' content='2023-12-08T17:34:26&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='建站记录' /><meta property='article:published_time' content='2024-01-01T17:34:26&#43;08:00'/><meta property='article:modified_time' content='2024-01-01T17:34:26&#43;08:00'/>
 <meta name="twitter:title" content="【建站1】Hugo配置主题及生成">
-<meta name="twitter:description" content="此为针对不懂代码的小白的懒人版教程。">
+<meta name="twitter:description" content="hugo和其他各类博客类型了解： https://cloud.tencent.com/developer/article/1917500 这里我">
     <link rel="shortcut icon" href="img/favicon.png" />
 
 <style>
@@ -116,7 +116,7 @@
             
                 <li>
                     <a 
-                        href='https://www.lofter.com/blog/springcecilia'
+                        href='https://springcecilia.lofter.com/'
                         target="_blank"
                         title="Lofter"
                     >
@@ -223,7 +223,7 @@
         
 
         <li >
-            <a href='/links/' >
+            <a href='/%E6%94%B6%E8%97%8F%E5%A4%B9/' >
                 
                 
                 
@@ -306,9 +306,30 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#一前期准备">一.前期准备</a></li>
-    <li><a href="#二创建博客">二.创建博客</a></li>
-    <li><a href="#三配置hugo主题模板">三.配置Hugo主题模板</a></li>
+    <li><a href="#前期准备">前期准备</a>
+      <ol>
+        <li><a href="#安装-git">安装 Git</a></li>
+        <li><a href="#安装vscode">安装VScode  </a></li>
+        <li><a href="#安装-hugo">安装 Hugo</a>
+          <ol>
+            <li><a href="#重要添加环境变量">（重要！）添加环境变量</a></li>
+          </ol>
+        </li>
+        <li><a href="#安装go语言">安装go语言</a></li>
+      </ol>
+    </li>
+    <li><a href="#2创建博客">2.创建博客</a>
+      <ol>
+        <li><a href="#打开git-bash">打开Git Bash</a></li>
+      </ol>
+    </li>
+    <li><a href="#3配置hugo主题模板">3.配置Hugo主题模板</a>
+      <ol>
+        <li><a href="#选择主题">选择主题</a></li>
+        <li><a href="#在博客目录中添加主题">在博客目录中添加主题</a></li>
+        <li><a href="#保存配置文件">保存配置文件</a></li>
+      </ol>
+    </li>
     <li><a href="#四运行-hugo">四.运行 Hugo</a></li>
   </ol>
 </nav>
@@ -333,10 +354,6 @@
         </h2>
     
         
-        <h3 class="article-subtitle">
-            此为针对不懂代码的小白的懒人版教程。
-        </h3>
-        
     </div>
 
     
@@ -352,7 +369,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2023-12-08</time>
+                <time class="article-time--published">2024-01-01</time>
             </div>
         
 
@@ -360,7 +377,7 @@
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-save"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
             <time class="article-words">
-            约2734字，阅读大约需 6 分钟
+            约3414字，阅读大约需 8 分钟
             </time>
         </div>
     
@@ -396,173 +413,297 @@
 </header>
 
     <section class="article-content">
-    
-    
-    <p>hugo和其他各类博客类型了解：
+  
+<section class="toc toc--inline">
+    <h2 class="">Table of contents</h2>
+    <div class="" >
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#前期准备">前期准备</a>
+      <ol>
+        <li><a href="#安装-git">安装 Git</a></li>
+        <li><a href="#安装vscode">安装VScode  </a></li>
+        <li><a href="#安装-hugo">安装 Hugo</a>
+          <ol>
+            <li><a href="#重要添加环境变量">（重要！）添加环境变量</a></li>
+          </ol>
+        </li>
+        <li><a href="#安装go语言">安装go语言</a></li>
+      </ol>
+    </li>
+    <li><a href="#2创建博客">2.创建博客</a>
+      <ol>
+        <li><a href="#打开git-bash">打开Git Bash</a></li>
+      </ol>
+    </li>
+    <li><a href="#3配置hugo主题模板">3.配置Hugo主题模板</a>
+      <ol>
+        <li><a href="#选择主题">选择主题</a></li>
+        <li><a href="#在博客目录中添加主题">在博客目录中添加主题</a></li>
+        <li><a href="#保存配置文件">保存配置文件</a></li>
+      </ol>
+    </li>
+    <li><a href="#四运行-hugo">四.运行 Hugo</a></li>
+  </ol>
+</nav>
+
+    </div>
+</section>
+
+  
+  
+  <p>hugo和其他各类博客类型了解：
 <a class="link" href="https://cloud.tencent.com/developer/article/1917500"  target="_blank" rel="noopener"
     >https://cloud.tencent.com/developer/article/1917500</a>
-这里我选的是hugo。</p>
-<h1 id="一前期准备">一.前期准备</h1>
-<ol>
-<li>
-<p><strong>安装 Git:</strong>
-访问 <a class="link" href="https://git-scm.com/download/win"  target="_blank" rel="noopener"
-    >Git 官网</a> 下载 Git 的最新版本。
-执行下载的安装程序，并按照提示进行安装。在 &ldquo;Select Components&rdquo; 阶段，确保选中 &ldquo;Git Bash Here&rdquo; 选项。</p>
-</li>
-<li>
-<p><strong>安装 Hugo:</strong>
-访问 <a class="link" href="https://github.com/gohugoio/hugo/releases"  target="_blank" rel="noopener"
-    >Hugo GitHub Releases</a> 页面。
-在 Assets 下找到适合 Windows 的 ZIP 文件（通常是 hugo_extended_X.XX.X_windows-64bit.zip）。
-下载 ZIP 文件，并解压到一个你喜欢的目录中（比如 C:\Hugo）。</p>
-</li>
-<li>
-<p><strong>（重要！）添加环境变量:</strong></p>
-<p>将解压得到的 hugo.exe 文件的路径（比如 C:\Hugo\hugo.exe）添加到系统的 PATH 变量中，以便在任何地方都能够在命令提示符中访问 Hugo。</p>
-<p>在 Windows 上将 Hugo可执行文件的路径添加到系统的 PATH 变量中可以通过以下步骤完成：</p>
-<p>获取 Hugo 可执行文件路径：</p>
-<p>打开 File Explorer（资源管理器），导航到你解压 Hugo ZIP 文件的目录。
-找到 hugo.exe 文件。记住 hugo.exe 的完整路径，
-比如 C:\Hugo\hugo.exe。</p>
-<p>打开系统环境变量设置：</p>
-<p>右键点击计算机（桌面上或开始菜单中），选择 &ldquo;属性&rdquo;。
-在左侧面板中，点击 &ldquo;高级系统设置&rdquo;。
-在打开的窗口中，点击 &ldquo;环境变量&rdquo; 按钮。</p>
-<p>编辑系统 PATH 变量：</p>
-<p>在环境变量窗口中，找到 &ldquo;系统变量&rdquo; 部分，找到并选中 &ldquo;Path&rdquo; 变量，然后点击 &ldquo;编辑&rdquo; 按钮。</p>
-<p>添加 Hugo 可执行文件路径：</p>
-<p>在 &ldquo;编辑环境变量&rdquo; 窗口中，点击 &ldquo;新建&rdquo; 按钮。
-输入 Hugo 可执行文件的完整路径（例如，C:\Hugo）。
+
+    
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+</p>
+<p>这里我选的是用Hugo搭建，比较简洁，wordpress对我来说太臃肿了访问也慢。Hugo内容可以在本地，备份比较方便和稳定。<p>
+<p><strong>注：</strong></p>
+<p>博主非计算机专业，对代码一窍不通；</p>
+<p>此搭建记录使用的电脑系统为windows，不适用Linux、mac人群；</p>
+<p>建博用的工具为Git、Hugo、VScode（写代码工具）；部署用的是GitHub   </p>
+<p>搭建过程需要：稳定的魔法工具、能访问Github、少量英语阅读能力以及基础的信息检索能力、电脑操作能力、足够的本地磁盘容量。    </p>
+<hr>
+<h1 id="前期准备">前期准备</h1>
+<h2 id="安装-git">安装 Git</h2>
+<p><strong>何为git？</strong></p>
+<p>Git就是一个搭建博客时用来推送源代码、跟踪文件的变化、记录每次修改、保存历史版本的工具。你后期更新博客的样式、文章等等都是修改后通过Git来推送。</p>
+<p><strong>Git安装步骤：</strong></p>
+<p>1）去 <a class="link" href="https://git-scm.com/download/win"  target="_blank" rel="noopener"
+    >Git 官网</a>
+
+    
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+ 下载 Git 的最新版本，根据你的电脑系统类型选择版本。</p>
+<p>2）下载完后在本地右键安装程序，按照默认的设置一路安装就好，注意在 &ldquo;Select Components&rdquo; 阶段，确保要选中 &ldquo;Git Bash Here&rdquo; 选项。</p>
+<h2 id="安装vscode">安装VScode  </h2>
+<p><strong>何为VScode？</strong></p>
+<p>Visual Studio Code（VSCode）为Microsoft开发的免费、开源的源代码编辑器。就是用来帮你修改hugo的主题文件代码的一个编辑工具，比如你文本一般是用word编辑，代码就是用VScode来编辑。</p>
+<p><strong>VScode安装步骤：</strong></p>
+<p>1）访问<a class="link" href="https://code.visualstudio.com/"  target="_blank" rel="noopener"
+    >Visual Studio Code官网</a>
+
+    
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+</p>
+<p>2）选择适用于你的电脑系统的版本下载。<p>
+<p>3）运行安装程序：按照提示进行安装。在Windows上，点击“Next”点到底，接受许可协议，并选择安装位置（可以自定义安装在哪个盘，避免让c盘负担过重）。<p>
+<p>4）启动VSCode： 安装完成后，你可以在开始菜单（Windows）中找到Visual Studio Code。双击启动它，就会看到一个编辑器界面。之后修改博客的代码文件时，只要右键选择“打开方式”-选择vscode即可。</p>
+<h2 id="安装-hugo">安装 Hugo</h2>
+<p><strong>何为Hugo？</strong></p>
+<p>Hugo就是我们用来生成静态博客网页的网站生成器，我们可以用前面安装的Git通过代码的配合，将想要呈现的内容转换为HTML网页。</p>
+<p><strong>Hugo安装步骤：</strong></p>
+<p>1）访问 <a class="link" href="https://github.com/gohugoio/hugo/releases"  target="_blank" rel="noopener"
+    >Hugo GitHub Releases</a>
+
+    
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+ 页面。</p>
+<p>2）在 Assets 下找到适合 Windows 的 ZIP 文件（通常是 hugo_extended_X.XX.X_windows-64bit.zip）。</p>
+<p>3）下载 ZIP 文件，并解压到一个你喜欢的磁盘里。</p>
+<h3 id="重要添加环境变量">（重要！）添加环境变量</h3>
+<p>解压得到的 hugo.exe 文件的路径一定要添加到系统的 PATH 变量中，否则有时写代码时会出现访问不了 Hugo的情况。</p>
+<p>添加环境变量步骤：</p>
+<p>1）获取 Hugo 的执行文件路径：  </p>
+<p>用wins+E快捷键打开 File Explorer（文件资源管理器），找到你解压 Hugo ZIP 文件的地方，找到 hugo.exe 文件；</p>
+<p>鼠标点击上方的栏目，变成光标即可看到你的 hugo.exe 的完整路径，比如 D:\Downloads\Hugo。</p>
+<img src="/images/Untitled.png" alt="Alt Text" style="width: 600px; height: auto;">
+<img src="/images/Untitled 1.png" alt="Alt Text" style="width: 600px; height: auto;">
+<p>2）打开系统环境变量设置：  </p>
+<p>右键点击计算机图标，选择 &ldquo;属性&rdquo;。</p>
+<img src="/images/Untitled 2.png" alt="Alt Text" style="width: 600px; height: auto;">
+<p>在面板中找到 &ldquo;高级系统设置&rdquo;。</p>
+<img src="/images/Untitled 3.png" alt="Alt Text" style="width: 600px; height: auto;">
+<p>在打开的窗口中，点击 &ldquo;环境变量&rdquo; 按钮。</p>
+<img src="/images/Untitled 4.png" alt="Alt Text" style="width: 600px; height: auto;">
+<p>3）编辑系统 PATH 变量：  </p>
+<p>在环境变量的面板中，找到下方的 &ldquo;系统变量&rdquo; 部分，选中 &ldquo;Path&rdquo; 变量点击 &ldquo;编辑&rdquo; 按钮。</p>
+<img src="/images/Untitled 5.png" alt="Alt Text" style="width: 600px; height: auto;">
+<p>3）添加 Hugo 可执行文件路径：  </p>
+<p>在 &ldquo;编辑环境变量&rdquo; 窗口中，点击右上方第一个 &ldquo;新建&rdquo; 按钮。
+输入 前面你复制的Hugo 执行文件的路径（例如，D:\Downloads\Hugo）。
 确认并关闭所有打开的窗口。</p>
-<p>验证是否添加成功：</p>
-<p>打开命令提示符（Command Prompt）</p>
-<p>在Windows 操作系统中，你可以通过以下步骤打开命令提示符：</p>
-<p>在任务栏的搜索框中，键入
-&ldquo;cmd&rdquo; 或 &ldquo;命令提示符&rdquo;。</p>
-<p>从搜索结果中选择
-&ldquo;命令提示符&rdquo; 或 &ldquo;Command Prompt&rdquo;。</p>
-<pre><code>运行对话框。
-
- **或**：按下 Win + R 组合键，打开运行对话框。  
-
- 输入&quot;cmd&quot; 或 &quot;cmd.exe&quot;，然后按 Enter 键。
-</code></pre>
-<p>无论你使用哪种方法，都会打开一个命令提示符窗口，你可以在其中输入命令。在这个窗口中，你可以执行各种命令和操作系统交互。</p>
-<p>输入 hugo version 并按回车键。
+<p>4）验证是否添加成功：  </p>
+<p>在Windows 操作系统中，在任务栏的搜索框中，键入
+&ldquo;cmd&rdquo; 或 &ldquo;命令提示符&rdquo;。
+<img src="/images/Untitled 6.png" alt="Alt Text" style="width: 600px; height: auto;">
+或者是按下快捷键 Win + R ，打开运行面板，在里面输入cmd就可以弹出命令提示符的面板
+<img src="/images/Untitled 7.png" alt="Alt Text" style="width: 600px; height: auto;"></p>
+<p>在命令提示符的面板输入 hugo version ，然后按回车。
 如果安装成功，你应该能够看到 Hugo 的版本信息，表示安装成功。</p>
-</li>
-</ol>
-<p>通过这些步骤，你就成功将 Hugo可执行文件的路径添加到系统的 PATH 变量中了。这样，你可以在任何地方使用命令提示符运行Hugo。如果有任何问题，记得检查路径是否正确，确保没有拼写错误。</p>
-<h1 id="二创建博客">二.创建博客</h1>
+<p>通过以上步骤，你就成功将 Hugo可执行文件的路径添加到系统的 PATH 变量中。这样，你可以在任何地方使用命令提示符运行Hugo。如果出现问题，记得检查你的路径是否正确。</p>
+<h2 id="安装go语言">安装go语言</h2>
+<p>Hugo 是使用 Go 语言开发的静态网站生成器，因此在运行 Hugo 之前，确保 Go 语言环境已经安装。</p>
+<p><strong>安装步骤：</strong></p>
+<p>1）打开 <a class="link" href="https://www.notion.so/by-mealin564-7e0ddfb6240347328003ea868799da39?pvs=21"  target="_blank" rel="noopener"
+    >Go 的官网</a>
+
+    
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+<a class="link" href="https://golang.org/dl/%E3%80%82"  target="_blank" rel="noopener"
+    >。</a>
+
+    
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+</p>
+<p>2）选择适合你电脑的 Windows 最新版本，然后选择带有 <strong>.msi 后缀</strong>的安装程序下载</p>
+<p>3） 双击下载的安装程序（.msi 文件），然后按提示操作。你可以接受默认设置，也可以根据需要进行自定义配置。</p>
+<p>4）检查安装： 安装完成后，打开命令提示符或 PowerShell 窗口，并运行以下命令来验证 Go 是否正确安装：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">go</span> <span class="nx">version</span>
+</span></span></code></pre></div><p>如果一切正常，你应该看到 Go 的版本信息。</p>
+<p>注：</p>
+<p>在安装 Go 语言时，确保将 Go 的 bin 目录添加到系统的 PATH 环境变量中，以便在命令行中直接运行 go 命令。</p>
+<p>若没有添加，你需要手动将 C:\Go\bin（或你选择安装的路径）添加到 PATH 中（步骤和上述操作相似）。
+安装完成后，你就可以在 Windows 上使用 Go 语言了</p>
+<h1 id="2创建博客">2.创建博客</h1>
+<h2 id="打开git-bash">打开Git Bash</h2>
+<p>新建一个你想要放博客内容和修改样式的文件，右键单击并选择 &ldquo;Git Bash Here&rdquo;。  
+<img src="/images/Untitled 8.png" alt="Alt Text" style="width: 600px; height: auto;"></p>
 <ol>
-<li><strong>打开Git Bash：</strong></li>
-</ol>
-<pre><code>在你想要创建博客的文件夹中，右键单击并选择 &quot;Git Bash Here&quot;。
-</code></pre>
-<ol start="2">
 <li>
-<p><strong>创建 Hugo 站点，输入代码：</strong>
-hugo new site myblog
-这将在当前目录创建一个名为 myblog 的新博客。</p>
+<p><strong>创建 Hugo 站点，输入代码：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">hugo</span> <span class="k">new</span> <span class="nx">site</span> <span class="nx">myblog</span>
+</span></span></code></pre></div><p>这将在这个路径创建一个新博客。</p>
 </li>
 <li>
-<p><strong>进入博客目录，输入代码：</strong>
-cd myblog</p>
-</li>
+<p><strong>进入博客目录，输入代码：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">cd</span> <span class="nx">myblog</span>
+</span></span></code></pre></div></li>
 </ol>
-<p><strong>Tips代码指令解释：</strong></p>
+<ul>
+<li>
+<p><strong>Tips代码指令解释</strong></p>
 <p>1.查看当前目录：
-在 Git Bash 终端中，可以输入以下命令来查看当前所在的目录：
-pwd
-这会显示当前工作目录的完整路径。</p>
-<p>2.进入博客目录：
-使用 cd 命令来进入博客目录。假设你的博客目录名为 myblog，你可以执行以下命令：
-cd myblog</p>
-<pre><code>如果博客目录不在当前工作目录，你需要替换成完整路径，例如：
-cd /d/blog/myblog
-这个就是根目录路径↑
-</code></pre>
+在 Git Bash 终端中，可以输入以下命令来查看当前所在的目录：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">pwd</span>
+</span></span></code></pre></div><p>这会显示当前文件夹的完整路径。</p>
+<p>2.进入博客目录（就是找到你新建的那个要放博客内容的那个文件）， 假设你的博客文件夹名为 myblog，你可以执行以下命令：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">cd</span> <span class="nx">myblog</span>
+</span></span></code></pre></div><p>如果博客文件夹不在当前工作目录，你需要替换成完整路径，例如：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">cd</span> <span class="o">/</span><span class="nx">d</span><span class="o">/</span><span class="nx">blog</span><span class="o">/</span><span class="nx">myblog</span>
+</span></span></code></pre></div><p>例如，这个就是我的博客文件的“根目录路径”↑</p>
 <p>3.验证是否成功进入博客目录：
 输入 pwd 命令确认当前工作目录是否为你的博客目录。
-使用 ls 命令查看博客目录中的文件和子目录：
-ls
-通过这些步骤，你就能够在 Git Bash 中成功进入 Hugo 博客的目录。</p>
-<p>*注：在 Bash 里，</p>
-<pre><code>  $： 一般用户的默认提示符。
-  #： 超级用户（root）的默认提示符。
-  对于默认用户，通常显示 $。
-  当你在 Bash 中输入 cd 命令时，你不需要管前面的 $。
-  你只需在 cd 后面加上目标目录的路径即可。
+使用 ls 命令查看博客目录中的文件和子目录：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">ls</span>
+</span></span></code></pre></div><p>通过这些步骤，你就能够在 Git Bash 中成功进入 Hugo 博客的目录。</p>
+<p>注（基础操作知识）：在Git Bash界面里输代码时，    </p>
+<pre><code>$： 一般用户的默认提示符。
+#： 超级用户（root）的默认提示符。
+对于默认用户，通常显示 $。
+在 Bash 中输入 cd 命令时，不用管前面的 $，只要复制上述的代码输入就行！
 </code></pre>
-<h1 id="三配置hugo主题模板">三.配置Hugo主题模板</h1>
-<ol>
-<li>
-<p><strong>选择主题：</strong></p>
-<p>在 Hugo 中，主题通常以 Git 存储库的形式存在。你可以从<a class="link" href="https://themes.gohugo.io/"  target="_blank" rel="noopener"
-    >Hugo Themes</a>网站上选择一个主题。</p>
-<p>在该主题的详情页面找到download跳转到 GitHub 界面，点击绿色的按键code便可复制git链接。</p>
 </li>
-<li>
-<p><strong>在博客目录中添加主题作为子模块：</strong></p>
-<p>方法1：直接连接github（坑：有时候因为防火墙问题会配置失败，不推荐！！）</p>
-<p>方法2：SSH密钥法链接（坑： .gitmodules 文件中的行尾符 (line endings) 与你的系统默认设置不一致，可能导致在 Windows 系统上的一些问题，所以也不推荐！！）</p>
-<p>（推荐）方法3：直接下载github仓库zip压缩包到themes文件夹解压（<strong>这个方法最保险</strong>）</p>
-<p>将下载的 ZIP 文件解压缩到你的 Hugo 项目的 themes 文件夹中。</p>
-<p>复制 themes 文件夹里的 exampleSite 中的文件：</p>
-<p>进入主题的文件夹，找到 exampleSite 文件夹。</p>
-<p>选择性复制文件：</p>
-<p>根据你的需要选择性地复制 exampleSite 文件夹中的文件到你的博客根目录。可能包括配置文件（如 config.toml、config.yaml 或 config.json）、内容文件、静态文件等。</p>
-<p>*注意文件路径：确保将文件复制到正确的位置。配置文件通常应该放在博客根目录，而内容文件可能需要根据主题的要求放在特定的文件夹中。</p>
-<p>*保留原有内容：在复制之前，建议备份你当前博客根目录中的重要文件，以免不小心覆盖。你可以将当前博客根目录的文件夹重命名或者备份到其他位置。</p>
-</li>
-<li>
-<p><strong>编辑主题配置文件：</strong></p>
-<p>打开博客根目录中的 config.toml 文件，这是 Hugo 的配置文件。</p>
-<p>在文件中找到或添加一个与主题相关的配置段。你可能需要根据主题的文档查看如何配置。</p>
-<p>查找示例配置文件：</p>
-<p>在主题目录中，通常会有一个示例配置文件，例如 exampleSite/config.toml 或 exampleSite/config.yaml，具体文件名可能会有所不同。</p>
-<p>复制示例配置文件到博客根目录：</p>
-<p>使用以下命令将示例配置文件复制到博客根目录。</p>
-<p>如果示例配置文件是 config.yaml，则相应地更改文件名。</p>
-<p>返回到博客根目录：</p>
-<p>使用以下命令返回到博客根目录：</p>
-<p>cd /d/blog/myblog</p>
-</li>
-<li>
-<p><strong>配置其他设置：</strong></p>
-<p>仍然在 config.toml 文件中，你可能需要配置其他与博客相关的设置，如标题、作者、语言等。根据主题文档和你自己的需求进行配置。</p>
-<p>*注：编辑config文件时，baseURL应该填什么？</p>
-<p>baseURL 是 Hugo 网站的基本 URL 地址，它用于生成网站中的链接。正确配置 baseURL 对于确保生成的网站链接的正确性非常重要。</p>
-<p>以下是设置 baseURL 的一些建议：</p>
-<p>本地开发：</p>
-<p>当你在本地开发时，可以将 baseURL 设置为本地服务器的地址，通常是 http://localhost:1313/，这样可确保本地预览。</p>
-<p>code baseURL= &ldquo;<a class="link" href="http://localhost:1313/"  target="_blank" rel="noopener"
-    >http://localhost:1313/</a>&rdquo;</p>
-<p>线上发布：</p>
-<p>当你准备发布网站时，将 baseURL 设置为你实际的域名或者托管服务的地址。如果你使用自定义域名，确保包括协议（https 或 http）。</p>
-<p>code baseURL= &ldquo;<a class="link" href="https://www.yourdomain.com/"  target="_blank" rel="noopener"
-    >https://www.yourdomain.com/</a>&rdquo;</p>
-<p>子路径或子目录：</p>
-<p>如果你计划将网站发布到子路径或子目录下，确保在 baseURL 中包含子路径。
-例如，如果你将网站放在 <a class="link" href="https://www.yourdomain.com/blog/"  target="_blank" rel="noopener"
-    >https://www.yourdomain.com/blog/</a> 下：</p>
-<p>code baseURL= &ldquo;<a class="link" href="https://www.yourdomain.com/blog/"  target="_blank" rel="noopener"
-    >https://www.yourdomain.com/blog/</a>&rdquo;</p>
-<p>总之，根据你的实际情况和计划，选择适当的 baseURL 设置。在网站发布之前，确保在本地测试环境中检查生成的链接是否正确。</p>
-</li>
-<li>
-<p><strong>保存配置文件：</strong></p>
-<p>Ctrl+S保存对 config.toml 文件的修改。</p>
-</li>
-</ol>
-<h1 id="四运行-hugo">四.运行 Hugo</h1>
-<pre><code>在博客根目录运行 Hugo，查看是否成功应用了主题的配置和样式。
+</ul>
+<h1 id="3配置hugo主题模板">3.配置Hugo主题模板</h1>
+<h2 id="选择主题">选择主题</h2>
+<p>在<a class="link" href="https://themes.gohugo.io/"  target="_blank" rel="noopener"
+    >Hugo Themes</a>
 
-hugo server -D
-</code></pre>
+    
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+网站上选择一个喜欢的主题。</p>
+<p>在该主题的详情页面找到download，跳转到 GitHub 界面，点击绿色的按键code。</p>
+<p>方法1：直接连接github（坑：有时会因防火墙问题配置失败，不推荐！！）</p>
+<p>方法2：SSH密钥法链接（坑： .gitmodules 文件中的行尾符 (line endings) 与系统默认设置不一致，可能导致在 Windows 系统上的一些问题，所以也不推荐！！）</p>
+<p><strong>（所以推荐）方法3：直接点击绿色code按键下方的Download Zip，下载github仓库zip压缩包到你的博客文件夹的themes文件夹里。</strong></p>
+<img src="/images/Untitled 9.png" alt="Alt Text" style="width: 600px; height: auto;">
+<img src="/images/Untitled 10.png" alt="Alt Text" style="width: 600px; height: auto;">
+<h2 id="在博客目录中添加主题">在博客目录中添加主题</h2>
+<p>将下载的 ZIP 文件在博客文件夹的themes 文件夹中右键解压</p>
+<p><strong>编辑主题配置文件：</strong></p>
+<p>打开博客根目录（即你的博客文件夹）中的 config.toml 或者config.yaml文件，这是 Hugo 的配置文件。 </p>
+<p>在文件中添加或修改与主题相关的配置段，需要根据主题的文档查看如何配置。</p>
+<p>config文件主要改动的是你想要的博客模板，比如你的主页标题、导航栏文字、链接地址、语言、版权信息、url等等。</p>
+<p>可以参考主题文件里的示例配置文件，例如 exampleSite文件夹里的config.toml 或 config.yaml，也可以自己google搜索“你的hugo主题名+装修”，看看其他博主的博客装修步骤记录和教程。</p>
+<ul>
+<li><strong>注：编辑config文件时，baseURL应该填什么？</strong></li>
+</ul>
+<p>baseURL 是 Hugo 博客网站的基本网址链接，帮你生成网站。</p>
+<p>当你还没购买域名，在本地修改博客测试时，可以将 baseURL 设置为本地服务器的地址，通常是 <a class="link" href="http://localhost:1313/%EF%BC%8C%E8%BF%99%E6%A0%B7%E5%8F%AF%E7%A1%AE%E4%BF%9D%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88%E3%80%82"  target="_blank" rel="noopener"
+    >http://localhost:1313/</a>
+
+    
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+
+这样可确保本地同步预览。将代码换成以下↓</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">code</span> <span class="nx">baseURL</span><span class="o">=</span> <span class="s2">&#34;[http://localhost:1313/](http://localhost:1313/)&#34;</span>
+</span></span></code></pre></div><p>当你有购买的域名和托管的网址时，可将 baseURL 设置为相应的域名。如果你使用自定义域名，确保包括协议（https 或 http）。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">code</span> <span class="nx">baseURL</span><span class="o">=</span> <span class="s2">&#34;[https://www.这里填入你的域名.com/](https://www.yourdomain.com/)&#34;</span>
+</span></span></code></pre></div><p>总之，根据你的实际情况和计划，选择适当的 baseURL 设置。在网站发布之前，确保在本地测试环境中检查生成的链接是否正确。</p>
+<h2 id="保存配置文件">保存配置文件</h2>
+<p>修改好文件后，Ctrl+S 保存对 config.toml 文件的修改。</p>
+<h1 id="四运行-hugo">四.运行 Hugo</h1>
+<p>在博客根目录运行 Hugo，右键点击你的博客根目录（博客文件），选择git bash here，在git里输入以下代码：</p>
+<pre tabindex="0"><code>hugo server -D
+</code></pre><p>如果成功会显示如下：  
+<img src="/images/Untitled 11.png" alt="Alt Text" style="width: 600px; height: auto;"></p>
+<p>比如，如上图所示，你可以在 <a class="link" href="http://localhost:5090/%EF%BC%8C%E8%BF%99%E6%A0%B7%E5%8F%AF%E7%A1%AE%E4%BF%9D%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88%E3%80%82"  target="_blank" rel="noopener"
+    >http://localhost:5090/</a>
+
+    
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+中预览网站，查看是否成功应用了主题的配置和样式。（*http://localhost:后面的数字根据你自己运行的结果而改变）</p>
 
 </section>
+
+
 
 
     <footer class="article-footer">
@@ -591,6 +732,7 @@ hugo server -D
 
     
 </article>
+    
 
     
 
@@ -616,12 +758,51 @@ hugo server -D
             
                 
 <article class="">
-    <a href="/my-first-post/">
+    <a href="/%E5%BB%BA%E7%AB%993%E4%BD%BF%E7%94%A8SSH%E5%AF%86%E9%92%A5%E6%B3%95%E5%B0%86Hugo%E4%B8%8A%E4%BC%A0%E8%87%B3Github/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">发布文章测试帖</h2>
+            <h2 class="article-title">【建站3】使用SSH密钥法将Hugo上传至Github</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/%E5%BB%BA%E7%AB%994%E6%8E%A8%E9%80%81%E5%88%B0GitHub-Actions/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">【建站4】推送到GitHub Actions</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/%E5%BB%BA%E7%AB%995%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0-DNS%E8%A7%A3%E6%9E%90/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">【建站5】域名购买&#43;DNS解析</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/%E5%BB%BA%E7%AB%996%E8%A3%85%E4%BF%AE%E5%8D%9A%E5%AE%A2/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">【建站6】装修博客(待更新)</h2>
         </div>
     </a>
 </article>
@@ -640,12 +821,11 @@ hugo server -D
     <section class="copyright">
         &copy; 
         
-        2023 Cecilia的博客
+        2024 Cecilia的博客
     </section>
     
     
-    
-
+ 
 <section class="totalcount">
     
     
@@ -667,10 +847,186 @@ hugo server -D
     
         
     
-    发表了3篇文章 · 
-    总计4.37k字
-
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    发表了91篇文章 · 
+    总计60.24w字
 </section>
+
 
 
 
@@ -764,7 +1120,15 @@ hugo server -D
                 src="https://Cecilia404404.github.io/js/vibrant.min.js"crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.js" defer></script><script>
+    (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+  
+    ChannelIO('boot', {
+      "pluginKey": "1f6a9957-560f-42a2-aaf5-ffe3e9d046b8"
+      
+    });
+    
+  </script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -787,7 +1151,7 @@ hugo server -D
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 55px;
+    right: 70px;
     width: 55px;
     height: 55px;
     border-radius: 7px;
@@ -819,8 +1183,8 @@ hugo server -D
    
   @media screen and (max-width: 768px) {
     #back-to-top {
-      bottom: 20px;
-      right: 20px;
+      bottom: 80px;
+      right: 15px;
       width: 40px;
       height: 40px;
       font-size: 10px;
@@ -830,16 +1194,16 @@ hugo server -D
    
   @media screen and (min-width: 1024px) {
     #back-to-top {
-      bottom: 20px;
-      right: 40px;
+      bottom: 80px;
+      right: 15px;
     }
   }
 
    
   @media screen and (min-width: 1280px) {
     #back-to-top {
-      bottom: 20px;
-      right: 55px;
+      bottom: 100px;
+      right: 20px;
     }
   }
 
@@ -897,6 +1261,14 @@ hugo server -D
 
   let result = days + "天" + hours + "小时" + minutes + "分钟";
   document.getElementById('runningdays').innerHTML = result;
+</script>
+
+<script>
+  (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+
+  ChannelIO('boot', {
+    "pluginKey": "1f6a9957-560f-42a2-aaf5-ffe3e9d046b8"
+  });
 </script>
 
     </body>

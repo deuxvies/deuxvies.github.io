@@ -9,17 +9,16 @@
     </section>
     
     
-    
-<!-- Add total page and word count time -->
+ <!-- Add total page and word count time -->
 <section class="totalcount">
-    {{$scratch := .Scratch}}
+    {{$scratch := newScratch}}
     {{ range (where .Site.Pages "Kind" "page" )}}
         {{$scratch.Add "total" .WordCount}}
     {{ end }}
     发表了{{ len (where .Site.RegularPages "Section" "post") }}篇文章 · 
-    总计{{ div ($scratch.Get "total") 1000.0 | lang.FormatNumber 2 }}k字
-
+    总计{{ div ($scratch.Get "total") 10000.0 | lang.FormatNumber 2 }}w字
 </section>
+
 
 
 <!-- Add blog running time -->
