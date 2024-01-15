@@ -1,13 +1,11 @@
 ---
-title: 相册
+title: 漂流瓶
 layout: "photos"
 menu:
     main:
-        weight: -70
+        weight: 160
         params:
-            icon: photo
+            icon: stamp
 
 ---
-这里存放了我收到的外国明信片和有意思的邮票。
-不分先后排序。
 

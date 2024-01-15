@@ -20,8 +20,9 @@ page = "/:slug/"
 mainSections = 'post'
 featuredImageField = "image"
 rssFullContent = true
+enableimgloop = true 
 favicon = "img/favicon.png"
-  
+
   [params.dateFormat]
   published = "2006-01-02"
   lastUpdated = "2006-01-02"
@@ -39,6 +40,7 @@ favicon = "img/favicon.png"
   [params.article]
   math = false
   toc = true
+  enableimgloop = true 
   readingTime = true
   
     [params.article.license]

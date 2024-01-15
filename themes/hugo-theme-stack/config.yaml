@@ -8,6 +8,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
+    enableimgloop: true 
     favicon:
 
     footer:
@@ -36,7 +37,7 @@ params:
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: false
+        enabled: true
         provider: waline
 
         disqusjs:
@@ -66,22 +67,36 @@ params:
 
         # Waline client configuration see: https://waline.js.org/en/reference/client.html
         waline:
-            serverURL: www.springcecilia.blog
+            serverURL: https://comment.springcecilia.blog/
             lang: 
             visitor: 
-            avatar:
+            avatar: monsterid
+            requiredMeta: ['mail']
+            el: '#waline'
+            reaction: true
             emoji:
                 - https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs
-            placeholder: 欢迎评论。昵称、邮箱、网址皆为非必填项，如留下邮箱，博主回复可收到通知~
+                - https://cdn.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan/
+            reaction:
+                - https://cdn.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan/017.png
+                - https://cdn.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan/029.png
+                - https://cdn.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan/026.png
+                - https://cdn.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan/008.png
+                - https://cdn.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan/035.png
+
             locale:
                 admin: 博主
+                placeholder:  |
+                 欢迎评论~
+                 左下第五个放大镜按键为评论预览功能（可显示表情最终效果）
+                 填写邮箱可收到博主的回复通知~您的邮箱信息不会被公开。
 
             
 
 
         twikoo:
-            envId: https://my-twikoo-sigma-ochre.vercel.app/
-            region: ap-shanghai
+            envId: 
+            region: 
             path:
             lang:
 

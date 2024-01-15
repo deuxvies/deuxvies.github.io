@@ -8,10 +8,20 @@ toc: true
 hidden: false
 comments: true
 draft: false
+license: false
 
 ---
 
+<br>
+
+需要：能访问GitHub的条件
+
+
+<br>
+
 # 前期准备
+
+<br>
 
 ## 注册github账号
 
@@ -37,6 +47,8 @@ GitHub是一个基于Git版本控制系统的代码托管平台，提供了一�
 注册好GitHub账户后就可以使用你的用户名和密码登录GitHub，并开始创建、托管和协作开发项目。
 
 
+<br>
+
 # 将Hugo部署到GitHub前期准备
 
 *注：在生成静态页面之前要把config.toml文件里的baseURL修改为自己博客的网址，譬如：
@@ -48,6 +60,10 @@ baseURL = "[https://xxxxx.github.io/](https://xxxxx.github.io/)"
 ```jsx
 hugo    ##生成静态页面文件
 ```
+
+<br>
+
+<br>
 
 ## 在 GitHub 上创建新仓库
 
@@ -64,6 +80,8 @@ hugo    ##生成静态页面文件
 点击 "Create repository"。
 
 
+<br>
+
 接下来将本地 Hugo 仓库关联到 GitHub 仓库，有两种方法。
 
 方法1：https法推送到github pages，适合没有墙的环境，pass
@@ -71,9 +89,15 @@ hugo    ##生成静态页面文件
 方法2：SSH密钥法连接，比较安全，减少了每次推送、拉取或克隆仓库时的繁琐过程，推荐
 
 
-## 确认Github仓库的默认分支
+<br>
+
+<br>
+
+## 注：确认Github仓库的默认分支
 
 GitHub 近期已经在新仓库中将默认分支的名称从 master 更改为 main，如果你的github默认分支是 master，请将master替换为 main。
+
+<br>
 
 替换步骤：
 
@@ -89,6 +113,8 @@ GitHub 近期已经在新仓库中将默认分支的名称从 master 更改为 m
 点击 "Update"（更新）按钮保存更改。
 
 
+<br>
+
 设置 GitHub Pages：
 
 • 在 GitHub 仓库页面的顶部，点击 "Settings"。
@@ -100,8 +126,14 @@ GitHub 近期已经在新仓库中将默认分支的名称从 master 更改为 m
 • 点击 "Save"。
 
 
+<br>
 
-# 3.使用SSH密钥与GitHub建立连接
+<br>
+
+
+# 使用SSH密钥与GitHub建立连接
+
+<br>
 
 ## 生成 SSH 密钥
 
@@ -115,6 +147,8 @@ ssh-keygen -t rsa -b 4096 -C "[your_email@example.com](mailto:your_email@example
 替换 "[your_email@example.com](mailto:your_email@example.com)" 为你在 GitHub 注册时使用的电子邮件地址。
 
 按照提示，选择默认的文件路径和设置密码（可选）。
+
+<br>
 
 ## 添加 SSH 密钥到 SSH 代理
 
@@ -132,6 +166,8 @@ ssh-add ~/.ssh/id_rsa
 
 如果你使用了不同的密钥文件名，请替换 id_rsa 为你实际的私钥文件名。
 
+<br>
+
 ## 添加 SSH 公钥到 GitHub
 
 使用以下命令查看并复制 SSH 公钥：
@@ -141,6 +177,8 @@ cat ~/.ssh/id_rsa.pub
 ```
 
 该命令将在终端中显示 SSH 公钥内容。
+
+<br>
 
 ## 登录到 GitHub
 
@@ -157,6 +195,8 @@ cat ~/.ssh/id_rsa.pub
 点击 "Add SSH key"。
 
 
+<br>
+
 ## 测试 SSH 连接
 运行以下命令测试 SSH 连接：
 
@@ -171,9 +211,12 @@ ssh -T [git@github.com](mailto:git@github.com)
 一旦成功设置了 SSH 密钥，就可以用它与 GitHub 进行安全的连接。
 
 
+<br>
+
 ## 将仓库 URL 切换为 SSH
 
 在你的 Hugo 项目目录中，使用以下命令将仓库的 URL 从 HTTPS 切换到 SSH。
+
 
 ## 找到仓库的 SSH 地址
 
@@ -187,6 +230,8 @@ ssh -T [git@github.com](mailto:git@github.com)
 git remote set-url origin [git@github.com](mailto:git@github.com):xxxxxx/xxx.git
 ```
 
+<br>
+
 ## 推送到 GitHub 仓库
 
 在git里使用以下代码将本地分支推送到 GitHub 仓库：
@@ -197,9 +242,13 @@ git push origin main
 
 该命令会将本地的 main 分支的提交推送到 GitHub 上的 origin/main 分支。
 
+<br>
+
 ## 验证推送
 在推送后，你可以在 GitHub 仓库页面上查看是否有新的提交。若一切正常，你的提交应该已经被推送到 GitHub 仓库。
 
+
+<br>
 
 <br>
 
@@ -284,6 +333,8 @@ connecting (yes/no/[fingerprint])? 该怎么办？
 
 显示Cloning into 'D:/blog/myblog/themes/XXXXX'... Enter passphrase for key '/c/Users/XXXX/.ssh/id_rsa': remote: Enumerating objects: 2393, done. remote: Counting objects: 100% (98/98), done. remote: Compressing objects: 100% (65/65), done. remote: Total 2393 (delta 42), reused 73 (delta 29), pack-reused 2295 Receiving objects: 100% (2393/2393), 1.56 MiB | 1.08 MiB/s, done. Resolving deltas: 100% (1400/1400), done. warning: in the working copy of '.gitmodules', LF will be replaced by CRLF the next time Git touches it 该怎么办？
 
+<br>
+
 答：这个警告是由于 Git 发现 .gitmodules 文件中的行尾符 (line endings) 与你的电脑系统默认设置不一致，可能导致在 Windows 系统上的一些问题。
 
 可按照以下步骤操作：
@@ -320,4 +371,6 @@ git config --global core.autocrlf
 
 [记录下使用hexo搭建博客踩过的坑](https://juejin.cn/post/7127828118143762469)
 
+
+<br>
 

@@ -8,6 +8,7 @@ toc: true
 hidden: false
 comments: true
 draft: false
+license: false
 
 ---
 
@@ -135,7 +136,7 @@ TTL（Time to Live）是DNS记录在缓存中保存的时间，通常以秒为�
 
 
 
-例如，如果你的 GitHub Pages 网站是通过 [https://<username>.github.io/](https://%3cusername%3e.github.io/) 访问的，那么你的 CNAME 记录可能如下所示：
+例如，如果你的 GitHub Pages 网站是通过 [https://<username>.github.io/](https://username.github.io/) 访问的，那么你的 CNAME 记录可能如下所示：
 
 - 主机名（Host）：www（或者其他子域名，根据你的需求）
 - 目标（Value）：<username>.github.io
@@ -147,28 +148,37 @@ TTL（Time to Live）是DNS记录在缓存中保存的时间，通常以秒为�
 
 **如果你的 Hugo 博客托管在 GitHub Pages，并且你想使用自定义域名，将你的github.io的子域名替换为你已经买好的域名：**
 
+<br>
+
 1. 打开你的 Hugo 项目的 GitHub 仓库。
+
+<br>
 
 2. 进入仓库的 "Settings"（设置）选项。
    
+<br>
+
 3. 自定义域名设置：
 
-在 "GitHub Pages" 部分：
+  在 "GitHub Pages" 部分：
 
-如果你的博客已启用 GitHub Pages，确保选择了 main 分支（或你的源分支）作为 source。
+  如果博客已启用 GitHub Pages，确保选择了 main 分支（或你的源分支）作为 source。
 
-在 Custom domain 字段中输入你的域名，例如xxxx.blog
-  这将告诉 GitHub Pages 为你的仓库生成网站，并在你的自定义域名上提供该网站。
+  在 Custom domain 字段中输入自己的域名，例如xxxx.blog，这将在 GitHub Pages 的仓库生成网站，并在自定义域名上链接该网站。
+
+<br>
 
 4. DNS 配置：
 
-在 Namesilo 或其他域名注册商处，确保你的域名的 DNS 设置包括正确的 A 记录，将子域名（例如 [www.xxxxxx.blog）](http://www.springcecilia.xn--blog)-w52hi6jfb42sd3eluixp6bw6kux6cda/)
+在 Namesilo 或其他域名注册商处，确保你的域名的 DNS 设置包括正确的 A 记录，将子域名（例如 www.xxxxxx.xxxx）指向你的服务器的公共IPv4 地址
 
-指向你的服务器的公共IPv4 地址
+<br>
 
 5. 等待 DNS
 
 记录生效，可能需要一些时间（通常在几小时内），以确保域名正确地映射到你的 GitHub Pages。
+
+<br>
 
 6. 测试和验证：
 
@@ -183,7 +193,7 @@ TTL（Time to Live）是DNS记录在缓存中保存的时间，通常以秒为�
 
 ## 其他参考教程
 
-**[冰布子的简易 Wordpress 建站指南](https://blog.cysi.me/2022/05/guide-for-building-a-wordpress-site.html)：（虽然是wordpress但是域名这块写得很详细）**  
+**[冰布子的简易 Wordpress 建站指南](https://blog.cysi.me/2022/05/guide-for-building-a-wordpress-site.html)（虽然是wordpress但是域名这块写得很详细）**  
 
 [配置GitHub Page域名](https://zhuanlan.zhihu.com/p/582629584)
 
@@ -195,16 +205,10 @@ TTL（Time to Live）是DNS记录在缓存中保存的时间，通常以秒为�
 
 <br>
 
-<br>
-
 **问题排除参考：**  
 
-**How to Fix Cloudflare Error 522：**
+[How to Fix Cloudflare Error 522](https://www.hostinger.com/tutorials/error-522)
 
-[https://www.hostinger.com/tutorials/error-522](https://www.hostinger.com/tutorials/error-522)
+[Troubleshooting custom domains and GitHub Pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages)
 
 <br>
-
-**Troubleshooting custom domains and GitHub Pages：**
-
-[https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages)

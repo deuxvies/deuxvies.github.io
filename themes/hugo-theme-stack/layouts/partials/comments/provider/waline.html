@@ -1,7 +1,48 @@
+
+
 <script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
 <link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet'/>
 <div id="waline" class="waline-container"></div>
+
 <style>
+
+    :root {
+    --waline-theme-color: #7f6c46; /*主题色，提交按钮*/
+    --waline-active-color: #f7b99a; /*鼠标移到提交按钮上的颜色*/
+    --waline-badge-color: #7f6c46; /*博主徽章色*/
+    --waline-reaction-color: #7f6c46;
+    --waline-dark-grey: #020826; /*ID颜色*/
+    --waline-bgcolor: #ffffff;
+    --waline-bgcolor-light: #ffffff;
+    --waline-border-color: #7f6c46; 
+    --waline-text-color: #020826; /* 亮色模式下文字颜色 */     
+     }
+   
+   /*夜间模式*/
+     :root[data-scheme="dark"] {
+     --waline-theme-color: #fafaf8;
+     --waline-white: #020826; /*按键字体颜色*/
+     --waline-active-color: #e6e5ab;
+     --waline-light-grey: #ffffff;
+     --waline-dark-grey: #ffffff; /*ID颜色*/
+     --waline-badge-color: #ffffff;
+     /* 布局颜色 */
+     --waline-text-color: #ffffff;
+     --waline-bgcolor: #424141;
+     --waline-bgcolor-light: #424141; /*行内代码块颜色*/
+     --waline-border-color: #ffffff;
+     --waline-disable-bgcolor: #2c2c2c;
+     --waline-disable-color: #020826; 
+   
+     /* 特殊颜色 */
+     --waline-bq-color: #e4e4e4; /*quote*/
+   
+     /* 其他颜色 */
+     --waline-info-bgcolor: #ffffff;
+     --waline-info-color: #ffffff;
+     }
+
+
     .waline-container {
         background-color: var(--card-background);
         border-radius: var(--card-border-radius);
@@ -12,6 +53,7 @@
     .waline-container .wl-count {
         color: var(--card-text-color-main);
     }
+
 </style>
 
 {{- with .Site.Params.comments.waline -}}

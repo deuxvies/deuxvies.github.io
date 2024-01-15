@@ -8,5 +8,3 @@ menu:
         params:
             icon: library
 ---
-
-这里存放其他资料和记录。

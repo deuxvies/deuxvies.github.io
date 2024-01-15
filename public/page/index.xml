@@ -5,20 +5,27 @@
         <link>https://springcecilia.blog/page/</link>
         <description>Recent content in Pages on Cecilia的博客</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <lastBuildDate>Sun, 28 Apr 2019 00:00:00 +0800</lastBuildDate><atom:link href="https://springcecilia.blog/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>zh-cn</language><atom:link href="https://springcecilia.blog/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Search</title>
+        <link>https://springcecilia.blog/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://springcecilia.blog/search/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>关于本站</title>
         <link>https://springcecilia.blog/about/</link>
-        <pubDate>Sun, 28 Apr 2019 00:00:00 +0800</pubDate>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://springcecilia.blog/about/</guid>
-        <description>&lt;h1&gt;关于博主&lt;/h1&gt;
+        <description>&lt;h1&gt;&lt;img src=&#34;https://springcecilia.blog/images/014.png&#34; width=60px height=auto&gt;关于博主&lt;/h1&gt;
 &lt;p&gt;称呼随意。&lt;/p&gt;
 &lt;p&gt;当读者的时刻比当作者的时刻要长，同人是探索生活的方式之一但不是全部。&lt;/p&gt;
 &lt;p&gt;写文三分钟热度，悟性不高，技巧永在摸索中......
 &lt;p&gt;&#34;In libris libertas.&#34; 为博主喜爱的一句拉丁谚语，意为“书中自由”。&lt;/p&gt;
 &lt;p&gt;祝大家不必在话语建构的世界里过分焦虑，进一步有一步的欢喜，退一步有退一步的从容!&lt;/p&gt;
-&lt;h1&gt;此站内容&lt;/h1&gt;
+&lt;h1&gt;&lt;img src=&#34;https://springcecilia.blog/images/006.png&#34; width=60px height=auto&gt;此站内容&lt;/h1&gt;
 &lt;p&gt;本站为博主的赛博存档地。&lt;p&gt;
 &lt;p&gt;建站没啥技术含量，您看到的此博客是博主照葫芦画瓢搞出来的（。&lt;/p&gt;
 &lt;p&gt;如有内容无法显示，很可能是需要魔法上网。&lt;/p&gt;
@@ -34,7 +41,7 @@
 &lt;/svg&gt;&lt;/span&gt;
 
 ，其他相关教程和工具也很多，博主自己用来订阅RSS的工具为Feedly。&lt;/p&gt;
-&lt;h1&gt;联系方式&lt;/h1&gt;
+&lt;h1&gt;&lt;img src=&#34;https://springcecilia.blog/images/002.png&#34; width=60px height=auto&gt;联系方式&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://peing.net/zh-CN/91e8000a0af399&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;（需魔法）匿名提问箱&lt;/a&gt;
 
@@ -48,18 +55,10 @@
 
 &lt;/p&gt;
 &lt;p&gt;（偶尔需要魔法）点击博客右下角的聊天小图标即可私聊&lt;p&gt;
-&lt;p&gt;（不需魔法）邮箱：springcecilia@tutamail.com&lt;p&gt;
-&lt;p&gt;&lt;img src=&#34;https://springcecilia.blog/images/blobcatflower.png&#34; width=50px height=50px &gt; 有空时会回复~ &lt;/p&gt;
-&lt;br&gt;
+&lt;p&gt;有空时会回复~ &lt;/p&gt;
+&lt;p&gt;悄悄补充：博客文章的评论区要魔法才能显示出来。&lt;p&gt;
+&lt;p&gt;&lt;img src=&#34;https://springcecilia.blog/images/038.png&#34; width=70px height=auto &gt;&lt;img src=&#34;https://springcecilia.blog/images/039.png&#34; width=70px height=auto &gt;&lt;img src=&#34;https://springcecilia.blog/images/040.png&#34; width=70px height=auto &gt; &lt;/p&gt;
 </description>
-        </item>
-        <item>
-        <title>Search</title>
-        <link>https://springcecilia.blog/search/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://springcecilia.blog/search/</guid>
-        <description></description>
         </item>
         <item>
         <title>归档</title>
@@ -67,8 +66,7 @@
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://springcecilia.blog/%E5%BD%92%E6%A1%A3/</guid>
-        <description>&lt;p&gt;这里存放其他资料和记录。&lt;/p&gt;
-</description>
+        <description></description>
         </item>
         <item>
         <title>收藏夹</title>
@@ -76,19 +74,17 @@
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://springcecilia.blog/%E6%94%B6%E8%97%8F%E5%A4%B9/</guid>
-        <description>&lt;img src=&#34;https://springcecilia.blog/images/blobcatgooglytrash.png&#34; width=50px height=50px&gt;
+        <description>&lt;img src=&#34;https://springcecilia.blog/images/020.png&#34; width=60px height=auto&gt;
 这里存搜书链接，部分已被墙掉需要魔法。
 </description>
         </item>
         <item>
-        <title>相册</title>
-        <link>https://springcecilia.blog/%E7%9B%B8%E5%86%8C/</link>
+        <title>漂流瓶</title>
+        <link>https://springcecilia.blog/%E6%BC%82%E6%B5%81%E7%93%B6/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://springcecilia.blog/%E7%9B%B8%E5%86%8C/</guid>
-        <description>&lt;p&gt;这里存放了我收到的外国明信片和有意思的邮票。
-不分先后排序。&lt;/p&gt;
-</description>
+        <guid>https://springcecilia.blog/%E6%BC%82%E6%B5%81%E7%93%B6/</guid>
+        <description></description>
         </item>
         
     </channel>

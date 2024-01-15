@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+<style>
+    #artitalk_main {
+        width: 90%; /* 调整为您想要的宽度百分比或具体数值 */
+        margin: 0 ;
+        border-radius: 25px;
+    }
+
+
+</style>
+
+<script type="text/javascript" src="https://unpkg.com/artitalk"></script>
+<div id="artitalk_main"></div>
+<script>
+    new Artitalk({
+    serverURL: '',
+    appId: "XowBkLvs1qZu6eU8Zjia5rzz-MdYXbMMI",
+    appKey: "tVOOytniIf2yB8xkvidsdWFe",
+    pageSize: 100,
+    motion: 0,
+    color3: "var(--accent-color-darker)",
+    color1: "var(--card-background)",
+    color2: "var(--card-background)",
+    
+    atComment: 1,
+    hideDeviceInfo: true,
+  
+    });
+</script>
+
+{{ end }}

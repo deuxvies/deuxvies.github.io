@@ -1,7 +1,7 @@
 ---
 title: 收藏夹
 comments: false  # 添加这一行，表示关闭评论
-
+license: false
 
 links:
   - title: Zlibrary
@@ -108,5 +108,5 @@ menu:
       icon: bookmark
 ---
 
-<img src="/images/blobcatgooglytrash.png" width=50px height=50px>
+<img src="/images/020.png" width=60px height=auto>
 这里存搜书链接，部分已被墙掉需要魔法。

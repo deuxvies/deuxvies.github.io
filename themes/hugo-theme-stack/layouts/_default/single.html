@@ -26,7 +26,136 @@
 {{ define "main" }}
     {{ partial "article/article.html" . }}
     
+    {{ if and .Params.password (ne .Params.password "") }}
+    <style>
+        /* 蒙层样式 */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f9f4ef; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999; /* 确保蒙层位于最顶层 */
+        }
+    
+        /* 弹窗样式 */
+        .custom-popup {
+            width: 400px;
+            padding: 20px;
+            background-color: #fae7dc;
+            border: 1px solid #8c7851;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 40px;
+            font-family: ipx;
+            color: #020826;
+        }
+    
+        .custom-popup input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 40px;
+            border: 1px solid #faf9f9;
+            border-radius: 3px;
+        }
+    
+        .custom-popup button {
+            background-color: #020826;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; 
+        }
 
+        .custom-popup button:hover {
+        background-color: #ecf0f9; /* 鼠标悬停时的背景颜色 */
+    }
+    
+        /* 密码错误提示样式 */
+        .error-message {
+            color: rgb(255, 0, 111);
+            font-size: 14px;
+            margin-top: 30px;
+        }
+
+        .password-hint {
+            color: #8c7851;
+            font-size: 14px;
+            margin-top: 40px;
+            padding: 20px 10px;
+        }
+
+        body[data-theme='dark'] .overlay {
+            background-color: #020826; /* 黑夜模式下的背景颜色 */
+        }
+
+        body[data-theme='dark'] .custom-popup {
+            background-color: #1e1e1e; /* 黑夜模式下的背景颜色 */
+            color: #ffffff; /* 黑夜模式下的文字颜色 */
+        }
+
+        body[data-theme='dark'] .custom-popup button {
+            background-color: #8c7851; /* 黑夜模式下的按钮背景颜色 */
+        }
+
+        body[data-theme='dark'] .custom-popup button:hover {
+            background-color: #8c7851; /* 黑夜模式下按钮悬停时的背景颜色 */
+        }
+
+        body[data-theme='dark'] .password-hint {
+            color: rgb(255, 255, 255);
+            font-size: 14px;
+            margin-top: 30px;
+        }
+    </style>
+    
+    <div class="overlay">
+        <div class="custom-popup">
+            <h2>需要验证您是否拥有该文件的访问权限</h2>
+            {{ if .Params.password_hint }}
+            <div class="password-hint">提示：{{ .Params.password_hint }}</div>
+            {{ end }}
+            <input type="password" id="password" placeholder="密码">
+            <button id="submit-button">认证</button>
+            <div class="error-message" id="error-message"></div> <!-- 密码错误提示 -->
+        </div>
+    </div>
+    
+    <script>
+        var passwordInput = document.getElementById('password');
+        var submitButton = document.getElementById('submit-button');
+        var errorMessage = document.getElementById('error-message');
+    
+        passwordInput.addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                submitButton.click(); // 模拟点击提交按钮
+            }
+        });
+    
+        submitButton.addEventListener('click', function() {
+            var inputPassword = passwordInput.value;
+            var expectedPassword = '{{ .Params.password }}';
+    
+            if (inputPassword = expectedPassword) {
+                // 密码正确，移除蒙层并显示内容
+                var overlay = document.querySelector('.overlay');
+                overlay.style.display = 'none';
+            } else {
+                errorMessage.textContent = '认证失败！'; // 显示错误提示
+            }
+        });
+    </script>
+    {{ end }}    
+
+
+        
     {{ if .Params.links }}
         {{ partial "article/components/links" . }}
     {{ end }}
@@ -45,3 +174,4 @@
 {{ define "right-sidebar" }}
     {{ if .Scratch.Get "hasWidget" }}{{ partial "sidebar/right.html" (dict "Context" . "Scope" "page") }}{{ end}}
 {{ end }}
+

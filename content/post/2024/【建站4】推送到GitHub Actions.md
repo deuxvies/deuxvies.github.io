@@ -8,6 +8,7 @@ toc: true
 hidden: false
 comments: true
 draft: false
+license: false
 
 ---
 
@@ -22,6 +23,8 @@ GitHub Actions是GitHub提供的一项自动化工作流服务。它允许你在
 
 # 主要步骤
 
+<br>
+
 ## 创建workflow文件
 
 在 Hugo 项目的根目录下创建一个名为 .github/workflows/main.yml 的文件
@@ -31,6 +34,8 @@ GitHub Actions是GitHub提供的一项自动化工作流服务。它允许你在
 ```jsx
 cd path/to/your/hugo/project
 ```
+
+<br>
 
 替换 path/to/your/hugo/project 为自己的 Hugo 博客文件路径。
 
@@ -43,14 +48,20 @@ mkdir -p .github/workflows
 这会创建一个名为 .github/workflows 的目录。-p 选项用于确保如果上级目录不存在也能一并创建。
 
  
+<br>
+
 
 进入 .github/workflows 目录，用 VSCode创建 main.yml 文件：
+
+<br>
 
 ```jsx
 code main.yml
 ```
 
- 打开 main.yml 文件，将 GitHub Actions 的配置内容复制到该文件中：  
+<br>
+
+打开 main.yml 文件，将 GitHub Actions 的配置内容复制到该文件中：  
 
 ```jsx
 name: Deploy Hugo
@@ -98,6 +109,8 @@ deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
 publish_dir: ./public
 ```
 
+<br>
+
 此配置文件的主要作用是：
 
 当代码推送到 main 分支时触发工作流程。
@@ -108,9 +121,15 @@ publish_dir: ./public
 
 使用 peaceiris/actions-gh-pages 动作将生成的静态文件推送到 GitHub Pages。
 
-**注：要更新uses: actions/checkout@ 后面的版本号**
+<br>
+
+<br>
+
+**注：要更新uses: actions/checkout@ 后面的版本号!!!**
 
 在 GitHub 上 actions/checkout 仓库的 releases 页面查看最新版本，步骤如下：
+
+<br>
 
 打开 actions/checkout 仓库的 releases 页面：
 
@@ -119,6 +138,8 @@ publish_dir: ./public
 在页面上可看到列出的所有发布版本的信息。GitHub Actions 通常会以 v2.x.x 的形式进行版本命名。
 
 最新版本的标签在列表的最上面。
+
+<br>
 
 在 GitHub Actions 工作流程文件中，更新 uses: actions/checkout@v2 部分的版本号为最新版本。例如：
 
@@ -129,9 +150,15 @@ uses: actions/checkout@v2.5.1  # 替换为最新版本
 
 通过使用最新版本，你可以确保 GitHub Actions 在最新的特性和改进的环境中运行。
 
+<br>
+
+<br>
+
 ## 生成 GitHub Personal Access Token（访问令牌）    
 
-为使 GitHub Actions 推送到 GitHub Pages，你需要一个具有推送权限的访问令牌，并将其添加到仓库的 Secrets 中。
+为使 GitHub Actions 推送到 GitHub Pages，需要一个具有推送权限的访问令牌，并将其添加到仓库的 Secrets 中。
+
+<br>
 
 **步骤如下：**
 
@@ -159,11 +186,15 @@ uses: actions/checkout@v2.5.1  # 替换为最新版本
 滚动到页面底部，点击 "Generate token"。
 
 
+<br>
+
 2）复制生成的个人访问令牌
 
 
 **重要： 请在生成后立即复制令牌，保存下来，因为它将不再可见，下次忘了得重新生成。**
 
+
+<br>
 
 3）将令牌添加到仓库的 Secrets 中
 
@@ -182,6 +213,10 @@ uses: actions/checkout@v2.5.1  # 替换为最新版本
 
 点击 "Add secret"。就可将个人访问令牌添加到仓库的 Secrets 中，在 GitHub Actions 的配置中使用它进行部署。
 
+
+<br>
+
+<br>
 
 ## 将修改的文件添加到 Git
 
@@ -203,6 +238,8 @@ git commit -m "Your commit message"
 git push origin main
 ```
 
+<br>
+
 注：
 
 如果默认分支不是 main，请将 main 替换为你的默认分支名称。
@@ -217,12 +254,19 @@ git push origin main
 如果 Hugo 网站使用子模块，确保在 actions/checkout 步骤中包括 submodules: 'recursive' 选项，以确保子模块也被正确检出。
 
 
-以上步骤适用于 GitHub Actions 的配置，确保你的仓库的 GitHub Pages 设置是正确的（例如，设置为使用 gh-pages 分支或 docs 文件夹）。部署完成后，你的 Hugo 网站应该可以通过 GitHub Pages 访问。
+以上步骤适用于 GitHub Actions 的配置，确保仓库的 GitHub Pages 设置是正确的（例如，设置为使用 gh-pages 分支或 docs 文件夹）。部署完成后， 网站应该可以通过 GitHub Pages 访问。
 
+
+<br>
 
 ## 查看 GitHub Actions 运行
 
 访问 GitHub 仓库页面，进入 "Actions" 标签页，能够看到 GitHub Actions 的运行。如果配置正确，工作流程应该会触发并开始运行。
 
 
-在 GitHub Actions 页面，可查看运行的工作流程的状态、日志和任何可能的错误信息。一旦工作流程成功运行，你的 Hugo 网站应该会被构建并部署到指定的目标（例如 GitHub Pages）。可通过查看工作流程的日志或访问你的 Hugo 网站的部署目标来确认部署的状态。
+在 GitHub Actions 页面，可查看运行的工作流程的状态、日志和任何可能的错误信息。
+
+一旦工作流程成功运行， 网站应该会被构建并部署到指定的目标（例如 GitHub Pages），可访问网站来确认部署的状态。
+
+
+<br>
