@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cecilia的博客</title><link>https://springcecilia.blog/</link><description>Recent content on Cecilia的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 02 Jan 2024 17:19:10 +0800</lastBuildDate><atom:link href="https://springcecilia.blog/index.xml" rel="self" type="application/rss+xml"/><item><title>【建站1】Hugo配置主题及生成</title><link>https://springcecilia.blog/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/</link><pubDate>Mon, 01 Jan 2024 17:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/</guid><description>&lt;br>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom"><channel><title>Cecilia的博客</title><link>https://springcecilia.blog/</link><description>Recent content on Cecilia的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 02 Jan 2024 17:19:10 +0800</lastBuildDate><atom:link href="https://springcecilia.blog/index.xml" rel="self" type="application/rss+xml"/><item><title>【建站1】Hugo配置主题及生成</title><link>https://springcecilia.blog/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/</link><pubDate>Mon, 01 Jan 2024 17:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/</guid><description>&lt;br>
 &lt;p>&lt;a class="link" href="https://cloud.tencent.com/developer/article/1917500" target="_blank" rel="noopener"
 >hugo和其他各类博客类型了解&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
+s
 这里我选的是用Hugo搭建，比较简洁，wordpress对我来说太臃肿了访问也慢。Hugo内容可以在本地，备份比较方便和稳定。&lt;/p>
 &lt;br>
 &lt;p>&lt;strong>注：&lt;/strong>&lt;/p>
@@ -24,12 +25,12 @@ fill="currentColor">
 &lt;p>1）去 &lt;a class="link" href="https://git-scm.com/download/win" target="_blank" rel="noopener"
 >Git 官网&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-下载 Git 的最新版本，根据你的电脑系统类型选择版本。&lt;/p>
+s 下载 Git 的最新版本，根据你的电脑系统类型选择版本。&lt;/p>
 &lt;p>2）下载完后在本地右键安装程序，按照默认的设置一路安装就好，注意在 &amp;ldquo;Select Components&amp;rdquo; 阶段，确保要选中 &amp;ldquo;Git Bash Here&amp;rdquo; 选项。&lt;/p>
 &lt;br>
 &lt;h2 id="安装vscode">安装VScode  &lt;/h2>
@@ -39,12 +40,12 @@ fill="currentColor">
 &lt;p>1）访问&lt;a class="link" href="https://code.visualstudio.com/" target="_blank" rel="noopener"
 >Visual Studio Code官网&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>2）选择适用于你的电脑系统的版本下载。&lt;p>
 &lt;p>3）运行安装程序：按照提示进行安装。在Windows上，点击“Next”点到底，接受许可协议，并选择安装位置（可以自定义安装在哪个盘，避免让c盘负担过重）。&lt;p>
 &lt;p>4）启动VSCode： 安装完成后，你可以在开始菜单（Windows）中找到Visual Studio Code。双击启动它，就会看到一个编辑器界面。之后修改博客的代码文件时，只要右键选择“打开方式”-选择vscode即可。&lt;/p>
@@ -57,12 +58,12 @@ fill="currentColor">
 &lt;p>1）访问 &lt;a class="link" href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener"
 >Hugo GitHub Releases&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-页面。&lt;/p>
+s 页面。&lt;/p>
 &lt;p>2）在 Assets 下找到适合 Windows 的 ZIP 文件（通常是 hugo_extended_X.XX.X_windows-64bit.zip）。&lt;/p>
 &lt;p>3）下载 ZIP 文件，并解压到一个你喜欢的磁盘里。&lt;/p>
 &lt;br>
@@ -112,20 +113,20 @@ fill="currentColor">
 &lt;p>1）打开 &lt;a class="link" href="https://www.notion.so/by-mealin564-7e0ddfb6240347328003ea868799da39?pvs=21" target="_blank" rel="noopener"
 >Go 的官网&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;a class="link" href="https://golang.org/dl/%E3%80%82" target="_blank" rel="noopener"
+s&lt;a class="link" href="https://golang.org/dl/%E3%80%82" target="_blank" rel="noopener"
 >。&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>2）选择适合你电脑的 Windows 最新版本，然后选择带有 &lt;strong>.msi 后缀&lt;/strong>的安装程序下载&lt;/p>
 &lt;p>3） 双击下载的安装程序（.msi 文件），然后按提示操作。你可以接受默认设置，也可以根据需要进行自定义配置。&lt;/p>
 &lt;p>4）检查安装：安装完成后，打开命令提示符或 PowerShell 窗口，并运行以下命令来验证 Go 是否正确安装：&lt;/p>
@@ -194,12 +195,12 @@ fill="currentColor">
 &lt;p>在&lt;a class="link" href="https://themes.gohugo.io/" target="_blank" rel="noopener"
 >Hugo Themes&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-网站上选择一个喜欢的主题。&lt;/p>
+s网站上选择一个喜欢的主题。&lt;/p>
 &lt;p>在该主题的详情页面找到download，跳转到 GitHub 界面，点击绿色的按键code。&lt;/p>
 &lt;br>
 &lt;p>方法1：直接连接github（坑：有时会因防火墙问题配置失败，不推荐！！）&lt;/p>
@@ -224,12 +225,12 @@ fill="currentColor">
 &lt;p>当你还没购买域名，在本地修改博客测试时，可以将 baseURL 设置为本地服务器的地址，通常是 &lt;a class="link" href="http://localhost:1313/%EF%BC%8C%E8%BF%99%E6%A0%B7%E5%8F%AF%E7%A1%AE%E4%BF%9D%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88%E3%80%82" target="_blank" rel="noopener"
 >http://localhost:XXXX/&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>末尾的数字根据你自己的情况而不同，这个网址可用来本地同步预览，方便你调整时同步看到效果。&lt;/p>
 &lt;p>将代码换成以下↓&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">code&lt;/span> &lt;span class="nx">baseURL&lt;/span>&lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;[http://localhost:XXXX/](http://localhost:1313/)&amp;#34;&lt;/span>
@@ -250,21 +251,21 @@ fill="currentColor">
 &lt;p>比如，如上图所示，你可以在 &lt;a class="link" href="http://localhost:5090/%EF%BC%8C%E8%BF%99%E6%A0%B7%E5%8F%AF%E7%A1%AE%E4%BF%9D%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88%E3%80%82" target="_blank" rel="noopener"
 >http://localhost:5090/&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-中预览网站，查看是否成功应用了主题的配置和样式。（&lt;strong>http://localhost:后面的数字根据你自己运行的结果而改变&lt;/strong>）&lt;/p>
+s中预览网站，查看是否成功应用了主题的配置和样式。（&lt;strong>http://localhost:后面的数字根据你自己运行的结果而改变&lt;/strong>）&lt;/p>
 &lt;br></description></item><item><title>【建站2】在Hugo中发布内容</title><link>https://springcecilia.blog/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/</link><pubDate>Mon, 01 Jan 2024 17:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/</guid><description>&lt;p>需要：git工具、VScode工具，少量&lt;a class="link" href="https://markdown.com.cn/basic-syntax/" target="_blank" rel="noopener"
 >markdown语法知识&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-  &lt;/p>
+s  &lt;/p>
 &lt;h1 id="1发布纯文字的文章">1.发布纯文字的文章&lt;/h1>
 &lt;br>
 &lt;h2 id="创建新文章">创建新文章&lt;/h2>
@@ -273,12 +274,12 @@ fill="currentColor">
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这将在 content/posts/ 目录下创建一个名为 &lt;a class="link" href="http://my-first-post.md/" target="_blank" rel="noopener"
 >my-first-post.md&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-的 Markdown 文件。&lt;/p>
+s 的 Markdown 文件。&lt;/p>
 &lt;br>
 &lt;h2 id="编辑文章">编辑文章&lt;/h2>
 &lt;p>使用VSCode打开 content/posts/my-first-post.md 文件，然后编辑内容保存。&lt;/p>
@@ -308,12 +309,12 @@ fill="currentColor">
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后，打开浏览器，访问 &lt;a class="link" href="http://localhost:xxxx/" target="_blank" rel="noopener"
 >http://localhost:xxxx/&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-（根据你自己的运行结果的网址）&lt;/p>
+s（根据你自己的运行结果的网址）&lt;/p>
 &lt;p>你应该能够在本地预览你的博客，包括新创建的文章。&lt;/p>
 &lt;p>如果预览中一切正常，你可以停止 Hugo 服务器，并输入以下代码来生成静态文件：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">hugo&lt;/span>
@@ -329,12 +330,12 @@ fill="currentColor">
 &lt;p>使用VScode打开文章，参考&lt;a class="link" href="https://markdown.com.cn/basic-syntax/" target="_blank" rel="noopener"
 >Markdown 官方教程&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-，对内容进行修改。&lt;/p>
+s，对内容进行修改。&lt;/p>
 &lt;br>
 &lt;h2 id="添加并提交修改的文件在git里输入以下代码">添加并提交修改的文件，在git里输入以下代码    &lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">git&lt;/span> &lt;span class="nx">add&lt;/span> &lt;span class="p">.&lt;/span>
@@ -347,12 +348,12 @@ fill="currentColor">
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>打开浏览器，访问 &lt;a class="link" href="http://localhost:1313/" target="_blank" rel="noopener"
 >http://localhost:1313/&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>查看你的修改是否生效。在预览中确认无误后，你可以继续下一步部署。&lt;/p>
 &lt;br>
 &lt;br>
@@ -374,12 +375,12 @@ imgsrc=&amp;quot;/img/hugo version.png&amp;quot;alt=&amp;ldquo;Alt Text&amp;quot
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>打开浏览器，访问 &lt;a class="link" href="http://localhost:xxxx/" target="_blank" rel="noopener"
 >http://localhost:xxxx/&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>显示如下：&lt;/p>
 &lt;img src="https://springcecilia.blog/images/1.png" alt="Alt Text" style="width: 50px; height: auto;">
 &lt;br>
@@ -399,12 +400,12 @@ fill="currentColor">
 &lt;p>1）访问&lt;a class="link" href="https://github.com/" target="_blank" rel="noopener"
 >GitHub官网&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-。  &lt;/p>
+s。  &lt;/p>
 &lt;p>2）在GitHub首页点击&amp;quot;Sign up&amp;quot;按钮。&lt;/p>
 &lt;p>3）填写注册信息，包括用户名、电子邮件地址（尽量用外国邮箱）和密码。用户名要好好取，因为它会用作你在GitHub上的标识。&lt;/p>
 &lt;p>4）完成信息填写后，GitHub可能会通过电子邮件发送的验证码进行身份验证。&lt;/p>
@@ -425,21 +426,21 @@ fill="currentColor">
 &lt;p>命名你的仓库，**注意：**仓库名要以 &lt;a class="link" href="http://xn--github-on9im33ani7aou3bged.github.io/" target="_blank" rel="noopener"
 >你的github用户名.github.io&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-这种格式&lt;/p>
+s 这种格式&lt;/p>
 &lt;p>例如，你的github用户名是xxxxx，仓库名就是：&lt;a class="link" href="http://xxxxx.github.io/" target="_blank" rel="noopener"
 >xxxxx.github.io&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-，确保xxxxx和你的本地文件config.toml里的baseURL博客网址一致&lt;/p>
+s，确保xxxxx和你的本地文件config.toml里的baseURL博客网址一致&lt;/p>
 &lt;p>不要勾选 &amp;ldquo;Initialize this repository with a README&amp;rdquo; 选项（因为你的 Hugo 网站已经有了自己的 README）。&lt;/p>
 &lt;p>点击 &amp;ldquo;Create repository&amp;rdquo;。&lt;/p>
 &lt;br>
@@ -472,7 +473,7 @@ fill="currentColor">
 运行以下命令生成 SSH 密钥。如果你已经有一个 SSH 密钥，请跳过此步骤。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">ssh&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">keygen&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="nx">t&lt;/span> &lt;span class="nx">rsa&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="nx">b&lt;/span> &lt;span class="mi">4096&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="nx">C&lt;/span> &lt;span class="s2">&amp;#34;[your_email@example.com](mailto:your_email@example.com)&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>替换 &amp;ldquo;&lt;a class="link" href="mailto:your_email@example.com" >your_email@example.com&lt;/a>
-&amp;rdquo; 为你在 GitHub 注册时使用的电子邮件地址。&lt;/p>
+s&amp;rdquo; 为你在 GitHub 注册时使用的电子邮件地址。&lt;/p>
 &lt;p>按照提示，选择默认的文件路径和设置密码（可选）。&lt;/p>
 &lt;br>
 &lt;h2 id="添加-ssh-密钥到-ssh-代理">添加 SSH 密钥到 SSH 代理&lt;/h2>
@@ -507,7 +508,7 @@ fill="currentColor">
 &lt;h2 id="找到仓库的-ssh-地址">找到仓库的 SSH 地址&lt;/h2>
 &lt;p>进入你的 GitHub 仓库页面&lt;/p>
 &lt;p>点击 &amp;ldquo;Code&amp;rdquo; 按钮，然后选择 &amp;ldquo;SSH&amp;rdquo; 选项，会显示仓库的 SSH 地址，类似于 &lt;a class="link" href="mailto:git@github.com" >git@github.com&lt;/a>
-:your_username/your_repository.git&lt;/p>
+s:your_username/your_repository.git&lt;/p>
 &lt;p>复制到git面板，把下列代码后半段的ssh地址替换成你的↓&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">git&lt;/span> &lt;span class="nx">remote&lt;/span> &lt;span class="nx">set&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">url&lt;/span> &lt;span class="nx">origin&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nx">git&lt;/span>&lt;span class="err">@&lt;/span>&lt;span class="nx">github&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">com&lt;/span>&lt;span class="p">](&lt;/span>&lt;span class="nx">mailto&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="nx">git&lt;/span>&lt;span class="err">@&lt;/span>&lt;span class="nx">github&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">com&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="nx">xxxxxx&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">xxx&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">git&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;br>
@@ -579,30 +580,30 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p>
 &lt;p>&lt;a class="link" href="https://mantyke.icu/posts/2021/hugo-build-blog/" target="_blank" rel="noopener"
 >塔塔的博客的Q&amp;amp;A&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://blog.csdn.net/ccviolett/article/details/124815319" target="_blank" rel="noopener"
 >Hugo 的使用&amp;amp;配置中有那些技巧与坑？&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://juejin.cn/post/7127828118143762469" target="_blank" rel="noopener"
 >记录下使用hexo搭建博客踩过的坑&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br></description></item><item><title>【建站4】推送到GitHub Actions</title><link>https://springcecilia.blog/%E5%BB%BA%E7%AB%994%E6%8E%A8%E9%80%81%E5%88%B0GitHub-Actions/</link><pubDate>Mon, 01 Jan 2024 17:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E5%BB%BA%E7%AB%994%E6%8E%A8%E9%80%81%E5%88%B0GitHub-Actions/</guid><description>&lt;h1 id="基本介绍">基本介绍&lt;/h1>
 &lt;p>GitHub Actions是GitHub提供的一项自动化工作流服务。它允许你在代码仓库中配置和执行自动化任务，例如构建、测试、部署等。&lt;/p>
 &lt;p>使用 Git 推送到 GitHub 仓库通常需要手动运行 Hugo 构建命令，将生成的静态文件添加到 Git 仓库，并推送到 GitHub，&lt;/p>
@@ -682,12 +683,12 @@ fill="currentColor">
 &lt;p>&lt;a class="link" href="https://github.com/actions/checkout/releases" target="_blank" rel="noopener"
 >https://github.com/actions/checkout/releases&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-。&lt;/p>
+s。&lt;/p>
 &lt;p>在页面上可看到列出的所有发布版本的信息。GitHub Actions 通常会以 v2.x.x 的形式进行版本命名。&lt;/p>
 &lt;p>最新版本的标签在列表的最上面。&lt;/p>
 &lt;br>
@@ -748,54 +749,54 @@ fill="currentColor">
 &lt;p>&lt;a class="link" href="https://shannote.com/archives/buy-foreign-domains.html" target="_blank" rel="noopener"
 >https://shannote.com/archives/buy-foreign-domains.html&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br>
 &lt;p>&lt;strong>namesilo购买教程：&lt;/strong>&lt;/p>
 &lt;p>&lt;a class="link" href="https://shannote.com/archives/how-to-register-namesilo-domain.html" target="_blank" rel="noopener"
 >https://shannote.com/archives/how-to-register-namesilo-domain.html&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br>
 &lt;p>&lt;strong>Namesilo配置教程：&lt;/strong>&lt;/p>
 &lt;p>&lt;a class="link" href="https://blog.mailjob.net/posts/4108183257.html" target="_blank" rel="noopener"
 >https://blog.mailjob.net/posts/4108183257.html&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://shannote.com/archives/how-to-register-namesilo-domain.html" target="_blank" rel="noopener"
 >https://shannote.com/archives/how-to-register-namesilo-domain.html&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br>
 &lt;p>&lt;strong>所有的操作是跟着这个教程走的:&lt;/strong>&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.zhudc.com/website/2413" target="_blank" rel="noopener"
 >https://www.zhudc.com/website/2413&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br>
 &lt;h1 id="填写注意">填写注意&lt;/h1>
 &lt;h2 id="a-记录ipv4-地址">A 记录（IPv4 地址）&lt;/h2>
@@ -824,30 +825,30 @@ fill="currentColor">
 &lt;p>&lt;a class="link" href="https://lucumt.info/post/hugo/migrate-github-blog-from-http-to-https/" target="_blank" rel="noopener"
 >利用Cloudflare修改DNS服务器&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://zhaouncle.com/hugo_03/#%E4%BA%8C%E5%88%A9%E7%94%A8cloudflare%E4%B8%BA%E5%9F%BA%E4%BA%8Egithub-pages%E7%9A%84hugo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0https%E6%94%AF%E6%8C%81" target="_blank" rel="noopener"
 >利用Cloudflare为基于GitHub Pages的Hugo博客添加HTTPS支持&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://h11ba1.com/2021/06/05/hugo&amp;#43;github%20page%E6%90%AD%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%9A%84https%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener"
 >hugo+github page搭建自定义域名的https博客&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br>
 &lt;h1 id="dns解析之我的修正">dns解析之我的修正&lt;/h1>
 &lt;p>因为网站的IP是会变化的，所以直接添加这四个解析到IP地址的A记录。&lt;/p>
@@ -876,12 +877,12 @@ fill="currentColor">
 &lt;p>例如，如果你的 GitHub Pages 网站是通过 &lt;a class="link" href="https://username.github.io/" target="_blank" rel="noopener"
 >https://&lt;username>.github.io/&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-访问的，那么你的 CNAME 记录可能如下所示：&lt;/p>
+s 访问的，那么你的 CNAME 记录可能如下所示：&lt;/p>
 &lt;ul>
 &lt;li>主机名（Host）：www（或者其他子域名，根据你的需求）&lt;/li>
 &lt;li>目标（Value）：&lt;username>.github.io&lt;/li>
@@ -911,12 +912,12 @@ fill="currentColor">
 &lt;p>在 Namesilo 或其他域名注册商处，确保你的域名的 DNS 设置包括正确的 A 记录，将子域名（例如 &lt;a class="link" href="https://www.xxxxxx.xxxx" target="_blank" rel="noopener"
 >www.xxxxxx.xxxx&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-）指向你的服务器的公共IPv4 地址&lt;/p>
+s）指向你的服务器的公共IPv4 地址&lt;/p>
 &lt;br>
 &lt;ol start="5">
 &lt;li>等待 DNS&lt;/li>
@@ -934,71 +935,71 @@ fill="currentColor">
 &lt;p>&lt;strong>&lt;a class="link" href="https://blog.cysi.me/2022/05/guide-for-building-a-wordpress-site.html" target="_blank" rel="noopener"
 >冰布子的简易 Wordpress 建站指南&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-（虽然是wordpress但是域名这块写得很详细）&lt;/strong>  &lt;/p>
+s（虽然是wordpress但是域名这块写得很详细）&lt;/strong>  &lt;/p>
 &lt;p>&lt;a class="link" href="https://zhuanlan.zhihu.com/p/582629584" target="_blank" rel="noopener"
 >配置GitHub Page域名&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://cloud.tencent.com/developer/article/1834163" target="_blank" rel="noopener"
 >使用自定义域名来访问GitHub上部署的hugo博客——GitHub Pages&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://ftzzloo.com/github-pages-and-domain-name-setting/#%E6%B7%BB%E5%8A%A0A%E8%AE%B0%E5%BD%95" target="_blank" rel="noopener"
 >GitHub博客绑定自定义域名&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br>
 &lt;p>&lt;strong>问题排除参考：&lt;/strong>  &lt;/p>
 &lt;p>&lt;a class="link" href="https://www.hostinger.com/tutorials/error-522" target="_blank" rel="noopener"
 >How to Fix Cloudflare Error 522&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages" target="_blank" rel="noopener"
 >Troubleshooting custom domains and GitHub Pages&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br></description></item><item><title>【建站6】装修博客记录</title><link>https://springcecilia.blog/%E5%BB%BA%E7%AB%996%E8%A3%85%E4%BF%AE%E5%8D%9A%E5%AE%A2/</link><pubDate>Mon, 01 Jan 2024 17:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E5%BB%BA%E7%AB%996%E8%A3%85%E4%BF%AE%E5%8D%9A%E5%AE%A2/</guid><description>&lt;br>
 &lt;p>注：博主使用的主题为stack。&lt;/p>
 &lt;p>官方文档参考：
 &lt;a class="link" href="https://stack.jimmycai.com/guide/getting-started" target="_blank" rel="noopener"
 >https://stack.jimmycai.com/guide/getting-started&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>后期博客的改动，一般都是在theme文件夹的\assets\scss里的costum.css文件改动&lt;/p>
 &lt;hr>
 &lt;br>
@@ -1007,155 +1008,155 @@ fill="currentColor">
 &lt;p>&lt;a class="link" href="https://blog.gezi.men/p/hugo-custom-global-font/" target="_blank" rel="noopener"
 >【Hugo之路 番外6】hugo自定义全局字体&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>补充：&lt;/p>
 &lt;p>&lt;a class="link" href="https://fonts.google.com/?noto.script=Hant&amp;amp;sort=popularity" target="_blank" rel="noopener"
 >换字体参考网站&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://w3c.github.io/clreq/" target="_blank" rel="noopener"
 >中文排版需求&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://github.com/lxgw/LxgwWenKai" target="_blank" rel="noopener"
 >霞鹜文楷&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://github.com/mzlogin/chinese-copywriting-guidelines" target="_blank" rel="noopener"
 >中文文案排版指北&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br>
 &lt;h1 id="修改背景色及布局">修改背景色及布局&lt;/h1>
 &lt;p>参考教程：
 &lt;a class="link" href="https://oxidane-uni.github.io/p/%E4%BD%BF%E7%94%A8-hugo-%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%87%8D%E5%BB%BA%E4%B8%8E-stack-%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E8%AE%B0%E5%BD%95/#%E6%94%B9%E5%96%84%E6%B5%85%E8%89%B2%E6%A8%A1%E5%BC%8F%E5%8F%AF%E8%AF%BB%E6%80%A7" target="_blank" rel="noopener"
 >使用 Hugo 对博客的重建与 Stack 主题优化记录&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>一些配色设计&amp;amp;工具网站：&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.happyhues.co/palettes/17" target="_blank" rel="noopener"
 >https://www.happyhues.co/palettes/17&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.magicpattern.design/tools/css-backgrounds" target="_blank" rel="noopener"
 >https://www.magicpattern.design/tools/css-backgrounds&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://colorhunt.co/" target="_blank" rel="noopener"
 >https://colorhunt.co/&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.color-hex.com/" target="_blank" rel="noopener"
 >https://www.color-hex.com/&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br>
 &lt;h1 id="修改svg图标">修改svg图标&lt;/h1>
 &lt;p>用到的网站：&lt;/p>
 &lt;p>&lt;a class="link" href="https://feathericons.com/" target="_blank" rel="noopener"
 >https://feathericons.com/&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.svgrepo.com/" target="_blank" rel="noopener"
 >https://www.svgrepo.com/&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br>
 &lt;h1 id="添加相册">添加相册&lt;/h1>
 &lt;p>参考教程：&lt;/p>
 &lt;p>&lt;a class="link" href="https://immmmm.com/hugo-readdir-photos/" target="_blank" rel="noopener"
 >Hugo 添加相册页面&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br>
 &lt;h1 id="添加动画">添加动画&lt;/h1>
 &lt;p>参考教程：&lt;/p>
 &lt;p>&lt;a class="link" href="https://lbqaq.top/p/%E7%BB%99blog%E5%A2%9E%E5%8A%A0%E5%8A%A8%E7%94%BB/#4%E8%8F%9C%E5%8D%95%E7%BC%A9%E6%94%BE" target="_blank" rel="noopener"
 >利用CSS给Blog增加动画&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br>
 &lt;h1 id="添加打字动画">添加打字动画&lt;/h1>
 &lt;p>参考教程：&lt;/p>
 &lt;p>&lt;a class="link" href="https://shishuochen.gitee.io/2020/uffick8u1/#8-subtitle%E6%89%93%E5%AD%97%E6%9C%BA%E6%98%BE%E7%A4%BA" target="_blank" rel="noopener"
 >https://shishuochen.gitee.io/2020/uffick8u1/#8-subtitle打字机显示&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>我的改法：
 在D:\blog\myblog\themes\hugo-theme-stack\layouts的index.html开头贴上&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{{&lt;/span> &lt;span class="nx">define&lt;/span> &lt;span class="s2">&amp;#34;main&amp;#34;&lt;/span> &lt;span class="p">}}&lt;/span>
@@ -1213,36 +1214,36 @@ fill="currentColor">
 &lt;p>&lt;a class="link" href="https://ponder.lol/2023/custom-hugo-theme-stack/#%e8%bf%94%e5%9b%9e%e9%a1%b6%e9%83%a8%e6%8c%89%e9%92%ae" target="_blank" rel="noopener"
 >https://ponder.lol/2023/custom-hugo-theme-stack/#返回顶部按钮&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br>
 &lt;h1 id="显示统计文章发布数量">显示/统计文章发布数量&lt;/h1>
 &lt;p>参考教程：&lt;/p>
 &lt;p>&lt;a class="link" href="https://thirdshire.com/hugo-stack-renovation/#%E6%80%BB%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%8F%91%E8%A1%A8%E4%BA%86x%E7%AF%87%E6%96%87%E7%AB%A0%E5%85%B1%E8%AE%A1x%E5%AD%97" target="_blank" rel="noopener"
 >https://thirdshire.com/hugo-stack-renovation/#总字数统计发表了x篇文章共计x字&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br>
 &lt;h1 id="添加文章加密功能">添加文章加密功能&lt;/h1>
 &lt;p>目前只成功实现一种网页前端加密的方法，不过对我来说够了。&lt;/p>
 &lt;p>参考&lt;a class="link" href="https://naturaleki.one/post/loadinghugo%E8%A3%85%E4%BF%AE%E6%97%A5%E5%BF%9703/#%E6%96%87%E7%AB%A0%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81%E8%AE%BF%E9%97%AE" target="_blank" rel="noopener"
 >天堂错误文件-Loading：《hugo 装修日志 03》&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-操作后，在要加密的文章头部添加&lt;/p>
+s操作后，在要加密的文章头部添加&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">password&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s2">&amp;#34;xxxx&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
@@ -1253,21 +1254,21 @@ fill="currentColor">
 &lt;p>&lt;a class="link" href="https://www.sleepymoon.cyou/2023/hugo-shortcodes/#%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A" target="_blank" rel="noopener"
 >Hugo | 在 Stack 主题上可行的短代码们&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://hugo-theme-luna.imiku.me/zh-cn/2022/05/02/shortcodes.html/#%E5%8D%A1%E7%89%87%E9%93%BE%E6%8E%A5" target="_blank" rel="noopener"
 >短代码（Shortcodes）&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>在博客进行一些实施成功的样式：&lt;/p>
 &lt;h2 id="文本效果语法">文本效果语法&lt;/h2>
 &lt;h3 id="文本折叠">文本折叠&lt;/h3>
@@ -1308,12 +1309,12 @@ alt="图1"
 &lt;p>参考&lt;a class="link" href="https://immmmm.com/hi-neodb-api/" target="_blank" rel="noopener"
 >木木木木木大佬的NeoDB嵌入教程&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>书籍：
 &lt;div class="db-card">
 &lt;div class="db-card-subject">
@@ -1349,7 +1350,7 @@ Hermione Lee, Financial Times&lt;/div>
 &lt;div class="db-card-post">&lt;img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://neodb.social/m/game/2021/09/15edeb3a9f-72bc-41da-9a6a-80e7e1aa0864.jpg">&lt;/div>
 &lt;div class="db-card-content">
 &lt;div class="db-card-title">&lt;a href="https://neodb.social/game/5WjnsFHydRg1rtlErgLmMs" class="cute" target="_blank" rel="noreferrer">弹丸论破 希望学园与绝望高中生 ダンガンロンパ 希望の学園と絶望の高校生&lt;/a>&lt;/div>
-&lt;div class="rating">&lt;span class="allstardark">&lt;span class="allstarlight" style="width:87%">&lt;/span>&lt;/span>&lt;span class="rating_nums">8.7&lt;/span>&lt;/div>
+&lt;div class="rating">&lt;span class="allstardark">&lt;span class="allstarlight" style="width:88%">&lt;/span>&lt;/span>&lt;span class="rating_nums">8.8&lt;/span>&lt;/div>
 &lt;div class="db-card-abstract">《弹丸论破 希望的学园与绝望高中生》（日语：ダンガンロンパ 希望の学園と絶望の高校生）是一套由日本游戏开发商Spike（日语：株式会社スパイク）制作，于2010年11月25日开始发售的PlayStation Portable游戏。&lt;/div>
 &lt;/div>
 &lt;div class="db-card-cate">game&lt;/div>
@@ -1383,24 +1384,24 @@ allowfullscreen="true"
 &lt;a class="link" href="https://irithys.com/hugo-mod-1/#%e8%81%94%e7%b3%bb%e6%b0%94%e6%b3%a1" target="_blank" rel="noopener"
 >给 Hugo 加一点好玩的功能&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>结果：自己不用魔法测试是没问题的，不知道其他地区访问实际应用怎样。&lt;/p>
 &lt;br>
 &lt;h2 id="添加ko-fi打赏功能">添加ko-fi打赏功能&lt;/h2>
 &lt;p>参考&lt;a class="link" href="https://ko-fi.com/" target="_blank" rel="noopener"
 >Ko-fi官网&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-一步步做，链接直接复制在left.html里就行&lt;/p>
+s一步步做，链接直接复制在left.html里就行&lt;/p>
 &lt;p>结果：图标好看，不过不魔法好像也显示不出，无所谓了！&lt;/p>
 &lt;br>
 &lt;h2 id="添加waline评论">添加Waline评论&lt;/h2>
@@ -1408,30 +1409,30 @@ fill="currentColor">
 &lt;p>&lt;a class="link" href="https://waline.js.org/guide/get-started/" target="_blank" rel="noopener"
 >Waline官方文档&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://naturaleki.one/post/loadinghugo%E8%A3%85%E4%BF%AE%E6%97%A5%E5%BF%9702/" target="_blank" rel="noopener"
 >天堂错误文件-Loading hugo 装修日志 02&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://8bytes.top/2022/12/12/walineErr/" target="_blank" rel="noopener"
 >waline无法登录(vercel.app被污染)&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>结果：因vercel被墙需要额外解析dns，不魔法好像加载不出来，算了就这样吧&lt;/p>
 &lt;br>
 &lt;h2 id="添加arititalk说说界面">添加Arititalk说说界面&lt;/h2>
@@ -1439,23 +1440,23 @@ fill="currentColor">
 &lt;p>参考&lt;a class="link" href="https://artitalk.js.org/doc.html#%F0%9F%8C%88-leancloud-%E7%9A%84%E7%9B%B8%E5%85%B3%E5%87%86%E5%A4%87" target="_blank" rel="noopener"
 >Artitalk使用文档&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;strong>注：&lt;/strong>&lt;/p>
 &lt;p>LeanCloud用的是国际版，在自己原来建waline评论区的那个应用里做上述教程就好了，不要单独新建应用，不然后期会出现冲突。&lt;/p>
 &lt;p>然后参考&lt;a class="link" href="https://naturaleki.one/post/loadinghugo%E8%A3%85%E4%BF%AE%E6%97%A5%E5%BF%9704/" target="_blank" rel="noopener"
 >Loading：《hugo 装修日志 04》&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>编辑eki.html文件时，国际版的LeanCloud不需要填serverurl&lt;/p>
 &lt;p>结果：头像要url链接，把图转存到某个图床，然后在LeanCloud设置里添加url，不过依然加载不出来，算了能发东西就行。&lt;/p>
 &lt;br>
@@ -1473,23 +1474,23 @@ fill="currentColor">
 &lt;a class="link" href="https://www.cnblogs.com/misaka10212/p/16751506.html" target="_blank" rel="noopener"
 >https://www.cnblogs.com/misaka10212/p/16751506.html&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br>
 &lt;h1 id="安装pandoc">安装Pandoc&lt;/h1>
 &lt;p>Pandoc是一个开源的文档转换工具，可以从&lt;a class="link" href="https://pandoc.org/" target="_blank" rel="noopener"
 >官网&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-下载并安装。&lt;/p>
+s下载并安装。&lt;/p>
 &lt;p>Windows用户下载 pandoc-3.1.9-windows-x86_64.msi 或 pandoc-3.1.9-windows-x86_64.zip。
 如果喜欢使用MSI安装程序（Microsoft Installer），选择 .msi 文件。
 如果喜欢使用ZIP文件，选择 .zip 文件。
@@ -1538,41 +1539,41 @@ fill="currentColor">
 &lt;p>方法1：参考→&lt;a class="link" href="https://forum-zh.obsidian.md/t/topic/971/3" target="_blank" rel="noopener"
 >怎么用calibre将电子书简单粗暴转换为md格式导入obsidian&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>方法2：&lt;a class="link" href="https://notionchina.co/guide/api-import-export/export-a-page-as-markdown.html" target="_blank" rel="noopener"
 >使用notion的导出为markdown功能&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-（前提是文档已存在notion）    &lt;/p>
+s（前提是文档已存在notion）    &lt;/p>
 &lt;p>其他方法：&lt;a class="link" href="https://publish.obsidian.md/chinesehelp/03&amp;#43;%E6%95%99%E7%A8%8B/%E4%BB%8E%E5%85%B6%E4%BB%96%E8%BD%AF%E4%BB%B6%E5%AF%BC%E5%85%A5obsidian%EF%BC%88MOC%EF%BC%89" target="_blank" rel="noopener"
 >从其他软件导入obsidian&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br>
 &lt;h1 id="其他参考">其他参考&lt;/h1>
 &lt;p>&lt;a class="link" href="http://www.liangshunet.com/ca/201904/765362983.htm" target="_blank" rel="noopener"
 >ppt转word（含怎么把大纲不显示文字的PPT转换Word和如何保留原格式将PPT转换成Word）&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p></description></item><item><title>【逛展】V&amp;A博物馆珍藏吉尔伯特精品展</title><link>https://springcecilia.blog/%E7%92%80%E7%92%A8%E4%B8%87%E8%B1%A1%E8%8B%B1%E5%9B%BDVA%E5%8D%9A%E7%89%A9%E9%A6%86%E7%8F%8D%E8%97%8F%E5%90%89%E5%B0%94%E4%BC%AF%E7%89%B9%E7%B2%BE%E5%93%81%E5%B1%95-2ef607a93ff1489992b00ed5c9bd35fc/</link><pubDate>Fri, 03 Nov 2023 10:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E7%92%80%E7%92%A8%E4%B8%87%E8%B1%A1%E8%8B%B1%E5%9B%BDVA%E5%8D%9A%E7%89%A9%E9%A6%86%E7%8F%8D%E8%97%8F%E5%90%89%E5%B0%94%E4%BC%AF%E7%89%B9%E7%B2%BE%E5%93%81%E5%B1%95-2ef607a93ff1489992b00ed5c9bd35fc/</guid><description>&lt;img src="https://springcecilia.blog/images/v0.jpg" alt="Alt Text" style="width: 500px; height: auto;">
+s&lt;/p></description></item><item><title>【逛展】V&amp;A博物馆珍藏吉尔伯特精品展</title><link>https://springcecilia.blog/%E7%92%80%E7%92%A8%E4%B8%87%E8%B1%A1%E8%8B%B1%E5%9B%BDVA%E5%8D%9A%E7%89%A9%E9%A6%86%E7%8F%8D%E8%97%8F%E5%90%89%E5%B0%94%E4%BC%AF%E7%89%B9%E7%B2%BE%E5%93%81%E5%B1%95-2ef607a93ff1489992b00ed5c9bd35fc/</link><pubDate>Fri, 03 Nov 2023 10:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E7%92%80%E7%92%A8%E4%B8%87%E8%B1%A1%E8%8B%B1%E5%9B%BDVA%E5%8D%9A%E7%89%A9%E9%A6%86%E7%8F%8D%E8%97%8F%E5%90%89%E5%B0%94%E4%BC%AF%E7%89%B9%E7%B2%BE%E5%93%81%E5%B1%95-2ef607a93ff1489992b00ed5c9bd35fc/</guid><description>&lt;img src="https://springcecilia.blog/images/v0.jpg" alt="Alt Text" style="width: 500px; height: auto;">
 &lt;p>V&amp;amp;A博物馆是1851年伦敦首届世博会后，维多利亚女王的丈夫阿尔伯特亲王发起并建立以世博会展品为基本藏品的博物馆。这次在上海展出的90件私人捐赠的V&amp;amp;A馆藏品，主要呈现16世纪至20世纪近500年欧洲装饰艺术的发展与演变。&lt;/p>
 &lt;br>
 &lt;p>记录几个我觉得有意思的展品↓&lt;/p>
@@ -1589,12 +1590,12 @@ fill="currentColor">
 &lt;p>&lt;a class="link" href="https://en.wikipedia.org/wiki/Regensburg" target="_blank" rel="noopener"
 >Regensburg（雷根斯堡）&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-是德国最大的中世纪老城之一，也是第二、第三次十字军东征的起始地。&lt;/p>
+s是德国最大的中世纪老城之一，也是第二、第三次十字军东征的起始地。&lt;/p>
 &lt;br>
 &lt;h1 id="18世纪银器餐具多层饰盘">18世纪银器餐具——多层饰盘&lt;/h1>
 &lt;br>
@@ -1605,21 +1606,21 @@ fill="currentColor">
 &lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=Avwz2yrV6KE" target="_blank" rel="noopener"
 >The Golden Age of Silver&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-youtube的这个系列对银器的展示和介绍更全面&lt;/p>
+s youtube的这个系列对银器的展示和介绍更全面&lt;/p>
 &lt;p>&lt;a class="link" href="https://m.thepaper.cn/newsDetail_forward_25446834" target="_blank" rel="noopener"
 >从“野蛮”到“文明”的欧洲餐桌，可不止一把叉子那么简单&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br>
 &lt;h1 id="防震巧克力杯及托盘">防震巧克力杯及托盘&lt;/h1>
 &lt;br>
@@ -1632,30 +1633,30 @@ fill="currentColor">
 &lt;p>日本伊万里瓷wiki：&lt;a class="link" href="https://zh.wikipedia.org/wiki/%E4%BC%8A%E8%90%AC%E9%87%8C%E7%87%92" target="_blank" rel="noopener"
 >https://zh.wikipedia.org/wiki/伊萬里燒&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-   &lt;/p>
+s   &lt;/p>
 &lt;p>相关：&lt;a class="link" href="https://zhuanlan.zhihu.com/p/77261893" target="_blank" rel="noopener"
 >https://zhuanlan.zhihu.com/p/77261893&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.city.imari.saga.jp/4331.htm" target="_blank" rel="noopener"
 >https://www.city.imari.saga.jp/4331.htm&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br>
 &lt;h1 id="18世纪20年代的英国茶叶罐">18世纪20年代的英国茶叶罐&lt;/h1>
 &lt;br>
@@ -1669,70 +1670,70 @@ fill="currentColor">
 &lt;p>&lt;a class="link" href="https://destinationtea.com/when-tea-wasnt-for-everyone/" target="_blank" rel="noopener"
 >When Tea Wasn’t for Everyone&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-文章提到，在 1740 年至 1822 年间的住在英国殖民地上的人每年将平均收入的 9% 拿来买茶叶；&lt;/p>
+s文章提到，在 1740 年至 1822 年间的住在英国殖民地上的人每年将平均收入的 9% 拿来买茶叶；&lt;/p>
 &lt;p>而这篇文章&lt;a class="link" href="https://www.tcd.ie/Economics/assets/pdf/SER/2015/McGowan,%20Brewing%20Up%20a%20Storm-%20Investigating%20British%20Tea%20Prices%20from%201690-1914.pdf" target="_blank" rel="noopener"
 >Brewing up a storm: Investigating British tea prices from 1690-1914&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-提到，1850年的普通英国人愿意放弃15%的收入来保留获得茶叶和糖的机会。&lt;/p>
+s提到，1850年的普通英国人愿意放弃15%的收入来保留获得茶叶和糖的机会。&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.ocha-festival.jp/archive/english/conference/ICOS2001/files/PROC/I-004.pdf" target="_blank" rel="noopener"
 >Tea culture in Britain, 1660-1800&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-   里面提到：&lt;/p>
+s   里面提到：&lt;/p>
 &lt;p>早在1698年，英国政府就对茶征税，每隔几年就会增加一次，最终关税高得吓人，几乎是茶叶成本的100%。（1773 年的波士顿倾茶事件，就是由于英国政府试图对再出口到美洲殖民地的茶叶征收高额关税而引发的。波士顿倾茶事件中有将近 342 箱茶叶约 92,000 磅（约 46 吨，总价值 9,659 英镑）被倒入波士顿港，换算成现代价值将近150 万美元。）&lt;/p>
 &lt;p>这篇文章还提到一些有趣的细节，比如1720 年代之前牛奶加茶的习惯在英国还并不普遍，这种混合喝法要到1830年代之后才流行起来；英国的糖业可追溯到1650年，糖的产地主要来自西印度群岛的甘蔗种植园，还有一些人在 1800 年左右通过抵制糖的方式来抗议奴隶贸易等等。&lt;/p>
 &lt;p>三联这篇文章&lt;a class="link" href="https://www.lifeweek.com.cn/article/155075" target="_blank" rel="noopener"
 >https://www.lifeweek.com.cn/article/155075&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
- 说是“从1658到1700年16到50先令一磅（约合454克），而一个侍者一年的工资仅为6英镑（1英镑合20先令）。1660年曾达到120先令一磅的惊人价格。” （不过不知道是参考哪篇文献，用英文搜时没查到这么具体的数字。）&lt;/p>
+s 说是“从1658到1700年16到50先令一磅（约合454克），而一个侍者一年的工资仅为6英镑（1英镑合20先令）。1660年曾达到120先令一磅的惊人价格。” （不过不知道是参考哪篇文献，用英文搜时没查到这么具体的数字。）&lt;/p>
 &lt;br>
 &lt;p>&lt;strong>其他相关&lt;/strong>&lt;/p>
 &lt;p>&lt;a class="link" href="https://qmhistoryoftea.wordpress.com/2014/01/11/buying-tea-in-1801/" target="_blank" rel="noopener"
 >Buying Tea in 1801&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="http://historychina.net/qsyj/ztyj/zwgx/2012-12-06/33370.shtml" target="_blank" rel="noopener"
 >http://historychina.net/qsyj/ztyj/zwgx/2012-12-06/33370.shtml&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.sohu.com/a/243824277_250209" target="_blank" rel="noopener"
 >英国茶趣闻：茶是如何传入英国的？&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>《绿色黄金：茶叶帝国》，社会科学文献出版社&lt;/p>
 &lt;br>
 &lt;h1 id="鼻烟盒">鼻烟盒&lt;/h1>
@@ -1766,48 +1767,48 @@ fill="currentColor">
 &lt;p>&lt;a class="link" href="https://new.qq.com/rain/a/20200103A05EGU00" target="_blank" rel="noopener"
 >鼻烟盒——18世纪欧洲烟民的掌中珍宝&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.sohu.com/a/109464932_161268" target="_blank" rel="noopener"
 >鼻烟盒:欧洲烟民的掌中艺术&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-  &lt;/p>
+s  &lt;/p>
 &lt;p>&lt;a class="link" href="https://www.jiemian.com/article/3638863.html" target="_blank" rel="noopener"
 >荒诞、奢靡与欲望，真实版“权游”中的顶级道具&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://history.ifeng.com/c/7slnXHOWBqc" target="_blank" rel="noopener"
 >西方的鼻烟盒，为何到了中国变成了鼻烟壶？&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://snuffbottlesociety.org/zh/History" target="_blank" rel="noopener"
 >鼻烟和鼻烟壶的历史&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br>
 &lt;h1 id="微型马赛克工艺">微型马赛克工艺&lt;/h1>
 &lt;br>
@@ -1835,12 +1836,12 @@ allowfullscreen="true"
 &lt;p>这篇&lt;a class="link" href="https://zhuanlan.zhihu.com/p/342668604" target="_blank" rel="noopener"
 >镶嵌经典，凝聚匠心 ｜不可不知的意大利微型马赛克镶嵌首饰&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-文章提及，四百多年前的梵蒂冈的圣彼得大教堂为了壁画防潮，直接用微型马赛克马赛克重新嵌了一遍。  &lt;/p>
+s文章提及，四百多年前的梵蒂冈的圣彼得大教堂为了壁画防潮，直接用微型马赛克马赛克重新嵌了一遍。  &lt;/p>
 &lt;br>
 &lt;h1 id="其他">其他&lt;/h1>
 &lt;br>
@@ -1860,12 +1861,12 @@ fill="currentColor">
 &lt;p>&lt;a class="link" href="https://zh.wikipedia.org/wiki/%E7%8E%B3%E7%91%81" target="_blank" rel="noopener"
 >玳瑁&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-被视为龟类中最好的物种，其寿命可达1500年，享有“海金”之称。（当然，玳瑁离了壳就活不成了，因为上千年来人类的过度捕杀，如今玳瑁是濒危物种。）&lt;/p>
+s被视为龟类中最好的物种，其寿命可达1500年，享有“海金”之称。（当然，玳瑁离了壳就活不成了，因为上千年来人类的过度捕杀，如今玳瑁是濒危物种。）&lt;/p>
 &lt;br></description></item><item><title>【爵柊】草莓奶油慕斯</title><link>https://springcecilia.blog/%E7%88%B5%E6%9F%8A%E8%8D%89%E8%8E%93%E5%A5%B6%E6%B2%B9%E6%85%95%E6%96%AF/</link><pubDate>Wed, 25 Oct 2023 17:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E7%88%B5%E6%9F%8A%E8%8D%89%E8%8E%93%E5%A5%B6%E6%B2%B9%E6%85%95%E6%96%AF/</guid><description>&lt;p>设定：爵柊同居中&lt;/p>
 &lt;p>避雷要素：口交&lt;/p>
 &lt;p>&lt;strong>————————————————————————————————&lt;/strong>   &lt;/p>
@@ -5162,75 +5163,75 @@ Gin送完耳钉后的某个夜晚。&lt;/p>
 &lt;p>&lt;a class="link" href="http://www.chinanews.com.cn/cul/news/2009/03-07/1592366.shtml" target="_blank" rel="noopener"
 >南风窗特约撰稿《大江健三郎的冲绳诉讼&amp;ndash;访日本《世界》杂志主编》&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.thepaper.cn/newsDetail_forward_18191729" target="_blank" rel="noopener"
 >澎湃新闻特稿《美军基地与身份鸿沟，冲绳“没有真正‘回归’”》&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://world.huanqiu.com/article/47xDYyWNda6" target="_blank" rel="noopener"
 >环球时报 《政府庆祝，县民游行——“回归”50年，冲绳民众人权仍遭践踏》&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.thepaper.cn/newsDetail_forward_2213347" target="_blank" rel="noopener"
 >澎湃新闻《一九六八｜专访小熊英二①：日本战后一代遭遇“现代”的时刻》&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.sohu.com/a/159619790_232950" target="_blank" rel="noopener"
 >文化纵横 《孙歌：走出主权的迷误 ——冲绳民众的实践及启示》&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="http://www.wyzxwk.com/Article/sichao/2020/11/425995.html" target="_blank" rel="noopener"
 >《水平轴思想——关于冲绳的“共同体意识”》冈本惠德&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.acsils.org/home" target="_blank" rel="noopener"
 >琉球民族独立综合研究学会（The Association of Comprehensive Studies for Independence of the Lew Chewans）官网&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://tamakidenny.com/" target="_blank" rel="noopener"
 >冲绳知事 玉城デニー OFFICIAL WEBSITE&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br>
 &lt;p>&lt;strong>其他背景相关&lt;/strong>&lt;/p>
 &lt;br>
@@ -5257,12 +5258,12 @@ fill="currentColor">
 &lt;p>&lt;a class="link" href="https://www.bilibili.com/video/BV1oD4y1R7cf/" target="_blank" rel="noopener"
 >NHK放送：1984全斗焕访日视频&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>干保柱,毕亚娜.战后日本中央与地方关系的重构[J].兰州学刊,2017.&lt;/p>
 &lt;p>杜钢建,刘杰.日本地方自治的立法权[J].小城镇建设, 2000.&lt;/p>
 &lt;p>宋金文.日本的地方分权与国家治理方式转型研究[J].社会政策研究, 2018.&lt;/p>
@@ -5875,12 +5876,12 @@ fill="currentColor">
 &lt;p>文末最后一首为二十世纪八十年代喜纳昌吉的经典名曲《花〜人心皆向花〜》（&lt;a class="link" href="https://www.youtube.com/watch?v=cC4YI9Y-gRE" target="_blank" rel="noopener"
 >花〜すべての人の心に花を〜&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-），是第一首流行的纯正冲绳民谣，后被各国相继翻唱过。&lt;/p>
+s），是第一首流行的纯正冲绳民谣，后被各国相继翻唱过。&lt;/p>
 &lt;br>
 &lt;p>【1】《海の声》：由BEGIN组合三线演奏的冲绳民歌。&lt;/p>
 &lt;iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&amp;id=1396731077&amp;auto=0&amp;height=66">&lt;/iframe>
@@ -5888,22 +5889,22 @@ fill="currentColor">
 &lt;p>【2】《&lt;a class="link" href="https://www.youtube.com/watch?v=EC9T4JtJmKE" target="_blank" rel="noopener"
 >安里屋咏叹&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-》：一首由八重山群岛流传的叙事民谣，起源于琉球王国时代。&lt;/p>
+s》：一首由八重山群岛流传的叙事民谣，起源于琉球王国时代。&lt;/p>
 &lt;br>
 &lt;p>【3】《&lt;a class="link" href="https://www.youtube.com/watch?v=ns9j6Nmvhqs" target="_blank" rel="noopener"
 >祭りのあと风&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-》（祭典过后的风）：三线伴奏的冲绳民谣。&lt;/p>
+s 》（祭典过后的风）：三线伴奏的冲绳民谣。&lt;/p>
 &lt;br>
 &lt;p>【4】名柯主题曲《运命のルーレット廻して》（转动命运之轮）。&lt;/p>
 &lt;iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&amp;id=2074118688&amp;auto=0&amp;height=66">&lt;/iframe>
@@ -5918,34 +5919,34 @@ fill="currentColor">
 &lt;p>【7】《&lt;a class="link" href="https://www.youtube.com/watch?v=OQNTcoayZ3E" target="_blank" rel="noopener"
 >弥勒世果报&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-》：坂本龙一于2015年参与演奏的反战歌曲，由冲绳民谣组合Unaigumi （冲绳语意为‘姐妹组合’）演唱，原曲为《Undercooled》。&lt;/p>
+s》：坂本龙一于2015年参与演奏的反战歌曲，由冲绳民谣组合Unaigumi （冲绳语意为‘姐妹组合’）演唱，原曲为《Undercooled》。&lt;/p>
 &lt;p>*“弥勒世”指的是佛教与古琉球信仰相结合的神灵庇佑的和平世界。&lt;/p>
 &lt;br>
 &lt;p>【8】《&lt;a class="link" href="https://www.youtube.com/watch?v=Lg1ulmkmvZg" target="_blank" rel="noopener"
 >こいのうた&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-》(恋之歌)：三线工工四弹奏版本。&lt;/p>
+s》(恋之歌)：三线工工四弹奏版本。&lt;/p>
 &lt;p>*工工四 （[kuŋkunɕiː]）：琉球三线的传统指法。&lt;/p>
 &lt;br>
 &lt;p>【9】《&lt;a class="link" href="https://www.youtube.com/watch?v=5TR1wJCimyk" target="_blank" rel="noopener"
 >涙そうそう&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-》（淚光闪闪）：创作于世纪之交的冲绳岛歌，于2000年问世红遍日本的大街小巷，被海内外翻唱了不下二十次，此后几乎所有冲绳出身的歌手都要翻唱这首。&lt;/p>
+s》（淚光闪闪）：创作于世纪之交的冲绳岛歌，于2000年问世红遍日本的大街小巷，被海内外翻唱了不下二十次，此后几乎所有冲绳出身的歌手都要翻唱这首。&lt;/p>
 &lt;br>
 &lt;p>其他补充：&lt;/p>
 &lt;p>岛呗&lt;/p>
@@ -5953,30 +5954,30 @@ fill="currentColor">
 &lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=sWIUjM_iIoQ" target="_blank" rel="noopener"
 >黄金之花&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=6HQ-UKTc3UQ&amp;amp;list=RD6HQ-UKTc3UQ&amp;amp;start_radio=1" target="_blank" rel="noopener"
 >月ぬ美しゃ&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=GdV9tJ8v4lo" target="_blank" rel="noopener"
 >Okinawan music&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br>
 &lt;p>*本连载系列已完结。&lt;/p>
 &lt;/details></description></item><item><title>【表演科】银月白沙之恋（23）</title><link>https://springcecilia.blog/%E8%A1%A8%E6%BC%94%E7%A7%91%E9%93%B6%E6%9C%88%E7%99%BD%E6%B2%99%E4%B9%8B%E6%81%8B23-eece2d73350146fea0e475bc00188511/</link><pubDate>Sun, 09 Jul 2023 22:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E8%A1%A8%E6%BC%94%E7%A7%91%E9%93%B6%E6%9C%88%E7%99%BD%E6%B2%99%E4%B9%8B%E6%81%8B23-eece2d73350146fea0e475bc00188511/</guid><description>&lt;p>&lt;strong>《星期六的第24小时》番外3，有一定的前文设定承接（OOC归我）&lt;/strong>&lt;/p>
@@ -13468,23 +13469,23 @@ fill="currentColor">
 &lt;p>【9】黄金之花：香檬的花。香檬由台湾传入琉球，琉球把太阳叫做“黄金”，将香檬的花视为吸收太阳能量和生机吉祥植物，故称“黄金之花”。过去琉球人常在远行的亲人的行囊里放入黄金之花或香檬果实，唱这首《&lt;a class="link" href="https://www.youtube.com/watch?v=sWIUjM_iIoQ" target="_blank" rel="noopener"
 >黄金之花&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-》祝福对方。
+s》祝福对方。
  
 &lt;br>&lt;/p>
 &lt;p>【10】《&lt;a class="link" href="https://www.youtube.com/watch?v=6HQ-UKTc3UQ&amp;amp;list=RD6HQ-UKTc3UQ&amp;amp;start_radio=1" target="_blank" rel="noopener"
 >月ぬ美しゃ&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-》：是琉球群岛八重山地区流传的一首民谣，歌名在八重山方言中意思是“月亮之美”，日语翻译为“月の美しさ”，歌手夏川里美有唱过一个删改版。*鉴于没有中译版，文中的歌词为我自己参考日译版翻译修改的产物。&lt;/p>
+s》：是琉球群岛八重山地区流传的一首民谣，歌名在八重山方言中意思是“月亮之美”，日语翻译为“月の美しさ”，歌手夏川里美有唱过一个删改版。*鉴于没有中译版，文中的歌词为我自己参考日译版翻译修改的产物。&lt;/p>
 &lt;br>
 &lt;/details></description></item><item><title>【表演科】银月白沙之恋（4）</title><link>https://springcecilia.blog/%E8%A1%A8%E6%BC%94%E7%A7%91%E9%93%B6%E6%9C%88%E7%99%BD%E6%B2%99%E4%B9%8B%E6%81%8B4-bbef790e828f4beb87cbf14b99372257/</link><pubDate>Thu, 08 Sep 2022 19:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E8%A1%A8%E6%BC%94%E7%A7%91%E9%93%B6%E6%9C%88%E7%99%BD%E6%B2%99%E4%B9%8B%E6%81%8B4-bbef790e828f4beb87cbf14b99372257/</guid><description>&lt;p>&lt;strong>《星期六的第24小时》番外3，有一定的前文设定承接（OOC归我）&lt;/strong>&lt;/p>
 &lt;p>&lt;strong>冲绳半架空群像剧&lt;/strong>&lt;/p>
@@ -14248,21 +14249,21 @@ fill="currentColor">
 &lt;p>首里城官网： &lt;a class="link" href="https://oki-park.jp/shurijo/sc/" target="_blank" rel="noopener"
 >https://oki-park.jp/shurijo/sc/&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>其他文化&amp;amp;风情&amp;amp;遗址介绍： &lt;a class="link" href="https://ryukyunihonisan.jp/cn/cultural_property_cn/" target="_blank" rel="noopener"
 >https://ryukyunihonisan.jp/cn/cultural_property_cn/&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;br>
 &lt;p>【4】君南风为古琉球的高级祝女，1500年，琉球国的尚真王与石垣岛的豪族·远弥计赤蜂交战，君南风在八重山联合其他神女于竹筏上立起火把，做佯攻造势，直至敌军将领被诛。（参考《中山世谱》）
  &lt;/p>
@@ -23742,30 +23743,30 @@ Correctness的设定呢，真是对不住啊，小朋友。”&lt;/p>
 &lt;p>订阅方式：&lt;a class="link" href="https://springcecilia.blog/index.xml" target="_blank" rel="noopener"
 >RSS&lt;img src="https://springcecilia.blog/images/rss.svg" width=15px height=auto >&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-。若您不熟悉RSS，可参考&lt;a class="link" href="https://www.jianshu.com/p/a5fa5cd6d933" target="_blank" rel="noopener"
+s。若您不熟悉RSS，可参考&lt;a class="link" href="https://www.jianshu.com/p/a5fa5cd6d933" target="_blank" rel="noopener"
 >此教程&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-，其他相关教程也很多，博主自己用来订阅RSS的工具为Feedly。&lt;/p>
+s，其他相关教程也很多，博主自己用来订阅RSS的工具为Feedly。&lt;/p>
 &lt;h1>&lt;img src="https://springcecilia.blog/images/002.png" width=60px height=auto>联系方式&lt;/h1>
 &lt;p>&lt;a class="link" href="https://peing.net/zh-CN/91e8000a0af399" target="_blank" rel="noopener"
 >（需魔法）匿名提问箱&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+s&lt;/p>
 &lt;p>（偶尔需要魔法）点击博客右下角的聊天小图标即可私聊&lt;p>
 &lt;p>有空时会回复~ &lt;/p>
 &lt;p>悄悄补充：博客文章的评论区要魔法才能显示出来。&lt;p>
