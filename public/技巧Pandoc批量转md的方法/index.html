@@ -379,7 +379,7 @@
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-save"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
             <time class="article-words">
-            约1571字，阅读大约需 3 分钟
+            约1498字，阅读大约需 3 分钟
             </time>
         </div>
     
@@ -437,7 +437,7 @@
   <p>需要：Git、pandoc</p>
 <p>批量管理Markdown文件的笔记软件为Obsidian  </p>
 <p>前提：已安装Git软件、word文档格式为.docx而不是.doc（如果是.doc格式要先自行转换为.docx） 、文件命名不含特殊字符     </p>
-<p>——————————————————————                    </p>
+<hr>
 <p>如果你有大量文档需要搬运到博客，可以尝试.docx格式批量转.md    </p>
 <p><strong>.docx ：</strong> Microsoft Word 文档的文件扩展名 ，以 XML（可扩展标记语言）为基础。这种格式取代了早期的二进制 .doc 格式，提供了更高的兼容性和可扩展性。（所以office软件保存现在保存.docx、.pptx等格式更好哦）。</p>
 <p><strong>.md：</strong> Markdown 文件的文件扩展名，通常包含纯文本，并使用一些特定的语法规则来标记文本的结构和格式，方便转换为有效的HTML。</p>
@@ -454,6 +454,7 @@
 </svg></span>
 
 </p>
+<br>
 <h1 id="安装pandoc">安装Pandoc</h1>
 <p>Pandoc是一个开源的文档转换工具，可以从<a class="link" href="https://pandoc.org/"  target="_blank" rel="noopener"
     >官网</a>
@@ -471,18 +472,22 @@
 如果喜欢使用MSI安装程序（Microsoft Installer），选择 .msi 文件。
 如果喜欢使用ZIP文件，选择 .zip 文件。
 这两个文件格式都是Windows用户常见的安装文件类型，选一个下就好，下载完成后，按照提示说明进行安装</p>
+<br>
 <h1 id="使用git将文档转换为markdown语法">使用Git将文档转换为markdown语法</h1>
 <p>找到包含你要批量转换的 Word 文档的文件夹，右键打开Open Git bash here。</p>
 <p>或者用cd命令在Git里导航到你的文件夹所在路径：    </p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">cd</span> <span class="o">/</span><span class="nx">X</span><span class="o">/</span><span class="nx">XXXX</span><span class="o">/</span><span class="nx">XXXX</span><span class="o">/</span><span class="nx">XXXX</span>
 </span></span></code></pre></div><p>注：在 Git Bash 中，路径分隔符使用正斜杠 /，而不是反斜杠 \。</p>
+<br>
 <p>转换 Word 文档为 Markdown，输入以下代码： </p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="nx">pandoc</span> <span class="nx">your_document</span><span class="p">.</span><span class="nx">docx</span> <span class="o">-</span><span class="nx">o</span> <span class="nx">output_file</span><span class="p">.</span><span class="nx">md</span>
-</span></span></code></pre></div><p>如果遇到问题，请确保 Git Bash 和 Pandoc 都已正确安装，并且 Pandoc 已经被添加到系统的 PATH 中。</p>
+</span></span></code></pre></div><br>
+<p>如果遇到问题，请确保 Git Bash 和 Pandoc 都已正确安装，并且 Pandoc 已经被添加到系统的 PATH 中。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-jsx" data-lang="jsx"><span class="line"><span class="cl"><span class="k">for</span> <span class="nx">file</span> <span class="k">in</span> <span class="nx">$</span><span class="p">(</span><span class="nx">find</span> <span class="p">.</span> <span class="o">-</span><span class="nx">name</span> <span class="s2">&#34;*.docx&#34;</span><span class="p">);</span> <span class="k">do</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">pandoc</span> <span class="s2">&#34;$file&#34;</span> <span class="o">-</span><span class="nx">o</span> <span class="s2">&#34;${file%.docx}.md&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nx">done</span>
-</span></span></code></pre></div><p>这个脚本意思是使用 find 命令来查找当前目录及其子目录中的所有 .docx 文件，并通过循环逐个转换它们为 Markdown 文件。</p>
+</span></span></code></pre></div><p>这个脚本的意思是使用 find 命令来查找当前目录及其子目录中的所有 .docx 文件，并通过循环逐个转换它们为 Markdown 文件。</p>
+<br>
 <p><strong>注：这种方法假设文件名中没有空格或特殊字符。</strong></p>
 <p>如果您的文件名包含空格或特殊字符，可能会影响命令的解释和执行。</p>
 <p>常见的特殊字符有：</p>
@@ -494,6 +499,7 @@
 <p><strong>反引号（`）：</strong> 在某些上下文中，反引号可能用于命令替换。</p>
 <p><strong>注意在转换前让docx文件名避免包含上述特殊字符。</strong></p>
 <p>Pandoc 找不到文件时会尝试使用默认的输出格式。如果 Pandoc 无法从文件扩展名中推断出格式，将默认为 Markdown 格式。</p>
+<br>
 <h1 id="将markdown文件批量导入obsidian">将Markdown文件批量导入Obsidian</h1>
 <p>将之前转换生成的Markdown文件直接批量复制/移动到 Obsidian 笔记文件夹中，或使用Obsidian的导入功能将文件导入。</p>
 <p>Obsidian就会识别Markdown格式，并将文档添加到您的笔记库中。</p>
@@ -505,6 +511,7 @@
 <li>在右键菜单中，选择 &ldquo;New folder&rdquo;（新建文件夹）。</li>
 <li>输入文件夹的名称并按 Enter 键确认。这样就在选定的位置成功创建了一个新的笔记文件夹。在该文件夹中，你可以创建或存放、修改你的 Markdown 笔记文件，Obsidian 会根据笔记文件的路径和文件名来模拟文件夹结构。</li>
 </ol>
+<br>
 <h1 id="其他批量转md文件的方法">其他批量转md文件的方法</h1>
 <p>方法1：参考→<a class="link" href="https://forum-zh.obsidian.md/t/topic/971/3"  target="_blank" rel="noopener"
     >怎么用calibre将电子书简单粗暴转换为md格式导入obsidian</a>
@@ -518,9 +525,20 @@
 </svg></span>
 
 </p>
-<p>方法2：使用notion的导出为markdown功能（前提是文档已存在notion）    </p>
+<p>方法2：<a class="link" href="https://notionchina.co/guide/api-import-export/export-a-page-as-markdown.html"  target="_blank" rel="noopener"
+    >使用notion的导出为markdown功能</a>
+
+    
+<span style="white-space: nowrap;"><svg width=".7em"
+    height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+    <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+    <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+        fill="currentColor">
+</svg></span>
+
+（前提是文档已存在notion）    </p>
 <p>其他方法：<a class="link" href="https://publish.obsidian.md/chinesehelp/03&#43;%E6%95%99%E7%A8%8B/%E4%BB%8E%E5%85%B6%E4%BB%96%E8%BD%AF%E4%BB%B6%E5%AF%BC%E5%85%A5obsidian%EF%BC%88MOC%EF%BC%89"  target="_blank" rel="noopener"
-    >https://publish.obsidian.md/chinesehelp/03+教程/从其他软件导入obsidian（MOC）</a>
+    >从其他软件导入obsidian</a>
 
     
 <span style="white-space: nowrap;"><svg width=".7em"
@@ -531,10 +549,10 @@
 </svg></span>
 
 </p>
+<br>
 <h1 id="其他参考">其他参考</h1>
-<p>ppt转word（含怎么把大纲不显示文字的PPT转换Word和如何保留原格式将PPT转换成Word）</p>
 <p><a class="link" href="http://www.liangshunet.com/ca/201904/765362983.htm"  target="_blank" rel="noopener"
-    >http://www.liangshunet.com/ca/201904/765362983.htm</a>
+    >ppt转word（含怎么把大纲不显示文字的PPT转换Word和如何保留原格式将PPT转换成Word）</a>
 
     
 <span style="white-space: nowrap;"><svg width=".7em"
@@ -560,18 +578,6 @@
     </section>
 
 
-    
-    <section class="article-copyright">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
-</svg>
-
-
-
-        <span>Licensed under CC BY springceceilia</span>
-    </section>
     </footer>
 
 

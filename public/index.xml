@@ -1250,7 +1250,7 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
 &lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&#34;修改背景色&#34;&gt;修改背景色&lt;/h1&gt;
+&lt;h1 id=&#34;修改背景色及布局&#34;&gt;修改背景色及布局&lt;/h1&gt;
 &lt;p&gt;参考教程：
 &lt;a class=&#34;link&#34; href=&#34;https://oxidane-uni.github.io/p/%E4%BD%BF%E7%94%A8-hugo-%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%87%8D%E5%BB%BA%E4%B8%8E-stack-%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E8%AE%B0%E5%BD%95/#%E6%94%B9%E5%96%84%E6%B5%85%E8%89%B2%E6%A8%A1%E5%BC%8F%E5%8F%AF%E8%AF%BB%E6%80%A7&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;使用 Hugo 对博客的重建与 Stack 主题优化记录&lt;/a&gt;
@@ -1467,6 +1467,25 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
 &lt;/p&gt;
 &lt;br&gt;
+&lt;h1 id=&#34;添加文章加密功能&#34;&gt;添加文章加密功能&lt;/h1&gt;
+&lt;p&gt;目前只成功实现一种网页前端加密的方法，不过对我来说够了。&lt;/p&gt;
+&lt;p&gt;参考&lt;a class=&#34;link&#34; href=&#34;https://naturaleki.one/post/loadinghugo%E8%A3%85%E4%BF%AE%E6%97%A5%E5%BF%9703/#%E6%96%87%E7%AB%A0%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81%E8%AE%BF%E9%97%AE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;天堂错误文件-Loading：《hugo 装修日志 03》&lt;/a&gt;
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+操作后，在要加密的文章头部添加&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;password&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;xxxx&amp;#34;&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;password_hint&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;xxxxx&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;即可对显示的网页加密。&lt;/p&gt;
 &lt;h1 id=&#34;短代码应用&#34;&gt;短代码应用&lt;/h1&gt;
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.sleepymoon.cyou/2023/hugo-shortcodes/#%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1695,7 +1714,8 @@ Hermione Lee, Financial Times&lt;/div&gt;
 
 &lt;br&gt;
 &lt;br&gt;
-&lt;h1 id=&#34;添加channelio私信插件&#34;&gt;添加Channel.io私信插件&lt;/h1&gt;
+&lt;h1 id=&#34;魔法区项目&#34;&gt;魔法区项目&lt;/h1&gt;
+&lt;h2 id=&#34;添加channelio私信插件&#34;&gt;添加Channel.io私信插件&lt;/h2&gt;
 &lt;p&gt;参考：
 &lt;a class=&#34;link&#34; href=&#34;https://irithys.com/hugo-mod-1/#%e8%81%94%e7%b3%bb%e6%b0%94%e6%b3%a1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;给 Hugo 加一点好玩的功能&lt;/a&gt;
@@ -1709,9 +1729,9 @@ Hermione Lee, Financial Times&lt;/div&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
 &lt;/p&gt;
-&lt;p&gt;结果：自己不用魔法测试是没问题的，不知道实际应用怎样。&lt;/p&gt;
+&lt;p&gt;结果：自己不用魔法测试是没问题的，不知道其他地区访问实际应用怎样。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&#34;添加ko-fi打赏功能&#34;&gt;添加ko-fi打赏功能&lt;/h1&gt;
+&lt;h2 id=&#34;添加ko-fi打赏功能&#34;&gt;添加ko-fi打赏功能&lt;/h2&gt;
 &lt;p&gt;参考&lt;a class=&#34;link&#34; href=&#34;https://ko-fi.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Ko-fi官网&lt;/a&gt;
 
@@ -1726,7 +1746,7 @@ Hermione Lee, Financial Times&lt;/div&gt;
 一步步做，链接直接复制在left.html里就行&lt;/p&gt;
 &lt;p&gt;结果：图标好看，不过不魔法好像也显示不出，无所谓了！&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&#34;添加waline评论&#34;&gt;添加Waline评论&lt;/h1&gt;
+&lt;h2 id=&#34;添加waline评论&#34;&gt;添加Waline评论&lt;/h2&gt;
 &lt;p&gt;参考：&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://waline.js.org/guide/get-started/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Waline官方文档&lt;/a&gt;
@@ -1766,7 +1786,7 @@ Hermione Lee, Financial Times&lt;/div&gt;
 &lt;/p&gt;
 &lt;p&gt;结果：因vercel被墙需要额外解析dns，不魔法好像加载不出来，算了就这样吧&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&#34;添加arititalk说说界面&#34;&gt;添加Arititalk说说界面&lt;/h1&gt;
+&lt;h2 id=&#34;添加arititalk说说界面&#34;&gt;添加Arititalk说说界面&lt;/h2&gt;
 &lt;p&gt;有些短打和碎碎念就不打算单独在博客里弄成文章发，所以给博客添加一个类似空间说说的分区。&lt;/p&gt;
 &lt;p&gt;参考&lt;a class=&#34;link&#34; href=&#34;https://artitalk.js.org/doc.html#%F0%9F%8C%88-leancloud-%E7%9A%84%E7%9B%B8%E5%85%B3%E5%87%86%E5%A4%87&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Artitalk使用文档&lt;/a&gt;
@@ -1794,40 +1814,9 @@ Hermione Lee, Financial Times&lt;/div&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
 &lt;/p&gt;
-&lt;p&gt;编辑eki.html文件时，国际版的 LeanCloud 不需要填serverurl&lt;/p&gt;
-&lt;p&gt;头像要url链接，所以先把图转存到某个图床，然后复制其url，图床我使用的&lt;a class=&#34;link&#34; href=&#34;https://sm.ms/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;SM.MS&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;结果：不魔法好像也加载不出来，正合我意。&lt;/p&gt;
+&lt;p&gt;编辑eki.html文件时，国际版的LeanCloud不需要填serverurl&lt;/p&gt;
+&lt;p&gt;结果：头像要url链接，把图转存到某个图床，然后在LeanCloud设置里添加url，不过依然加载不出来，算了能发东西就行。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&#34;添加文章加密功能&#34;&gt;添加文章加密功能&lt;/h1&gt;
-&lt;p&gt;目前只成功实现一种网页前端加密的方法，不过对我来说够了。&lt;/p&gt;
-&lt;p&gt;参考&lt;a class=&#34;link&#34; href=&#34;https://naturaleki.one/post/loadinghugo%E8%A3%85%E4%BF%AE%E6%97%A5%E5%BF%9703/#%E6%96%87%E7%AB%A0%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81%E8%AE%BF%E9%97%AE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;天堂错误文件-Loading：《hugo 装修日志 03》&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-操作后，在要加密的文章头部添加&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;password&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;xxxx&amp;#34;&lt;/span&gt;  
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;password_hint&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;xxxxx&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;即可对显示的网页加密。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;暂时就优化到这个地步，发现有些浏览器可能界面显示有差异，但大多数都是正常的。&lt;/p&gt;
 &lt;p&gt;可以愉快地开启新的赛博魂器地的存档了！&lt;/p&gt;
@@ -1843,7 +1832,7 @@ Hermione Lee, Financial Times&lt;/div&gt;
         <description>&lt;p&gt;需要：Git、pandoc&lt;/p&gt;
 &lt;p&gt;批量管理Markdown文件的笔记软件为Obsidian  &lt;/p&gt;
 &lt;p&gt;前提：已安装Git软件、word文档格式为.docx而不是.doc（如果是.doc格式要先自行转换为.docx） 、文件命名不含特殊字符     &lt;/p&gt;
-&lt;p&gt;——————————————————————                    &lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;如果你有大量文档需要搬运到博客，可以尝试.docx格式批量转.md    &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;.docx ：&lt;/strong&gt; Microsoft Word 文档的文件扩展名 ，以 XML（可扩展标记语言）为基础。这种格式取代了早期的二进制 .doc 格式，提供了更高的兼容性和可扩展性。（所以office软件保存现在保存.docx、.pptx等格式更好哦）。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;.md：&lt;/strong&gt; Markdown 文件的文件扩展名，通常包含纯文本，并使用一些特定的语法规则来标记文本的结构和格式，方便转换为有效的HTML。&lt;/p&gt;
@@ -1860,6 +1849,7 @@ Hermione Lee, Financial Times&lt;/div&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
 &lt;/p&gt;
+&lt;br&gt;
 &lt;h1 id=&#34;安装pandoc&#34;&gt;安装Pandoc&lt;/h1&gt;
 &lt;p&gt;Pandoc是一个开源的文档转换工具，可以从&lt;a class=&#34;link&#34; href=&#34;https://pandoc.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;官网&lt;/a&gt;
@@ -1877,18 +1867,22 @@ Hermione Lee, Financial Times&lt;/div&gt;
 如果喜欢使用MSI安装程序（Microsoft Installer），选择 .msi 文件。
 如果喜欢使用ZIP文件，选择 .zip 文件。
 这两个文件格式都是Windows用户常见的安装文件类型，选一个下就好，下载完成后，按照提示说明进行安装&lt;/p&gt;
+&lt;br&gt;
 &lt;h1 id=&#34;使用git将文档转换为markdown语法&#34;&gt;使用Git将文档转换为markdown语法&lt;/h1&gt;
 &lt;p&gt;找到包含你要批量转换的 Word 文档的文件夹，右键打开Open Git bash here。&lt;/p&gt;
 &lt;p&gt;或者用cd命令在Git里导航到你的文件夹所在路径：    &lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;cd&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;X&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;XXXX&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;XXXX&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;XXXX&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;注：在 Git Bash 中，路径分隔符使用正斜杠 /，而不是反斜杠 \。&lt;/p&gt;
+&lt;br&gt;
 &lt;p&gt;转换 Word 文档为 Markdown，输入以下代码： &lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;pandoc&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;your_document&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;docx&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;o&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;output_file&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;md&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果遇到问题，请确保 Git Bash 和 Pandoc 都已正确安装，并且 Pandoc 已经被添加到系统的 PATH 中。&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;如果遇到问题，请确保 Git Bash 和 Pandoc 都已正确安装，并且 Pandoc 已经被添加到系统的 PATH 中。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;file&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;find&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;name&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;*.docx&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nx&#34;&gt;pandoc&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;$file&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;o&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;${file%.docx}.md&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;done&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这个脚本意思是使用 find 命令来查找当前目录及其子目录中的所有 .docx 文件，并通过循环逐个转换它们为 Markdown 文件。&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这个脚本的意思是使用 find 命令来查找当前目录及其子目录中的所有 .docx 文件，并通过循环逐个转换它们为 Markdown 文件。&lt;/p&gt;
+&lt;br&gt;
 &lt;p&gt;&lt;strong&gt;注：这种方法假设文件名中没有空格或特殊字符。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;如果您的文件名包含空格或特殊字符，可能会影响命令的解释和执行。&lt;/p&gt;
 &lt;p&gt;常见的特殊字符有：&lt;/p&gt;
@@ -1900,6 +1894,7 @@ Hermione Lee, Financial Times&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;反引号（`）：&lt;/strong&gt; 在某些上下文中，反引号可能用于命令替换。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;注意在转换前让docx文件名避免包含上述特殊字符。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Pandoc 找不到文件时会尝试使用默认的输出格式。如果 Pandoc 无法从文件扩展名中推断出格式，将默认为 Markdown 格式。&lt;/p&gt;
+&lt;br&gt;
 &lt;h1 id=&#34;将markdown文件批量导入obsidian&#34;&gt;将Markdown文件批量导入Obsidian&lt;/h1&gt;
 &lt;p&gt;将之前转换生成的Markdown文件直接批量复制/移动到 Obsidian 笔记文件夹中，或使用Obsidian的导入功能将文件导入。&lt;/p&gt;
 &lt;p&gt;Obsidian就会识别Markdown格式，并将文档添加到您的笔记库中。&lt;/p&gt;
@@ -1911,6 +1906,7 @@ Hermione Lee, Financial Times&lt;/div&gt;
 &lt;li&gt;在右键菜单中，选择 &amp;ldquo;New folder&amp;rdquo;（新建文件夹）。&lt;/li&gt;
 &lt;li&gt;输入文件夹的名称并按 Enter 键确认。这样就在选定的位置成功创建了一个新的笔记文件夹。在该文件夹中，你可以创建或存放、修改你的 Markdown 笔记文件，Obsidian 会根据笔记文件的路径和文件名来模拟文件夹结构。&lt;/li&gt;
 &lt;/ol&gt;
+&lt;br&gt;
 &lt;h1 id=&#34;其他批量转md文件的方法&#34;&gt;其他批量转md文件的方法&lt;/h1&gt;
 &lt;p&gt;方法1：参考→&lt;a class=&#34;link&#34; href=&#34;https://forum-zh.obsidian.md/t/topic/971/3&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;怎么用calibre将电子书简单粗暴转换为md格式导入obsidian&lt;/a&gt;
@@ -1924,9 +1920,20 @@ Hermione Lee, Financial Times&lt;/div&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
 &lt;/p&gt;
-&lt;p&gt;方法2：使用notion的导出为markdown功能（前提是文档已存在notion）    &lt;/p&gt;
+&lt;p&gt;方法2：&lt;a class=&#34;link&#34; href=&#34;https://notionchina.co/guide/api-import-export/export-a-page-as-markdown.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;使用notion的导出为markdown功能&lt;/a&gt;
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+（前提是文档已存在notion）    &lt;/p&gt;
 &lt;p&gt;其他方法：&lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/chinesehelp/03&amp;#43;%E6%95%99%E7%A8%8B/%E4%BB%8E%E5%85%B6%E4%BB%96%E8%BD%AF%E4%BB%B6%E5%AF%BC%E5%85%A5obsidian%EF%BC%88MOC%EF%BC%89&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://publish.obsidian.md/chinesehelp/03+教程/从其他软件导入obsidian（MOC）&lt;/a&gt;
+    &gt;从其他软件导入obsidian&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
@@ -1937,10 +1944,10 @@ Hermione Lee, Financial Times&lt;/div&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
 &lt;/p&gt;
+&lt;br&gt;
 &lt;h1 id=&#34;其他参考&#34;&gt;其他参考&lt;/h1&gt;
-&lt;p&gt;ppt转word（含怎么把大纲不显示文字的PPT转换Word和如何保留原格式将PPT转换成Word）&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.liangshunet.com/ca/201904/765362983.htm&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;http://www.liangshunet.com/ca/201904/765362983.htm&lt;/a&gt;
+    &gt;ppt转word（含怎么把大纲不显示文字的PPT转换Word和如何保留原格式将PPT转换成Word）&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
@@ -1954,7 +1961,7 @@ Hermione Lee, Financial Times&lt;/div&gt;
 </description>
         </item>
         <item>
-        <title>【逛展】璀璨万象——英国V&amp;A博物馆珍藏吉尔伯特精品展</title>
+        <title>【逛展】V&amp;A博物馆珍藏吉尔伯特精品展</title>
         <link>https://springcecilia.blog/%E7%92%80%E7%92%A8%E4%B8%87%E8%B1%A1%E8%8B%B1%E5%9B%BDVA%E5%8D%9A%E7%89%A9%E9%A6%86%E7%8F%8D%E8%97%8F%E5%90%89%E5%B0%94%E4%BC%AF%E7%89%B9%E7%B2%BE%E5%93%81%E5%B1%95-2ef607a93ff1489992b00ed5c9bd35fc/</link>
         <pubDate>Fri, 03 Nov 2023 10:34:26 +0800</pubDate>
         
@@ -25079,7 +25086,18 @@ Correctness的设定呢，真是对不住啊，小朋友。”&lt;/p&gt;
 &lt;p&gt;本站为博主的赛博存档地。&lt;p&gt;
 &lt;p&gt;建站没啥技术含量，您看到的此博客是博主照葫芦画瓢搞出来的（。&lt;/p&gt;
 &lt;p&gt;如有内容无法显示，很可能是需要魔法上网。&lt;/p&gt;
-&lt;p&gt;可使用RSS订阅。若您不熟悉RSS，可参考&lt;a class=&#34;link&#34; href=&#34;https://sspai.com/post/56391&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;订阅方式：&lt;a class=&#34;link&#34; href=&#34;https://springcecilia.blog/index.xml&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;RSS&lt;img src=&#34;https://springcecilia.blog/images/rss.svg&#34; width=15px height=auto &gt;&lt;/a&gt;
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+。若您不熟悉RSS，可参考&lt;a class=&#34;link&#34; href=&#34;https://www.jianshu.com/p/a5fa5cd6d933&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;此教程&lt;/a&gt;
 
     
@@ -25090,7 +25108,7 @@ Correctness的设定呢，真是对不住啊，小朋友。”&lt;/p&gt;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-，其他相关教程和工具也很多，博主自己用来订阅RSS的工具为Feedly。&lt;/p&gt;
+，其他相关教程也很多，博主自己用来订阅RSS的工具为Feedly。&lt;/p&gt;
 &lt;h1&gt;&lt;img src=&#34;https://springcecilia.blog/images/002.png&#34; width=60px height=auto&gt;联系方式&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://peing.net/zh-CN/91e8000a0af399&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;（需魔法）匿名提问箱&lt;/a&gt;
