@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
     <channel>
-        <title>碎碎念 on Cecilia的博客</title>
+        <title>碎碎念 on Ceciliaの小站</title>
         <link>https://springcecilia.blog/eki/</link>
-        <description>Recent content in 碎碎念 on Cecilia的博客</description>
+        <description>Recent content in 碎碎念 on Ceciliaの小站</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language><atom:link href="https://springcecilia.blog/eki/index.xml" rel="self" type="application/rss+xml" />
     </channel>

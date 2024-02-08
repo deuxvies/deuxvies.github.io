@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
     <channel>
-        <title>Pages on Cecilia的博客</title>
+        <title>Pages on Ceciliaの小站</title>
         <link>https://springcecilia.blog/page/</link>
-        <description>Recent content in Pages on Cecilia的博客</description>
+        <description>Recent content in Pages on Ceciliaの小站</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language><atom:link href="https://springcecilia.blog/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Search</title>
@@ -22,52 +22,26 @@
         <description>&lt;h1&gt;&lt;img src=&#34;https://springcecilia.blog/images/014.png&#34; width=60px height=auto&gt;关于博主&lt;/h1&gt;
 &lt;p&gt;称呼随意。&lt;/p&gt;
 &lt;p&gt;当读者的时刻比当作者的时刻要长，同人是探索生活的方式之一但不是全部。&lt;/p&gt;
-&lt;p&gt;写文三分钟热度，悟性不高，技巧永在摸索中......
-&lt;p&gt;&#34;In libris libertas.&#34; 为博主喜爱的一句拉丁谚语，意为“书中自由”。&lt;/p&gt;
-&lt;p&gt;祝大家不必在话语建构的世界里过分焦虑，进一步有一步的欢喜，退一步有退一步的从容!&lt;/p&gt;
+&lt;p&gt;写文三分钟热度，随缘发电。
 &lt;h1&gt;&lt;img src=&#34;https://springcecilia.blog/images/006.png&#34; width=60px height=auto&gt;此站内容&lt;/h1&gt;
 &lt;p&gt;本站为博主的赛博存档地。&lt;p&gt;
-&lt;p&gt;建站没啥技术含量，您看到的此博客是博主照葫芦画瓢搞出来的（。&lt;/p&gt;
 &lt;p&gt;如有内容无法显示，很可能是需要魔法上网。&lt;/p&gt;
-&lt;p&gt;订阅方式：&lt;a class=&#34;link&#34; href=&#34;https://springcecilia.blog/index.xml&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;RSS&lt;img src=&#34;https://springcecilia.blog/images/rss.svg&#34; width=15px height=auto &gt;&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-。若您不熟悉RSS，可参考&lt;a class=&#34;link&#34; href=&#34;https://www.jianshu.com/p/a5fa5cd6d933&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;此教程&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-，其他相关教程也很多，博主自己用来订阅RSS的工具为Feedly。&lt;/p&gt;
 &lt;h1&gt;&lt;img src=&#34;https://springcecilia.blog/images/002.png&#34; width=60px height=auto&gt;联系方式&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://peing.net/zh-CN/91e8000a0af399&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;（需魔法）匿名提问箱&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;（偶尔需要魔法）点击博客右下角的聊天小图标即可私聊&lt;p&gt;
 &lt;p&gt;有空时会回复~ &lt;/p&gt;
-&lt;p&gt;悄悄补充：博客文章的评论区要魔法才能显示出来。&lt;p&gt;
+&lt;p&gt;补充：博客文章的评论区有时需要魔法才能显示出来。&lt;p&gt;
 &lt;p&gt;&lt;img src=&#34;https://springcecilia.blog/images/038.png&#34; width=70px height=auto &gt;&lt;img src=&#34;https://springcecilia.blog/images/039.png&#34; width=70px height=auto &gt;&lt;img src=&#34;https://springcecilia.blog/images/040.png&#34; width=70px height=auto &gt; &lt;/p&gt;
 </description>
         </item>
@@ -86,16 +60,8 @@
         
         <guid>https://springcecilia.blog/%E6%94%B6%E8%97%8F%E5%A4%B9/</guid>
         <description>&lt;img src=&#34;https://springcecilia.blog/images/020.png&#34; width=60px height=auto&gt;
-这里存搜书链接，部分已被墙掉需要魔法。
+这里存搜书链接，部分需要魔法访问。
 </description>
-        </item>
-        <item>
-        <title>漂流瓶</title>
-        <link>https://springcecilia.blog/%E6%BC%82%E6%B5%81%E7%93%B6/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://springcecilia.blog/%E6%BC%82%E6%B5%81%E7%93%B6/</guid>
-        <description></description>
         </item>
         
     </channel>

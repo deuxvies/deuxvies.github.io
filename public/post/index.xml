@@ -1,1966 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on Cecilia的博客</title>
+        <title>Posts on Ceciliaの小站</title>
         <link>https://springcecilia.blog/post/</link>
-        <description>Recent content in Posts on Cecilia的博客</description>
+        <description>Recent content in Posts on Ceciliaの小站</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 02 Jan 2024 17:19:10 +0800</lastBuildDate><atom:link href="https://springcecilia.blog/post/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>【建站1】Hugo配置主题及生成</title>
-        <link>https://springcecilia.blog/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/</link>
-        <pubDate>Mon, 01 Jan 2024 17:34:26 +0800</pubDate>
-        
-        <guid>https://springcecilia.blog/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/</guid>
-        <description>&lt;br&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cloud.tencent.com/developer/article/1917500&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;hugo和其他各类博客类型了解&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-
-这里我选的是用Hugo搭建，比较简洁，wordpress对我来说太臃肿了访问也慢。Hugo内容可以在本地，备份比较方便和稳定。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;注：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;博主非计算机专业，对代码一窍不通（&lt;strong&gt;所以如果遇到问题，请出门左转google&lt;/strong&gt;）；&lt;/p&gt;
-&lt;p&gt;此搭建记录使用电脑系统：windows，此帖不适用Linux、mac人群；&lt;/p&gt;
-&lt;p&gt;建博工具：Git、Hugo、VScode（写代码）；&lt;/p&gt;
-&lt;p&gt;部署：GitHub ；&lt;/p&gt;
-&lt;p&gt;搭建过程需要：稳定的魔法工具、能访问Github、少量英语阅读能力以及基础的信息检索能力、足够的本地磁盘容量。    &lt;/p&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;前期准备&#34;&gt;前期准备&lt;/h1&gt;
-&lt;h2 id=&#34;安装-git&#34;&gt;安装 Git&lt;/h2&gt;
-&lt;br&gt;
-&lt;p&gt;Git就是一个搭建博客时用来推送源代码、跟踪文件的变化、记录每次修改、保存历史版本的工具。你后期更新博客的样式、文章等等都是修改后通过Git来推送。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Git安装步骤：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;1）去 &lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/download/win&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Git 官网&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
- 下载 Git 的最新版本，根据你的电脑系统类型选择版本。&lt;/p&gt;
-&lt;p&gt;2）下载完后在本地右键安装程序，按照默认的设置一路安装就好，注意在 &amp;ldquo;Select Components&amp;rdquo; 阶段，确保要选中 &amp;ldquo;Git Bash Here&amp;rdquo; 选项。&lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;安装vscode&#34;&gt;安装VScode  &lt;/h2&gt;
-&lt;br&gt;
-&lt;p&gt;Visual Studio Code（VSCode）为Microsoft开发的免费、开源的源代码编辑器。就是用来帮你修改hugo的主题文件代码的一个编辑工具，比如你文本一般是用word编辑，代码就是用VScode来编辑。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;VScode安装步骤：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;1）访问&lt;a class=&#34;link&#34; href=&#34;https://code.visualstudio.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Visual Studio Code官网&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;2）选择适用于你的电脑系统的版本下载。&lt;p&gt;
-&lt;p&gt;3）运行安装程序：按照提示进行安装。在Windows上，点击“Next”点到底，接受许可协议，并选择安装位置（可以自定义安装在哪个盘，避免让c盘负担过重）。&lt;p&gt;
-&lt;p&gt;4）启动VSCode： 安装完成后，你可以在开始菜单（Windows）中找到Visual Studio Code。双击启动它，就会看到一个编辑器界面。之后修改博客的代码文件时，只要右键选择“打开方式”-选择vscode即可。&lt;/p&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;安装-hugo&#34;&gt;安装 Hugo&lt;/h2&gt;
-&lt;br&gt;
-&lt;p&gt;Hugo就是我们用来生成静态博客网页的网站生成器，我们可以用前面安装的Git通过代码的配合，将想呈现的内容转为HTML网页。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Hugo安装步骤：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;1）访问 &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo GitHub Releases&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
- 页面。&lt;/p&gt;
-&lt;p&gt;2）在 Assets 下找到适合 Windows 的 ZIP 文件（通常是 hugo_extended_X.XX.X_windows-64bit.zip）。&lt;/p&gt;
-&lt;p&gt;3）下载 ZIP 文件，并解压到一个你喜欢的磁盘里。&lt;/p&gt;
-&lt;br&gt;
-&lt;h3 id=&#34;重要添加环境变量&#34;&gt;（重要！）添加环境变量&lt;/h3&gt;
-&lt;p&gt;解压得到的 hugo.exe 文件的路径一定要添加到系统的 PATH 变量中，否则有时写代码时会出现访问不了 Hugo的情况。&lt;/p&gt;
-&lt;p&gt;添加环境变量步骤：&lt;/p&gt;
-&lt;p&gt;1）获取 Hugo 的执行文件路径：  &lt;/p&gt;
-&lt;p&gt;用wins+E快捷键打开 File Explorer（文件资源管理器），找到你解压 Hugo ZIP 文件的地方，找到 hugo.exe 文件；&lt;/p&gt;
-&lt;p&gt;鼠标点击上方的栏目，变成光标即可看到你的 hugo.exe 的完整路径，比如 D:\Downloads\Hugo。&lt;/p&gt;
-&lt;img src=&#34;https://springcecilia.blog/images/Untitled.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 600px; height: auto;&#34;&gt;
-&lt;img src=&#34;https://springcecilia.blog/images/Untitled 1.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 600px; height: auto;&#34;&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;p&gt;2）打开系统环境变量设置：  &lt;/p&gt;
-&lt;p&gt;右键点击计算机图标，选择 &amp;ldquo;属性&amp;rdquo;。&lt;/p&gt;
-&lt;img src=&#34;https://springcecilia.blog/images/Untitled 2.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 600px; height: auto;&#34;&gt;
-&lt;p&gt;在面板中找到 &amp;ldquo;高级系统设置&amp;rdquo;。&lt;/p&gt;
-&lt;img src=&#34;https://springcecilia.blog/images/Untitled 3.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 600px; height: auto;&#34;&gt;
-&lt;p&gt;在打开的窗口中，点击 &amp;ldquo;环境变量&amp;rdquo; 按钮。&lt;/p&gt;
-&lt;img src=&#34;https://springcecilia.blog/images/Untitled 4.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 600px; height: auto;&#34;&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;p&gt;3）编辑系统 PATH 变量：  &lt;/p&gt;
-&lt;p&gt;在环境变量的面板中，找到下方的 &amp;ldquo;系统变量&amp;rdquo; 部分，选中 &amp;ldquo;Path&amp;rdquo; 变量点击 &amp;ldquo;编辑&amp;rdquo; 按钮。&lt;/p&gt;
-&lt;img src=&#34;https://springcecilia.blog/images/Untitled 5.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 600px; height: auto;&#34;&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;p&gt;4）添加 Hugo 可执行文件路径：  &lt;/p&gt;
-&lt;p&gt;在 &amp;ldquo;编辑环境变量&amp;rdquo; 窗口中，点击右上方第一个 &amp;ldquo;新建&amp;rdquo; 按钮。
-输入 前面你复制的Hugo 执行文件的路径（例如，D:\Downloads\Hugo）。
-确认并关闭所有打开的窗口。&lt;/p&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;p&gt;5）验证是否添加成功：  &lt;/p&gt;
-&lt;p&gt;在Windows 操作系统中，在任务栏的搜索框中，键入
-&amp;ldquo;cmd&amp;rdquo; 或 &amp;ldquo;命令提示符&amp;rdquo;。
-&lt;img src=&#34;https://springcecilia.blog/images/Untitled 6.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 600px; height: auto;&#34;&gt;
-或者是按下快捷键 Win + R ，打开运行面板，在里面输入cmd就可以弹出命令提示符的面板
-&lt;img src=&#34;https://springcecilia.blog/images/Untitled 7.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 600px; height: auto;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;在命令提示符的面板输入 hugo version ，然后按回车。
-如果安装成功，你应该能够看到 Hugo 的版本信息，表示安装成功。&lt;/p&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;安装go语言&#34;&gt;安装go语言&lt;/h2&gt;
-&lt;p&gt;Hugo 是使用 Go 语言开发的静态网站生成器，因此在运行 Hugo 之前，确保 Go 语言环境已经安装。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;安装步骤：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;1）打开 &lt;a class=&#34;link&#34; href=&#34;https://www.notion.so/by-mealin564-7e0ddfb6240347328003ea868799da39?pvs=21&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Go 的官网&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;a class=&#34;link&#34; href=&#34;https://golang.org/dl/%E3%80%82&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;。&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;2）选择适合你电脑的 Windows 最新版本，然后选择带有 &lt;strong&gt;.msi 后缀&lt;/strong&gt;的安装程序下载&lt;/p&gt;
-&lt;p&gt;3） 双击下载的安装程序（.msi 文件），然后按提示操作。你可以接受默认设置，也可以根据需要进行自定义配置。&lt;/p&gt;
-&lt;p&gt;4）检查安装：安装完成后，打开命令提示符或 PowerShell 窗口，并运行以下命令来验证 Go 是否正确安装：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;go&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;version&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果一切正常，可以看到 Go 的版本信息。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;注：&lt;/p&gt;
-&lt;p&gt;在安装 Go 语言时，确保将 Go 的 bin 目录添加到系统的 PATH 环境变量中，以便在命令行中直接运行 go 命令。&lt;/p&gt;
-&lt;p&gt;若没有添加，需要手动将 C:\Go\bin（或你选择安装的路径）添加到 PATH 中（步骤和上述操作相似）。
-安装完成后，就可以在 Windows 上使用 Go 语言了&lt;/p&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;2创建博客&#34;&gt;2.创建博客&lt;/h1&gt;
-&lt;h2 id=&#34;打开git-bash&#34;&gt;打开Git Bash&lt;/h2&gt;
-&lt;p&gt;新建一个你想要放博客内容和修改样式的文件，右键单击并选择 &amp;ldquo;Git Bash Here&amp;rdquo;。  
-&lt;img src=&#34;https://springcecilia.blog/images/Untitled 8.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 600px; height: auto;&#34;&gt;&lt;/p&gt;
-&lt;br&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;创建 Hugo 站点，输入代码：&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;hugo&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;site&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;myblog&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这将在此路径创建一个新博客。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;br&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;进入博客目录，输入代码：&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;cd&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;myblog&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;br&gt;
-&lt;details&gt;
-  &lt;summary&gt;Tips：代码指令解释（有基础的可以pass）&lt;/summary&gt;
-  &lt;br&gt;
-&lt;p&gt;&lt;strong&gt;查看当前目录&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在 Git Bash 终端中，可以输入以下命令来查看当前所在的目录：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;pwd&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这会显示当前文件夹的完整路径。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;进入博客目录&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;就是找到你新建的那个要放博客内容的那个文件）， 假设你的博客文件夹名为 myblog，你可以执行以下命令：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;cd&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;myblog&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br&gt;
-&lt;p&gt;如果博客文件夹不在当前工作目录，你需要替换成完整路径，例如：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;cd&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;blog&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;myblog&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;例如，这个就是我的博客文件的“根目录路径”↑&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;验证是否成功进入博客目录&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;输入 pwd 命令确认当前工作目录是否为你的博客目录。
-使用 ls 命令查看博客目录中的文件和子目录：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;ls&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;通过这些步骤，就能够在 Git Bash 中成功进入 Hugo 博客的目录。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;注（基础操作知识）：在Git Bash界面里输代码时，&lt;/strong&gt;   &lt;/p&gt;
-&lt;p&gt;$： 一般用户的默认提示符。&lt;/p&gt;
-&lt;p&gt;#： 超级用户（root）的默认提示符。&lt;/p&gt;
-&lt;p&gt;对于默认用户，通常显示 $。&lt;/p&gt;
-&lt;p&gt;在 Bash 中输入 cd 命令时，不用管前面的 $，只要复制上述的代码输入就行！&lt;/p&gt;
-
-&lt;/details&gt;
-
-&lt;br&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;3配置hugo主题模板&#34;&gt;3.配置Hugo主题模板&lt;/h1&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;选择主题&#34;&gt;选择主题&lt;/h2&gt;
-&lt;p&gt;在&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo Themes&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-网站上选择一个喜欢的主题。&lt;/p&gt;
-&lt;p&gt;在该主题的详情页面找到download，跳转到 GitHub 界面，点击绿色的按键code。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;方法1：直接连接github（坑：有时会因防火墙问题配置失败，不推荐！！）&lt;/p&gt;
-&lt;p&gt;方法2：SSH密钥法链接（坑： .gitmodules 文件中的行尾符 (line endings) 与系统默认设置不一致，可能导致在 Windows 系统上的一些问题，所以也不推荐！！）&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;（所以推荐）方法3：直接点击绿色code按键下方的Download Zip，下载github仓库zip压缩包到你的博客文件夹的themes文件夹里。&lt;/strong&gt;&lt;/p&gt;
-&lt;img src=&#34;https://springcecilia.blog/images/Untitled 9.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 600px; height: auto;&#34;&gt;
-&lt;img src=&#34;https://springcecilia.blog/images/Untitled 10.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 600px; height: auto;&#34;&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;在博客目录中添加主题&#34;&gt;在博客目录中添加主题&lt;/h2&gt;
-&lt;p&gt;将下载的 ZIP 文件在博客文件夹的themes 文件夹中右键解压&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;编辑主题配置文件：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;打开博客根目录（即你的博客文件夹）中的 config.toml 或者config.yaml文件，这是 Hugo 的配置文件。 &lt;/p&gt;
-&lt;p&gt;在文件中添加或修改与主题相关的配置段，需要根据主题的文档查看如何配置。&lt;/p&gt;
-&lt;p&gt;config文件主要改动的是你想要的博客模板，比如你的主页标题、导航栏文字、链接地址、语言、版权信息、url等等。&lt;/p&gt;
-&lt;p&gt;可以参考主题文件里的示例配置文件，例如 exampleSite文件夹里的config.toml 或 config.yaml，也可以自己google搜索“你的hugo主题名+装修”，看看其他博主的博客装修步骤记录和教程。&lt;/p&gt;
-&lt;br&gt;
-&lt;details&gt;
-  &lt;summary&gt;注：编辑config文件时，baseURL的正确填写方式&lt;/summary&gt;
-  &lt;p&gt;baseURL 是 Hugo 博客网站的基本网址链接，帮你生成网站。&lt;/p&gt;
-&lt;p&gt;当你还没购买域名，在本地修改博客测试时，可以将 baseURL 设置为本地服务器的地址，通常是 &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/%EF%BC%8C%E8%BF%99%E6%A0%B7%E5%8F%AF%E7%A1%AE%E4%BF%9D%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88%E3%80%82&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;http://localhost:XXXX/&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;末尾的数字根据你自己的情况而不同，这个网址可用来本地同步预览，方便你调整时同步看到效果。&lt;/p&gt;
-&lt;p&gt;将代码换成以下↓&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;code&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;baseURL&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;[http://localhost:XXXX/](http://localhost:1313/)&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;当你有购买的域名和托管的网址时，可将 baseURL 设置为相应的域名。如果你使用自定义域名，确保包括协议（https 或 http）。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;code&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;baseURL&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;[https://www.这里填入你的域名.com/](https://www.yourdomain.com/)&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;总之，根据你的实际情况和计划填入。在网站发布之前，确保在本地测试环境中检查生成的链接是否正确。&lt;/p&gt;
-
-&lt;/details&gt;
-
-&lt;br&gt;
-&lt;h2 id=&#34;保存配置文件&#34;&gt;保存配置文件&lt;/h2&gt;
-&lt;p&gt;修改好文件后，Ctrl+S 保存对 config.toml 文件的修改。&lt;/p&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;四运行-hugo&#34;&gt;四.运行 Hugo&lt;/h1&gt;
-&lt;p&gt;在博客根目录运行 Hugo，右键点击你的博客根目录（博客文件），选择git bash here，在git里输入以下代码：&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hugo server -D
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果成功会显示如下：  
-&lt;img src=&#34;https://springcecilia.blog/images/Untitled 11.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 600px; height: auto;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;比如，如上图所示，你可以在 &lt;a class=&#34;link&#34; href=&#34;http://localhost:5090/%EF%BC%8C%E8%BF%99%E6%A0%B7%E5%8F%AF%E7%A1%AE%E4%BF%9D%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88%E3%80%82&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;http://localhost:5090/&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-中预览网站，查看是否成功应用了主题的配置和样式。（&lt;strong&gt;http://localhost:后面的数字根据你自己运行的结果而改变&lt;/strong&gt;）&lt;/p&gt;
-&lt;br&gt;
-</description>
-        </item>
-        <item>
-        <title>【建站2】在Hugo中发布内容</title>
-        <link>https://springcecilia.blog/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/</link>
-        <pubDate>Mon, 01 Jan 2024 17:34:26 +0800</pubDate>
-        
-        <guid>https://springcecilia.blog/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/</guid>
-        <description>&lt;p&gt;需要：git工具、VScode工具，少量&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;markdown语法知识&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-  &lt;/p&gt;
-&lt;h1 id=&#34;1发布纯文字的文章&#34;&gt;1.发布纯文字的文章&lt;/h1&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;创建新文章&#34;&gt;创建新文章&lt;/h2&gt;
-&lt;p&gt;导航到你的 Hugo 根目录，选中博客文件夹右键选中Open git bash here，运行以下代码：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;hugo&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;posts&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;my&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;first&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;post&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;md&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这将在 content/posts/ 目录下创建一个名为 &lt;a class=&#34;link&#34; href=&#34;http://my-first-post.md/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;my-first-post.md&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
- 的 Markdown 文件。&lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;编辑文章&#34;&gt;编辑文章&lt;/h2&gt;
-&lt;p&gt;使用VSCode打开 content/posts/my-first-post.md 文件，然后编辑内容保存。&lt;/p&gt;
-&lt;p&gt;Markdown 文件的开头通常包括一些元数据，比如标题、日期、标签等。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;例如：&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;--&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;我的第一篇博客&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;date&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2023&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;T09&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;00&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;00&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;draft&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;tags&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Hugo&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;博客&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;categories&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;技术&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;---&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;这是我的第一篇博客文章&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;，&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;使用&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Hugo&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;搭建的博客系统&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;。&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt; &lt;/p&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;运行-hugo-本地服务器进行预览&#34;&gt;运行 Hugo 本地服务器进行预览&lt;/h2&gt;
-&lt;p&gt;在git中输入以下代码：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;hugo&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;server&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;D&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后，打开浏览器，访问 &lt;a class=&#34;link&#34; href=&#34;http://localhost:xxxx/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;http://localhost:xxxx/&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-（根据你自己的运行结果的网址）&lt;/p&gt;
-&lt;p&gt;你应该能够在本地预览你的博客，包括新创建的文章。&lt;/p&gt;
-&lt;p&gt;如果预览中一切正常，你可以停止 Hugo 服务器，并输入以下代码来生成静态文件：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;hugo&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这会在博客的根目录生成一个 public/ 目录，里面包含了你想要呈现的整个博客的静态文件。&lt;/p&gt;
-&lt;p&gt;你可以将这些文件托管到GitHub（见下篇教程），使其在互联网上可访问。    &lt;/p&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;修改已经发布的-hugo-文章&#34;&gt;修改已经发布的 Hugo 文章&lt;/h1&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;找到文章&#34;&gt;找到文章&lt;/h2&gt;
-&lt;p&gt;在 Hugo 项目的 content/posts/ 目录下找到你想修改的文章，以 .md 为扩展名格式。&lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;编辑文章内容&#34;&gt;编辑文章内容&lt;/h2&gt;
-&lt;p&gt;使用VScode打开文章，参考&lt;a class=&#34;link&#34; href=&#34;https://markdown.com.cn/basic-syntax/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Markdown 官方教程&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-，对内容进行修改。&lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;添加并提交修改的文件在git里输入以下代码&#34;&gt;添加并提交修改的文件，在git里输入以下代码    &lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;commit&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;m&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;这里随便填，可以注明你的修改记录&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后，再将 public/ 目录的内容部署到你的服务器上。&lt;/p&gt;
-&lt;p&gt;注意：输入””时要保证是英文输入法状态     &lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;运行以下代码在本地进行预览&#34;&gt;运行以下代码，在本地进行预览&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;hugo&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;server&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;D&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;打开浏览器，访问 &lt;a class=&#34;link&#34; href=&#34;http://localhost:1313/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;http://localhost:1313/&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;查看你的修改是否生效。在预览中确认无误后，你可以继续下一步部署。&lt;/p&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;3发布带图文章&#34;&gt;3.发布带图文章&lt;/h1&gt;
-&lt;p&gt;如要在 Hugo 中发布有图片的文章，需要使用正确的Markdown语法来插入图片。&lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;准备图片&#34;&gt;准备图片&lt;/h2&gt;
-&lt;p&gt;确保你的图片已经放置在博客文件里的 static 文件夹下。
-例如，如果你有一张图片 my-image.jpg，可以将其放在 static/images/ 目录下。&lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;用-markdown-插入图片&#34;&gt;用 Markdown 插入图片&lt;/h2&gt;
-&lt;p&gt;在文章中，使用以下语法插入图片：&lt;/p&gt;
-&lt;p&gt;（注：输入下列代码两边要加英文输入法状态下的&amp;lt;&amp;gt;）
-imgsrc=&amp;quot;/img/hugo version.png&amp;quot;alt=&amp;ldquo;Alt Text&amp;quot;width=&amp;ldquo;50&amp;quot;height=&amp;ldquo;auto&amp;rdquo;&lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;运行-hugo-本地服务器进行预览-1&#34;&gt;运行 Hugo 本地服务器进行预览&lt;/h2&gt;
-&lt;p&gt;在Git中运行以下命令：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;hugo&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;server&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;D&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;打开浏览器，访问 &lt;a class=&#34;link&#34; href=&#34;http://localhost:xxxx/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;http://localhost:xxxx/&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;显示如下：&lt;/p&gt;
-&lt;img src=&#34;https://springcecilia.blog/images/1.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 50px; height: auto;&#34;&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;调整图片大小&#34;&gt;调整图片大小&lt;/h2&gt;
-&lt;p&gt;如果需要设置图片的大小，可以修改代码里 width 和 height 的数值。&lt;/p&gt;
-&lt;p&gt;显示如下：&lt;/p&gt;
-&lt;img src=&#34;https://springcecilia.blog/images/1.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 600px; height: auto;&#34;&gt;
-&lt;p&gt;查看修改是否生效。在预览中确认无误后，可继续下一步部署。&lt;/p&gt;
-&lt;br&gt;
-</description>
-        </item>
-        <item>
-        <title>【建站3】使用SSH密钥法将Hugo上传至Github</title>
-        <link>https://springcecilia.blog/%E5%BB%BA%E7%AB%993%E4%BD%BF%E7%94%A8SSH%E5%AF%86%E9%92%A5%E6%B3%95%E5%B0%86Hugo%E4%B8%8A%E4%BC%A0%E8%87%B3Github/</link>
-        <pubDate>Mon, 01 Jan 2024 17:34:26 +0800</pubDate>
-        
-        <guid>https://springcecilia.blog/%E5%BB%BA%E7%AB%993%E4%BD%BF%E7%94%A8SSH%E5%AF%86%E9%92%A5%E6%B3%95%E5%B0%86Hugo%E4%B8%8A%E4%BC%A0%E8%87%B3Github/</guid>
-        <description>&lt;br&gt;
-&lt;p&gt;需要：能访问GitHub的条件&lt;/p&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;前期准备&#34;&gt;前期准备&lt;/h1&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;注册github账号&#34;&gt;注册github账号&lt;/h2&gt;
-&lt;p&gt;GitHub是一个基于Git版本控制系统的代码托管平台，提供了一系列协作工具，例如问题追踪、代码审查、分支管理等。&lt;/p&gt;
-&lt;p&gt;注册步骤（要魔法工具，有github账号的可跳过）：    &lt;/p&gt;
-&lt;p&gt;1）访问&lt;a class=&#34;link&#34; href=&#34;https://github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;GitHub官网&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-。  &lt;/p&gt;
-&lt;p&gt;2）在GitHub首页点击&amp;quot;Sign up&amp;quot;按钮。&lt;/p&gt;
-&lt;p&gt;3）填写注册信息，包括用户名、电子邮件地址（尽量用外国邮箱）和密码。用户名要好好取，因为它会用作你在GitHub上的标识。&lt;/p&gt;
-&lt;p&gt;4）完成信息填写后，GitHub可能会通过电子邮件发送的验证码进行身份验证。&lt;/p&gt;
-&lt;p&gt;5）选择免费计划然后点击&amp;quot;Continue&amp;quot;。&lt;/p&gt;
-&lt;p&gt;6）完成上述步骤后，可以设置头像、添加个人简介等信息。完成设置后，点击&amp;quot;Submit&amp;quot;。&lt;/p&gt;
-&lt;p&gt;7）验证邮箱： 为了确保你的电子邮件地址的有效性，GitHub可能会要求你验证你的电子邮件地址，按照指示操作就行了。&lt;/p&gt;
-&lt;p&gt;注册好GitHub账户后就可以使用你的用户名和密码登录GitHub，并开始创建、托管和协作开发项目。&lt;/p&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;将hugo部署到github前期准备&#34;&gt;将Hugo部署到GitHub前期准备&lt;/h1&gt;
-&lt;p&gt;*注：在生成静态页面之前要把config.toml文件里的baseURL修改为自己博客的网址，譬如：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;baseURL&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;[https://xxxxx.github.io/](https://xxxxx.github.io/)&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;hugo&lt;/span&gt;    &lt;span class=&#34;err&#34;&gt;##&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;生成静态页面文件&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;在-github-上创建新仓库&#34;&gt;在 GitHub 上创建新仓库&lt;/h2&gt;
-&lt;p&gt;登录到 GitHub&lt;/p&gt;
-&lt;p&gt;在右上角的头像旁边，点击加号（+），然后选择 &amp;ldquo;New repository&amp;rdquo;。&lt;/p&gt;
-&lt;p&gt;命名你的仓库，**注意：**仓库名要以 &lt;a class=&#34;link&#34; href=&#34;http://xn--github-on9im33ani7aou3bged.github.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;你的github用户名.github.io&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
- 这种格式&lt;/p&gt;
-&lt;p&gt;例如，你的github用户名是xxxxx，仓库名就是：&lt;a class=&#34;link&#34; href=&#34;http://xxxxx.github.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;xxxxx.github.io&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-，确保xxxxx和你的本地文件config.toml里的baseURL博客网址一致&lt;/p&gt;
-&lt;p&gt;不要勾选 &amp;ldquo;Initialize this repository with a README&amp;rdquo; 选项（因为你的 Hugo 网站已经有了自己的 README）。&lt;/p&gt;
-&lt;p&gt;点击 &amp;ldquo;Create repository&amp;rdquo;。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;接下来将本地 Hugo 仓库关联到 GitHub 仓库，有两种方法。&lt;/p&gt;
-&lt;p&gt;方法1：https法推送到github pages，适合没有墙的环境，pass&lt;/p&gt;
-&lt;p&gt;方法2：SSH密钥法连接，比较安全，减少了每次推送、拉取或克隆仓库时的繁琐过程，推荐&lt;/p&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;注确认github仓库的默认分支&#34;&gt;注：确认Github仓库的默认分支&lt;/h2&gt;
-&lt;p&gt;GitHub 近期已经在新仓库中将默认分支的名称从 master 更改为 main，如果你的github默认分支是 master，请将master替换为 main。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;替换步骤：&lt;/p&gt;
-&lt;p&gt;打开你的 GitHub 仓库。&lt;/p&gt;
-&lt;p&gt;点击右上角的 &amp;ldquo;Settings&amp;rdquo;（设置）。&lt;/p&gt;
-&lt;p&gt;进入新的界面后直接在Repository name下找到 &amp;ldquo;Default branch&amp;rdquo;（默认分支）&lt;/p&gt;
-&lt;p&gt;下拉菜单中选择你想要设置为默认的分支，例如 main&lt;/p&gt;
-&lt;p&gt;点击 &amp;ldquo;Update&amp;rdquo;（更新）按钮保存更改。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;设置 GitHub Pages：&lt;/p&gt;
-&lt;p&gt;• 在 GitHub 仓库页面的顶部，点击 &amp;ldquo;Settings&amp;rdquo;。&lt;/p&gt;
-&lt;p&gt;• 在左侧导航栏中选择 &amp;ldquo;Pages&amp;rdquo;。&lt;/p&gt;
-&lt;p&gt;• 在 &amp;ldquo;Source&amp;rdquo; 下拉菜单中选择 main 分支（或者是你的默认分支）。&lt;/p&gt;
-&lt;p&gt;• 点击 &amp;ldquo;Save&amp;rdquo;。&lt;/p&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;使用ssh密钥与github建立连接&#34;&gt;使用SSH密钥与GitHub建立连接&lt;/h1&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;生成-ssh-密钥&#34;&gt;生成 SSH 密钥&lt;/h2&gt;
-&lt;p&gt;打开Git。
-运行以下命令生成 SSH 密钥。如果你已经有一个 SSH 密钥，请跳过此步骤。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;ssh&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;keygen&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;t&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;rsa&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;b&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;4096&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;C&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;[your_email@example.com](mailto:your_email@example.com)&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;替换 &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;mailto:your_email@example.com&#34; &gt;your_email@example.com&lt;/a&gt;
-
-    
-&amp;rdquo; 为你在 GitHub 注册时使用的电子邮件地址。&lt;/p&gt;
-&lt;p&gt;按照提示，选择默认的文件路径和设置密码（可选）。&lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;添加-ssh-密钥到-ssh-代理&#34;&gt;添加 SSH 密钥到 SSH 代理&lt;/h2&gt;
-&lt;p&gt;运行以下命令启动 SSH 代理：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;eval&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;$(ssh-agent -s)&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;将 SSH 私钥添加到 SSH 代理：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;ssh&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;/.ssh/id_rsa&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果你使用了不同的密钥文件名，请替换 id_rsa 为你实际的私钥文件名。&lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;添加-ssh-公钥到-github&#34;&gt;添加 SSH 公钥到 GitHub&lt;/h2&gt;
-&lt;p&gt;使用以下命令查看并复制 SSH 公钥：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;cat&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;~&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;/.ssh/id_rsa.pub&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;该命令将在终端中显示 SSH 公钥内容。&lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;登录到-github&#34;&gt;登录到 GitHub&lt;/h2&gt;
-&lt;p&gt;点击右上角的头像，选择 &amp;ldquo;Settings&amp;rdquo;。&lt;/p&gt;
-&lt;p&gt;在左侧导航栏中，选择 &amp;ldquo;SSH and GPG keys&amp;rdquo;。&lt;/p&gt;
-&lt;p&gt;点击 &amp;ldquo;New SSH key&amp;rdquo;。&lt;/p&gt;
-&lt;p&gt;在 &amp;ldquo;Title&amp;rdquo; 字段中，为 SSH 密钥提供一个描述性的名称。&lt;/p&gt;
-&lt;p&gt;在 &amp;ldquo;Key&amp;rdquo; 字段中，粘贴你复制的 SSH 公钥。&lt;/p&gt;
-&lt;p&gt;点击 &amp;ldquo;Add SSH key&amp;rdquo;。&lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;测试-ssh-连接&#34;&gt;测试 SSH 连接&lt;/h2&gt;
-&lt;p&gt;运行以下命令测试 SSH 连接：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;ssh&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;T&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;github&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;com&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;](&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;mailto&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;github&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;com&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果设置正确，会看到一条消息显示已成功地进行了身份验证。&lt;/p&gt;
-&lt;p&gt;如果出现警告或错误，请检查你的设置。&lt;/p&gt;
-&lt;p&gt;一旦成功设置了 SSH 密钥，就可以用它与 GitHub 进行安全的连接。&lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;将仓库-url-切换为-ssh&#34;&gt;将仓库 URL 切换为 SSH&lt;/h2&gt;
-&lt;p&gt;在你的 Hugo 项目目录中，使用以下命令将仓库的 URL 从 HTTPS 切换到 SSH。&lt;/p&gt;
-&lt;h2 id=&#34;找到仓库的-ssh-地址&#34;&gt;找到仓库的 SSH 地址&lt;/h2&gt;
-&lt;p&gt;进入你的 GitHub 仓库页面&lt;/p&gt;
-&lt;p&gt;点击 &amp;ldquo;Code&amp;rdquo; 按钮，然后选择 &amp;ldquo;SSH&amp;rdquo; 选项，会显示仓库的 SSH 地址，类似于 &lt;a class=&#34;link&#34; href=&#34;mailto:git@github.com&#34; &gt;git@github.com&lt;/a&gt;
-
-    
-:your_username/your_repository.git&lt;/p&gt;
-&lt;p&gt;复制到git面板，把下列代码后半段的ssh地址替换成你的↓&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;remote&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;set&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;url&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;origin&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;github&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;com&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;](&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;mailto&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;github&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;com&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;xxxxxx&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;xxx&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br&gt;
-&lt;h2 id=&#34;推送到-github-仓库&#34;&gt;推送到 GitHub 仓库&lt;/h2&gt;
-&lt;p&gt;在git里使用以下代码将本地分支推送到 GitHub 仓库：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;push&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;origin&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;main&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;该命令会将本地的 main 分支的提交推送到 GitHub 上的 origin/main 分支。&lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;验证推送&#34;&gt;验证推送&lt;/h2&gt;
-&lt;p&gt;在推送后，你可以在 GitHub 仓库页面上查看是否有新的提交。若一切正常，你的提交应该已经被推送到 GitHub 仓库。&lt;/p&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;注可能遇到的问题&#34;&gt;&lt;strong&gt;注：可能遇到的问题&lt;/strong&gt;&lt;/h1&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;问题1：&lt;/strong&gt;
-遇到Enter file in which to save the key
-(/c/Users/xxxx/.ssh/id_rsa): /c/Users/.ssh/id_rsa already exists. Overwrite
-(y/n)? y Enter passphrase (empty for no passphrase): 这一步该怎么办？&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;答：这个步骤是在生成 SSH 密钥时的一些设置选项，如  &lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;&amp;ldquo;Enter file in which to save the key&amp;rdquo;：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;意思是系统正在询问你要保存 SSH 密钥的文件路径和名称。默认情况下，它会提供一个默认的路径，例如 /c/Users/xxxx/.ssh/id_rsa。这是 SSH 密钥的默认路径和名称。&lt;/p&gt;
-&lt;p&gt;如果想将密钥保存在默认位置并使用默认名称，只需按 Enter 键。否则，你可以输入一个新的文件路径和名称，例如 /c/Users/xxxx/.ssh/custom_key。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;&amp;ldquo;already exists. Overwrite (y/n)?&amp;quot;：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;如果你选择的文件路径和名称已经存在一个文件，系统会询问你是否要覆盖现有文件。在你的情况下，系统发现 /c/Users/xxxx/.ssh/id_rsa 已经存在。&lt;/p&gt;
-&lt;p&gt;如果想覆盖现有文件并使用相同的路径和名称，你可以输入 y 并按 Enter 键。否则，输入 n 并按 Enter 键，然后选择另一个路径和名称。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;&amp;ldquo;Enter passphrase (empty for no passphrase)&amp;quot;：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在这一步，系统询问你是否要为 SSH 密钥设置密码（也称为“passphrase”）。密码对于提高安全性很有用，但是你可以选择留空，按 Enter 键，以创建没有密码的密钥。&lt;/p&gt;
-&lt;p&gt;如果你选择设置密码，确保记住密码，因为在将来你使用密钥时需要输入密码。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;总结：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;如果希望使用默认设置，只需按 Enter 键即可。&lt;/p&gt;
-&lt;p&gt;如果希望更改保存密钥的路径和名称，输入新的路径和名称。&lt;/p&gt;
-&lt;p&gt;如果密钥文件已经存在，自己决定是否要覆盖。&lt;/p&gt;
-&lt;p&gt;选择是否设置密码，如不想设置密码，直接按 Enter 键。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;问题2：&lt;/strong&gt;
-输入仓库的SSH地址时，显示：&lt;/p&gt;
-&lt;p&gt;The authenticity of host &amp;lsquo;github.com (XX.XXX.XXX.XXX)&amp;rsquo; can&amp;rsquo;t be established.
-XXXXXX key fingerprint is XXXXXXXXXXXXXXXXXXXXXXXX
-This key is not known by any other names. Are you sure you want to continue
-connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;答：这是 SSH 连接的一部分，系统会询问你是否信任 GitHub 的主机密钥。通常只会发生一次，当你第一次连接 GitHub 时，GitHub 提供了一个密钥用于安全连接，在提示中会有一行显示 GitHub 的公钥指纹，需要确保指纹与 GitHub 上提供的一致。&lt;/p&gt;
-&lt;p&gt;如果指纹是正确的，输入 yes 表示你确认连接。&lt;/p&gt;
-&lt;p&gt;如果你有疑虑或担心，可以输入 no 中止连接。&lt;/p&gt;
-&lt;p&gt;如果输入 yes，计算机将记住 GitHub 的主机密钥，以后连接时不再提示。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;问题3：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;显示Cloning into &amp;lsquo;D:/blog/myblog/themes/XXXXX&amp;rsquo;&amp;hellip; Enter passphrase for key &amp;lsquo;/c/Users/XXXX/.ssh/id_rsa&amp;rsquo;: remote: Enumerating objects: 2393, done. remote: Counting objects: 100% (98/98), done. remote: Compressing objects: 100% (65/65), done. remote: Total 2393 (delta 42), reused 73 (delta 29), pack-reused 2295 Receiving objects: 100% (2393/2393), 1.56 MiB | 1.08 MiB/s, done. Resolving deltas: 100% (1400/1400), done. warning: in the working copy of &amp;lsquo;.gitmodules&amp;rsquo;, LF will be replaced by CRLF the next time Git touches it 该怎么办？&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;答：这个警告是由于 Git 发现 .gitmodules 文件中的行尾符 (line endings) 与你的电脑系统默认设置不一致，可能导致在 Windows 系统上的一些问题。&lt;/p&gt;
-&lt;p&gt;可按照以下步骤操作：
-在 Git Bash 中运行以下命令，将 .gitmodules 文件的行尾符修改为 LF（换行符）：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;config&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;global&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;core&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;autocrlf&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;input&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;接下来，重新拉取子模块：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;submodule&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;update&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;init&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;recursive&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这样，Git 将使用 LF 行尾符处理 .gitmodules 文件，与 GitHub 上的默认设置一致。&lt;/p&gt;
-&lt;p&gt;可通过运行以下命令检查设置是否正确：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;config&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;global&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;core&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;autocrlf&lt;/span&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果设置正确，命令的输出应该是 input。如果输出是 true 或 false，表示设置不正确，可能需要重新运行 git config 命令。&lt;/p&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;其他参考：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mantyke.icu/posts/2021/hugo-build-blog/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;塔塔的博客的Q&amp;amp;A&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/ccviolett/article/details/124815319&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo 的使用&amp;amp;配置中有那些技巧与坑？&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://juejin.cn/post/7127828118143762469&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;记录下使用hexo搭建博客踩过的坑&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;br&gt;
-</description>
-        </item>
-        <item>
-        <title>【建站4】推送到GitHub Actions</title>
-        <link>https://springcecilia.blog/%E5%BB%BA%E7%AB%994%E6%8E%A8%E9%80%81%E5%88%B0GitHub-Actions/</link>
-        <pubDate>Mon, 01 Jan 2024 17:34:26 +0800</pubDate>
-        
-        <guid>https://springcecilia.blog/%E5%BB%BA%E7%AB%994%E6%8E%A8%E9%80%81%E5%88%B0GitHub-Actions/</guid>
-        <description>&lt;h1 id=&#34;基本介绍&#34;&gt;基本介绍&lt;/h1&gt;
-&lt;p&gt;GitHub Actions是GitHub提供的一项自动化工作流服务。它允许你在代码仓库中配置和执行自动化任务，例如构建、测试、部署等。&lt;/p&gt;
-&lt;p&gt;使用 Git 推送到 GitHub 仓库通常需要手动运行 Hugo 构建命令，将生成的静态文件添加到 Git 仓库，并推送到 GitHub，&lt;/p&gt;
-&lt;p&gt;相比之下，GitHub Actions 提供了自动化的方式来构建和部署 Hugo 网站。在每次推送代码到 GitHub 仓库时，GitHub Actions 可以自动触发构建过程，并将生成的静态文件部署到指定的目标，如 GitHub Pages。&lt;/p&gt;
-&lt;h1 id=&#34;主要步骤&#34;&gt;主要步骤&lt;/h1&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;创建workflow文件&#34;&gt;创建workflow文件&lt;/h2&gt;
-&lt;p&gt;在 Hugo 项目的根目录下创建一个名为 .github/workflows/main.yml 的文件&lt;/p&gt;
-&lt;p&gt;打开Git，使用 cd 命令导航到你的 Hugo 项目的根目录。例如：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;cd&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;to&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;your&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;hugo&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;project&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br&gt;
-&lt;p&gt;替换 path/to/your/hugo/project 为自己的 Hugo 博客文件路径。&lt;/p&gt;
-&lt;p&gt;使用以下命令创建 .github/workflows 目录：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;mkdir&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;github&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;workflows&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这会创建一个名为 .github/workflows 的目录。-p 选项用于确保如果上级目录不存在也能一并创建。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;进入 .github/workflows 目录，用 VSCode创建 main.yml 文件：&lt;/p&gt;
-&lt;br&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;code&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;yml&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br&gt;
-&lt;p&gt;打开 main.yml 文件，将 GitHub Actions 的配置内容复制到该文件中：  &lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Deploy&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Hugo&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;on&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;push&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;branches&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;main&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;可以根据实际情况修改分支&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;jobs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;build&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;runs&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;on&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;ubuntu&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;latest&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;steps&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Checkout&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;repository&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;uses&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;actions&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;checkout&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;v4&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;.1.1&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Setup&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Hugo&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;uses&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;peaceiris&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;actions&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;hugo&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;v2&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;with&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;hugo&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;version&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;latest&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Build&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;hugo&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;minify&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Deploy&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;to&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;GitHub&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Pages&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;uses&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;peaceiris&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;actions&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;gh&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;pages&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;v3&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;with&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;deploy_key&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{{&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;secrets&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;ACTIONS_DEPLOY_KEY&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;publish_dir&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;kr&#34;&gt;public&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br&gt;
-&lt;p&gt;此配置文件的主要作用是：&lt;/p&gt;
-&lt;p&gt;当代码推送到 main 分支时触发工作流程。&lt;/p&gt;
-&lt;p&gt;使用 actions/checkout 动作检出仓库。&lt;/p&gt;
-&lt;p&gt;使用 peaceiris/actions-hugo 动作设置 Hugo 环境并构建网站。&lt;/p&gt;
-&lt;p&gt;使用 peaceiris/actions-gh-pages 动作将生成的静态文件推送到 GitHub Pages。&lt;/p&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;注：要更新uses: actions/checkout@ 后面的版本号!!!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在 GitHub 上 actions/checkout 仓库的 releases 页面查看最新版本，步骤如下：&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;打开 actions/checkout 仓库的 releases 页面：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/actions/checkout/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/actions/checkout/releases&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-。&lt;/p&gt;
-&lt;p&gt;在页面上可看到列出的所有发布版本的信息。GitHub Actions 通常会以 v2.x.x 的形式进行版本命名。&lt;/p&gt;
-&lt;p&gt;最新版本的标签在列表的最上面。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;在 GitHub Actions 工作流程文件中，更新 uses: actions/checkout@v2 部分的版本号为最新版本。例如：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Checkout&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;repository&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;uses&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;actions&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;checkout&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;v2&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;.5.1&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;#&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;替换为最新版本&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;通过使用最新版本，你可以确保 GitHub Actions 在最新的特性和改进的环境中运行。&lt;/p&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;生成-github-personal-access-token访问令牌&#34;&gt;生成 GitHub Personal Access Token（访问令牌）    &lt;/h2&gt;
-&lt;p&gt;为使 GitHub Actions 推送到 GitHub Pages，需要一个具有推送权限的访问令牌，并将其添加到仓库的 Secrets 中。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;步骤如下：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;1） 生成个人访问令牌     &lt;/p&gt;
-&lt;p&gt;登录到你的 GitHub 帐户；&lt;/p&gt;
-&lt;p&gt;在右上角的头像旁边，点击你的头像，然后选择 &amp;ldquo;Settings&amp;rdquo;；&lt;/p&gt;
-&lt;p&gt;在左侧导航栏中，选择 &amp;ldquo;Developer settings&amp;rdquo;；&lt;/p&gt;
-&lt;p&gt;在 &amp;ldquo;Access tokens&amp;rdquo; 部分，点击 &amp;ldquo;Generate token&amp;rdquo;；&lt;/p&gt;
-&lt;p&gt;在 &amp;ldquo;Note&amp;rdquo; 字段中，输入一个描述性的名称，以便识别这个访问令牌是用于什么目的；&lt;/p&gt;
-&lt;p&gt;在 &amp;ldquo;Select scopes&amp;rdquo; 或 &amp;ldquo;Select scopes to grant access to your repositories&amp;rdquo; 部分，选择适当的权限范围。对于部署 Hugo 网站，你可能需要选择 repo 和 workflow；&lt;/p&gt;
-&lt;p&gt;滚动到页面底部，点击 &amp;ldquo;Generate token&amp;rdquo;。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;2）复制生成的个人访问令牌&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;重要： 请在生成后立即复制令牌，保存下来，因为它将不再可见，下次忘了得重新生成。&lt;/strong&gt;&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;3）将令牌添加到仓库的 Secrets 中&lt;/p&gt;
-&lt;p&gt;转到你的 Hugo 项目的 GitHub 仓库。&lt;/p&gt;
-&lt;p&gt;在仓库页面的右上角，点击 &amp;ldquo;Settings&amp;rdquo;。&lt;/p&gt;
-&lt;p&gt;在左侧导航栏中，选择 &amp;ldquo;Secrets and variables&amp;rdquo;。&lt;/p&gt;
-&lt;p&gt;点击 &amp;ldquo;Actions&amp;rdquo; New repository secret&amp;quot;。&lt;/p&gt;
-&lt;p&gt;在 &amp;ldquo;Name&amp;rdquo; 字段中，输入 ACTIONS_DEPLOY_KEY，这是在 GitHub Actions 配置中引用的 Secret 名称。&lt;/p&gt;
-&lt;p&gt;在 &amp;ldquo;Value&amp;rdquo; 字段中，粘贴刚刚生成的个人访问令牌。&lt;/p&gt;
-&lt;p&gt;点击 &amp;ldquo;Add secret&amp;rdquo;。就可将个人访问令牌添加到仓库的 Secrets 中，在 GitHub Actions 的配置中使用它进行部署。&lt;/p&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;将修改的文件添加到-git&#34;&gt;将修改的文件添加到 Git&lt;/h2&gt;
-&lt;p&gt;在你的 Hugo 项目路径，使用Git复制以下命令将修改的文件添加到 Git 缓存区：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;使用以下命令提交修改，其中 &amp;ldquo;Your commit message&amp;rdquo; 替换为你的提交信息：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;commit&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;m&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Your commit message&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;将提交的修改推送到 GitHub 仓库：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;push&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;origin&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;main&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br&gt;
-&lt;p&gt;注：&lt;/p&gt;
-&lt;p&gt;如果默认分支不是 main，请将 main 替换为你的默认分支名称。&lt;/p&gt;
-&lt;p&gt;确保 main.yml 文件的缩进是正确的 YAML 格式。&lt;/p&gt;
-&lt;p&gt;确保 Hugo 项目的根目录中有 public 文件夹，并且该文件夹在 .gitignore 文件中没有被忽略。&lt;/p&gt;
-&lt;p&gt;如果 Hugo 网站使用子模块，确保在 actions/checkout 步骤中包括 submodules: &amp;lsquo;recursive&amp;rsquo; 选项，以确保子模块也被正确检出。&lt;/p&gt;
-&lt;p&gt;以上步骤适用于 GitHub Actions 的配置，确保仓库的 GitHub Pages 设置是正确的（例如，设置为使用 gh-pages 分支或 docs 文件夹）。部署完成后， 网站应该可以通过 GitHub Pages 访问。&lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;查看-github-actions-运行&#34;&gt;查看 GitHub Actions 运行&lt;/h2&gt;
-&lt;p&gt;访问 GitHub 仓库页面，进入 &amp;ldquo;Actions&amp;rdquo; 标签页，能够看到 GitHub Actions 的运行。如果配置正确，工作流程应该会触发并开始运行。&lt;/p&gt;
-&lt;p&gt;在 GitHub Actions 页面，可查看运行的工作流程的状态、日志和任何可能的错误信息。&lt;/p&gt;
-&lt;p&gt;一旦工作流程成功运行， 网站应该会被构建并部署到指定的目标（例如 GitHub Pages），可访问网站来确认部署的状态。&lt;/p&gt;
-&lt;br&gt;
-</description>
-        </item>
-        <item>
-        <title>【建站5】域名购买&#43;DNS解析</title>
-        <link>https://springcecilia.blog/%E5%BB%BA%E7%AB%995%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0-DNS%E8%A7%A3%E6%9E%90/</link>
-        <pubDate>Mon, 01 Jan 2024 17:34:26 +0800</pubDate>
-        
-        <guid>https://springcecilia.blog/%E5%BB%BA%E7%AB%995%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0-DNS%E8%A7%A3%E6%9E%90/</guid>
-        <description>&lt;h1 id=&#34;域名购买与配置&#34;&gt;域名购买与配置&lt;/h1&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;域名对比，我选的是namesilo：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://shannote.com/archives/buy-foreign-domains.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://shannote.com/archives/buy-foreign-domains.html&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;namesilo购买教程：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://shannote.com/archives/how-to-register-namesilo-domain.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://shannote.com/archives/how-to-register-namesilo-domain.html&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;Namesilo配置教程：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.mailjob.net/posts/4108183257.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://blog.mailjob.net/posts/4108183257.html&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://shannote.com/archives/how-to-register-namesilo-domain.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://shannote.com/archives/how-to-register-namesilo-domain.html&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;所有的操作是跟着这个教程走的:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.zhudc.com/website/2413&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.zhudc.com/website/2413&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;填写注意&#34;&gt;填写注意&lt;/h1&gt;
-&lt;h2 id=&#34;a-记录ipv4-地址&#34;&gt;A 记录（IPv4 地址）&lt;/h2&gt;
-&lt;p&gt;主机名（Host）： 通常是 @
-或者你的域名（比如 example.com）。&lt;/p&gt;
-&lt;p&gt;IP 地址： 这是你的服务器的公共 IPv4地址。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;如何获取服务器的公共 IPv4 地址：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;如果使用云服务提供商（如AWS、DigitalOcean、Azure），可在控制台或面板中找到你的服务器实例，并找到其公共 IP 地址。&lt;/p&gt;
-&lt;p&gt;如果有自己的物理服务器，你可以通过访问网站WhatIsMyIP 或使用命令行工具（例如，在终端中运行 curl ifconfig.me）获取公共 IP 地址。&lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;cname-记录&#34;&gt;CNAME 记录&lt;/h2&gt;
-&lt;p&gt;填上面两个A就不用填这个，这个是填你的www 子域名，和上面那个二选一。&lt;/p&gt;
-&lt;p&gt;主机名（Host）： 通常是 www。&lt;/p&gt;
-&lt;p&gt;目标（Value）： 这是你的域名（比如example.com）。&lt;/p&gt;
-&lt;p&gt;CNAME 记录是选填的，通常用于将 www子域名指向主域名，以确保两者都能正确访问博客。&lt;/p&gt;
-&lt;p&gt;TTL（Time to Live）是DNS记录在缓存中保存的时间，通常以秒为单位。&lt;/p&gt;
-&lt;p&gt;当你在NameSilo或其他域名注册商添加A记录或CNAME记录时，你可以选择设置TTL。TTL的设置影响了DNS变更生效的时间以及对DNS查询的缓存持续时间。&lt;/p&gt;
-&lt;p&gt;一般来说，TTL一般填3600秒就好（1小时），因为较短的TTL可以使DNS更迅速地生效，但同时也增加了DNS服务器的负担。如果频繁地进行DNS更改，可以选择将TTL设置得更短，以便更快地应用变更。&lt;/p&gt;
-&lt;p&gt;具体的TTL设置取决于你的需求和实际情况。如果不经常更改DNS记录，使用较长的TTL可能更有效，因为它会减轻DNS服务器的负担并提高性能。&lt;/p&gt;
-&lt;p&gt;总之，将TTL设置为3600秒是为了在进行DNS更改时能够更迅速地生效。可根据自己的需求来选择TTL的值。&lt;/p&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;使用cloudflare解析dns&#34;&gt;使用Cloudflare解析DNS&lt;/h1&gt;
-&lt;br&gt;
-&lt;p&gt;参考教程：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://lucumt.info/post/hugo/migrate-github-blog-from-http-to-https/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;利用Cloudflare修改DNS服务器&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zhaouncle.com/hugo_03/#%E4%BA%8C%E5%88%A9%E7%94%A8cloudflare%E4%B8%BA%E5%9F%BA%E4%BA%8Egithub-pages%E7%9A%84hugo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0https%E6%94%AF%E6%8C%81&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;利用Cloudflare为基于GitHub Pages的Hugo博客添加HTTPS支持&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://h11ba1.com/2021/06/05/hugo&amp;#43;github%20page%E6%90%AD%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%9A%84https%E5%8D%9A%E5%AE%A2/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;hugo+github page搭建自定义域名的https博客&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;dns解析之我的修正&#34;&gt;dns解析之我的修正&lt;/h1&gt;
-&lt;p&gt;因为网站的IP是会变化的，所以直接添加这四个解析到IP地址的A记录。&lt;/p&gt;
-&lt;p&gt;185.199.108.153&lt;/p&gt;
-&lt;p&gt;185.199.109.153&lt;/p&gt;
-&lt;p&gt;185.199.110.153&lt;/p&gt;
-&lt;p&gt;185.199.111.153&lt;/p&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;github-pages部署&#34;&gt;GitHub pages部署&lt;/h1&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;如果你的 Hugo 博客托管在 GitHub Pages，那么你需要指向 GitHub 提供的域名。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;通常，GitHub Pages 的域名是 &lt;username&gt;.github.io（其中 &lt;username&gt; 是你的 GitHub 用户名）。&lt;/p&gt;
-&lt;p&gt;如果你在仓库的设置中配置了自定义域名，那么使用自定义域名。&lt;/p&gt;
-&lt;p&gt;步骤如下：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;打开你的 Hugo 项目的 GitHub 仓库。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;进入仓库的 &amp;ldquo;Settings&amp;rdquo;（设置）选项&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;在 &amp;ldquo;GitHub Pages&amp;rdquo; 部分查看你的 GitHub Pages 网站的域名。如果设置了自定义域名，那么使用这个自定义域名。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;例如，如果你的 GitHub Pages 网站是通过 &lt;a class=&#34;link&#34; href=&#34;https://username.github.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://&lt;username&gt;.github.io/&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
- 访问的，那么你的 CNAME 记录可能如下所示：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;主机名（Host）：www（或者其他子域名，根据你的需求）&lt;/li&gt;
-&lt;li&gt;目标（Value）：&lt;username&gt;.github.io&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;记住，在设置 CNAME 记录之后，DNS 记录需要一些时间来生效，通常在几小时内，因此你可能需要等待一段时间，然后在浏览器中输入子域名来测试。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;如果你的 Hugo 博客托管在 GitHub Pages，并且你想使用自定义域名，将你的github.io的子域名替换为你已经买好的域名：&lt;/strong&gt;&lt;/p&gt;
-&lt;br&gt;
-&lt;ol&gt;
-&lt;li&gt;打开你的 Hugo 项目的 GitHub 仓库。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;br&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;进入仓库的 &amp;ldquo;Settings&amp;rdquo;（设置）选项。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;br&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;自定义域名设置：&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;在 &amp;ldquo;GitHub Pages&amp;rdquo; 部分：&lt;/p&gt;
-&lt;p&gt;如果博客已启用 GitHub Pages，确保选择了 main 分支（或你的源分支）作为 source。&lt;/p&gt;
-&lt;p&gt;在 Custom domain 字段中输入自己的域名，例如xxxx.blog，这将在 GitHub Pages 的仓库生成网站，并在自定义域名上链接该网站。&lt;/p&gt;
-&lt;br&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;DNS 配置：&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;在 Namesilo 或其他域名注册商处，确保你的域名的 DNS 设置包括正确的 A 记录，将子域名（例如 &lt;a class=&#34;link&#34; href=&#34;https://www.xxxxxx.xxxx&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;www.xxxxxx.xxxx&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-）指向你的服务器的公共IPv4 地址&lt;/p&gt;
-&lt;br&gt;
-&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;等待 DNS&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;记录生效，可能需要一些时间（通常在几小时内），以确保域名正确地映射到你的 GitHub Pages。&lt;/p&gt;
-&lt;br&gt;
-&lt;ol start=&#34;6&#34;&gt;
-&lt;li&gt;测试和验证：&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;在浏览器中输入你的域名和子域名，确保Hugo博客能够正确加载。&lt;/p&gt;
-&lt;p&gt;如果一切设置正确，你的博客应该能够通过自定义域名访问。&lt;/p&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;其他参考教程&#34;&gt;其他参考教程&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.cysi.me/2022/05/guide-for-building-a-wordpress-site.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;冰布子的简易 Wordpress 建站指南&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-（虽然是wordpress但是域名这块写得很详细）&lt;/strong&gt;  &lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/582629584&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;配置GitHub Page域名&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cloud.tencent.com/developer/article/1834163&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;使用自定义域名来访问GitHub上部署的hugo博客——GitHub Pages&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ftzzloo.com/github-pages-and-domain-name-setting/#%E6%B7%BB%E5%8A%A0A%E8%AE%B0%E5%BD%95&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;GitHub博客绑定自定义域名&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;问题排除参考：&lt;/strong&gt;  &lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.hostinger.com/tutorials/error-522&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;How to Fix Cloudflare Error 522&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Troubleshooting custom domains and GitHub Pages&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;br&gt;</description>
-        </item>
-        <item>
-        <title>【建站6】装修博客记录</title>
-        <link>https://springcecilia.blog/%E5%BB%BA%E7%AB%996%E8%A3%85%E4%BF%AE%E5%8D%9A%E5%AE%A2/</link>
-        <pubDate>Mon, 01 Jan 2024 17:34:26 +0800</pubDate>
-        
-        <guid>https://springcecilia.blog/%E5%BB%BA%E7%AB%996%E8%A3%85%E4%BF%AE%E5%8D%9A%E5%AE%A2/</guid>
-        <description>&lt;br&gt;
-&lt;p&gt;注：博主使用的主题为stack。&lt;/p&gt;
-&lt;p&gt;官方文档参考：
-&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/guide/getting-started&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://stack.jimmycai.com/guide/getting-started&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;后期博客的改动，一般都是在theme文件夹的\assets\scss里的costum.css文件改动&lt;/p&gt;
-&lt;hr&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;修改字体&#34;&gt;修改字体&lt;/h1&gt;
-&lt;p&gt;参考教程：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.gezi.men/p/hugo-custom-global-font/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;【Hugo之路 番外6】hugo自定义全局字体&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;补充：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://fonts.google.com/?noto.script=Hant&amp;amp;sort=popularity&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;换字体参考网站&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://w3c.github.io/clreq/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;中文排版需求&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/lxgw/LxgwWenKai&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;霞鹜文楷&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/mzlogin/chinese-copywriting-guidelines&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;中文文案排版指北&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;修改背景色及布局&#34;&gt;修改背景色及布局&lt;/h1&gt;
-&lt;p&gt;参考教程：
-&lt;a class=&#34;link&#34; href=&#34;https://oxidane-uni.github.io/p/%E4%BD%BF%E7%94%A8-hugo-%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%87%8D%E5%BB%BA%E4%B8%8E-stack-%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E8%AE%B0%E5%BD%95/#%E6%94%B9%E5%96%84%E6%B5%85%E8%89%B2%E6%A8%A1%E5%BC%8F%E5%8F%AF%E8%AF%BB%E6%80%A7&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;使用 Hugo 对博客的重建与 Stack 主题优化记录&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;一些配色设计&amp;amp;工具网站：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.happyhues.co/palettes/17&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.happyhues.co/palettes/17&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.magicpattern.design/tools/css-backgrounds&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.magicpattern.design/tools/css-backgrounds&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://colorhunt.co/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://colorhunt.co/&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.color-hex.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.color-hex.com/&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;修改svg图标&#34;&gt;修改svg图标&lt;/h1&gt;
-&lt;p&gt;用到的网站：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://feathericons.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://feathericons.com/&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.svgrepo.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.svgrepo.com/&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;添加相册&#34;&gt;添加相册&lt;/h1&gt;
-&lt;p&gt;参考教程：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://immmmm.com/hugo-readdir-photos/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo 添加相册页面&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;添加动画&#34;&gt;添加动画&lt;/h1&gt;
-&lt;p&gt;参考教程：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://lbqaq.top/p/%E7%BB%99blog%E5%A2%9E%E5%8A%A0%E5%8A%A8%E7%94%BB/#4%E8%8F%9C%E5%8D%95%E7%BC%A9%E6%94%BE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;利用CSS给Blog增加动画&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;添加打字动画&#34;&gt;添加打字动画&lt;/h1&gt;
-&lt;p&gt;参考教程：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://shishuochen.gitee.io/2020/uffick8u1/#8-subtitle%E6%89%93%E5%AD%97%E6%9C%BA%E6%98%BE%E7%A4%BA&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://shishuochen.gitee.io/2020/uffick8u1/#8-subtitle打字机显示&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;我的改法：
-在D:\blog\myblog\themes\hugo-theme-stack\layouts的index.html开头贴上&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{{&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;define&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;main&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&amp;lt;!--&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;or&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;home&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;font-size: 3rem; text-align: center; font-weight: bold;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;   &lt;span class=&#34;c1&#34;&gt;// 设置想打的字的样式，3rem是大小
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&amp;lt;!--&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;...&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;other&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;HTML&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;content&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;...&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;divTyping&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;document&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;querySelector&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;#text p&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;timer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;// 修改为适当的时间间隔，以控制打字速度
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;str&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Humo sum, humani nihil ame alienum puton.&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;// 修改为自己想打的字
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;typing&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;length&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;divTyping&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;innerHTML&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;slice&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;_&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;timer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;setTimeout&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;typing&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;timer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;divTyping&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;innerHTML&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// 结束打字，移除 _ 光标
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;nx&#34;&gt;clearTimeout&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;timer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;typing&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;发现暗色模式下文字不会跟着变色，因此还需要再改&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{{&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;define&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;main&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&amp;lt;!--&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;or&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;home&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;font-size: 3rem; text-align: center; font-weight: bold; color: var(--card-text-color-secondary);&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;&amp;lt;!--&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;在这里替换为你想要的颜色变量&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;&amp;lt;!--&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;...&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;other&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;HTML&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;content&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;...&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;--&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;divTyping&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;document&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;querySelector&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;#text p&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;timer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;// 修改为适当的时间间隔，以控制打字速度
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;str&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Humo sum, humani nihil ame alienum puton.&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;// 修改为自己想打的字
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;typing&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;length&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;divTyping&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;innerHTML&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;slice&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;_&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;timer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;setTimeout&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;typing&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;timer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;divTyping&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;innerHTML&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// 结束打字，移除 _ 光标
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;nx&#34;&gt;clearTimeout&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;timer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;typing&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;();&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br&gt;
-&lt;h1 id=&#34;添加返回到顶部插件&#34;&gt;添加返回到顶部插件&lt;/h1&gt;
-&lt;p&gt;参考教程：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ponder.lol/2023/custom-hugo-theme-stack/#%e8%bf%94%e5%9b%9e%e9%a1%b6%e9%83%a8%e6%8c%89%e9%92%ae&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://ponder.lol/2023/custom-hugo-theme-stack/#返回顶部按钮&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;显示统计文章发布数量&#34;&gt;显示/统计文章发布数量&lt;/h1&gt;
-&lt;p&gt;参考教程：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://thirdshire.com/hugo-stack-renovation/#%E6%80%BB%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%8F%91%E8%A1%A8%E4%BA%86x%E7%AF%87%E6%96%87%E7%AB%A0%E5%85%B1%E8%AE%A1x%E5%AD%97&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://thirdshire.com/hugo-stack-renovation/#总字数统计发表了x篇文章共计x字&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;添加文章加密功能&#34;&gt;添加文章加密功能&lt;/h1&gt;
-&lt;p&gt;目前只成功实现一种网页前端加密的方法，不过对我来说够了。&lt;/p&gt;
-&lt;p&gt;参考&lt;a class=&#34;link&#34; href=&#34;https://naturaleki.one/post/loadinghugo%E8%A3%85%E4%BF%AE%E6%97%A5%E5%BF%9703/#%E6%96%87%E7%AB%A0%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81%E8%AE%BF%E9%97%AE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;天堂错误文件-Loading：《hugo 装修日志 03》&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-操作后，在要加密的文章头部添加&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;password&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;xxxx&amp;#34;&lt;/span&gt;  
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;password_hint&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;xxxxx&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;即可对显示的网页加密。&lt;/p&gt;
-&lt;h1 id=&#34;短代码应用&#34;&gt;短代码应用&lt;/h1&gt;
-&lt;p&gt;参考：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.sleepymoon.cyou/2023/hugo-shortcodes/#%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo | 在 Stack 主题上可行的短代码们&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hugo-theme-luna.imiku.me/zh-cn/2022/05/02/shortcodes.html/#%E5%8D%A1%E7%89%87%E9%93%BE%E6%8E%A5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;短代码（Shortcodes）&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;在博客进行一些实施成功的样式：&lt;/p&gt;
-&lt;h2 id=&#34;文本效果语法&#34;&gt;文本效果语法&lt;/h2&gt;
-&lt;h3 id=&#34;文本折叠&#34;&gt;文本折叠&lt;/h3&gt;
-&lt;details&gt;
-  &lt;summary&gt;折叠↓&lt;/summary&gt;
-  实际使用时别忘了换成双括号！
-&lt;/details&gt;
-
-&lt;h3 id=&#34;文本模糊&#34;&gt;文本模糊&lt;/h3&gt;
-&lt;p&gt;&lt;span class=&#34;blur&#34;&gt;手动打码效果
-&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;文本黑幕&#34;&gt;文本黑幕&lt;/h3&gt;
-&lt;p&gt;&lt;span class=&#34;shady&#34;&gt;数据删除！数据删除！
-&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;文本位置&#34;&gt;文本位置&lt;/h3&gt;
-&lt;p&gt;&lt;p style=&#34;text-align:left&#34;&gt;文字居左&lt;/p&gt;
-
-&lt;p style=&#34;text-align:center&#34;&gt;文字居中&lt;/p&gt;
-
-&lt;p style=&#34;text-align:right&#34;&gt;文字居右&lt;/p&gt;
-&lt;/p&gt;
-&lt;h3 id=&#34;摘录引用&#34;&gt;摘录引用&lt;/h3&gt;
-
-
-
-
-
-
-
-  
-  
-  
-  
-
-
-
-
-
-  
-
-
-&lt;blockquote&gt;
-  &lt;p&gt;There is no possibility that any perceptible change will happen within our own lifetime. We are the dead. Our only true life is in the future. We shall take part in it ashandfuls of dust and splinters of bone. But how far away that future may be, there is no knowing.&lt;/p&gt;
-  &lt;footer style=&#34;text-align:right&#34;&gt;
-    &lt;strong&gt;George Orwell&lt;/strong&gt;
-    
-      
-        
-          &lt;cite&gt;
-            《1984》&lt;/a&gt;
-          &lt;/cite&gt;
-        
-      
-    
-  &lt;/footer&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;插入图片&#34;&gt;插入图片&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://springcecilia.blog/images/1.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;图1&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;调整大小：&lt;/p&gt;
-&lt;img src=&#34;https://springcecilia.blog/images/1.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 100px; height: auto;&#34;&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;neodb引用&#34;&gt;neodb引用&lt;/h2&gt;
-&lt;p&gt;参考&lt;a class=&#34;link&#34; href=&#34;https://immmmm.com/hi-neodb-api/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;木木木木木大佬的NeoDB嵌入教程&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;书籍：
-
-
-
-
-
-    
-
-
-
-
-
-    
-    &lt;div class=&#34;db-card&#34;&gt;
-        &lt;div class=&#34;db-card-subject&#34;&gt;
-            &lt;div class=&#34;db-card-post&#34;&gt;&lt;img loading=&#34;lazy&#34; decoding=&#34;async&#34; referrerpolicy=&#34;no-referrer&#34; src=&#34;https://neodb.social/m/item/2023/01/29/2749cb43-3efb-4518-a454-5d6de1f192ad.jpg&#34;&gt;&lt;/div&gt;
-            &lt;div class=&#34;db-card-content&#34;&gt;
-                &lt;div class=&#34;db-card-title&#34;&gt;&lt;a href=&#34;https://neodb.social/book/1pIUZwWPfeBxwb4MLv7gec&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;A Room of One&amp;#39;s Own&lt;/a&gt;&lt;/div&gt;
-                &lt;div class=&#34;rating&#34;&gt;&lt;span class=&#34;allstardark&#34;&gt;&lt;span class=&#34;allstarlight&#34; style=&#34;width:0%&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;rating_nums&#34;&gt;0&lt;/span&gt;&lt;/div&gt;
-                &lt;div class=&#34;db-card-abstract&#34;&gt;A Room of One&amp;#39;s Own, based on a lecture given at Girton College, Cambridge, is one of the great feminist polemics, ranging in its themes from Jane Austen and Carlotte Brontë to the silent fate of Shakespeare&amp;#39;s gifted (imaginary) sister and the effects of poverty and sexual constraint on female creativity.
-
-Virginia Woolf (1882-1941) is regarded as a major 20th century author and essayist, a key figure in literary history as a feminist and modernist, and the centre of &amp;#39;The Bloomsbury Group&amp;#39;. This informal collective of artists and writers which included Lytton Strachey and Roger Fry, exerted a powerful influence over early twentieth-century British culture. Between 1925 and 1931 Virginia Woolf produced what are now regarded as her finest masterpieces, from Mrs Dalloway (1925) to the poetic and highly experimental novel The Waves (1931). She also maintained an astonishing output of literary criticism, short fiction, journalism and biography, including the playfully subversive Orlando (1928) and A Room of One&amp;#39;s Own (1929) a passionate feminist essay.
-
-If you enjoyed A Room of One&amp;#39;s Own, you might like Woolf&amp;#39;s Orlando, also available in Penguin Modern Classics.
-
-&amp;#39;Probably the most influential piece of non-fictional writing by a woman in this century&amp;#39;
-Hermione Lee, Financial Times&lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class=&#34;db-card-cate&#34;&gt;book&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-
-
-影视：
-
-
-
-
-
-    
-
-
-
-
-
-    
-    &lt;div class=&#34;db-card&#34;&gt;
-        &lt;div class=&#34;db-card-subject&#34;&gt;
-            &lt;div class=&#34;db-card-post&#34;&gt;&lt;img loading=&#34;lazy&#34; decoding=&#34;async&#34; referrerpolicy=&#34;no-referrer&#34; src=&#34;https://neodb.social/m/item/doubanmovie/2023/08/02/c941e41c-5691-484f-be7b-d4f86ea2523b.jpg&#34;&gt;&lt;/div&gt;
-            &lt;div class=&#34;db-card-content&#34;&gt;
-                &lt;div class=&#34;db-card-title&#34;&gt;&lt;a href=&#34;https://neodb.social/tv/season/1UMEf2NuQxnWLWDyso8Pwm&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;戴洛奇小镇 第一季&lt;/a&gt;&lt;/div&gt;
-                &lt;div class=&#34;rating&#34;&gt;&lt;span class=&#34;allstardark&#34;&gt;&lt;span class=&#34;allstarlight&#34; style=&#34;width:90%&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;rating_nums&#34;&gt;9&lt;/span&gt;&lt;/div&gt;
-                &lt;div class=&#34;db-card-abstract&#34;&gt;《戴洛奇小镇》（Deadloch）是由亚马逊出品的澳大利亚犯罪悬疑黑色喜剧电视连续剧，由凯特·麦卡特尼和凯特·麦克伦南创作。
-《戴洛奇小镇》以塔斯马尼亚州的一个虚构小镇 Deadloch 为背景，做事严谨的当地高级警长Dulcie Collins正应妻子要求放慢工作节奏，以平衡生活。这时，一具男尸被冲上沙滩，Dulcie又被推回侦探工作中。高级调查员Eddie Redcliffe，从达尔文空降支援这起案件，但她粗鲁不羁的破案行事风格引起了Dulcie的不满。随着死亡人数的不断增多，她们必须化解分歧和矛盾，联手侦破这起目标为顺直白男的连环杀人案。&lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class=&#34;db-card-cate&#34;&gt;tv&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-
-
-游戏：
-
-
-
-
-
-    
-
-
-
-
-
-    
-    &lt;div class=&#34;db-card&#34;&gt;
-        &lt;div class=&#34;db-card-subject&#34;&gt;
-            &lt;div class=&#34;db-card-post&#34;&gt;&lt;img loading=&#34;lazy&#34; decoding=&#34;async&#34; referrerpolicy=&#34;no-referrer&#34; src=&#34;https://neodb.social/m/game/2021/09/15edeb3a9f-72bc-41da-9a6a-80e7e1aa0864.jpg&#34;&gt;&lt;/div&gt;
-            &lt;div class=&#34;db-card-content&#34;&gt;
-                &lt;div class=&#34;db-card-title&#34;&gt;&lt;a href=&#34;https://neodb.social/game/5WjnsFHydRg1rtlErgLmMs&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;弹丸论破 希望学园与绝望高中生 ダンガンロンパ 希望の学園と絶望の高校生&lt;/a&gt;&lt;/div&gt;
-                &lt;div class=&#34;rating&#34;&gt;&lt;span class=&#34;allstardark&#34;&gt;&lt;span class=&#34;allstarlight&#34; style=&#34;width:87%&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;rating_nums&#34;&gt;8.7&lt;/span&gt;&lt;/div&gt;
-                &lt;div class=&#34;db-card-abstract&#34;&gt;《弹丸论破 希望的学园与绝望高中生》（日语：ダンガンロンパ 希望の学園と絶望の高校生）是一套由日本游戏开发商Spike（日语：株式会社スパイク）制作，于2010年11月25日开始发售的PlayStation Portable游戏。&lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class=&#34;db-card-cate&#34;&gt;game&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-
-&lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;插入网易云音乐外链&#34;&gt;插入网易云音乐外链&lt;/h2&gt;
-&lt;p&gt;在文章里输入
-{&amp;lt; netease XXXXXXXXX 0 &amp;gt;} //歌曲的id;是否自动播放(1为自动播放，0为手动播放)，输入时加两个{}&lt;/p&gt;
-&lt;p&gt;效果：&lt;/p&gt;
-&lt;iframe frameborder=&#34;no&#34; border=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; width=100% height=86 src=&#34;//music.163.com/outchain/player?type=2&amp;id=1396731073&amp;auto=0&amp;height=66&#34;&gt;&lt;/iframe&gt;
-
-&lt;br&gt;
-&lt;h2 id=&#34;插入b站视频外链&#34;&gt;插入B站视频外链&lt;/h2&gt;
-&lt;p&gt;{&amp;lt; bilibili XXXXXXXXXXX 0 &amp;gt;} //BV号，分p数，0/1为是否自动播放；输入时加两个{}&lt;/p&gt;
-&lt;p&gt;效果：&lt;/p&gt;
-
-
-
-
-
-
-    
-
-
-&lt;div class=&#34;video-wrapper&#34;&gt;
-    &lt;iframe src=&#34;https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV13J411d74C&#34;
-            scrolling=&#34;no&#34;
-            frameborder=&#34;no&#34;
-            framespacing=&#34;0&#34;
-            allowfullscreen=&#34;true&#34;
-    &gt;
-    &lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;br&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;魔法区项目&#34;&gt;魔法区项目&lt;/h1&gt;
-&lt;h2 id=&#34;添加channelio私信插件&#34;&gt;添加Channel.io私信插件&lt;/h2&gt;
-&lt;p&gt;参考：
-&lt;a class=&#34;link&#34; href=&#34;https://irithys.com/hugo-mod-1/#%e8%81%94%e7%b3%bb%e6%b0%94%e6%b3%a1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;给 Hugo 加一点好玩的功能&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;结果：自己不用魔法测试是没问题的，不知道其他地区访问实际应用怎样。&lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;添加ko-fi打赏功能&#34;&gt;添加ko-fi打赏功能&lt;/h2&gt;
-&lt;p&gt;参考&lt;a class=&#34;link&#34; href=&#34;https://ko-fi.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Ko-fi官网&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-一步步做，链接直接复制在left.html里就行&lt;/p&gt;
-&lt;p&gt;结果：图标好看，不过不魔法好像也显示不出，无所谓了！&lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;添加waline评论&#34;&gt;添加Waline评论&lt;/h2&gt;
-&lt;p&gt;参考：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://waline.js.org/guide/get-started/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Waline官方文档&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://naturaleki.one/post/loadinghugo%E8%A3%85%E4%BF%AE%E6%97%A5%E5%BF%9702/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;天堂错误文件-Loading hugo 装修日志 02&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://8bytes.top/2022/12/12/walineErr/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;waline无法登录(vercel.app被污染)&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;结果：因vercel被墙需要额外解析dns，不魔法好像加载不出来，算了就这样吧&lt;/p&gt;
-&lt;br&gt;
-&lt;h2 id=&#34;添加arititalk说说界面&#34;&gt;添加Arititalk说说界面&lt;/h2&gt;
-&lt;p&gt;有些短打和碎碎念就不打算单独在博客里弄成文章发，所以给博客添加一个类似空间说说的分区。&lt;/p&gt;
-&lt;p&gt;参考&lt;a class=&#34;link&#34; href=&#34;https://artitalk.js.org/doc.html#%F0%9F%8C%88-leancloud-%E7%9A%84%E7%9B%B8%E5%85%B3%E5%87%86%E5%A4%87&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Artitalk使用文档&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;注：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;LeanCloud用的是国际版，在自己原来建waline评论区的那个应用里做上述教程就好了，不要单独新建应用，不然后期会出现冲突。&lt;/p&gt;
-&lt;p&gt;然后参考&lt;a class=&#34;link&#34; href=&#34;https://naturaleki.one/post/loadinghugo%E8%A3%85%E4%BF%AE%E6%97%A5%E5%BF%9704/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Loading：《hugo 装修日志 04》&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;编辑eki.html文件时，国际版的LeanCloud不需要填serverurl&lt;/p&gt;
-&lt;p&gt;结果：头像要url链接，把图转存到某个图床，然后在LeanCloud设置里添加url，不过依然加载不出来，算了能发东西就行。&lt;/p&gt;
-&lt;br&gt;
-&lt;hr&gt;
-&lt;p&gt;暂时就优化到这个地步，发现有些浏览器可能界面显示有差异，但大多数都是正常的。&lt;/p&gt;
-&lt;p&gt;可以愉快地开启新的赛博魂器地的存档了！&lt;/p&gt;
-&lt;br&gt;
-</description>
-        </item>
-        <item>
-        <title>【技巧】Pandoc批量转md的方法</title>
-        <link>https://springcecilia.blog/%E6%8A%80%E5%B7%A7Pandoc%E6%89%B9%E9%87%8F%E8%BD%ACmd%E7%9A%84%E6%96%B9%E6%B3%95/</link>
-        <pubDate>Mon, 01 Jan 2024 17:34:26 +0800</pubDate>
-        
-        <guid>https://springcecilia.blog/%E6%8A%80%E5%B7%A7Pandoc%E6%89%B9%E9%87%8F%E8%BD%ACmd%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
-        <description>&lt;p&gt;需要：Git、pandoc&lt;/p&gt;
-&lt;p&gt;批量管理Markdown文件的笔记软件为Obsidian  &lt;/p&gt;
-&lt;p&gt;前提：已安装Git软件、word文档格式为.docx而不是.doc（如果是.doc格式要先自行转换为.docx） 、文件命名不含特殊字符     &lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;如果你有大量文档需要搬运到博客，可以尝试.docx格式批量转.md    &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;.docx ：&lt;/strong&gt; Microsoft Word 文档的文件扩展名 ，以 XML（可扩展标记语言）为基础。这种格式取代了早期的二进制 .doc 格式，提供了更高的兼容性和可扩展性。（所以office软件保存现在保存.docx、.pptx等格式更好哦）。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;.md：&lt;/strong&gt; Markdown 文件的文件扩展名，通常包含纯文本，并使用一些特定的语法规则来标记文本的结构和格式，方便转换为有效的HTML。&lt;/p&gt;
-&lt;p&gt;做法参考这位大佬的教程：
-&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/misaka10212/p/16751506.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.cnblogs.com/misaka10212/p/16751506.html&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;安装pandoc&#34;&gt;安装Pandoc&lt;/h1&gt;
-&lt;p&gt;Pandoc是一个开源的文档转换工具，可以从&lt;a class=&#34;link&#34; href=&#34;https://pandoc.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;官网&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-下载并安装。&lt;/p&gt;
-&lt;p&gt;Windows用户下载 pandoc-3.1.9-windows-x86_64.msi 或 pandoc-3.1.9-windows-x86_64.zip。
-如果喜欢使用MSI安装程序（Microsoft Installer），选择 .msi 文件。
-如果喜欢使用ZIP文件，选择 .zip 文件。
-这两个文件格式都是Windows用户常见的安装文件类型，选一个下就好，下载完成后，按照提示说明进行安装&lt;/p&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;使用git将文档转换为markdown语法&#34;&gt;使用Git将文档转换为markdown语法&lt;/h1&gt;
-&lt;p&gt;找到包含你要批量转换的 Word 文档的文件夹，右键打开Open Git bash here。&lt;/p&gt;
-&lt;p&gt;或者用cd命令在Git里导航到你的文件夹所在路径：    &lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;cd&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;X&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;XXXX&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;XXXX&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;XXXX&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;注：在 Git Bash 中，路径分隔符使用正斜杠 /，而不是反斜杠 \。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;转换 Word 文档为 Markdown，输入以下代码： &lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;pandoc&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;your_document&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;docx&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;o&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;output_file&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;md&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br&gt;
-&lt;p&gt;如果遇到问题，请确保 Git Bash 和 Pandoc 都已正确安装，并且 Pandoc 已经被添加到系统的 PATH 中。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;file&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;find&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;name&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;*.docx&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nx&#34;&gt;pandoc&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;$file&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;o&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;${file%.docx}.md&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;done&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这个脚本的意思是使用 find 命令来查找当前目录及其子目录中的所有 .docx 文件，并通过循环逐个转换它们为 Markdown 文件。&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;注：这种方法假设文件名中没有空格或特殊字符。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;如果您的文件名包含空格或特殊字符，可能会影响命令的解释和执行。&lt;/p&gt;
-&lt;p&gt;常见的特殊字符有：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;空格（Space）：&lt;/strong&gt;  常用作参数或文件名之间的分隔符。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;双引号（&amp;quot;）和单引号（&amp;rsquo;）：&lt;/strong&gt;  用于定义字符串。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;反斜杠（\）：&lt;/strong&gt; 用于转义字符。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;通配符（*、?）：&lt;/strong&gt; 用于匹配文件名中的字符。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;美元符号（$）：&lt;/strong&gt; 在一些上下文中，美元符号有特殊含义，如变量引用。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;反引号（`）：&lt;/strong&gt; 在某些上下文中，反引号可能用于命令替换。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;注意在转换前让docx文件名避免包含上述特殊字符。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Pandoc 找不到文件时会尝试使用默认的输出格式。如果 Pandoc 无法从文件扩展名中推断出格式，将默认为 Markdown 格式。&lt;/p&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;将markdown文件批量导入obsidian&#34;&gt;将Markdown文件批量导入Obsidian&lt;/h1&gt;
-&lt;p&gt;将之前转换生成的Markdown文件直接批量复制/移动到 Obsidian 笔记文件夹中，或使用Obsidian的导入功能将文件导入。&lt;/p&gt;
-&lt;p&gt;Obsidian就会识别Markdown格式，并将文档添加到您的笔记库中。&lt;/p&gt;
-&lt;p&gt;补充（针对不懂Obsidian者）：&lt;/p&gt;
-&lt;p&gt;如何 Obsidian 中创建笔记文件夹：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;打开 Obsidian 应用。&lt;/li&gt;
-&lt;li&gt;在左侧文件导航面板中，选择想创建笔记文件夹的位置。&lt;/li&gt;
-&lt;li&gt;在右键菜单中，选择 &amp;ldquo;New folder&amp;rdquo;（新建文件夹）。&lt;/li&gt;
-&lt;li&gt;输入文件夹的名称并按 Enter 键确认。这样就在选定的位置成功创建了一个新的笔记文件夹。在该文件夹中，你可以创建或存放、修改你的 Markdown 笔记文件，Obsidian 会根据笔记文件的路径和文件名来模拟文件夹结构。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;其他批量转md文件的方法&#34;&gt;其他批量转md文件的方法&lt;/h1&gt;
-&lt;p&gt;方法1：参考→&lt;a class=&#34;link&#34; href=&#34;https://forum-zh.obsidian.md/t/topic/971/3&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;怎么用calibre将电子书简单粗暴转换为md格式导入obsidian&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;p&gt;方法2：&lt;a class=&#34;link&#34; href=&#34;https://notionchina.co/guide/api-import-export/export-a-page-as-markdown.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;使用notion的导出为markdown功能&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-（前提是文档已存在notion）    &lt;/p&gt;
-&lt;p&gt;其他方法：&lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/chinesehelp/03&amp;#43;%E6%95%99%E7%A8%8B/%E4%BB%8E%E5%85%B6%E4%BB%96%E8%BD%AF%E4%BB%B6%E5%AF%BC%E5%85%A5obsidian%EF%BC%88MOC%EF%BC%89&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;从其他软件导入obsidian&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-&lt;br&gt;
-&lt;h1 id=&#34;其他参考&#34;&gt;其他参考&lt;/h1&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.liangshunet.com/ca/201904/765362983.htm&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;ppt转word（含怎么把大纲不显示文字的PPT转换Word和如何保留原格式将PPT转换成Word）&lt;/a&gt;
-
-    
-&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
-    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
-    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
-        fill=&#34;currentColor&#34;&gt;
-&lt;/svg&gt;&lt;/span&gt;
-
-&lt;/p&gt;
-</description>
-        </item>
-        <item>
+        <lastBuildDate>Fri, 03 Nov 2023 10:34:26 +0800</lastBuildDate><atom:link href="https://springcecilia.blog/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>【逛展】V&amp;A博物馆珍藏吉尔伯特精品展</title>
         <link>https://springcecilia.blog/%E7%92%80%E7%92%A8%E4%B8%87%E8%B1%A1%E8%8B%B1%E5%9B%BDVA%E5%8D%9A%E7%89%A9%E9%A6%86%E7%8F%8D%E8%97%8F%E5%90%89%E5%B0%94%E4%BC%AF%E7%89%B9%E7%B2%BE%E5%93%81%E5%B1%95-2ef607a93ff1489992b00ed5c9bd35fc/</link>
         <pubDate>Fri, 03 Nov 2023 10:34:26 +0800</pubDate>
@@ -1985,13 +31,13 @@ Hermione Lee, Financial Times&lt;/div&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-是德国最大的中世纪老城之一，也是第二、第三次十字军东征的起始地。&lt;/p&gt;
+s是德国最大的中世纪老城之一，也是第二、第三次十字军东征的起始地。&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;18世纪银器餐具多层饰盘&#34;&gt;18世纪银器餐具——多层饰盘&lt;/h1&gt;
 &lt;br&gt;
@@ -2004,25 +50,25 @@ Hermione Lee, Financial Times&lt;/div&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
- youtube的这个系列对银器的展示和介绍更全面&lt;/p&gt;
+s youtube的这个系列对银器的展示和介绍更全面&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://m.thepaper.cn/newsDetail_forward_25446834&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;从“野蛮”到“文明”的欧洲餐桌，可不止一把叉子那么简单&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;防震巧克力杯及托盘&#34;&gt;防震巧克力杯及托盘&lt;/h1&gt;
 &lt;br&gt;
@@ -2037,37 +83,37 @@ Hermione Lee, Financial Times&lt;/div&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-   &lt;/p&gt;
+s   &lt;/p&gt;
 &lt;p&gt;相关：&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/77261893&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://zhuanlan.zhihu.com/p/77261893&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.city.imari.saga.jp/4331.htm&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.city.imari.saga.jp/4331.htm&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;18世纪20年代的英国茶叶罐&#34;&gt;18世纪20年代的英国茶叶罐&lt;/h1&gt;
 &lt;br&gt;
@@ -2083,37 +129,37 @@ Hermione Lee, Financial Times&lt;/div&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-文章提到，在 1740 年至 1822 年间的住在英国殖民地上的人每年将平均收入的 9% 拿来买茶叶；&lt;/p&gt;
+s文章提到，在 1740 年至 1822 年间的住在英国殖民地上的人每年将平均收入的 9% 拿来买茶叶；&lt;/p&gt;
 &lt;p&gt;而这篇文章&lt;a class=&#34;link&#34; href=&#34;https://www.tcd.ie/Economics/assets/pdf/SER/2015/McGowan,%20Brewing%20Up%20a%20Storm-%20Investigating%20British%20Tea%20Prices%20from%201690-1914.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Brewing up a storm: Investigating British tea prices from 1690-1914&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-提到，1850年的普通英国人愿意放弃15%的收入来保留获得茶叶和糖的机会。&lt;/p&gt;
+s提到，1850年的普通英国人愿意放弃15%的收入来保留获得茶叶和糖的机会。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.ocha-festival.jp/archive/english/conference/ICOS2001/files/PROC/I-004.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Tea culture in Britain, 1660-1800&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-   里面提到：&lt;/p&gt;
+s   里面提到：&lt;/p&gt;
 &lt;p&gt;早在1698年，英国政府就对茶征税，每隔几年就会增加一次，最终关税高得吓人，几乎是茶叶成本的100%。（1773 年的波士顿倾茶事件，就是由于英国政府试图对再出口到美洲殖民地的茶叶征收高额关税而引发的。波士顿倾茶事件中有将近 342 箱茶叶约 92,000 磅（约 46 吨，总价值 9,659 英镑）被倒入波士顿港，换算成现代价值将近150 万美元。）&lt;/p&gt;
 &lt;p&gt;这篇文章还提到一些有趣的细节，比如1720 年代之前牛奶加茶的习惯在英国还并不普遍，这种混合喝法要到1830年代之后才流行起来；英国的糖业可追溯到1650年，糖的产地主要来自西印度群岛的甘蔗种植园，还有一些人在 1800 年左右通过抵制糖的方式来抗议奴隶贸易等等。&lt;/p&gt;
 &lt;p&gt;三联这篇文章&lt;a class=&#34;link&#34; href=&#34;https://www.lifeweek.com.cn/article/155075&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -2121,13 +167,13 @@ Hermione Lee, Financial Times&lt;/div&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
- 说是“从1658到1700年16到50先令一磅（约合454克），而一个侍者一年的工资仅为6英镑（1英镑合20先令）。1660年曾达到120先令一磅的惊人价格。” （不过不知道是参考哪篇文献，用英文搜时没查到这么具体的数字。）&lt;/p&gt;
+s 说是“从1658到1700年16到50先令一磅（约合454克），而一个侍者一年的工资仅为6英镑（1英镑合20先令）。1660年曾达到120先令一磅的惊人价格。” （不过不知道是参考哪篇文献，用英文搜时没查到这么具体的数字。）&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;&lt;strong&gt;其他相关&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://qmhistoryoftea.wordpress.com/2014/01/11/buying-tea-in-1801/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -2135,37 +181,37 @@ Hermione Lee, Financial Times&lt;/div&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://historychina.net/qsyj/ztyj/zwgx/2012-12-06/33370.shtml&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://historychina.net/qsyj/ztyj/zwgx/2012-12-06/33370.shtml&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.sohu.com/a/243824277_250209&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;英国茶趣闻：茶是如何传入英国的？&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;《绿色黄金：茶叶帝国》，社会科学文献出版社&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;鼻烟盒&#34;&gt;鼻烟盒&lt;/h1&gt;
@@ -2201,61 +247,61 @@ Hermione Lee, Financial Times&lt;/div&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.sohu.com/a/109464932_161268&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;鼻烟盒:欧洲烟民的掌中艺术&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-  &lt;/p&gt;
+s  &lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.jiemian.com/article/3638863.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;荒诞、奢靡与欲望，真实版“权游”中的顶级道具&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://history.ifeng.com/c/7slnXHOWBqc&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;西方的鼻烟盒，为何到了中国变成了鼻烟壶？&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://snuffbottlesociety.org/zh/History&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;鼻烟和鼻烟壶的历史&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;微型马赛克工艺&#34;&gt;微型马赛克工艺&lt;/h1&gt;
 &lt;br&gt;
@@ -2295,13 +341,13 @@ Hermione Lee, Financial Times&lt;/div&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-文章提及，四百多年前的梵蒂冈的圣彼得大教堂为了壁画防潮，直接用微型马赛克马赛克重新嵌了一遍。  &lt;/p&gt;
+s文章提及，四百多年前的梵蒂冈的圣彼得大教堂为了壁画防潮，直接用微型马赛克马赛克重新嵌了一遍。  &lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;其他&#34;&gt;其他&lt;/h1&gt;
 &lt;br&gt;
@@ -2323,13 +369,13 @@ Hermione Lee, Financial Times&lt;/div&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-被视为龟类中最好的物种，其寿命可达1500年，享有“海金”之称。（当然，玳瑁离了壳就活不成了，因为上千年来人类的过度捕杀，如今玳瑁是濒危物种。）&lt;/p&gt;
+s被视为龟类中最好的物种，其寿命可达1500年，享有“海金”之称。（当然，玳瑁离了壳就活不成了，因为上千年来人类的过度捕杀，如今玳瑁是濒危物种。）&lt;/p&gt;
 &lt;br&gt;
 </description>
         </item>
@@ -5801,97 +3847,97 @@ Gin送完耳钉后的某个夜晚。&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.thepaper.cn/newsDetail_forward_18191729&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;澎湃新闻特稿《美军基地与身份鸿沟，冲绳“没有真正‘回归’”》&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://world.huanqiu.com/article/47xDYyWNda6&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;环球时报 《政府庆祝，县民游行——“回归”50年，冲绳民众人权仍遭践踏》&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.thepaper.cn/newsDetail_forward_2213347&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;澎湃新闻《一九六八｜专访小熊英二①：日本战后一代遭遇“现代”的时刻》&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.sohu.com/a/159619790_232950&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;文化纵横 《孙歌：走出主权的迷误 ——冲绳民众的实践及启示》&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.wyzxwk.com/Article/sichao/2020/11/425995.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;《水平轴思想——关于冲绳的“共同体意识”》冈本惠德&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.acsils.org/home&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;琉球民族独立综合研究学会（The Association of Comprehensive Studies for Independence of the Lew Chewans）官网&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://tamakidenny.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;冲绳知事 玉城デニー OFFICIAL WEBSITE&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;&lt;strong&gt;其他背景相关&lt;/strong&gt;&lt;/p&gt;
 &lt;br&gt;
@@ -5920,13 +3966,13 @@ Gin送完耳钉后的某个夜晚。&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;干保柱,毕亚娜.战后日本中央与地方关系的重构[J].兰州学刊,2017.&lt;/p&gt;
 &lt;p&gt;杜钢建,刘杰.日本地方自治的立法权[J].小城镇建设, 2000.&lt;/p&gt;
 &lt;p&gt;宋金文.日本的地方分权与国家治理方式转型研究[J].社会政策研究, 2018.&lt;/p&gt;
@@ -6550,13 +4596,13 @@ Gin送完耳钉后的某个夜晚。&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-），是第一首流行的纯正冲绳民谣，后被各国相继翻唱过。&lt;/p&gt;
+s），是第一首流行的纯正冲绳民谣，后被各国相继翻唱过。&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;【1】《海の声》：由BEGIN组合三线演奏的冲绳民歌。&lt;/p&gt;
 &lt;iframe frameborder=&#34;no&#34; border=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; width=100% height=86 src=&#34;//music.163.com/outchain/player?type=2&amp;id=1396731077&amp;auto=0&amp;height=66&#34;&gt;&lt;/iframe&gt;
@@ -6566,26 +4612,26 @@ Gin送完耳钉后的某个夜晚。&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-》：一首由八重山群岛流传的叙事民谣，起源于琉球王国时代。&lt;/p&gt;
+s》：一首由八重山群岛流传的叙事民谣，起源于琉球王国时代。&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;【3】《&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=ns9j6Nmvhqs&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;祭りのあと风&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
- 》（祭典过后的风）：三线伴奏的冲绳民谣。&lt;/p&gt;
+s 》（祭典过后的风）：三线伴奏的冲绳民谣。&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;【4】名柯主题曲《运命のルーレット廻して》（转动命运之轮）。&lt;/p&gt;
 &lt;iframe frameborder=&#34;no&#34; border=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; width=100% height=86 src=&#34;//music.163.com/outchain/player?type=2&amp;id=2074118688&amp;auto=0&amp;height=66&#34;&gt;&lt;/iframe&gt;
@@ -6602,13 +4648,13 @@ Gin送完耳钉后的某个夜晚。&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-》：坂本龙一于2015年参与演奏的反战歌曲，由冲绳民谣组合Unaigumi （冲绳语意为‘姐妹组合’）演唱，原曲为《Undercooled》。&lt;/p&gt;
+s》：坂本龙一于2015年参与演奏的反战歌曲，由冲绳民谣组合Unaigumi （冲绳语意为‘姐妹组合’）演唱，原曲为《Undercooled》。&lt;/p&gt;
 &lt;p&gt;*“弥勒世”指的是佛教与古琉球信仰相结合的神灵庇佑的和平世界。&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;【8】《&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=Lg1ulmkmvZg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -6616,13 +4662,13 @@ Gin送完耳钉后的某个夜晚。&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-》(恋之歌)：三线工工四弹奏版本。&lt;/p&gt;
+s》(恋之歌)：三线工工四弹奏版本。&lt;/p&gt;
 &lt;p&gt;*工工四 （[kuŋkunɕiː]）：琉球三线的传统指法。&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;【9】《&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=5TR1wJCimyk&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -6630,13 +4676,13 @@ Gin送完耳钉后的某个夜晚。&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-》（淚光闪闪）：创作于世纪之交的冲绳岛歌，于2000年问世红遍日本的大街小巷，被海内外翻唱了不下二十次，此后几乎所有冲绳出身的歌手都要翻唱这首。&lt;/p&gt;
+s》（淚光闪闪）：创作于世纪之交的冲绳岛歌，于2000年问世红遍日本的大街小巷，被海内外翻唱了不下二十次，此后几乎所有冲绳出身的歌手都要翻唱这首。&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;其他补充：&lt;/p&gt;
 &lt;p&gt;岛呗&lt;/p&gt;
@@ -6646,37 +4692,37 @@ Gin送完耳钉后的某个夜晚。&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=6HQ-UKTc3UQ&amp;amp;list=RD6HQ-UKTc3UQ&amp;amp;start_radio=1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;月ぬ美しゃ&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=GdV9tJ8v4lo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Okinawan music&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;*本连载系列已完结。&lt;/p&gt;
 
@@ -14364,13 +12410,13 @@ Gin送完耳钉后的某个夜晚。&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-》祝福对方。
+s》祝福对方。
  
 &lt;br&gt;&lt;/p&gt;
 &lt;p&gt;【10】《&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=6HQ-UKTc3UQ&amp;amp;list=RD6HQ-UKTc3UQ&amp;amp;start_radio=1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -14378,13 +12424,13 @@ Gin送完耳钉后的某个夜晚。&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-》：是琉球群岛八重山地区流传的一首民谣，歌名在八重山方言中意思是“月亮之美”，日语翻译为“月の美しさ”，歌手夏川里美有唱过一个删改版。*鉴于没有中译版，文中的歌词为我自己参考日译版翻译修改的产物。&lt;/p&gt;
+s》：是琉球群岛八重山地区流传的一首民谣，歌名在八重山方言中意思是“月亮之美”，日语翻译为“月の美しさ”，歌手夏川里美有唱过一个删改版。*鉴于没有中译版，文中的歌词为我自己参考日译版翻译修改的产物。&lt;/p&gt;
 &lt;br&gt;
 
 &lt;/details&gt;
@@ -15172,25 +13218,25 @@ Gin送完耳钉后的某个夜晚。&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;其他文化&amp;amp;风情&amp;amp;遗址介绍： &lt;a class=&#34;link&#34; href=&#34;https://ryukyunihonisan.jp/cn/cultural_property_cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://ryukyunihonisan.jp/cn/cultural_property_cn/&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;【4】君南风为古琉球的高级祝女，1500年，琉球国的尚真王与石垣岛的豪族·远弥计赤蜂交战，君南风在八重山联合其他神女于竹筏上立起火把，做佯攻造势，直至敌军将领被诛。（参考《中山世谱》）
  &lt;/p&gt;

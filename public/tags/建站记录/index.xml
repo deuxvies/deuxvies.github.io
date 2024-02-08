@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
     <channel>
         <title>建站记录 on Cecilia的博客</title>
         <link>https://springcecilia.blog/tags/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/</link>
@@ -18,13 +18,13 @@
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-
+s
 这里我选的是用Hugo搭建，比较简洁，wordpress对我来说太臃肿了访问也慢。Hugo内容可以在本地，备份比较方便和稳定。&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;&lt;strong&gt;注：&lt;/strong&gt;&lt;/p&gt;
@@ -44,13 +44,13 @@
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
- 下载 Git 的最新版本，根据你的电脑系统类型选择版本。&lt;/p&gt;
+s 下载 Git 的最新版本，根据你的电脑系统类型选择版本。&lt;/p&gt;
 &lt;p&gt;2）下载完后在本地右键安装程序，按照默认的设置一路安装就好，注意在 &amp;ldquo;Select Components&amp;rdquo; 阶段，确保要选中 &amp;ldquo;Git Bash Here&amp;rdquo; 选项。&lt;/p&gt;
 &lt;br&gt;
 &lt;h2 id=&#34;安装vscode&#34;&gt;安装VScode  &lt;/h2&gt;
@@ -62,13 +62,13 @@
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;2）选择适用于你的电脑系统的版本下载。&lt;p&gt;
 &lt;p&gt;3）运行安装程序：按照提示进行安装。在Windows上，点击“Next”点到底，接受许可协议，并选择安装位置（可以自定义安装在哪个盘，避免让c盘负担过重）。&lt;p&gt;
 &lt;p&gt;4）启动VSCode： 安装完成后，你可以在开始菜单（Windows）中找到Visual Studio Code。双击启动它，就会看到一个编辑器界面。之后修改博客的代码文件时，只要右键选择“打开方式”-选择vscode即可。&lt;/p&gt;
@@ -83,13 +83,13 @@
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
- 页面。&lt;/p&gt;
+s 页面。&lt;/p&gt;
 &lt;p&gt;2）在 Assets 下找到适合 Windows 的 ZIP 文件（通常是 hugo_extended_X.XX.X_windows-64bit.zip）。&lt;/p&gt;
 &lt;p&gt;3）下载 ZIP 文件，并解压到一个你喜欢的磁盘里。&lt;/p&gt;
 &lt;br&gt;
@@ -141,24 +141,24 @@
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;a class=&#34;link&#34; href=&#34;https://golang.org/dl/%E3%80%82&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+s&lt;a class=&#34;link&#34; href=&#34;https://golang.org/dl/%E3%80%82&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;。&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;2）选择适合你电脑的 Windows 最新版本，然后选择带有 &lt;strong&gt;.msi 后缀&lt;/strong&gt;的安装程序下载&lt;/p&gt;
 &lt;p&gt;3） 双击下载的安装程序（.msi 文件），然后按提示操作。你可以接受默认设置，也可以根据需要进行自定义配置。&lt;/p&gt;
 &lt;p&gt;4）检查安装：安装完成后，打开命令提示符或 PowerShell 窗口，并运行以下命令来验证 Go 是否正确安装：&lt;/p&gt;
@@ -231,13 +231,13 @@
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-网站上选择一个喜欢的主题。&lt;/p&gt;
+s网站上选择一个喜欢的主题。&lt;/p&gt;
 &lt;p&gt;在该主题的详情页面找到download，跳转到 GitHub 界面，点击绿色的按键code。&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;方法1：直接连接github（坑：有时会因防火墙问题配置失败，不推荐！！）&lt;/p&gt;
@@ -264,13 +264,13 @@
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;末尾的数字根据你自己的情况而不同，这个网址可用来本地同步预览，方便你调整时同步看到效果。&lt;/p&gt;
 &lt;p&gt;将代码换成以下↓&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;code&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;baseURL&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;[http://localhost:XXXX/](http://localhost:1313/)&amp;#34;&lt;/span&gt;
@@ -295,13 +295,13 @@
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-中预览网站，查看是否成功应用了主题的配置和样式。（&lt;strong&gt;http://localhost:后面的数字根据你自己运行的结果而改变&lt;/strong&gt;）&lt;/p&gt;
+s中预览网站，查看是否成功应用了主题的配置和样式。（&lt;strong&gt;http://localhost:后面的数字根据你自己运行的结果而改变&lt;/strong&gt;）&lt;/p&gt;
 &lt;br&gt;
 </description>
         </item>
@@ -316,13 +316,13 @@
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-  &lt;/p&gt;
+s  &lt;/p&gt;
 &lt;h1 id=&#34;1发布纯文字的文章&#34;&gt;1.发布纯文字的文章&lt;/h1&gt;
 &lt;br&gt;
 &lt;h2 id=&#34;创建新文章&#34;&gt;创建新文章&lt;/h2&gt;
@@ -333,13 +333,13 @@
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
- 的 Markdown 文件。&lt;/p&gt;
+s 的 Markdown 文件。&lt;/p&gt;
 &lt;br&gt;
 &lt;h2 id=&#34;编辑文章&#34;&gt;编辑文章&lt;/h2&gt;
 &lt;p&gt;使用VSCode打开 content/posts/my-first-post.md 文件，然后编辑内容保存。&lt;/p&gt;
@@ -371,13 +371,13 @@
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-（根据你自己的运行结果的网址）&lt;/p&gt;
+s（根据你自己的运行结果的网址）&lt;/p&gt;
 &lt;p&gt;你应该能够在本地预览你的博客，包括新创建的文章。&lt;/p&gt;
 &lt;p&gt;如果预览中一切正常，你可以停止 Hugo 服务器，并输入以下代码来生成静态文件：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;hugo&lt;/span&gt;
@@ -395,13 +395,13 @@
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-，对内容进行修改。&lt;/p&gt;
+s，对内容进行修改。&lt;/p&gt;
 &lt;br&gt;
 &lt;h2 id=&#34;添加并提交修改的文件在git里输入以下代码&#34;&gt;添加并提交修改的文件，在git里输入以下代码    &lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;
@@ -416,13 +416,13 @@
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;查看你的修改是否生效。在预览中确认无误后，你可以继续下一步部署。&lt;/p&gt;
 &lt;br&gt;
 &lt;br&gt;
@@ -446,13 +446,13 @@ imgsrc=&amp;quot;/img/hugo version.png&amp;quot;alt=&amp;ldquo;Alt Text&amp;quot
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;显示如下：&lt;/p&gt;
 &lt;img src=&#34;https://springcecilia.blog/images/1.png&#34; alt=&#34;Alt Text&#34; style=&#34;width: 50px; height: auto;&#34;&gt;
 &lt;br&gt;
@@ -483,13 +483,13 @@ imgsrc=&amp;quot;/img/hugo version.png&amp;quot;alt=&amp;ldquo;Alt Text&amp;quot
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-。  &lt;/p&gt;
+s。  &lt;/p&gt;
 &lt;p&gt;2）在GitHub首页点击&amp;quot;Sign up&amp;quot;按钮。&lt;/p&gt;
 &lt;p&gt;3）填写注册信息，包括用户名、电子邮件地址（尽量用外国邮箱）和密码。用户名要好好取，因为它会用作你在GitHub上的标识。&lt;/p&gt;
 &lt;p&gt;4）完成信息填写后，GitHub可能会通过电子邮件发送的验证码进行身份验证。&lt;/p&gt;
@@ -512,25 +512,25 @@ imgsrc=&amp;quot;/img/hugo version.png&amp;quot;alt=&amp;ldquo;Alt Text&amp;quot
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
- 这种格式&lt;/p&gt;
+s 这种格式&lt;/p&gt;
 &lt;p&gt;例如，你的github用户名是xxxxx，仓库名就是：&lt;a class=&#34;link&#34; href=&#34;http://xxxxx.github.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;xxxxx.github.io&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-，确保xxxxx和你的本地文件config.toml里的baseURL博客网址一致&lt;/p&gt;
+s，确保xxxxx和你的本地文件config.toml里的baseURL博客网址一致&lt;/p&gt;
 &lt;p&gt;不要勾选 &amp;ldquo;Initialize this repository with a README&amp;rdquo; 选项（因为你的 Hugo 网站已经有了自己的 README）。&lt;/p&gt;
 &lt;p&gt;点击 &amp;ldquo;Create repository&amp;rdquo;。&lt;/p&gt;
 &lt;br&gt;
@@ -565,7 +565,7 @@ imgsrc=&amp;quot;/img/hugo version.png&amp;quot;alt=&amp;ldquo;Alt Text&amp;quot
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;替换 &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;mailto:your_email@example.com&#34; &gt;your_email@example.com&lt;/a&gt;
 
     
-&amp;rdquo; 为你在 GitHub 注册时使用的电子邮件地址。&lt;/p&gt;
+s&amp;rdquo; 为你在 GitHub 注册时使用的电子邮件地址。&lt;/p&gt;
 &lt;p&gt;按照提示，选择默认的文件路径和设置密码（可选）。&lt;/p&gt;
 &lt;br&gt;
 &lt;h2 id=&#34;添加-ssh-密钥到-ssh-代理&#34;&gt;添加 SSH 密钥到 SSH 代理&lt;/h2&gt;
@@ -602,7 +602,7 @@ imgsrc=&amp;quot;/img/hugo version.png&amp;quot;alt=&amp;ldquo;Alt Text&amp;quot
 &lt;p&gt;点击 &amp;ldquo;Code&amp;rdquo; 按钮，然后选择 &amp;ldquo;SSH&amp;rdquo; 选项，会显示仓库的 SSH 地址，类似于 &lt;a class=&#34;link&#34; href=&#34;mailto:git@github.com&#34; &gt;git@github.com&lt;/a&gt;
 
     
-:your_username/your_repository.git&lt;/p&gt;
+s:your_username/your_repository.git&lt;/p&gt;
 &lt;p&gt;复制到git面板，把下列代码后半段的ssh地址替换成你的↓&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;remote&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;set&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;url&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;origin&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;github&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;com&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;](&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;mailto&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;github&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;com&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;xxxxxx&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;xxx&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;git&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br&gt;
@@ -676,37 +676,37 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/ccviolett/article/details/124815319&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Hugo 的使用&amp;amp;配置中有那些技巧与坑？&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://juejin.cn/post/7127828118143762469&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;记录下使用hexo搭建博客踩过的坑&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 </description>
         </item>
@@ -797,13 +797,13 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-。&lt;/p&gt;
+s。&lt;/p&gt;
 &lt;p&gt;在页面上可看到列出的所有发布版本的信息。GitHub Actions 通常会以 v2.x.x 的形式进行版本命名。&lt;/p&gt;
 &lt;p&gt;最新版本的标签在列表的最上面。&lt;/p&gt;
 &lt;br&gt;
@@ -875,13 +875,13 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;&lt;strong&gt;namesilo购买教程：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://shannote.com/archives/how-to-register-namesilo-domain.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -889,13 +889,13 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;&lt;strong&gt;Namesilo配置教程：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.mailjob.net/posts/4108183257.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -903,25 +903,25 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://shannote.com/archives/how-to-register-namesilo-domain.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://shannote.com/archives/how-to-register-namesilo-domain.html&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;&lt;strong&gt;所有的操作是跟着这个教程走的:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.zhudc.com/website/2413&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -929,13 +929,13 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;填写注意&#34;&gt;填写注意&lt;/h1&gt;
 &lt;h2 id=&#34;a-记录ipv4-地址&#34;&gt;A 记录（IPv4 地址）&lt;/h2&gt;
@@ -966,37 +966,37 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zhaouncle.com/hugo_03/#%E4%BA%8C%E5%88%A9%E7%94%A8cloudflare%E4%B8%BA%E5%9F%BA%E4%BA%8Egithub-pages%E7%9A%84hugo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0https%E6%94%AF%E6%8C%81&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;利用Cloudflare为基于GitHub Pages的Hugo博客添加HTTPS支持&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://h11ba1.com/2021/06/05/hugo&amp;#43;github%20page%E6%90%AD%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%9A%84https%E5%8D%9A%E5%AE%A2/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;hugo+github page搭建自定义域名的https博客&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;dns解析之我的修正&#34;&gt;dns解析之我的修正&lt;/h1&gt;
 &lt;p&gt;因为网站的IP是会变化的，所以直接添加这四个解析到IP地址的A记录。&lt;/p&gt;
@@ -1027,13 +1027,13 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
- 访问的，那么你的 CNAME 记录可能如下所示：&lt;/p&gt;
+s 访问的，那么你的 CNAME 记录可能如下所示：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;主机名（Host）：www（或者其他子域名，根据你的需求）&lt;/li&gt;
 &lt;li&gt;目标（Value）：&lt;username&gt;.github.io&lt;/li&gt;
@@ -1065,13 +1065,13 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-）指向你的服务器的公共IPv4 地址&lt;/p&gt;
+s）指向你的服务器的公共IPv4 地址&lt;/p&gt;
 &lt;br&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;等待 DNS&lt;/li&gt;
@@ -1091,49 +1091,49 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-（虽然是wordpress但是域名这块写得很详细）&lt;/strong&gt;  &lt;/p&gt;
+s（虽然是wordpress但是域名这块写得很详细）&lt;/strong&gt;  &lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/582629584&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;配置GitHub Page域名&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cloud.tencent.com/developer/article/1834163&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;使用自定义域名来访问GitHub上部署的hugo博客——GitHub Pages&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ftzzloo.com/github-pages-and-domain-name-setting/#%E6%B7%BB%E5%8A%A0A%E8%AE%B0%E5%BD%95&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitHub博客绑定自定义域名&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;&lt;strong&gt;问题排除参考：&lt;/strong&gt;  &lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.hostinger.com/tutorials/error-522&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1141,25 +1141,25 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Troubleshooting custom domains and GitHub Pages&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;</description>
         </item>
         <item>
@@ -1176,13 +1176,13 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;后期博客的改动，一般都是在theme文件夹的\assets\scss里的costum.css文件改动&lt;/p&gt;
 &lt;hr&gt;
 &lt;br&gt;
@@ -1193,62 +1193,62 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;补充：&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://fonts.google.com/?noto.script=Hant&amp;amp;sort=popularity&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;换字体参考网站&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://w3c.github.io/clreq/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;中文排版需求&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/lxgw/LxgwWenKai&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;霞鹜文楷&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/mzlogin/chinese-copywriting-guidelines&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;中文文案排版指北&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;修改背景色及布局&#34;&gt;修改背景色及布局&lt;/h1&gt;
 &lt;p&gt;参考教程：
@@ -1257,62 +1257,62 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;一些配色设计&amp;amp;工具网站：&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.happyhues.co/palettes/17&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.happyhues.co/palettes/17&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.magicpattern.design/tools/css-backgrounds&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.magicpattern.design/tools/css-backgrounds&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://colorhunt.co/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://colorhunt.co/&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.color-hex.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.color-hex.com/&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;修改svg图标&#34;&gt;修改svg图标&lt;/h1&gt;
 &lt;p&gt;用到的网站：&lt;/p&gt;
@@ -1321,25 +1321,25 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.svgrepo.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.svgrepo.com/&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;添加相册&#34;&gt;添加相册&lt;/h1&gt;
 &lt;p&gt;参考教程：&lt;/p&gt;
@@ -1348,13 +1348,13 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;添加动画&#34;&gt;添加动画&lt;/h1&gt;
 &lt;p&gt;参考教程：&lt;/p&gt;
@@ -1363,13 +1363,13 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;添加打字动画&#34;&gt;添加打字动画&lt;/h1&gt;
 &lt;p&gt;参考教程：&lt;/p&gt;
@@ -1378,13 +1378,13 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;我的改法：
 在D:\blog\myblog\themes\hugo-theme-stack\layouts的index.html开头贴上&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{{&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;define&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;main&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}}&lt;/span&gt;
@@ -1444,13 +1444,13 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;显示统计文章发布数量&#34;&gt;显示/统计文章发布数量&lt;/h1&gt;
 &lt;p&gt;参考教程：&lt;/p&gt;
@@ -1459,13 +1459,13 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;添加文章加密功能&#34;&gt;添加文章加密功能&lt;/h1&gt;
 &lt;p&gt;目前只成功实现一种网页前端加密的方法，不过对我来说够了。&lt;/p&gt;
@@ -1474,13 +1474,13 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-操作后，在要加密的文章头部添加&lt;/p&gt;
+s操作后，在要加密的文章头部添加&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;password&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;xxxx&amp;#34;&lt;/span&gt;  
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -1493,25 +1493,25 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://hugo-theme-luna.imiku.me/zh-cn/2022/05/02/shortcodes.html/#%E5%8D%A1%E7%89%87%E9%93%BE%E6%8E%A5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;短代码（Shortcodes）&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;在博客进行一些实施成功的样式：&lt;/p&gt;
 &lt;h2 id=&#34;文本效果语法&#34;&gt;文本效果语法&lt;/h2&gt;
 &lt;h3 id=&#34;文本折叠&#34;&gt;文本折叠&lt;/h3&gt;
@@ -1589,13 +1589,13 @@ connecting (yes/no/[fingerprint])? 该怎么办？&lt;/p&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;书籍：
 
 
@@ -1722,13 +1722,13 @@ Hermione Lee, Financial Times&lt;/div&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;结果：自己不用魔法测试是没问题的，不知道其他地区访问实际应用怎样。&lt;/p&gt;
 &lt;br&gt;
 &lt;h2 id=&#34;添加ko-fi打赏功能&#34;&gt;添加ko-fi打赏功能&lt;/h2&gt;
@@ -1737,13 +1737,13 @@ Hermione Lee, Financial Times&lt;/div&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-一步步做，链接直接复制在left.html里就行&lt;/p&gt;
+s一步步做，链接直接复制在left.html里就行&lt;/p&gt;
 &lt;p&gt;结果：图标好看，不过不魔法好像也显示不出，无所谓了！&lt;/p&gt;
 &lt;br&gt;
 &lt;h2 id=&#34;添加waline评论&#34;&gt;添加Waline评论&lt;/h2&gt;
@@ -1753,37 +1753,37 @@ Hermione Lee, Financial Times&lt;/div&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://naturaleki.one/post/loadinghugo%E8%A3%85%E4%BF%AE%E6%97%A5%E5%BF%9702/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;天堂错误文件-Loading hugo 装修日志 02&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://8bytes.top/2022/12/12/walineErr/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;waline无法登录(vercel.app被污染)&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;结果：因vercel被墙需要额外解析dns，不魔法好像加载不出来，算了就这样吧&lt;/p&gt;
 &lt;br&gt;
 &lt;h2 id=&#34;添加arititalk说说界面&#34;&gt;添加Arititalk说说界面&lt;/h2&gt;
@@ -1793,13 +1793,13 @@ Hermione Lee, Financial Times&lt;/div&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;注：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;LeanCloud用的是国际版，在自己原来建waline评论区的那个应用里做上述教程就好了，不要单独新建应用，不然后期会出现冲突。&lt;/p&gt;
 &lt;p&gt;然后参考&lt;a class=&#34;link&#34; href=&#34;https://naturaleki.one/post/loadinghugo%E8%A3%85%E4%BF%AE%E6%97%A5%E5%BF%9704/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1807,13 +1807,13 @@ Hermione Lee, Financial Times&lt;/div&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;编辑eki.html文件时，国际版的LeanCloud不需要填serverurl&lt;/p&gt;
 &lt;p&gt;结果：头像要url链接，把图转存到某个图床，然后在LeanCloud设置里添加url，不过依然加载不出来，算了能发东西就行。&lt;/p&gt;
 &lt;br&gt;
@@ -1842,13 +1842,13 @@ Hermione Lee, Financial Times&lt;/div&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;安装pandoc&#34;&gt;安装Pandoc&lt;/h1&gt;
 &lt;p&gt;Pandoc是一个开源的文档转换工具，可以从&lt;a class=&#34;link&#34; href=&#34;https://pandoc.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1856,13 +1856,13 @@ Hermione Lee, Financial Times&lt;/div&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-下载并安装。&lt;/p&gt;
+s下载并安装。&lt;/p&gt;
 &lt;p&gt;Windows用户下载 pandoc-3.1.9-windows-x86_64.msi 或 pandoc-3.1.9-windows-x86_64.zip。
 如果喜欢使用MSI安装程序（Microsoft Installer），选择 .msi 文件。
 如果喜欢使用ZIP文件，选择 .zip 文件。
@@ -1913,37 +1913,37 @@ Hermione Lee, Financial Times&lt;/div&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;p&gt;方法2：&lt;a class=&#34;link&#34; href=&#34;https://notionchina.co/guide/api-import-export/export-a-page-as-markdown.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;使用notion的导出为markdown功能&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-（前提是文档已存在notion）    &lt;/p&gt;
+s（前提是文档已存在notion）    &lt;/p&gt;
 &lt;p&gt;其他方法：&lt;a class=&#34;link&#34; href=&#34;https://publish.obsidian.md/chinesehelp/03&amp;#43;%E6%95%99%E7%A8%8B/%E4%BB%8E%E5%85%B6%E4%BB%96%E8%BD%AF%E4%BB%B6%E5%AF%BC%E5%85%A5obsidian%EF%BC%88MOC%EF%BC%89&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;从其他软件导入obsidian&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 &lt;br&gt;
 &lt;h1 id=&#34;其他参考&#34;&gt;其他参考&lt;/h1&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.liangshunet.com/ca/201904/765362983.htm&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1951,13 +1951,13 @@ Hermione Lee, Financial Times&lt;/div&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
-    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
     &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
     &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-&lt;/p&gt;
+s&lt;/p&gt;
 </description>
         </item>
         

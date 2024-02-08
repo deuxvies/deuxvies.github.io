@@ -1,6 +1,6 @@
 baseURL = "https://springcecilia.blog"
 languageCode = 'zh-cn'
-title = 'Cecilia的博客'
+title = 'Ceciliaの小站'
 theme = "hugo-theme-stack"
 summaryLength = 20
 paginate = 10

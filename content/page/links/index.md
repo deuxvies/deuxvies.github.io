@@ -109,4 +109,4 @@ menu:
 ---
 
 <img src="/images/020.png" width=60px height=auto>
-这里存搜书链接，部分已被墙掉需要魔法。
+这里存搜书链接，部分需要魔法访问。
