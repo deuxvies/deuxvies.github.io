@@ -1,8 +1,10 @@
 ---
 title: 关于本站
-description: 
+readingTime: false
 slug: about
 comments: false
+dateFormat: false
+details: false
 aliases:
   - contact
 

@@ -9,7 +9,7 @@ params:
     featuredImageField: image
     rssFullContent: true
     enableimgloop: true 
-    favicon:
+    favicon: /favicon.ico
 
     footer:
         since:

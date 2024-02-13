@@ -1,6 +1,6 @@
 <div class="article-details">
    
-    
+   
     <div class="article-title-wrapper">
         <h2 class="article-title">
             <a href="{{ .RelPermalink }}">
@@ -24,8 +24,9 @@
                     {{- .Date.Format (or .Site.Params.dateFormat.published "Jan 02, 2006") -}}
                 </time>
             </div>
+    
         {{ end }}
-
+    
         {{ if .Site.Params.article.readingTime }}
         <div>
             {{ partial "helper/icon" "save" }}

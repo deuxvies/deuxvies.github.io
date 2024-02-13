@@ -16,12 +16,13 @@ timeZone = "Asia/Shanghai"
 post = "/:filename/"
 page = "/:slug/"
 
+
 [params]
 mainSections = 'post'
 featuredImageField = "image"
 rssFullContent = true
-enableimgloop = true 
-favicon = "img/favicon.png"
+enableimgloop = true
+favicon = "/favicon.ico "
 
   [params.dateFormat]
   published = "2006-01-02"
@@ -144,6 +145,7 @@ toLower = false
 
 [markup.goldmark.renderer]
 unsafe = true
+hardWrapsm = true
 
 [markup.tableOfContents]
 endLevel = 4

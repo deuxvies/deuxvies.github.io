@@ -58,6 +58,7 @@
             margin-right: 5px; // Make cards spacing narrower
             flex-shrink: 0;
 
+            
             .article-title {
                 margin: 0;
                 font-size: 1.8rem;
@@ -67,6 +68,14 @@
                 padding: 20px;
             }
         }
+
+        .article-list--tagtile {
+            display: flex;
+            padding-bottom: 10px;
+            flex-wrap: wrap; //实现Archive中的Tag卡片自动换行
+    
+        }
+    
     }
 
 

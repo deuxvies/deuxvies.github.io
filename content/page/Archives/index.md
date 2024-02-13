@@ -4,7 +4,7 @@ layout: archives
 
 menu:
     main:
-        weight: -80
+        weight: -90
         params:
             icon: library
 ---

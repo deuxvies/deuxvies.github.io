@@ -73,6 +73,18 @@
     padding-bottom: 15px;
   }
 
+  .related-contents--wrapper {
+    .related-contents {
+        article {
+            width: 200px;
+            height: 85px;
+            .article-title {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
   
 /* ---------------------------------------右侧导航栏----------------------------------- */
 /* 搜索菜单动画 */
@@ -131,7 +143,8 @@
             border-radius: 10px;
         }
     }
-  }
+  } 
+
   
   /* ----------------------------------------*-链接页面------------------------------------------ */
   /* 友情链接设置成三栏样式 */
@@ -500,14 +513,6 @@ $image-scale: 1.2;
   }
 }
 
-//多图排版
-.post-content p:has(> img:nth-child(2)){column-count:2;column-gap:8px;margin:6px 0;}
-.post-content p:has(> img:nth-child(3)){column-count:3;}
-.post-content p:has(> img:nth-child(4)){column-count:4;}
-.post-content p:has(> img:nth-child(5)){column-count:5;}
-.post-content p:has(> img:nth-child(6)){column-count:4;}
-.post-content p:has(> img:nth-child(2)) img{display:inherit;}
-.post-content p:has(> img:nth-child(6)) img{margin-bottom:8px;}
 
 //WALINE
 body {
@@ -518,4 +523,13 @@ body {
       margin: -0.125em 0.25em;
   }
 }
+
+
+/* 隐藏主页按钮 */
+.menu {
+  li:first-child {
+      display: none;
+  }
+}
+
 
