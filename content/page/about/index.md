@@ -1,8 +1,8 @@
 ---
-title: 关于本站
+title: 简介
 readingTime: false
 slug: about
-comments: false
+comments: true
 dateFormat: false
 details: false
 aliases:
@@ -10,7 +10,7 @@ aliases:
 
 menu:
     main: 
-        weight: -70
+        weight: -90
         params:
             icon: coffee
 license: false
@@ -22,20 +22,29 @@ license: false
 
 称呼随意。
 <p>当读者的时刻比当作者的时刻要长，同人是探索生活的方式之一但不是全部。</p>
-<p>写文三分钟热度，随缘发电。
+<p>写文三分钟热度，随缘发电，催更勿扰。
 
 <h1><img src="/images/006.png" width=60px height=auto>此站内容</h1>
 
-<p>本站为博主的赛博存档地。<p>
-<p>如有内容无法显示，很可能是需要魔法上网。</p>
+<p>本站为博主正在完善中的赛博存档地，主要放同人和一些杂七杂八的资料。<p>
+<p>使用非旧版的浏览器可正常访问看文。如有内容无法显示，很可能是所在地区需要魔法上网。</p>
+<p>如要站内搜索，点击头像可返回主页。<p>
+
+
+<p>本博客由hugo搭建而成，小白建站教程（只适合会魔法者）↓
+
+[建站记录](https://othernotion.vercel.app/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95)<p>
+
 
 <h1><img src="/images/002.png" width=60px height=auto>联系方式</h1>
 
-[（需魔法）匿名提问箱](https://peing.net/zh-CN/91e8000a0af399)
-<p>（偶尔需要魔法）点击博客右下角的聊天小图标即可私聊<p>
+（需魔法）[匿名提问箱](https://peing.net/zh-CN/91e8000a0af399)
+<p>（需魔法）点击右下角的chat小图标可聊天，或在最下方留言板留言<p>
 <p>有空时会回复~ </p>
-<p>补充：博客文章的评论区有时需要魔法才能显示出来。<p>
+
 <p><img src="/images/038.png" width=70px height=auto ><img src="/images/039.png" width=70px height=auto ><img src="/images/040.png" width=70px height=auto > </p>
+
+
 
 
 
