@@ -161,28 +161,56 @@ s&lt;/p>
 &lt;br>
 &lt;h1 id="鼻烟盒">鼻烟盒&lt;/h1>
 &lt;br>
-&lt;p>这次展览最精美的展品就是鼻烟盒了，放图↓： &lt;/p>
-&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429135.png" alt="Alt Text" style="width: 400px; height: auto;">
-&lt;p>&lt;em>&lt;strong>拿破仑一世鼻烟盒, about 1812&lt;/strong>&lt;/em>&lt;/p>
-&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429136.png" alt="Alt Text" style="width: 400px; height: auto;">
-&lt;p>&lt;em>&lt;strong>伦敦市纹章自由之盒, 1809-1810&lt;/strong>&lt;/em>&lt;/p>
-&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429137.png" alt="Alt Text" style="width: 400px; height: auto;">
-&lt;p>&lt;em>&lt;strong>维多利亚女王鼻烟盒, about 1837&lt;/strong>&lt;/em>&lt;/p>
-&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429138.png" alt="Alt Text" style="width: 400px; height: auto;">
-&lt;p>&lt;em>&lt;strong>德国黄金珍珠贝母鼻烟盒, about 1730&lt;/strong>&lt;/em>&lt;/p>
-&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429139.png" alt="Alt Text" style="width: 400px; height: auto;">
-&lt;p>&lt;em>&lt;strong>俄国皇室赠予接种疫苗先驱者Nathaniel Dimsdale的鼻烟盒, about 1786&lt;/strong>&lt;/em>&lt;/p>
-&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429140.png" alt="Alt Text" style="width: 400px; height: auto;">
-&lt;p>&lt;em>&lt;strong>伊丽莎白鼻烟盒, 1810-1812&lt;/strong>&lt;/em>&lt;/p>
-&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429141.png" alt="Alt Text" style="width: 400px; height: auto;">
-&lt;p>&lt;em>&lt;strong>法国花卉与旭日鼻烟盒, 1755-1756&lt;/strong>&lt;/em>&lt;/p>
-&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429142.png" alt="Alt Text" style="width: 400px; height: auto;">
-&lt;p>&lt;em>&lt;strong>法国音乐盒园艺奖杯鼻烟盒（巴黎标志性作品）, 1708-1709&lt;/strong>&lt;/em>&lt;/p>
-&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429143.png" alt="Alt Text" style="width: 400px; height: auto;">
-&lt;p>&lt;em>&lt;strong>瑞典珐琅彩人物鼻烟盒, 1759&lt;/strong>&lt;/em>&lt;/p>
-&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429144.png" alt="Alt Text" style="width: 400px; height: auto;">
-&lt;p>&lt;em>&lt;strong>德国蝴蝶鼻烟盒, about 1770&lt;/strong>&lt;/em>&lt;/p>
-&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429145.png" alt="Alt Text" style="width: 400px; height: auto;">
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+&lt;div class="swiper-container">
+&lt;div class="swiper-wrapper">
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429135.png" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429136.png" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429137.png" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429138.png" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429139.png" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429140.png" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429141.png" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429142.png" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429143.png" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429144.png" alt="">
+&lt;/div>
+&lt;/div>
+&lt;div class="swiper-pagination">&lt;/div>
+&lt;/div>
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js">&lt;/script>
+&lt;script>
+var swiper = new Swiper('.swiper-container', {
+pagination: '.swiper-pagination',
+paginationClickable: true,
+autoHeight: true,
+keyboardControl : true,
+mousewheelControl : true,
+lazyLoading : true,
+lazyLoadingInPrevNext : true,
+loop : true,
+});
+&lt;/script>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429145.png" >
 &lt;p>&lt;em>&lt;strong>腓特烈大帝鼻烟盒, about 1765&lt;/strong>&lt;/em>&lt;/p>
 &lt;p>腓特烈大帝的这块鼻烟盒由产自西西里岛的一整块翡翠镶嵌钻石打造而成。传闻腓特烈二世是鼻烟盒收藏狂魔，他生前拥有的一百多个鼻烟盒现存世26个（真·史上最富有的烟民……）&lt;/p>
 &lt;br>
@@ -247,13 +275,43 @@ allowfullscreen="true"
 &lt;/iframe>
 &lt;/div>
 &lt;p>这项装饰工艺应用领域很广，好多展品远看像画上去的，近看都是嵌进去的↓：&lt;/p>
-&lt;gallery>
-&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429146.png" style="width: 400px; height: auto;">
-&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429147.png" style="width: 400px; height: auto;">
-&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429148.png" style="width: 400px; height: auto;">
-&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429149.png" style="width: 400px; height: auto;">
-&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429150.jpg" style="width: 400px; height: auto;">
-&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429152.png" style="width: 400px; height: auto;">
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+&lt;div class="swiper-container">
+&lt;div class="swiper-wrapper">
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429146.png" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429147.png" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429148.png" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429149.png" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429150.jpg" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429152.png" alt="">
+&lt;/div>
+&lt;/div>
+&lt;div class="swiper-pagination">&lt;/div>
+&lt;/div>
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js">&lt;/script>
+&lt;script>
+var swiper = new Swiper('.swiper-container', {
+pagination: '.swiper-pagination',
+paginationClickable: true,
+autoHeight: true,
+keyboardControl : true,
+mousewheelControl : true,
+lazyLoading : true,
+lazyLoadingInPrevNext : true,
+loop : true,
+});
+&lt;/script>
 &lt;/gallery>
 &lt;br>
 &lt;p>其他相关：&lt;/p>
