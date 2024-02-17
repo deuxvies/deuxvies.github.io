@@ -21,7 +21,6 @@ page = "/:slug/"
 mainSections = 'post'
 featuredImageField = "image"
 rssFullContent = true
-enableimgloop = true
 favicon = "/favicon.ico "
 
   [params.dateFormat]
@@ -86,7 +85,11 @@ favicon = "/favicon.ico "
 
   [params.imageProcessing.content]
   enabled = false
-  
+
+# 是否开启轮播图
+enableimgloop = true
+
+
 [[menu.main]]
 identifier = "home"
 name = "主页"
