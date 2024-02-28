@@ -103,6 +103,32 @@ links:
     description: 世界著名画作速查
     website: https://gallerix.asia/
 
+  - title: Goole Art & Cultures
+    description: 开放在线艺术馆
+    website: https://artsandculture.google.com/
+
+  - title: 掘火档案
+    description: 小众书影音网站,主西语翻译资料
+    website: https://www.digforfire.net/
+
+  - title: 巴黎评论
+    description: 作家采访栏目
+    website: https://www.theparisreview.org/
+
+  - title: 聯合文學
+    description: 杂志
+    website: https://www.unitas.me/
+
+  - title: The New Yorker
+    description: 杂志
+    website: https://www.newyorker.com/
+
+  
+
+
+
+
+
 
 menu:
   main:

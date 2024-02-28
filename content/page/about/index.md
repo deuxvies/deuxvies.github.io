@@ -2,7 +2,7 @@
 title: 简介
 readingTime: false
 slug: about
-comments: true
+comments: false
 dateFormat: false
 details: false
 aliases:
@@ -39,7 +39,7 @@ license: false
 <h1><img src="/images/002.png" width=60px height=auto>联系方式</h1>
 
 （需魔法）[匿名提问箱](https://peing.net/zh-CN/91e8000a0af399)
-<p>（需魔法）点击右下角的chat小图标可聊天，或在最下方留言板留言<p>
+
 <p>有空时会回复~ </p>
 
 <p><img src="/images/038.png" width=70px height=auto ><img src="/images/039.png" width=70px height=auto ><img src="/images/040.png" width=70px height=auto > </p>
