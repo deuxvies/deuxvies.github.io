@@ -75,6 +75,10 @@ links:
     description: 聚合型搜书网址1
     website: http://shu.ziyuandi.cn/
 
+  - title: freemdict
+    description: 语言学习资源
+    website: https://freemdict.com/
+
   - title: AO3扫盲手册
     description: AO3教程指南
     website: https://bai-fan-inc.gitbook.io/ao3guideforeveryone/mu-lu
