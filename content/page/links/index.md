@@ -127,7 +127,14 @@ links:
     description: 杂志
     website: https://www.newyorker.com/
 
-  
+  - title: POETRY FOUNDATION
+    description: 外语诗歌搜索
+    website: https://www.poetryfoundation.org/
+
+  - title: Allpoetry
+    description: 外语诗歌搜索2
+    website: https://allpoetry.com/
+
 
 
 

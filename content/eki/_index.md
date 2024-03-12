@@ -1,5 +1,5 @@
 ---
-title: 碎碎念
+title: 代餐诗
 layout: eki
 comments: false
 menu:
