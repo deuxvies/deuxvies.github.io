@@ -39,3 +39,8 @@
 		data-flex-basis="{{ div (mul $image.Width 240) $image.Height }}px"
 	{{ end }}
 >
+
+<p class="md_image">
+	<img loading='lazy' src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
+  </p>
+  
