@@ -16,13 +16,13 @@
   }
   
   .article-list article:nth-child(n) .article-category a {
-    background: #020826!important;
+    background: #552A23!important;
     color: #fff;
   }
   
   .article-category a, .article-tags a {
-    background-color: #8c7851!important;
-    color: #fff;
+    background-color: #F3D2C1!important;
+    color: #40201b;
   }
   
   
@@ -45,6 +45,8 @@
         color: var(--section-total-count-color-dark);
     }
   }
+  
+
   
   /* -------------------------动画部分--------------------------------------------- */
   
@@ -193,7 +195,8 @@ $image-scale: 1.2;
 
 /* 主页文章图片圆角 */
 .article-list article {
-  --card-border-radius: 24px;
+  border: 2px solid #ededed; /* 添加边框 */
+  --card-border-radius: 15px;
 }
 
 /* 文章标签圆角 */
@@ -534,4 +537,17 @@ body {
   }
 }
 
-
+//键盘标签样式
+kbd {
+  margin: 0 .1em;
+  padding: .1em .6em;
+  font-size: .8em;
+  color: #242729;
+  background: #fff;
+  border: 1px solid #adb3b9;
+  border-radius: 3px;
+  box-shadow: 0px 1px 0 rgba(12, 13, 14, 0.2), 0 0 0 2px #fff inset;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-family: SourceHanSerifSC; //字体可以自己修改
+}
