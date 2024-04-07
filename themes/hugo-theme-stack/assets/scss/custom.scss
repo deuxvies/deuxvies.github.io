@@ -1,6 +1,6 @@
 /* 更换背景 */
 :root {
-    --body-background: #f9f4ef;
+    --body-background: #F6F2F1;
     --accent-color: #020826;
     --accent-color-darker: #3a2044;
     --accent-color-text: #FFF;
@@ -9,20 +9,20 @@
   
   :root {
     --card-background: #fffffe;
-    --card-background-selected: #f3d2c1;
+    --card-background-selected: #F1E2DB;
     --card-text-color-main: #020826;
     --card-text-color-secondary: #020826;
     --card-text-color-tertiary: #020826;
   }
   
   .article-list article:nth-child(n) .article-category a {
-    background: #552A23!important;
+    background: #AA7474!important;
     color: #fff;
   }
   
   .article-category a, .article-tags a {
-    background-color: #F3D2C1!important;
-    color: #40201b;
+    background-color: #768276!important;
+    color: #ffffff;
   }
   
   
@@ -195,7 +195,6 @@ $image-scale: 1.2;
 
 /* 主页文章图片圆角 */
 .article-list article {
-  border: 2px solid #ededed; /* 添加边框 */
   --card-border-radius: 15px;
 }
 

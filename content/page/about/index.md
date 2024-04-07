@@ -36,6 +36,8 @@ license: false
 
 （需魔法）[匿名提问箱](https://peing.net/zh-CN/91e8000a0af399)
 
+（不需魔法）[匿名提问箱2](https://box.n3ko.cc/_/hana)
+
 <p>有空时会回复~ </p>
 
 <p><img src="/images/038.png" width=70px height=auto ><img src="/images/039.png" width=70px height=auto ><img src="/images/040.png" width=70px height=auto > </p>

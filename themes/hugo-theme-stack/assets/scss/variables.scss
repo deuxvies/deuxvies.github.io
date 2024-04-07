@@ -27,12 +27,12 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --scrollbar-track: var(--body-background);
 
     &[data-scheme="dark"] {
-        --body-background: #121213;
+        --body-background: #24222b;
         --accent-color: #fbfbfb;
         --accent-color-darker: #fbfbfb;
         --accent-color-text: #000;
         --body-text-color: rgba(255, 255, 255, 0.928);
-        --scrollbar-thumb: hsl(0, 0%, 40%);
+        --scrollbar-thumb: #4A475C;
         --scrollbar-track: var(--body-background);
         --emphasize-text-color: #fbfbfb; // Add emphasize font color for dark scheme
     }
@@ -59,10 +59,8 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --card-text-color-main: #000;
     --card-text-color-secondary: #ffffff;
     --card-text-color-tertiary: #767676;
-    --card-separator-color: rgba(218, 218, 218, 0.5);
-
+    --card-separator-color: rgba(246, 246, 246, 0.5);
     --card-border-radius: 10px;
-
     --card-padding: 20px;
 
     @include respond(md) {
@@ -80,8 +78,8 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     }
 
     &[data-scheme="dark"] {
-        --card-background: #424242;
-        --card-background-selected: rgba(255, 255, 255, 0.16);
+        --card-background: #4A475C;
+        --card-background-selected: rgba(195, 112, 112, 0.16);
         --card-text-color-main: rgba(255, 255, 255, 0.9);
         --card-text-color-secondary: rgb(255, 255, 255);
         --card-text-color-tertiary: rgba(255, 255, 255, 0.849);

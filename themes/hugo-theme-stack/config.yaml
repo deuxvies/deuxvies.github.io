@@ -73,7 +73,7 @@ params:
             avatar: monsterid
             requiredMeta: ['mail']
             el: '#waline'
-            reaction: true
+            reaction: false
             emoji:
                 - https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs
                 - https://cdn.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan/
@@ -88,6 +88,7 @@ params:
                 admin: 博主
                 placeholder:  |
                  欢迎评论~
+                 开魔法可食用小豆泥和blobcat表情包
                  左下第五个放大镜按键为评论预览功能（可显示表情最终效果）
                  填写邮箱可收到博主的回复通知~您的邮箱信息不会被公开。
 
