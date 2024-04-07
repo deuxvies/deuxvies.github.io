@@ -1,4 +1,939 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom"><channel><title>Posts on Ceciliaの小站</title><link>https://springcecilia.blog/post/</link><description>Recent content in Posts on Ceciliaの小站</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 09 Mar 2024 18:34:26 +0800</lastBuildDate><atom:link href="https://springcecilia.blog/post/index.xml" rel="self" type="application/rss+xml"/><item><title>【抽卡观影】时间之舞（2）</title><link>https://springcecilia.blog/%E6%8A%BD%E5%8D%A1%E8%A7%82%E5%BD%B1%E6%97%B6%E9%97%B4%E4%B9%8B%E8%88%9E2/</link><pubDate>Sat, 09 Mar 2024 18:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E6%8A%BD%E5%8D%A1%E8%A7%82%E5%BD%B1%E6%97%B6%E9%97%B4%E4%B9%8B%E8%88%9E2/</guid><description>&lt;p>魔改向观影体，缘更&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom"><channel><title>Posts on Ceciliaの 小站</title><link>https://springcecilia.blog/post/</link><description>Recent content in Posts on Ceciliaの 小站</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 30 Mar 2024 10:34:26 +0800</lastBuildDate><atom:link href="https://springcecilia.blog/post/index.xml" rel="self" type="application/rss+xml"/><item><title>逛展小记| 永恒的爱：十九世纪欧洲经典艺术展</title><link>https://springcecilia.blog/%E9%80%9B%E5%B1%95%E5%B0%8F%E8%AE%B0-%E6%B0%B8%E6%81%92%E7%9A%84%E7%88%B1/</link><pubDate>Sat, 30 Mar 2024 10:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E9%80%9B%E5%B1%95%E5%B0%8F%E8%AE%B0-%E6%B0%B8%E6%81%92%E7%9A%84%E7%88%B1/</guid><description>&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404031302717.jpg" alt="Featured image of post 逛展小记| 永恒的爱：十九世纪欧洲经典艺术展" />&lt;br>
+&lt;p>小声吐槽：上海线下的免费展质量总是比付费展高……&lt;/p>
+&lt;h1 id="背景">背景&lt;/h1>
+&lt;div class="timeline__row">
+&lt;div class="timeline__time">
+&lt;div class="timeline__time">17、18世纪&lt;/div>
+&lt;div class="timeline__split-line">&lt;/div>
+&lt;/div>
+&lt;div class="timeline__content">
+&lt;div class="timeline__tags">
+&lt;span class="timeline__tag">&lt;/span>
+&lt;/div>
+&lt;div class="timeline__title">流行宫廷和豪华场所的人物题材&lt;/div>
+&lt;div class="timeline__description">
+并逐渐过渡到私密场合
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.timeline {
+display: flex;
+flex-direction: column;
+}
+.timeline__row {
+display: flex;
+padding-left: 4%;
+height: 90px;
+}
+.timeline__time {
+flex: 0 0 110px;
+color: #5d5d5d;
+font-size: 17px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5rem 0;
+}
+.timeline__time-text {
+margin: 0;
+}
+.timeline__split-line {
+position: absolute;
+top: 0.5rem;
+right: -20px;
+height: 100%;
+width: 2px;
+background-color: #84c4e240;
+z-index: 0;
+}
+.timeline__split-line:before {
+content: "";
+position: absolute;
+top: 24%;
+right: -4px;
+transform: translateY(-50%);
+width: 10px;
+height: 10px;
+background-color: #c9e5f2;
+box-shadow: 0 0 0 4px var(--theme);
+border-radius: 50%;
+border: 0px solid #84c4e2;
+z-index: -1;
+}
+.timeline__content {
+flex: 1;
+margin-left: 4.5rem;
+padding: 0.5rem 0 1.2rem 0;
+}
+.timeline__title {
+margin: 0;
+margin-bottom: 2px;
+padding-top: 3px;
+margin-left: 0.5rem;
+color: var(--content);
+font-family: var(--font-family-teshu);
+font-size: 19px;
+font-weight: 600;
+width: fit-content;
+display: inline-block;
+vertical-align: middle;
+}
+.timeline__tags {
+display: inline-block;
+padding: 0;
+margin-left: 0.3rem;
+align-items: center;
+gap: 0.3rem;
+}
+.timeline__tag {
+display: inline-block;
+color: var(--secondary);
+background-color: #84c4e230;
+border: 1.5px solid #84c4e230;
+border-radius: 999px;
+padding: 0rem 0.5rem;
+font-size: 12px;
+white-space: nowrap;
+line-height: 1.4rem;
+opacity: 0.8;
+vertical-align: middle;
+}
+.timeline__description {
+font-size: 15px;
+line-height: 1.6;
+color: #5d5d5d;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0.5rem 0 0.4rem 1.5rem;
+}
+.timeline__tag-style {
+background-color: #c581da;
+border-color: #c581da;
+color: #FFFFFF;
+}
+.timeline__tag-article {
+background-color: #92d392;
+border-color: #92d392;
+color: #000000;
+}
+.timeline__tag-page {
+background-color: #707070;
+border-color: #707070;
+color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+.timeline__time {
+font-size: 14px;
+}
+.timeline__title {
+font-size: 16px;
+}
+.timeline__description {
+font-size: 14px;
+}
+}
+&lt;/style>
+&lt;br>
+&lt;br>
+&lt;div class="timeline__row">
+&lt;div class="timeline__time">
+&lt;div class="timeline__time">18世纪中叶&lt;/div>
+&lt;div class="timeline__split-line">&lt;/div>
+&lt;/div>
+&lt;div class="timeline__content">
+&lt;div class="timeline__tags">
+&lt;span class="timeline__tag">&lt;/span>
+&lt;/div>
+&lt;div class="timeline__title">流行半身像雕塑和肖像艺术&lt;/div>
+&lt;div class="timeline__description">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.timeline {
+display: flex;
+flex-direction: column;
+}
+.timeline__row {
+display: flex;
+padding-left: 4%;
+height: 90px;
+}
+.timeline__time {
+flex: 0 0 110px;
+color: #5d5d5d;
+font-size: 17px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5rem 0;
+}
+.timeline__time-text {
+margin: 0;
+}
+.timeline__split-line {
+position: absolute;
+top: 0.5rem;
+right: -20px;
+height: 100%;
+width: 2px;
+background-color: #84c4e240;
+z-index: 0;
+}
+.timeline__split-line:before {
+content: "";
+position: absolute;
+top: 24%;
+right: -4px;
+transform: translateY(-50%);
+width: 10px;
+height: 10px;
+background-color: #c9e5f2;
+box-shadow: 0 0 0 4px var(--theme);
+border-radius: 50%;
+border: 0px solid #84c4e2;
+z-index: -1;
+}
+.timeline__content {
+flex: 1;
+margin-left: 4.5rem;
+padding: 0.5rem 0 1.2rem 0;
+}
+.timeline__title {
+margin: 0;
+margin-bottom: 2px;
+padding-top: 3px;
+margin-left: 0.5rem;
+color: var(--content);
+font-family: var(--font-family-teshu);
+font-size: 19px;
+font-weight: 600;
+width: fit-content;
+display: inline-block;
+vertical-align: middle;
+}
+.timeline__tags {
+display: inline-block;
+padding: 0;
+margin-left: 0.3rem;
+align-items: center;
+gap: 0.3rem;
+}
+.timeline__tag {
+display: inline-block;
+color: var(--secondary);
+background-color: #84c4e230;
+border: 1.5px solid #84c4e230;
+border-radius: 999px;
+padding: 0rem 0.5rem;
+font-size: 12px;
+white-space: nowrap;
+line-height: 1.4rem;
+opacity: 0.8;
+vertical-align: middle;
+}
+.timeline__description {
+font-size: 15px;
+line-height: 1.6;
+color: #5d5d5d;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0.5rem 0 0.4rem 1.5rem;
+}
+.timeline__tag-style {
+background-color: #c581da;
+border-color: #c581da;
+color: #FFFFFF;
+}
+.timeline__tag-article {
+background-color: #92d392;
+border-color: #92d392;
+color: #000000;
+}
+.timeline__tag-page {
+background-color: #707070;
+border-color: #707070;
+color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+.timeline__time {
+font-size: 14px;
+}
+.timeline__title {
+font-size: 16px;
+}
+.timeline__description {
+font-size: 14px;
+}
+}
+&lt;/style>
+&lt;br>
+&lt;div class="timeline__row">
+&lt;div class="timeline__time">
+&lt;div class="timeline__time">19世纪初&lt;/div>
+&lt;div class="timeline__split-line">&lt;/div>
+&lt;/div>
+&lt;div class="timeline__content">
+&lt;div class="timeline__tags">
+&lt;span class="timeline__tag">&lt;/span>
+&lt;/div>
+&lt;div class="timeline__title">流行新古典主义风格半身像&lt;/div>
+&lt;div class="timeline__description">
+重视人物和发型表现，这也是艺术家唯一可以自由发挥的地方
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.timeline {
+display: flex;
+flex-direction: column;
+}
+.timeline__row {
+display: flex;
+padding-left: 4%;
+height: 90px;
+}
+.timeline__time {
+flex: 0 0 110px;
+color: #5d5d5d;
+font-size: 17px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5rem 0;
+}
+.timeline__time-text {
+margin: 0;
+}
+.timeline__split-line {
+position: absolute;
+top: 0.5rem;
+right: -20px;
+height: 100%;
+width: 2px;
+background-color: #84c4e240;
+z-index: 0;
+}
+.timeline__split-line:before {
+content: "";
+position: absolute;
+top: 24%;
+right: -4px;
+transform: translateY(-50%);
+width: 10px;
+height: 10px;
+background-color: #c9e5f2;
+box-shadow: 0 0 0 4px var(--theme);
+border-radius: 50%;
+border: 0px solid #84c4e2;
+z-index: -1;
+}
+.timeline__content {
+flex: 1;
+margin-left: 4.5rem;
+padding: 0.5rem 0 1.2rem 0;
+}
+.timeline__title {
+margin: 0;
+margin-bottom: 2px;
+padding-top: 3px;
+margin-left: 0.5rem;
+color: var(--content);
+font-family: var(--font-family-teshu);
+font-size: 19px;
+font-weight: 600;
+width: fit-content;
+display: inline-block;
+vertical-align: middle;
+}
+.timeline__tags {
+display: inline-block;
+padding: 0;
+margin-left: 0.3rem;
+align-items: center;
+gap: 0.3rem;
+}
+.timeline__tag {
+display: inline-block;
+color: var(--secondary);
+background-color: #84c4e230;
+border: 1.5px solid #84c4e230;
+border-radius: 999px;
+padding: 0rem 0.5rem;
+font-size: 12px;
+white-space: nowrap;
+line-height: 1.4rem;
+opacity: 0.8;
+vertical-align: middle;
+}
+.timeline__description {
+font-size: 15px;
+line-height: 1.6;
+color: #5d5d5d;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0.5rem 0 0.4rem 1.5rem;
+}
+.timeline__tag-style {
+background-color: #c581da;
+border-color: #c581da;
+color: #FFFFFF;
+}
+.timeline__tag-article {
+background-color: #92d392;
+border-color: #92d392;
+color: #000000;
+}
+.timeline__tag-page {
+background-color: #707070;
+border-color: #707070;
+color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+.timeline__time {
+font-size: 14px;
+}
+.timeline__title {
+font-size: 16px;
+}
+.timeline__description {
+font-size: 14px;
+}
+}
+&lt;/style>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;div class="timeline__row">
+&lt;div class="timeline__time">
+&lt;div class="timeline__time">1830年左右&lt;/div>
+&lt;div class="timeline__split-line">&lt;/div>
+&lt;/div>
+&lt;div class="timeline__content">
+&lt;div class="timeline__tags">
+&lt;span class="timeline__tag">&lt;/span>
+&lt;/div>
+&lt;div class="timeline__title">浪漫主义雕塑家发起对新古典主义价值的颠覆&lt;/div>
+&lt;div class="timeline__description">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.timeline {
+display: flex;
+flex-direction: column;
+}
+.timeline__row {
+display: flex;
+padding-left: 4%;
+height: 90px;
+}
+.timeline__time {
+flex: 0 0 110px;
+color: #5d5d5d;
+font-size: 17px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5rem 0;
+}
+.timeline__time-text {
+margin: 0;
+}
+.timeline__split-line {
+position: absolute;
+top: 0.5rem;
+right: -20px;
+height: 100%;
+width: 2px;
+background-color: #84c4e240;
+z-index: 0;
+}
+.timeline__split-line:before {
+content: "";
+position: absolute;
+top: 24%;
+right: -4px;
+transform: translateY(-50%);
+width: 10px;
+height: 10px;
+background-color: #c9e5f2;
+box-shadow: 0 0 0 4px var(--theme);
+border-radius: 50%;
+border: 0px solid #84c4e2;
+z-index: -1;
+}
+.timeline__content {
+flex: 1;
+margin-left: 4.5rem;
+padding: 0.5rem 0 1.2rem 0;
+}
+.timeline__title {
+margin: 0;
+margin-bottom: 2px;
+padding-top: 3px;
+margin-left: 0.5rem;
+color: var(--content);
+font-family: var(--font-family-teshu);
+font-size: 19px;
+font-weight: 600;
+width: fit-content;
+display: inline-block;
+vertical-align: middle;
+}
+.timeline__tags {
+display: inline-block;
+padding: 0;
+margin-left: 0.3rem;
+align-items: center;
+gap: 0.3rem;
+}
+.timeline__tag {
+display: inline-block;
+color: var(--secondary);
+background-color: #84c4e230;
+border: 1.5px solid #84c4e230;
+border-radius: 999px;
+padding: 0rem 0.5rem;
+font-size: 12px;
+white-space: nowrap;
+line-height: 1.4rem;
+opacity: 0.8;
+vertical-align: middle;
+}
+.timeline__description {
+font-size: 15px;
+line-height: 1.6;
+color: #5d5d5d;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0.5rem 0 0.4rem 1.5rem;
+}
+.timeline__tag-style {
+background-color: #c581da;
+border-color: #c581da;
+color: #FFFFFF;
+}
+.timeline__tag-article {
+background-color: #92d392;
+border-color: #92d392;
+color: #000000;
+}
+.timeline__tag-page {
+background-color: #707070;
+border-color: #707070;
+color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+.timeline__time {
+font-size: 14px;
+}
+.timeline__title {
+font-size: 16px;
+}
+.timeline__description {
+font-size: 14px;
+}
+}
+&lt;/style>
+&lt;br>
+&lt;br>
+&lt;div class="timeline__row">
+&lt;div class="timeline__time">
+&lt;div class="timeline__time">第二帝国时期（1852-1870年）&lt;/div>
+&lt;div class="timeline__split-line">&lt;/div>
+&lt;/div>
+&lt;div class="timeline__content">
+&lt;div class="timeline__tags">
+&lt;span class="timeline__tag">&lt;/span>
+&lt;/div>
+&lt;div class="timeline__title">官方肖像雕塑和私人肖像雕塑在新写实主义风格中完成&lt;/div>
+&lt;div class="timeline__description">
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;style>
+.timeline {
+display: flex;
+flex-direction: column;
+}
+.timeline__row {
+display: flex;
+padding-left: 4%;
+height: 90px;
+}
+.timeline__time {
+flex: 0 0 110px;
+color: #5d5d5d;
+font-size: 17px;
+text-transform: uppercase;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0.5rem 0;
+}
+.timeline__time-text {
+margin: 0;
+}
+.timeline__split-line {
+position: absolute;
+top: 0.5rem;
+right: -20px;
+height: 100%;
+width: 2px;
+background-color: #84c4e240;
+z-index: 0;
+}
+.timeline__split-line:before {
+content: "";
+position: absolute;
+top: 24%;
+right: -4px;
+transform: translateY(-50%);
+width: 10px;
+height: 10px;
+background-color: #c9e5f2;
+box-shadow: 0 0 0 4px var(--theme);
+border-radius: 50%;
+border: 0px solid #84c4e2;
+z-index: -1;
+}
+.timeline__content {
+flex: 1;
+margin-left: 4.5rem;
+padding: 0.5rem 0 1.2rem 0;
+}
+.timeline__title {
+margin: 0;
+margin-bottom: 2px;
+padding-top: 3px;
+margin-left: 0.5rem;
+color: var(--content);
+font-family: var(--font-family-teshu);
+font-size: 19px;
+font-weight: 600;
+width: fit-content;
+display: inline-block;
+vertical-align: middle;
+}
+.timeline__tags {
+display: inline-block;
+padding: 0;
+margin-left: 0.3rem;
+align-items: center;
+gap: 0.3rem;
+}
+.timeline__tag {
+display: inline-block;
+color: var(--secondary);
+background-color: #84c4e230;
+border: 1.5px solid #84c4e230;
+border-radius: 999px;
+padding: 0rem 0.5rem;
+font-size: 12px;
+white-space: nowrap;
+line-height: 1.4rem;
+opacity: 0.8;
+vertical-align: middle;
+}
+.timeline__description {
+font-size: 15px;
+line-height: 1.6;
+color: #5d5d5d;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0.5rem 0 0.4rem 1.5rem;
+}
+.timeline__tag-style {
+background-color: #c581da;
+border-color: #c581da;
+color: #FFFFFF;
+}
+.timeline__tag-article {
+background-color: #92d392;
+border-color: #92d392;
+color: #000000;
+}
+.timeline__tag-page {
+background-color: #707070;
+border-color: #707070;
+color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+.timeline__time {
+font-size: 14px;
+}
+.timeline__title {
+font-size: 16px;
+}
+.timeline__description {
+font-size: 14px;
+}
+}
+&lt;/style>
+&lt;br>
+&lt;br>
+&lt;br>
+&lt;p>整个十九世纪，雕塑行业的基本原则是忠实还原模特本来的面貌。&lt;/p>
+&lt;h1 id="雕塑">雕塑&lt;/h1>
+&lt;br>
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+&lt;div class="swiper-container">
+&lt;div class="swiper-wrapper">
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113976.jpg" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113977.jpg" alt="">
+&lt;/div>
+&lt;/div>
+&lt;div class="swiper-pagination">&lt;/div>
+&lt;/div>
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js">&lt;/script>
+&lt;script>
+var swiper = new Swiper('.swiper-container', {
+pagination: '.swiper-pagination',
+paginationClickable: true,
+autoHeight: true,
+keyboardControl : true,
+mousewheelControl : true,
+lazyLoading : true,
+lazyLoadingInPrevNext : true,
+loop : true,
+});
+&lt;/script>
+&lt;p style="text-align:center">&lt;em>&lt;strong>《维纳斯与小天使》，菲利普·普瓦特万&lt;/strong>&lt;/em>&lt;/p>
+&lt;br>
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+&lt;div class="swiper-container">
+&lt;div class="swiper-wrapper">
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113978.jpg" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113980.jpg" alt="">
+&lt;/div>
+&lt;/div>
+&lt;div class="swiper-pagination">&lt;/div>
+&lt;/div>
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js">&lt;/script>
+&lt;script>
+var swiper = new Swiper('.swiper-container', {
+pagination: '.swiper-pagination',
+paginationClickable: true,
+autoHeight: true,
+keyboardControl : true,
+mousewheelControl : true,
+lazyLoading : true,
+lazyLoadingInPrevNext : true,
+loop : true,
+});
+&lt;/script>
+&lt;p style="text-align:center">&lt;em>&lt;strong>《罗马修女》，乔万尼· 安东尼奥· 拉布斯，1840&lt;/strong>&lt;/em>&lt;/p>
+&lt;br>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113974.jpg" alt="Alt Text" style="width: 800px; height: auto;">
+&lt;p style="text-align:center">&lt;em>&lt;strong>《丘比特和普赛克》，爱德华· 安布罗斯，1852-1862&lt;/strong>&lt;/em>&lt;/p>
+&lt;br>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113971.jpg" alt="Alt Text" style="width: 800px; height: auto;">
+&lt;p style="text-align:center">&lt;em>&lt;strong>《爱神吻醒普赛克》，爱德华· 安布罗斯，1849&lt;/strong>&lt;/em>&lt;/p>
+&lt;br>
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+&lt;div class="swiper-container">
+&lt;div class="swiper-wrapper">
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113973.jpg" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113972.jpg" alt="">
+&lt;/div>
+&lt;/div>
+&lt;div class="swiper-pagination">&lt;/div>
+&lt;/div>
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js">&lt;/script>
+&lt;script>
+var swiper = new Swiper('.swiper-container', {
+pagination: '.swiper-pagination',
+paginationClickable: true,
+autoHeight: true,
+keyboardControl : true,
+mousewheelControl : true,
+lazyLoading : true,
+lazyLoadingInPrevNext : true,
+loop : true,
+});
+&lt;/script>
+&lt;p style="text-align:center">&lt;em>&lt;strong>《戴面纱的女人》，朱塞佩·克罗夫，1853&lt;/strong>&lt;/em>&lt;/p>
+&lt;br>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113967.jpg" alt="Alt Text" style="width: 500px; height: auto;">
+&lt;p style="text-align:center">&lt;em>&lt;strong>《白天和夜晚寓意雕塑》，玛蒂兰· 莫罗，1855&lt;/strong>&lt;/em>&lt;/p>
+&lt;br>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113963.jpg" alt="Alt Text" style="width: 500px; height: auto;">
+&lt;p style="text-align:center">&lt;em>&lt;strong>《年轻的牧羊人》，安东尼奥· 博尔托内&lt;/strong>&lt;/em>&lt;/p>
+&lt;br>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113964.jpg" alt="Alt Text" style="width: 500px; height: auto;">
+&lt;p style="text-align:center">&lt;em>&lt;strong>《高原玛丽》，本杰明·爱德华· 斯彭斯&lt;/strong>&lt;/em>&lt;/p>
+&lt;br>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113965.jpg" alt="Alt Text" style="width: 500px; height: auto;">
+&lt;p style="text-align:center">&lt;em>&lt;strong>《东方少女全身像》，古格里莫·巴尔迪&lt;/strong>&lt;/em>&lt;/p>
+&lt;br>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113958.jpg" alt="Alt Text" style="width: 500px; height: auto;">
+&lt;p style="text-align:center">&lt;em>&lt;strong>《年轻男孩和他的爱犬》，恩里科 ·巴齐&lt;/strong>&lt;/em>&lt;/p>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113959.jpg" alt="Alt Text" style="width: 500px; height: auto;">
+&lt;p style="text-align:center">&lt;em>&lt;strong>《未婚妻》，让· 巴普蒂斯特· 卡尔波&lt;/strong>&lt;/em>&lt;/p>
+&lt;br>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113962.jpg" alt="Alt Text" style="width: 500px; height: auto;">
+&lt;p style="text-align:center">&lt;em>&lt;strong>《多西亚》，奥古斯特· 罗丹&lt;/strong>&lt;/em>&lt;/p>
+&lt;br>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113960.jpg" alt="Alt Text" style="width: 500px; height: auto;">
+&lt;p style="text-align:center">&lt;em>&lt;strong>《拉·芭隆贝拉》，让· 巴普蒂斯特· 卡尔波，1861-1864&lt;/strong>&lt;/em>&lt;/p>
+&lt;br>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113955.jpg" alt="Alt Text" style="width: 500px; height: auto;">
+&lt;p style="text-align:center">&lt;em>&lt;strong>《保罗和维尔吉妮》，玛蒂兰· 莫罗，约1880年&lt;/strong>&lt;/em>&lt;/p>
+&lt;h1 id="其他">其他&lt;/h1>
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+&lt;div class="swiper-container">
+&lt;div class="swiper-wrapper">
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113952.jpg" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113953.jpg" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113951.jpg" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113947.jpg" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113948.jpg" alt="">
+&lt;/div>
+&lt;/div>
+&lt;div class="swiper-pagination">&lt;/div>
+&lt;/div>
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js">&lt;/script>
+&lt;script>
+var swiper = new Swiper('.swiper-container', {
+pagination: '.swiper-pagination',
+paginationClickable: true,
+autoHeight: true,
+keyboardControl : true,
+mousewheelControl : true,
+lazyLoading : true,
+lazyLoadingInPrevNext : true,
+loop : true,
+});
+&lt;/script>
+&lt;br>
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+&lt;div class="swiper-container">
+&lt;div class="swiper-wrapper">
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113949.jpg" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113950.jpg" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113946.jpg" alt="">
+&lt;/div>
+&lt;/div>
+&lt;div class="swiper-pagination">&lt;/div>
+&lt;/div>
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js">&lt;/script>
+&lt;script>
+var swiper = new Swiper('.swiper-container', {
+pagination: '.swiper-pagination',
+paginationClickable: true,
+autoHeight: true,
+keyboardControl : true,
+mousewheelControl : true,
+lazyLoading : true,
+lazyLoadingInPrevNext : true,
+loop : true,
+});
+&lt;/script>
+&lt;p style="text-align:center">&lt;em>&lt;strong>《仙女座》，皮埃尔·阿方斯·伯格特&lt;/strong>&lt;/em>&lt;/p>
+&lt;br>
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+&lt;div class="swiper-container">
+&lt;div class="swiper-wrapper">
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113932.jpg" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113931.jpg" alt="">
+&lt;/div>
+&lt;/div>
+&lt;div class="swiper-pagination">&lt;/div>
+&lt;/div>
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js">&lt;/script>
+&lt;script>
+var swiper = new Swiper('.swiper-container', {
+pagination: '.swiper-pagination',
+paginationClickable: true,
+autoHeight: true,
+keyboardControl : true,
+mousewheelControl : true,
+lazyLoading : true,
+lazyLoadingInPrevNext : true,
+loop : true,
+});
+&lt;/script>
+&lt;p style="text-align:center">&lt;em>&lt;strong>《圣女热纳维耶芙拯救被围困的巴黎》，保罗· 菲利克斯· 加列&lt;/strong>&lt;/em>&lt;/p>
+&lt;br>
+&lt;h2 id="衣柜">衣柜&lt;/h2>
+&lt;br>
+这些和装饰艺术有关。
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+&lt;div class="swiper-container">
+&lt;div class="swiper-wrapper">
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113945.jpg" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113944.jpg" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113943.jpg" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113937.jpg" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113934.jpg" alt="">
+&lt;/div>
+&lt;/div>
+&lt;div class="swiper-pagination">&lt;/div>
+&lt;/div>
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js">&lt;/script>
+&lt;script>
+var swiper = new Swiper('.swiper-container', {
+pagination: '.swiper-pagination',
+paginationClickable: true,
+autoHeight: true,
+keyboardControl : true,
+mousewheelControl : true,
+lazyLoading : true,
+lazyLoadingInPrevNext : true,
+loop : true,
+});
+&lt;/script>
+&lt;br>
+&lt;h2 id="首饰盒">首饰盒&lt;/h2>
+&lt;br>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202404021113933.jpg" alt="Alt Text" style="width: 800px; height: auto;"></description></item><item><title>【抽卡观影】时间之舞（2）</title><link>https://springcecilia.blog/%E6%8A%BD%E5%8D%A1%E8%A7%82%E5%BD%B1%E6%97%B6%E9%97%B4%E4%B9%8B%E8%88%9E2/</link><pubDate>Sat, 09 Mar 2024 18:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E6%8A%BD%E5%8D%A1%E8%A7%82%E5%BD%B1%E6%97%B6%E9%97%B4%E4%B9%8B%E8%88%9E2/</guid><description>&lt;p>魔改向观影体，缘更&lt;/p>
 &lt;p>&lt;strong>魔法背景设定，联动魔快&lt;/strong>&lt;/p>
 &lt;p>CP为爵柊&lt;/p>
 &lt;p>&lt;strong>非原著向，完全魔改/捏造/恶搞原作情节，所有观影内容均和原作有出入&lt;/strong>&lt;/p>
@@ -362,18 +1297,19 @@
 &lt;p>&lt;strong>———TBC———&lt;/strong>&lt;/p>
 &lt;br>
 &lt;p>【1】哆啦A梦日语版主题曲。&lt;/p>
-&lt;br></description></item><item><title>逛展小记| 16世纪至20世纪欧洲装饰艺术品</title><link>https://springcecilia.blog/%E9%80%9B%E5%B1%95%E5%B0%8F%E8%AE%B0-16%E4%B8%96%E7%BA%AA%E8%87%B320%E4%B8%96%E7%BA%AA%E6%AC%A7%E6%B4%B2%E8%A3%85%E9%A5%B0%E8%89%BA%E6%9C%AF%E5%93%81/</link><pubDate>Fri, 03 Nov 2023 10:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E9%80%9B%E5%B1%95%E5%B0%8F%E8%AE%B0-16%E4%B8%96%E7%BA%AA%E8%87%B320%E4%B8%96%E7%BA%AA%E6%AC%A7%E6%B4%B2%E8%A3%85%E9%A5%B0%E8%89%BA%E6%9C%AF%E5%93%81/</guid><description>&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429129.jpg" alt="Featured image of post 逛展小记| 16世纪至20世纪欧洲装饰艺术品" />&lt;br>
-&lt;p>多图预警（可能要魔法才能加载出来），记录几个我觉得有意思的展品↓&lt;/p>
+&lt;br></description></item><item><title>逛展小记| 璀璨万象：英国V&amp;A博物馆珍藏吉尔伯特精品展</title><link>https://springcecilia.blog/%E9%80%9B%E5%B1%95%E5%B0%8F%E8%AE%B0-16%E4%B8%96%E7%BA%AA%E8%87%B320%E4%B8%96%E7%BA%AA%E6%AC%A7%E6%B4%B2%E8%A3%85%E9%A5%B0%E8%89%BA%E6%9C%AF%E5%93%81/</link><pubDate>Fri, 03 Nov 2023 10:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E9%80%9B%E5%B1%95%E5%B0%8F%E8%AE%B0-16%E4%B8%96%E7%BA%AA%E8%87%B320%E4%B8%96%E7%BA%AA%E6%AC%A7%E6%B4%B2%E8%A3%85%E9%A5%B0%E8%89%BA%E6%9C%AF%E5%93%81/</guid><description>&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429129.jpg" alt="Featured image of post 逛展小记| 璀璨万象：英国V&amp;A博物馆珍藏吉尔伯特精品展" />&lt;br>
 &lt;br>
-&lt;h1 id="船形杯nef-cup">船形杯（nef-cup）&lt;/h1>
+&lt;p>感受16世纪至20世纪欧洲装饰艺术品的魅力。多图预警，记录几个我觉得有意思的展品↓&lt;/p>
+&lt;br>
+&lt;h2 id="船形杯nef-cup">船形杯（nef-cup）&lt;/h2>
 &lt;br>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429131.png" alt="Alt Text" style="width: 500px; height: auto;">
-&lt;p>&lt;em>&lt;strong>Regensburg（雷根斯堡），Germany，about 1610&lt;/strong>&lt;/em>&lt;/p>
+&lt;p style="text-align:center">&lt;em>&lt;strong>Regensburg（雷根斯堡），Germany，about 1610&lt;/strong>&lt;/em>&lt;/p>
 &lt;br>
 &lt;p>“nef”在法兰克福意为船，西方早期铸造的船形酒杯就被用于感恩安然渡海，在世俗和宗教生活中享有一定的地位，也是王侯贵族在餐桌上彰显尊贵身份的重要象征物。&lt;/p>
 &lt;p>自 14 世纪起在德国宫廷人们常用这类造型独特的杯子敬酒，在当时，宾客和主人用同一酒杯是结盟的象征，据说使用的酒杯越奢华，同盟关系越重要。&lt;/p>
 &lt;br>
-&lt;p>&lt;strong>其他补充&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>其他参考&lt;/strong>&lt;/p>
 &lt;p>&lt;a class="link" href="https://en.wikipedia.org/wiki/Regensburg" target="_blank" rel="noopener"
 >Regensburg（雷根斯堡）&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
@@ -384,12 +1320,12 @@ fill="currentColor">
 &lt;/svg>&lt;/span>
 是德国最大的中世纪老城之一，也是第二、第三次十字军东征的起始地。&lt;/p>
 &lt;br>
-&lt;h1 id="18世纪银器餐具多层饰盘">18世纪银器餐具——多层饰盘&lt;/h1>
+&lt;h2 id="18世纪银器餐具多层饰盘">18世纪银器餐具——多层饰盘&lt;/h2>
 &lt;br>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429132.png" alt="Alt Text" style="width: 500px; height: auto;">
-&lt;p>&lt;em>&lt;strong>London，England，1763-1764&lt;/strong>&lt;/em>&lt;/p>
+&lt;p style="text-align:center">&lt;em>&lt;strong>London，England，1763-1764&lt;/strong>&lt;/em>&lt;/p>
 &lt;br>
-&lt;p>&lt;strong>其他补充&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>其他参考&lt;/strong>&lt;/p>
 &lt;p>&lt;a class="link" href="https://www.youtube.com/watch?v=Avwz2yrV6KE" target="_blank" rel="noopener"
 >The Golden Age of Silver&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
@@ -409,14 +1345,14 @@ fill="currentColor">
 &lt;/svg>&lt;/span>
 &lt;/p>
 &lt;br>
-&lt;h1 id="防震巧克力杯及托盘">防震巧克力杯及托盘&lt;/h1>
+&lt;h2 id="防震巧克力杯及托盘">防震巧克力杯及托盘&lt;/h2>
 &lt;br>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429133.png" alt="Alt Text" style="width: 500px; height: auto;">
-&lt;p>&lt;em>&lt;strong>Paris，France，about 1720&lt;/strong>&lt;/em>&lt;/p>
+&lt;p style="text-align:center">&lt;em>&lt;strong>Paris，France，about 1720&lt;/strong>&lt;/em>&lt;/p>
 &lt;br>
 &lt;p>17世纪中期到18世纪末期是法国盛行装饰艺术，欧洲人喜欢在东方引进的瓷器上加上金银装饰。例如这套，展牌说明：放热可可的杯具是在伊万里瓷上进行的浮雕、镂雕银工艺，杯子还被设计成固定在凹形或唇口形的托盘上，以防手抖时溅出液体。&lt;/p>
 &lt;br>
-&lt;p>&lt;strong>其他补充&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>其他参考&lt;/strong>&lt;/p>
 &lt;p>日本伊万里瓷wiki：&lt;a class="link" href="https://zh.wikipedia.org/wiki/%E4%BC%8A%E8%90%AC%E9%87%8C%E7%87%92" target="_blank" rel="noopener"
 >https://zh.wikipedia.org/wiki/伊萬里燒&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
@@ -445,14 +1381,14 @@ fill="currentColor">
 &lt;/svg>&lt;/span>
 &lt;/p>
 &lt;br>
-&lt;h1 id="18世纪20年代的英国茶叶罐">18世纪20年代的英国茶叶罐&lt;/h1>
+&lt;h2 id="18世纪20年代的英国茶叶罐">18世纪20年代的英国茶叶罐&lt;/h2>
 &lt;br>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429134.png" alt="Alt Text" style="width: 600px; height: auto;">
-&lt;p>&lt;em>&lt;strong>London，England，1747-1748&lt;/strong>&lt;/em>&lt;/p>
+&lt;p style="text-align:center">&lt;em>&lt;strong>London，England，1747-1748&lt;/strong>&lt;/em>&lt;/p>
 &lt;p>18世纪20年代起的茶叶罐通常一套=红茶罐+绿茶罐+混合茶叶/糖罐。&lt;/p>
 &lt;p>茶罐还要锁起来，有客人来访时主人亲自用钥匙打开招待。&lt;/p>
 &lt;br>
-&lt;p>&lt;strong>其他补充&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>其他参考&lt;/strong>&lt;/p>
 &lt;p>引入西方的茶叶早期到底有多贵？ &lt;/p>
 &lt;p>&lt;a class="link" href="https://destinationtea.com/when-tea-wasnt-for-everyone/" target="_blank" rel="noopener"
 >When Tea Wasn’t for Everyone&lt;/a>
@@ -523,7 +1459,7 @@ fill="currentColor">
 &lt;/p>
 &lt;p>《绿色黄金：茶叶帝国》，社会科学文献出版社&lt;/p>
 &lt;br>
-&lt;h1 id="鼻烟盒">鼻烟盒&lt;/h1>
+&lt;h2 id="鼻烟盒">鼻烟盒&lt;/h2>
 &lt;br>
 &lt;p>放个左划轮播图：&lt;/p>
 &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
@@ -575,11 +1511,11 @@ lazyLoadingInPrevNext : true,
 loop : true,
 });
 &lt;/script>
-&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429145.png" >
-&lt;p>&lt;em>&lt;strong>腓特烈大帝鼻烟盒, about 1765&lt;/strong>&lt;/em>&lt;/p>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429145.png" alt="Alt Text" style="width: 400px; height: auto;">
+&lt;p style="text-align:center">&lt;em>&lt;strong>腓特烈大帝鼻烟盒, about 1765&lt;/strong>&lt;/em>&lt;/p>
 &lt;p>腓特烈大帝的这块鼻烟盒由产自西西里岛的一整块翡翠镶嵌钻石打造而成。传闻腓特烈二世是鼻烟盒收藏狂魔，他生前拥有的一百多个鼻烟盒现存世26个（真·史上最富有的烟民……）&lt;/p>
 &lt;br>
-&lt;p>&lt;strong>其他补充&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>其他参考&lt;/strong>&lt;/p>
 &lt;p>&lt;a class="link" href="https://new.qq.com/rain/a/20200103A05EGU00" target="_blank" rel="noopener"
 >鼻烟盒——18世纪欧洲烟民的掌中珍宝&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
@@ -626,7 +1562,7 @@ fill="currentColor">
 &lt;/svg>&lt;/span>
 &lt;/p>
 &lt;br>
-&lt;h1 id="微型马赛克工艺">微型马赛克工艺&lt;/h1>
+&lt;h2 id="微型马赛克工艺">微型马赛克工艺&lt;/h2>
 &lt;br>
 &lt;p>微型马赛克，说通俗点就是把珐琅、石块或玻璃切成极细的小棒，再切成极小的颗粒，用镊子夹取不同颜色的颗粒在玻璃或宝石板上，利用粘合剂一点点拼成图案，再用蜡对颗粒间的空隙进行充填。（耗时的镶嵌手工活……）&lt;/p>
 &lt;p>流程如视频所示：&lt;/p>
@@ -689,30 +1625,18 @@ fill="currentColor">
 &lt;/svg>&lt;/span>
 文章提及，四百多年前的梵蒂冈的圣彼得大教堂为了壁画防潮，直接用微型马赛克马赛克重新嵌了一遍。  &lt;/p>
 &lt;br>
-&lt;h1 id="其他">其他&lt;/h1>
-&lt;br>
-&lt;h2 id="嵌宝石钟琴">嵌宝石钟琴&lt;/h2>
+&lt;h2 id="其他">其他&lt;/h2>
 &lt;br>
 &lt;img src= "https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429153.png" alt="Alt Text" style="width: 500px; height: auto;">
-&lt;p>&lt;em>&lt;strong>London，England，about 1770&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>展牌说明：刻花、铸金，嵌入了玛瑙、珍珠、人造宝石玻璃，里面打造了可放镊子、剪刀、耳勺的收纳空间。&lt;/p>
-&lt;br>
-&lt;h2 id="糖果盒">糖果盒&lt;/h2>
+&lt;p style="text-align:center">&lt;em>&lt;strong>嵌宝石钟琴，London，England，about 1770&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>刻花铸金嵌入了玛瑙、珍珠、人造宝石玻璃，里面打造了可放镊子、剪刀、耳勺的收纳空间。&lt;/p>
 &lt;br>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402161429154.png" alt="Alt Text" style="width: 600px; height: auto;">
-&lt;p>&lt;em>&lt;strong>Paris，France，1764-1765&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>展牌说明： 鳞片粉（Poudre d’écaille）、玳瑁壳（Tortoiseshell），以彩金以银装饰，浮雕、刻花、镂空嵌金      &lt;/p>
-&lt;p>鳞片粉不一定是哪种鱼类或爬行动物的鳞片。écaille 在法语里也可能用来描述某物的外观像鳞片一样，在光线下闪闪发光或具有独特的质感，所以粉末不一定是活物的鳞片粉末。&lt;/p>
-&lt;p>玳瑁壳是一种热带深海龟的壳。西方自古希腊就有使用龟甲来装饰的习俗，罗马人也用于装饰家具，尤其是用餐沙发和小物品；中国使用玳瑁饰品可追溯到战国时期，唐代曾用玳瑁制造钱币，明清时期更是用于各阶层的物件。&lt;/p>
-&lt;p>&lt;a class="link" href="https://zh.wikipedia.org/wiki/%E7%8E%B3%E7%91%81" target="_blank" rel="noopener"
->玳瑁&lt;/a>
-&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
-height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
-&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
-&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
-fill="currentColor">
-&lt;/svg>&lt;/span>
-被视为龟类中最好的物种，其寿命可达1500年，享有“海金”之称。（当然，玳瑁离了壳就活不成了，因为上千年来人类的过度捕杀，如今成为濒危物种。）&lt;/p>
+&lt;p style="text-align:center">&lt;em>&lt;strong>糖果盒，Paris，France，1764-1765&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>展牌说明用到的材质有鳞片粉（Poudre d’écaille）、玳瑁壳（Tortoiseshell），以彩金以银装饰，浮雕、刻花、镂空嵌金。     &lt;/p>
+&lt;p>鳞片粉不一定是哪种鱼类或爬行动物的鳞片。écaille 在法语里也可能用来描述某物的外观像鳞片一样，在光线下闪闪发光或具有独特的质感（所以粉末不一定是活物的鳞片粉末）。&lt;/p>
+&lt;p>玳瑁壳是热带深海龟的壳。西方自古希腊就有使用龟甲来装饰的习俗，罗马人也用于装饰家具，尤其是用餐沙发和小物品；中国使用玳瑁饰品可追溯到战国时期，唐代曾用玳瑁制造钱币，明清时期更是用于各阶层的物件。&lt;/p>
+&lt;p>玳瑁被视为龟类中最好的物种，其寿命可达1500年，享有“海金”之称。（当然，玳瑁离了壳就活不成了，因为上千年来人类的过度捕杀，如今成为濒危物种……）&lt;/p>
 &lt;br></description></item><item><title>【爵柊】草莓奶油慕斯</title><link>https://springcecilia.blog/%E7%88%B5%E6%9F%8A%E8%8D%89%E8%8E%93%E5%A5%B6%E6%B2%B9%E6%85%95%E6%96%AF/</link><pubDate>Wed, 25 Oct 2023 17:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E7%88%B5%E6%9F%8A%E8%8D%89%E8%8E%93%E5%A5%B6%E6%B2%B9%E6%85%95%E6%96%AF/</guid><description>&lt;p>设定：爵柊同居中&lt;/p>
 &lt;p>避雷要素：口交&lt;/p>
 &lt;p>&lt;strong>————————————————————————————————&lt;/strong>   &lt;/p>
@@ -10061,7 +10985,8 @@ fill="currentColor">
 &lt;br>
 &lt;p>&lt;strong>—————TBC——————&lt;/strong>&lt;/p></description></item><item><title>逛展小记| 宅兹中国：河南夏商周三代文明展</title><link>https://springcecilia.blog/%E9%80%9B%E5%B1%95%E5%B0%8F%E8%AE%B0-%E5%AE%85%E5%85%B9%E4%B8%AD%E5%9B%BD%E6%B2%B3%E5%8D%97%E5%A4%8F%E5%95%86%E5%91%A8%E4%B8%89%E4%BB%A3%E6%96%87%E6%98%8E%E5%B1%95/</link><pubDate>Sat, 08 Oct 2022 16:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E9%80%9B%E5%B1%95%E5%B0%8F%E8%AE%B0-%E5%AE%85%E5%85%B9%E4%B8%AD%E5%9B%BD%E6%B2%B3%E5%8D%97%E5%A4%8F%E5%95%86%E5%91%A8%E4%B8%89%E4%BB%A3%E6%96%87%E6%98%8E%E5%B1%95/</guid><description>&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402291543448.jpg" alt="Featured image of post 逛展小记| 宅兹中国：河南夏商周三代文明展" />&lt;p>多图预警&lt;/p>
 &lt;br>
-&lt;p>&lt;a class="link" href="https://www.sohu.com/a/639110736_121124392" target="_blank" rel="noopener"
+&lt;p>参考：
+&lt;a class="link" href="https://www.sohu.com/a/639110736_121124392" target="_blank" rel="noopener"
 >“宅兹中国”里的夏商周：从青铜器到礼制成形&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
 height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
@@ -12644,9 +13569,8 @@ font-size: 14px;
 }
 &lt;/style>
 &lt;br>
-&lt;p>伊、洛河交汇处的偃师二里头遗址一般被认为是夏代晚期都城。&lt;/p>
-&lt;p>二里头遗址面积近400万平方米，是一处经缜密规划、布局完整的大型都邑，对中国城市布局和规划具有承上启下的重要意义。&lt;/p>
-&lt;p>这里发现有迄今所知中国最早的中轴线宫殿建筑群、最早的宫城、最早的封闭式官营手工业作坊区、最早的青铜礼器组合等。&lt;/p>
+&lt;p>注：伊、洛河交汇处的偃师二里头遗址一般被认为是夏代晚期都城。&lt;/p>
+&lt;p>二里头遗址面积近400万平方米，是一处经缜密规划、布局完整的大型都邑，对中国城市布局和规划具有承上启下的重要意义。这里发现有迄今所知中国最早的中轴线宫殿建筑群、最早的宫城、最早的封闭式官营手工业作坊区、最早的青铜礼器组合等。&lt;/p>
 &lt;h1 id="朝代时间轴">朝代时间轴&lt;/h1>
 &lt;div class="timeline__row">
 &lt;div class="timeline__time">
@@ -15498,19 +16422,19 @@ font-size: 14px;
 &lt;br>
 &lt;br>
 &lt;p>西周共历11代12王，东周共历25王，前后800余年。周人提倡“德治”，以宗法制和分封制为基础，从社会结构和思想观念两个方面构建了一整套完备的礼乐制度，成为整个中国古代社会政治伦理的核心。&lt;/p>
-&lt;p>东迁以后，周王室衰微，丧失了实际控制天下的能力，此后诸侯争霸，逐鹿中原，在纵横兼并的过程中，思想和技术广泛传播，文化和民族相互融合，为秦汉时期的帝国统一奠定了基础。&lt;/p>
+&lt;p>东迁以后，周王室衰微，丧失了实际控制天下的能力，此后进入诸侯争霸的时代。&lt;/p>
 &lt;br>
 &lt;h1 id="夏">夏&lt;/h1>
 &lt;br>
 &lt;h2 id="兽面纹陶片">兽面纹陶片&lt;/h2>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402291543453.jpg" alt="Alt Text" style="width: 600px; height: auto;">
-&lt;p>夏代早期（公元前21世纪-公元前18世纪）&lt;/p>
+&lt;p style="text-align:center">&lt;strong>夏代早期（公元前21世纪-公元前18世纪）&lt;/strong>&lt;/p>
 &lt;br>
 &lt;h2 id="兽面纹白陶罍léi">兽面纹白陶罍（léi）&lt;/h2>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402291553444.jpg" alt="Alt Text" style="width: 600px; height: auto;">
-&lt;p>夏代早期（公元前21世纪-公元前18世纪）&lt;/p>
+&lt;p style="text-align:center">&lt;strong>夏代早期（公元前21世纪-公元前18世纪）&lt;/strong>&lt;/p>
 &lt;p>能感受早期的陶艺水平能精湛到何种地步……&lt;/p>
-&lt;p>补充：&lt;a class="link" href="https://www.sohu.com/a/574906916_772510" target="_blank" rel="noopener"
+&lt;p>参考文章：&lt;a class="link" href="https://www.sohu.com/a/574906916_772510" target="_blank" rel="noopener"
 >朱宗明：商周青铜器兽面纹与饕餮纹的名实简述 &lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
 height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
@@ -15524,22 +16448,22 @@ fill="currentColor">
 &lt;br>
 &lt;h2 id="白陶象尊">白陶象尊&lt;/h2>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402291543456.jpg" alt="Alt Text" style="width: 600px; height: auto;">
-&lt;p>商代晚期（公元前13世纪—前1046年）&lt;/p>
+&lt;p style="text-align:center">&lt;strong>商代晚期（公元前13世纪—前1046年）&lt;/strong>&lt;/p>
 &lt;p>*象尊：商周时祭祀礼仪中使用的盛酒礼器之一。&lt;/p>
 &lt;br>
 &lt;h2 id="刻辞卜甲">刻辞卜甲&lt;/h2>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402291543454.jpg" alt="Alt Text" style="width: 600px; height: auto;">
-&lt;p>商代晚期（公元前13世纪—前1046年）&lt;/p>
+&lt;p style="text-align:center">&lt;strong>商代晚期（公元前13世纪—前1046年）&lt;/strong>&lt;/p>
 &lt;p>商人常用龟甲和兽骨进行占卜，以达到感知未来、趋吉避害的目的。&lt;/p>
 &lt;br>
 &lt;h2 id="簋guǐ陶范">簋（guǐ）陶范&lt;/h2>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402291553445.jpg" alt="Alt Text" style="width: 600px; height: auto;">
-&lt;p>商代晚期（公元前13世纪—前1046年）&lt;/p>
+&lt;p style="text-align:center">&lt;strong>商代晚期（公元前13世纪—前1046年）&lt;/strong>&lt;/p>
 &lt;p>簋：中国商周时代的青铜食器兼礼器，用来盛放谷物饭食。&lt;/p>
 &lt;br>
 &lt;h2 id="妇好鸮xiāo尊">妇好鸮(xiāo)尊&lt;/h2>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402291917167.jpg" alt="Alt Text" style="width: 600px; height: auto;">
-&lt;p>商代晚期（公元前13世纪—前1046年）&lt;/p>
+&lt;p style="text-align:center">&lt;strong>商代晚期（公元前13世纪—前1046年）&lt;/strong>&lt;/p>
 &lt;p>鸮：古代对猫头鹰一类鸟的统称。&lt;/p>
 &lt;p>商人有崇拜鸟的习惯，在当时猫头鹰被视作英勇与聪慧的战神象征。&lt;/p>
 &lt;p>这类动物为主的尊是这一时代青铜艺术审美观念的集中体现。&lt;/p>
@@ -15548,17 +16472,17 @@ fill="currentColor">
 &lt;br>
 &lt;h2 id="金腰带饰">金腰带饰&lt;/h2>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402291543461.jpg" alt="Alt Text" style="width: 600px; height: auto;">
-&lt;p>西周晚期（公元前9世纪—前771年）&lt;/p>
+&lt;p style="text-align:center">&lt;strong>西周晚期（公元前9世纪—前771年）&lt;/strong>&lt;/p>
 &lt;p>这组金饰也仅限于地位较高的贵族阶层佩戴。&lt;/p>
 &lt;p>佩戴方式↓&lt;/p>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403052349701.jpg" alt="Alt Text" style="width: 200px; height: auto;">
 &lt;br>
 &lt;h2 id="梁姬罐">梁姬罐&lt;/h2>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402291543459.jpg" alt="Alt Text" style="width: 600px; height: auto;">
-&lt;p>西周晚期（公元前9世纪—前771年）&lt;/p>
+&lt;p style="text-align:center">&lt;strong>西周晚期（公元前9世纪—前771年）&lt;/strong>&lt;/p>
 &lt;p>梁姬是西周虢国国君虢季的夫人。&lt;/p>
 &lt;p>值得一提的是虢国也是姬姓诸侯国之一，两人为同姓通婚，在当时是很常见的。&lt;/p>
-&lt;p>补充：&lt;a class="link" href="https://culture.ifeng.com/1/detail_2011_07/04/7415293_0.shtml" target="_blank" rel="noopener"
+&lt;p>参考文章：&lt;a class="link" href="https://culture.ifeng.com/1/detail_2011_07/04/7415293_0.shtml" target="_blank" rel="noopener"
 >为什么越古老的姓越多“女”字旁：母系社会追思&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
 height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
@@ -15570,8 +16494,8 @@ fill="currentColor">
 &lt;br>
 &lt;h2 id="玉凤">玉凤&lt;/h2>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402291553446.jpg" alt="Alt Text" style="width: 600px; height: auto;">
-&lt;p>西周晚期（公元前9世纪—前771年）&lt;/p>
-&lt;p>补充：&lt;a class="link" href="http://www.cnhetianyu.com/ContentPage.aspx?cid=3394" target="_blank" rel="noopener"
+&lt;p style="text-align:center">&lt;strong>西周晚期（公元前9世纪—前771年）&lt;/strong>&lt;/p>
+&lt;p>参考文章：&lt;a class="link" href="http://www.cnhetianyu.com/ContentPage.aspx?cid=3394" target="_blank" rel="noopener"
 >品味西周玉器之凤鸟纹&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
 height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
@@ -15583,21 +16507,21 @@ fill="currentColor">
 &lt;br>
 &lt;h2 id="龙形玉玦">龙形玉玦&lt;/h2>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402291543463.jpg" alt="Alt Text" style="width: 600px; height: auto;">
-&lt;p>春秋晚期（公元前570年—前476年）&lt;/p>
+&lt;p style="text-align:center">&lt;strong>春秋晚期（公元前570年—前476年）&lt;/strong>&lt;/p>
 &lt;p>玦：圆环形有缺口的玉器。&lt;/p>
 &lt;br>
 &lt;h2 id="商鞅方升">商鞅方升&lt;/h2>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402291543464.jpg" alt="Alt Text" style="width: 600px; height: auto;">
-&lt;p>战国秦孝公18年（公元前344年）&lt;/p>
+&lt;p style="text-align:center">&lt;strong>战国秦孝公18年（公元前344年）&lt;/strong>&lt;/p>
 &lt;p>商鞅方升是中国最早统一使用的量器，主要用来计算粮食的多少。这是中国度量衡史上极为重要的实物资料。&lt;/p>
 &lt;br>
 &lt;h2 id="镶嵌金银团花纹带流鼎">镶嵌金银团花纹带流鼎&lt;/h2>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402291553442.jpg" alt="Alt Text" style="width: 600px; height: auto;">
-&lt;p>战国晚期（公元前275年—前222年）&lt;/p>
+&lt;p style="text-align:center">&lt;strong>战国晚期（公元前275年—前222年）&lt;/strong>&lt;/p>
 &lt;p>四瓣花纹非常罕见，铺首钮也很少见。错金银对称和谐，装饰华丽，造型精巧玲珑，是战国时期错金银工艺的典型。&lt;/p>
 &lt;br>
 &lt;br>
-&lt;p>其他补充：&lt;/p>
+&lt;p>其他参考文章：&lt;/p>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403052349700.jpg"/>
 &lt;p>&lt;a class="link" href="https://www.shanghaimuseum.net/mu/frontend/pg/article/id/E00004145" target="_blank" rel="noopener"
 >宅兹中国：河南夏商周三代文明展&lt;/a>
@@ -15625,8 +16549,7 @@ fill="currentColor">
 &lt;p>古希腊文明发源于爱琴海文明。爱琴文明指的是爱琴海地区的青铜文明，以克里特和迈锡尼两地为主。&lt;/p>
 &lt;p>爱琴海与希腊半岛在历史传统上关系密切，岛屿众多，希腊本土则分为北、中、南三部分。这些区域统称为希腊，但它并不是一个大统一的国家，而是众多的城邦国家联合共存。&lt;/p>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402251909056.jpg" alt="Alt Text" style="width: 700px; height: auto;">
-&lt;p>公元前5世纪时期的希腊城邦分布&lt;/p>
-&lt;p>&lt;strong>图源：&lt;a class="link" href="https://ancient-greece.org/map.html" target="_blank" rel="noopener"
+&lt;p>公元前5世纪时期的希腊城邦分布，&lt;strong>图源：&lt;a class="link" href="https://ancient-greece.org/map.html" target="_blank" rel="noopener"
 >ancient-greece.org&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
 height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
@@ -15637,9 +16560,9 @@ fill="currentColor">
 &lt;/strong>&lt;/p>
 &lt;p>正是这种河流遍布、多山的地理环境，粮食用地较少，所以古希腊人常常海上外出开拓更大的地方或进行各种贸易活动。&lt;/p>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402251909055.jpg" alt="Alt Text" style="width: 700px; height: auto;">
-&lt;p>古希腊的航海扩张路线&lt;/p>
+&lt;p style="text-align:center">&lt;em>&lt;strong>古希腊的航海扩张路线（图源网络）&lt;/strong>&lt;/em>&lt;/p>
 &lt;br>
-&lt;p>其他补充：
+&lt;p>其他参考文章：
 &lt;a class="link" href="https://shangbo-exhibition.yit.com/sb-lecture/index.html" target="_blank" rel="noopener"
 >上博公众号的上博课程里相关讲座&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
@@ -16925,7 +17848,7 @@ trans. Rouse Greek epic C5th A.D.&lt;/a>
 &lt;p>他是希腊神话里提坦旧神之一，赫西俄德的《神谱》称其为天神乌拉诺斯和地母盖亚所生，掌管着地表的所有洋流与河流，但也有说法是他是始祖之父、众生起源，这种说法是父系社会取代母系社会时的信仰转变。&lt;/p>
 &lt;p>提坦二代神被宙斯派推翻时，俄刻阿诺斯由于并未参与众神之间的政治站队因而保留部分权力，直到古典时代主宰海洋的地位才被波塞冬取代。&lt;/p>
 &lt;br>
-&lt;p>补充：&lt;/p>
+&lt;p>参考文章：&lt;/p>
 &lt;p>&lt;a class="link" href="https://m.163.com/dy/article/I8O4A9RU0512B61E.html" target="_blank" rel="noopener"
 >波塞冬是古希腊唯一的海神吗&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
@@ -19038,18 +19961,18 @@ font-size: 14px;
 &lt;h1 id="互文的艺术">互文的艺术&lt;/h1>
 &lt;br>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402251640317.jpg" alt="Alt Text" style="width: 600px; height: auto;">
-&lt;p>&lt;strong>扬尼斯·盖蒂斯（Υiannis Gaitis） 《塞壬—奥德修斯》&lt;/strong>&lt;/p>
+&lt;p style="text-align:center">&lt;em>&lt;strong>扬尼斯·盖蒂斯（Υiannis Gaitis） 《塞壬—奥德修斯》&lt;/strong>&lt;/em>&lt;/p>
 &lt;p>这副画有在致敬古希腊陶器的图绘风格，例如Exekias（540–530 BC）的狄奥尼索斯航海（Dionysus Cup）↓&lt;/p>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402282242786.jpg" alt="Alt Text" style="width: 400px; height: auto;">
 &lt;p>但亮点是上图的现代画里，作者用戴礼帽的男人头颅取代了传说中的海妖塞壬的女性头颅。其实纵观奥德修斯的返乡史，及从古至今的父系文明史，不免为一种巧妙讽刺。&lt;/p>
 &lt;br>
 &lt;br>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402251640316.jpg" alt="Alt Text" style="width: 700px; height: auto;">
-&lt;p>&lt;strong>亚历山大·马加尼奥蒂斯（Alexandros Maganiotis） 《尤利西斯帆船》&lt;/strong>&lt;/p>
+&lt;p style="text-align:center">&lt;strong>&lt;strong>亚历山大·马加尼奥蒂斯（Alexandros Maganiotis） 《尤利西斯帆船》&lt;/strong>&lt;/strong>&lt;/p>
 &lt;p>这副画中的奥德修斯被缚在泰坦尼克号上，随着航船在广袤的辞海里漫无目的地漂泊。画里不仅包含作者对《荷马史诗》的阐释，也包含了现代文明的元素，颇有呼应《尤利西斯》小说的意味。&lt;/p>
 &lt;p>（《尤利西斯》的小说就充满了大量变化的文体，从早期的盎格鲁-撒克逊语、古拉丁文、古盖尔文岛当代俚语，用典更是堪称旁征博引，令人眼花缭乱。然而，文体的展览盛宴确与取材的现实生活内容却形成了强大的反差，这正是作者刻意为之。）&lt;/p>
 &lt;br>
-&lt;p>其他补充：&lt;a class="link" href="https://www.thepaper.cn/newsDetail_forward_19426060" target="_blank" rel="noopener"
+&lt;p>其他参考文章：&lt;a class="link" href="https://www.thepaper.cn/newsDetail_forward_19426060" target="_blank" rel="noopener"
 >特展细读丨“塔拉萨”特展里的海景画&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
 height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
@@ -30972,17 +31895,178 @@ Correctness的设定呢，真是对不住啊，小朋友。”&lt;/p>
 &lt;p>“你可是她最喜欢的类型了，降谷零，给我好好服侍她哦。”&lt;/p>
 &lt;br>
 &lt;br>
-&lt;p>&lt;strong>————Fin————&lt;/strong>&lt;/p></description></item><item><title>逛展小记| 汉淮传奇：噩国青铜器精粹展</title><link>https://springcecilia.blog/%E9%80%9B%E5%B1%95%E5%B0%8F%E8%AE%B0-%E6%B1%89%E6%B7%AE%E4%BC%A0%E5%A5%87%E5%99%A9%E5%9B%BD%E9%9D%92%E9%93%9C%E5%99%A8%E7%B2%BE%E7%B2%B9%E5%B1%95/</link><pubDate>Sat, 11 Dec 2021 16:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E9%80%9B%E5%B1%95%E5%B0%8F%E8%AE%B0-%E6%B1%89%E6%B7%AE%E4%BC%A0%E5%A5%87%E5%99%A9%E5%9B%BD%E9%9D%92%E9%93%9C%E5%99%A8%E7%B2%BE%E7%B2%B9%E5%B1%95/</guid><description>&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403060051334.jpg" alt="Featured image of post 逛展小记| 汉淮传奇：噩国青铜器精粹展" />&lt;br>
+&lt;p>&lt;strong>————Fin————&lt;/strong>&lt;/p></description></item><item><title>逛展小记| 东西汇融：中欧陶瓷与文化交流特展</title><link>https://springcecilia.blog/%E9%80%9B%E5%B1%95%E5%B0%8F%E8%AE%B0-%E4%B8%9C%E8%A5%BF%E6%B1%87%E8%9E%8D%E4%B8%AD%E6%AC%A7%E9%99%B6%E7%93%B7%E4%B8%8E%E6%96%87%E5%8C%96%E4%BA%A4%E6%B5%81%E7%89%B9%E5%B1%95/</link><pubDate>Sat, 11 Dec 2021 16:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E9%80%9B%E5%B1%95%E5%B0%8F%E8%AE%B0-%E4%B8%9C%E8%A5%BF%E6%B1%87%E8%9E%8D%E4%B8%AD%E6%AC%A7%E9%99%B6%E7%93%B7%E4%B8%8E%E6%96%87%E5%8C%96%E4%BA%A4%E6%B5%81%E7%89%B9%E5%B1%95/</guid><description>&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403072047016.jpg" alt="Featured image of post 逛展小记| 东西汇融：中欧陶瓷与文化交流特展" />&lt;br>
+&lt;p>想要探究大航海时代的欧亚贸易和跨文化交流是什么样，推荐从瓷器见微知著。&lt;/p>
+&lt;p>瓷器是当时航海贸易最重要的商品之一，其面貌的变迁也反映了16、17、18世纪中欧贸易主导权由葡萄牙向荷兰、英国东印度公司渐次转移的过程。&lt;/p>
+&lt;br>
+&lt;h1 id="大航海时代背景">大航海时代背景&lt;/h1>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403072047025.jpg"/>
+&lt;p>15世纪中期以降，中东联结东西方的传统商路渐受奥斯曼帝国控制，烦受阳滞，威洲船队于海上不断打张，探寻新领地与贸易路线、席卷世界的大航海时代自此开启。&lt;/p>
+&lt;p>葡萄牙人最先东来，1498年达·伽马船队绕过好望角到达印度卡利卡特，开辟了欧亚交通的新路线，此后持续东进，到达中国沿海，揭开近世东西方交流的新篇章。&lt;/p>
+&lt;p>西班牙、荷兰紧随其后，接踵而至，东方货品自此源源不断地输入欧洲。&lt;/p>
+&lt;br>
+&lt;h1 id="瓷器类">瓷器类&lt;/h1>
+&lt;h2 id="克拉克瓷">克拉克瓷&lt;/h2>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403072047020.jpg"/>
+&lt;p style="text-align:center">&lt;em>&lt;strong>五彩开光盆景花卉图盘，明天启—崇祯（1621-1644年）&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>克拉克瓷(Kraak porcelain)：“克拉克”（Kraak）在荷兰语里意为葡萄牙战舰，有一种说法是在17世纪，这些明万历年间生产的瓷器是被荷兰人称为“克拉克”的船运来的，欧洲人便称这批中国青花瓷器为“克拉克瓷”(Kraak porcelain)。&lt;/p>
+&lt;p>其他参考文章：&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.thepaper.cn/newsDetail_forward_3024074" target="_blank" rel="noopener"
+>观天下 | 什么是“克拉克瓷”&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;p>&lt;a class="link" href="https://mt.sohu.com/20161218/n476222594.shtml" target="_blank" rel="noopener"
+>明宣德五彩瓷器鉴定 被誉为瓷器史上一株奇花异葩&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;br>
+&lt;h2 id="墨彩瓷">墨彩瓷&lt;/h2>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403072047052.jpg"/>
+&lt;p style="text-align:center">&lt;em>&lt;strong>墨彩描金耶稣复活图盘，清乾隆（1736-1795年）&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>这种以版画订制的瓷盘一般用于宗教场合或作为装饰宣传教义。&lt;/p>
+&lt;p>其他参考：&lt;a class="link" href="https://www.163.com/dy/article/HPEG80RT0523E4AV.html" target="_blank" rel="noopener"
+>广州人笔下的“圣诞”与“复活”&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;br>
+&lt;h2 id="珐琅瓷">珐琅瓷&lt;/h2>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403072047044.jpg"/>
+&lt;p style="text-align:center">&lt;em>&lt;strong>五彩花果纹杯，清康熙（1662—1722年）&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>这件瓷器是康熙年间的中国景德镇工匠仿法国利摩日（Limoges）珐琅的作品。&lt;/p>
+&lt;p>利摩日（Limoges）：位于法国中西部的工艺之城，为欧洲珐琅之都。&lt;/p>
+&lt;p>其他参考：&lt;/p>
+&lt;p>&lt;a class="link" href="https://www.sohu.com/a/530887560_121107011" target="_blank" rel="noopener"
+>【华彩宫瓷】珐琅彩鉴赏：明清彩瓷上的“皇冠” &lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;p>&lt;a class="link" href="https://m.thepaper.cn/baijiahao_15109155" target="_blank" rel="noopener"
+>一位100年前的女画师为我们揭秘法国“景德镇”的历史&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;br>
+&lt;h2 id="白釉瓷">白釉瓷&lt;/h2>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403072047032.jpg"/>
+&lt;p style="text-align:center">&lt;em>&lt;strong>白釉八方带座香炉，清康熙（1662-1722年）&lt;/strong>&lt;/em>&lt;/p>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403072047033.jpg"/>
+&lt;p style="text-align:center">&lt;em>&lt;strong>白釉加彩开光人物图八方杯一对，清康熙（1662-1722年）&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>彩料从荷兰和威尼斯进口。&lt;/p>
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+&lt;div class="swiper-container">
+&lt;div class="swiper-wrapper">
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403072047045.jpg" alt="">
+&lt;/div>
+&lt;div class="swiper-slide">
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403072047046.jpg" alt="">
+&lt;/div>
+&lt;/div>
+&lt;div class="swiper-pagination">&lt;/div>
+&lt;/div>
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js">&lt;/script>
+&lt;script>
+var swiper = new Swiper('.swiper-container', {
+pagination: '.swiper-pagination',
+paginationClickable: true,
+autoHeight: true,
+keyboardControl : true,
+mousewheelControl : true,
+lazyLoading : true,
+lazyLoadingInPrevNext : true,
+loop : true,
+});
+&lt;/script>
+&lt;p style="text-align:center">&lt;em>&lt;strong>青花矾红描金法国王室徽章纹壶，清康熙（1662-1722年）&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>自1709年后，路易十四下令融化银器来帮助振兴法国经济，中国瓷器成为当时宫廷和贵族日常用器最适合的替代品。当时贵族也流行将家族徽章绘制于瓷器上。（凡尔赛宫里有什么可以自行想象啦……改装的瓷器居多。）&lt;/p>
+&lt;br>
+&lt;h1 id="瓷其他材料镶嵌类">瓷+其他材料镶嵌类&lt;/h1>
+&lt;br>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403072047017.jpg"/>
+&lt;p style="text-align:center">&lt;em>&lt;strong>青花矾红描金缠枝莲纹碗镶嵌鎏金银座，明嘉靖（1522-1566年），德国鎏金银座约1583年&lt;/strong>&lt;/em>&lt;/p>
+&lt;br>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403072047035.jpg"/>
+&lt;p style="text-align:center">&lt;em>&lt;strong>五彩暗花八宝纹碗镶嵌黄金与红宝石，明万历（1573-1620年），奥斯曼帝国镶嵌，约1570-1600年&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>这种在瓷器上镶嵌金丝宝石的做法为中东地区的流行，且专属于宫廷。1877年，苏丹阿卜杜勒·哈米德二世（Abdul Hamid II，1842—1918）将这件碗赠予英国驻君士坦丁堡大使。&lt;/p>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403072047038.jpg"/>
+&lt;p style="text-align:center">&lt;em>&lt;strong>白釉印花八方香炉改装香薰，清康熙（1662-1722年），法国镶嵌青铜镀金，约1750-1760年&lt;/strong>&lt;/em>&lt;/p>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403072047037.jpg"/>
+&lt;p style="text-align:center">&lt;em>&lt;strong>白釉梅花纹瓶改装香薰，清康熙（1662-1722年），法国镶嵌银镀金，约1710年&lt;/strong>&lt;/em>&lt;/p>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403072047036.jpg"/>
+&lt;p style="text-align:center">&lt;em>&lt;strong>青釉划花碗改装香薰，清乾隆（1736-1759年），法国镶嵌青铜镀金，约1740-1760年&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>18世纪中期的洛可可风格。&lt;/p>
+&lt;br>
+&lt;h1 id="釉上彩类">釉上彩类&lt;/h1>
+&lt;br>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403072047047.jpg"/>
+&lt;p style="text-align:center">&lt;em>&lt;strong>釉上彩酒神杯一对，18世纪英国德比瓷器&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>绘制的是酒神狄俄倪索斯（罗马名为巴克斯）。希腊神话中关于酒神的出身有两种说法，一一种说法为宙斯与人类女子塞墨勒的孩子，塞墨勒被宙斯显出的真身焚烧时，宙斯将她的腹中胎儿取出放进自己的腿中孕育，从宙斯的大腿里第二次出生；还有一些版本说他出生之后曾经给第一代泰坦神撕碎，后又被拼接在一起，所以酒神的名字在希腊语里有“二次出生”的含义，也有说法说他是宙斯与冥后珀耳塞福涅之子，与丰收女神有所联系，所以酒神也与葡萄有关。&lt;/p>
+&lt;br>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403072047053.jpg"/>
+&lt;p style="text-align:center">&lt;em>&lt;strong>彩绘中国乐师像，德国迈森瓷器，约1763-1794年&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>18世纪20、30年代开始，洛可可风格的瓷质雕像扬名欧洲，影响了整个欧洲的瓷器制造。在欧洲出版的东方见闻录如《荷使初访中国记》、《中国图说》等书中的插画都成为18世纪中国风瓷塑的灵感来源之一。&lt;/p>
+&lt;p>这尊瓷器体现的是西方对中国人形象的想象与建构，充满异域风情的刻画，而非真实的形象。&lt;/p>
+&lt;br>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403072047054.jpg"/>
+&lt;p style="text-align:center">&lt;em>&lt;strong>粉彩圣母像，清乾隆（1736-1795年）&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>这尊造像是典型的中西合璧产物，圣母手挂佛珠，脚踏花座，是佛教塑像的常见形象。在明清时代，传教士为了传教将基督教形象中国化，以便于文化沟通和理解的现象很常见。&lt;/p>
+&lt;br>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403072047055.jpg"/>
+&lt;p style="text-align:center">&lt;em>&lt;strong>彩色釉陶中国与美洲人物图壁砖，荷兰代尔夫特锡釉陶，约1690-1720年&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>17世纪末流行以大量的瓷器装饰在设有托架或漆板的墙面上。&lt;/p>
+&lt;p>此壁砖面板上的观音造型出自17世纪制作于苏州的《西游记》版画，将实际的中国图像和西方世界对南美洲土著形象的诠释相结合，依旧代表了一种西方对西方以外的异域想象。&lt;/p>
+&lt;p>解说参考：
+&lt;a class="link" href="https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/CI00005653" target="_blank" rel="noopener"
+>彩色釉陶中国与美洲人物图壁砖&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;br>
+&lt;h1 id="其他">其他&lt;/h1>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403072047040.jpg"/>
+&lt;p style="text-align:center">&lt;em>&lt;strong>庭院仕女图化妆盒，卡地亚巴黎，1928年&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>展牌说明的材料包含：金、铂金、螺钿、珊瑚、蓝宝石、绿松石、缟玛瑙、东菱玉、玉盘（树）、白玉（扇子与花瓶）、绿色莹石（凳子和桌子）、祖母绿（花园围栏）、钻石、黑色珐琅……&lt;/p>
+&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403072047039.jpg"/>
+&lt;p style="text-align:center">&lt;em>&lt;strong>粉彩镂空人物故事图香笼改装台式烟盒，清乾隆（1736-1795年），卡地亚巴黎设计镶嵌，金、银镀金、珍珠母贝、硬橡胶、珐琅，1792年&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>中央瓷片绘《西厢记》终章张生提亲。&lt;/p></description></item><item><title>逛展小记| 汉淮传奇：噩国青铜器精粹展</title><link>https://springcecilia.blog/%E9%80%9B%E5%B1%95%E5%B0%8F%E8%AE%B0-%E6%B1%89%E6%B7%AE%E4%BC%A0%E5%A5%87%E5%99%A9%E5%9B%BD%E9%9D%92%E9%93%9C%E5%99%A8%E7%B2%BE%E7%B2%B9%E5%B1%95/</link><pubDate>Sat, 11 Dec 2021 16:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E9%80%9B%E5%B1%95%E5%B0%8F%E8%AE%B0-%E6%B1%89%E6%B7%AE%E4%BC%A0%E5%A5%87%E5%99%A9%E5%9B%BD%E9%9D%92%E9%93%9C%E5%99%A8%E7%B2%BE%E7%B2%B9%E5%B1%95/</guid><description>&lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403060051334.jpg" alt="Featured image of post 逛展小记| 汉淮传奇：噩国青铜器精粹展" />&lt;br>
 &lt;h1 id="噩国">噩国&lt;/h1>
-&lt;p>噩国历史未载于史册，长久以来不为人知。2007年湖北随州安居羊子山发现一座西周早期墓葬（编号为羊子山M4），出土青铜器27件，其中9件铸有“噩侯”铭文，根据铭文和随葬品的规模可知其为一代噩侯墓葬，由此一段被历史长河吞噬了3000年的噩国历史重现于世。&lt;/p>
+&lt;p>这次展出的是一个未载于中国史册的名为“噩国”的诸侯国墓葬品。2007年湖北随州安居羊子山发现一座西周早期墓葬（编号为羊子山M4），出土青铜器27件，其中9件铸有“噩侯”铭文，根据铭文和随葬品的规模可知其为一代噩侯墓葬，大约有3000年的历史。&lt;/p>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403060056270.jpg" alt="Alt Text" style="width: 600px; height: auto;">
-&lt;p>“噩”作为古老的国（氏）族，除了噩侯之外，尚见噩叔、噩季与噩侯弟。噩侯弟居季尊明确出土于随州羊子山，为同时代活跃之家族成员。&lt;/p>
+&lt;p style="text-align:center">（图源看展小册）&lt;/p>
 &lt;h1 id="与周王室的关系">与周王室的关系&lt;/h1>
 &lt;p>西周早期：噩、曾两国并立汉东，为西周王朝扼守南境、控制金路往来的重要诸侯国。&lt;/p>
 &lt;p>西周中晚期：噩国与周王室联姻，辉煌一时，噩侯驭方献壶，与周王同宴、并行射礼，显示噩侯与周王友好的亲近关系。&lt;/p>
 &lt;p>西周晚期：一种说法是噩侯驭方率东夷、南淮夷反叛，震动周王朝，周王动用西六师、殷八师伐噩，并下达“勿遗寿幼”的格杀令，最后以擒杀噩侯驭方、扑灭噩国。&lt;/p>
 &lt;p>但2012年河南南阳夏饷铺因南水北调工程发现一处墓地，内有80余座墓葬及大批青铜器，其中不少也铸有噩侯等铭文。这是包括四代噩侯夫妇的墓葬，且为西周晚期至春秋早期的噩国贵族墓地，颠覆了“噩国灭亡于驭方叛变之战”的传统看法。&lt;/p>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202403060056271.jpg" alt="Alt Text" style="width: 600px; height: auto;">
+&lt;p style="text-align:center">（图源看展小册）&lt;/p>
 &lt;br>
 &lt;h1 id="青铜器">青铜器&lt;/h1>
 &lt;p>噩国的青铜器不仅有着以兽面“人目”、“人鼻”的奇诡纹样，艺术风格在中国青铜器历史上独树一帜绝无仅有，记录一些印象深刻的，放图↓&lt;/p>
@@ -31079,7 +32163,7 @@ loop : true,
 &lt;br>
 &lt;h2 id="噩侯驭方鼎">噩侯驭方鼎&lt;/h2>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402291946620.jpg" alt="Alt Text" style="width: 600px; height: auto;">
-&lt;p>内壁有铭文79字。其大意是周王南征角、儒，归返途中在坯地，周王与噩侯驭方行燕射之礼，整个过程宾主尽欢。周王亲赐噩侯玉五品，马四匹，矢五束，驭方感谢赞扬周王，为纪念此事铸造此鼎，万年宝用之。&lt;/p>
+&lt;p>展牌信息：内壁有铭文79字。其大意是周王南征角、儒，归返途中在坯地，周王与噩侯驭方行燕射之礼，整个过程宾主尽欢。周王亲赐噩侯玉五品，马四匹，矢五束，驭方感谢赞扬周王，为纪念此事铸造此鼎，万年宝用之。&lt;/p>
 &lt;br>
 &lt;h2 id="禹鼎">禹鼎&lt;/h2>
 &lt;img src="https://cdn.jsdelivr.net/gh/Cecilia404404/pic/muse202402291946621.jpg" alt="Alt Text" style="width: 600px; height: auto;">
@@ -31268,7 +32352,230 @@ loop : true,
 &lt;p>登顶的快感轻飘飘的——三笠·阿克曼感觉自己的身子在人间千尺坠落，随后，有人接住了她，她降落在飞翔的巨人身上。&lt;/p>
 &lt;br>
 &lt;br>
-&lt;p>——————Fin——————&lt;/p></description></item><item><title>【通行禁止】夏花尚未凋零</title><link>https://springcecilia.blog/%E9%80%9A%E8%A1%8C%E7%A6%81%E6%AD%A2%E5%A4%8F%E8%8A%B1%E5%B0%9A%E6%9C%AA%E5%87%8B%E9%9B%B6/</link><pubDate>Thu, 13 Sep 2018 17:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E9%80%9A%E8%A1%8C%E7%A6%81%E6%AD%A2%E5%A4%8F%E8%8A%B1%E5%B0%9A%E6%9C%AA%E5%87%8B%E9%9B%B6/</guid><description>&lt;p>summary：我们从未知晓电极中断时的阿方能看见什么XD&lt;/p>
+&lt;p>——————Fin——————&lt;/p></description></item><item><title>【建站2】在Hugo中发布内容（含图床使用教程）</title><link>https://springcecilia.blog/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/</link><pubDate>Wed, 01 Jan 2020 17:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/</guid><description>&lt;p>需要：git工具、VScode工具，少量&lt;a class="link" href="https://markdown.com.cn/basic-syntax/" target="_blank" rel="noopener"
+>markdown语法知识&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+  &lt;/p>
+&lt;h1 id="发布纯文字的文章">发布纯文字的文章&lt;/h1>
+&lt;br>
+&lt;h2 id="创建新文章">创建新文章&lt;/h2>
+&lt;p>导航到 Hugo 根目录，选中博客文件夹右键选中Open git bash here，运行以下代码：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">hugo&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">posts&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">my&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">first&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">post&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">md&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这将在 content/posts/ 目录下创建一个名为 &lt;a class="link" href="http://my-first-post.md/" target="_blank" rel="noopener"
+>my-first-post.md&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+的 Markdown 文件。&lt;/p>
+&lt;br>
+&lt;h2 id="编辑文章">编辑文章&lt;/h2>
+&lt;p>选中content/posts/my-first-post.md 文件右键使用VSCode打开，然后编辑内容保存。&lt;/p>
+&lt;p>Markdown 文件的开头通常包括一些元数据，比如标题、日期、标签等。&lt;/p>
+&lt;br>
+&lt;p>&lt;strong>例如：&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">--&lt;/span> &lt;span class="nx">title&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s2">&amp;#34;我的第一篇博客&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">date&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">2023&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">11&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">30&lt;/span>&lt;span class="nx">T09&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="mi">00&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="mi">00&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">00&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="mi">00&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">draft&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">tags&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;Hugo&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;博客&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">categories&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;技术&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">---&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">这是我的第一篇博客文章&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">使用&lt;/span> &lt;span class="nx">Hugo&lt;/span> &lt;span class="nx">搭建的博客系统&lt;/span>&lt;span class="err">。&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p> &lt;/p>
+&lt;br>
+&lt;br>
+&lt;h2 id="运行-hugo-本地服务器进行预览">运行 Hugo 本地服务器进行预览&lt;/h2>
+&lt;p>在git中输入以下代码：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">hugo&lt;/span> &lt;span class="nx">server&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="nx">D&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后，打开浏览器，访问 &lt;a class="link" href="http://localhost:xxxx/" target="_blank" rel="noopener"
+>http://localhost:xxxx/&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+（根据你自己的运行结果的网址）&lt;/p>
+&lt;p>能够在本地预览博客，包括新创建的文章。&lt;/p>
+&lt;p>如果预览一切正常，可以ctrl+c停止 Hugo 服务器，并输入以下代码来生成静态文件：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">hugo&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这会在博客的根目录生成一个 public/ 目录，里面包含了整个博客的静态文件。&lt;/p>
+&lt;p>你可以将这些文件托管到GitHub（见下篇教程），使其在互联网上可访问。    &lt;/p>
+&lt;br>
+&lt;h1 id="修改已经发布的-hugo-文章">修改已经发布的 Hugo 文章&lt;/h1>
+&lt;br>
+&lt;h2 id="找到文章">找到文章&lt;/h2>
+&lt;p>在 Hugo 项目的 content/posts/ 目录下找到你想修改的文章，以 .md 为扩展名格式。&lt;/p>
+&lt;br>
+&lt;h2 id="编辑文章内容">编辑文章内容&lt;/h2>
+&lt;p>使用VScode参考&lt;a class="link" href="https://markdown.com.cn/basic-syntax/" target="_blank" rel="noopener"
+>Markdown 官方教程&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+对内容进行修改。&lt;/p>
+&lt;br>
+&lt;h2 id="添加并提交修改的文件在git里输入以下代码">添加并提交修改的文件，在git里输入以下代码    &lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">git&lt;/span> &lt;span class="nx">add&lt;/span> &lt;span class="p">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">git&lt;/span> &lt;span class="nx">commit&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="nx">m&lt;/span> &lt;span class="s2">&amp;#34;这里随便填，可以注明你的修改记录&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后，再将 public/ 目录的内容部署到你的服务器上。&lt;/p>
+&lt;p>注意：输入””时要保证是英文输入法状态     &lt;/p>
+&lt;br>
+&lt;h2 id="运行以下代码在本地进行预览">运行以下代码，在本地进行预览&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">hugo&lt;/span> &lt;span class="nx">server&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="nx">D&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>打开浏览器，访问 &lt;a class="link" href="http://localhost:1313/" target="_blank" rel="noopener"
+>http://localhost:1313/&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;p>查看你的修改是否生效。在预览中确认无误后，你可以继续下一步部署。&lt;/p>
+&lt;br>
+&lt;br>
+&lt;h1 id="发布带图文章">发布带图文章&lt;/h1>
+&lt;p>如要在 Hugo 中发布有图片的文章，需要使用正确的Markdown语法来插入图片。&lt;/p>
+&lt;br>
+&lt;h2 id="准备图片">准备图片&lt;/h2>
+&lt;p>确保图片已经放置在博客文件里的 static 文件夹下。
+例如，图片 my-image.jpg放在 static/images/ 目录下。&lt;/p>
+&lt;br>
+&lt;h2 id="用-markdown-插入图片">用 Markdown 插入图片&lt;/h2>
+&lt;p>使用以下语法插入图片：&lt;/p>
+&lt;p>（注：输入下列代码两边要加英文输入法状态下的&amp;lt;&amp;gt;）
+imgsrc=&amp;quot;/img/hugo version.png&amp;quot;alt=&amp;ldquo;Alt Text&amp;quot;width=&amp;ldquo;50&amp;quot;height=&amp;ldquo;auto&amp;rdquo;&lt;/p>
+&lt;br>
+&lt;h2 id="运行-hugo-本地服务器进行预览-1">运行 Hugo 本地服务器进行预览&lt;/h2>
+&lt;p>在Git中运行以下命令：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">hugo&lt;/span> &lt;span class="nx">server&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="nx">D&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>打开浏览器，访问 &lt;a class="link" href="http://localhost:xxxx/" target="_blank" rel="noopener"
+>http://localhost:xxxx/&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;p>显示如下：&lt;/p>
+&lt;img src="https://springcecilia.blog/images/1.png" alt="Alt Text" style="width: 50px; height: auto;">
+&lt;br>
+&lt;h2 id="调整图片大小">调整图片大小&lt;/h2>
+&lt;p>如果需要设置图片的大小，可以修改代码里 width 和 height 的数值。&lt;/p>
+&lt;p>显示如下：&lt;/p>
+&lt;img src="https://springcecilia.blog/images/1.png" alt="Alt Text" style="width: 600px; height: auto;">
+&lt;p>查看修改是否生效。在预览中确认无误后，可继续下一步部署。&lt;/p>
+&lt;br>
+&lt;h1 id="使用图床picgogithubjsdelivr写带图博客">使用图床PicGo+GitHub+jsDelivr写带图博客&lt;/h1>
+&lt;br>
+&lt;p>在博客嵌入图片有两种形式：&lt;/p>
+&lt;h2 id="本地形式">本地形式&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>准备图片文件：&lt;/strong> 将图片文件放置在 Hugo 项目的 &lt;strong>&lt;code>/static&lt;/code>&lt;/strong> 文件夹中。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>编辑内容文件：&lt;/strong> 在需要插入图片的内容文件中，你可以使用 Markdown 格式或者 HTML 格式插入图片。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Markdown 格式：&lt;/strong> 如果使用 Markdown 编写内容，可以使用类似以下格式插入图片：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">替代文本&lt;/span>](&lt;span class="na">/路径/到/图片文件.jpg&lt;/span>)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">图片描述&lt;/span>](&lt;span class="na">/images/example.jpg&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这里的 &lt;strong>&lt;code>/路径/到/图片文件.jpg&lt;/code>&lt;/strong> 应该是相对于 &lt;strong>&lt;code>/static&lt;/code>&lt;/strong> 文件夹的路径。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>HTML 格式：&lt;/strong> 如果你更喜欢使用 HTML，可以使用 &lt;strong>&lt;code>&amp;lt;img&amp;gt;&lt;/code>&lt;/strong> 标签插入图片：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">img&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;/路径/到/图片文件.jpg&amp;#34;&lt;/span> &lt;span class="na">alt&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;替代文本&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>这个方法缺点是图片容易加载缓慢。&lt;/p>
+&lt;h2 id="图床cdn加速形式">图床CDN加速形式&lt;/h2>
+&lt;h3 id="图床的作用">图床的作用&lt;/h3>
+&lt;p>图床是一种用于存储和管理图片的在线服务，帮助用户将图片从本地上传到云端存储空间，生成图片链接供引用。&lt;/p>
+&lt;p>这样做的好处是：&lt;/p>
+&lt;ol>
+&lt;li>可将大量图片存储在云端网盘，节省本地存储空间。&lt;/li>
+&lt;li>提供稳定可靠的图片访问链接，可以一链接在多个网站、社交媒体或应用程序中分享。&lt;/li>
+&lt;li>减轻主服务器的压力。&lt;/li>
+&lt;/ol>
+&lt;h3 id="步骤">步骤&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>上传图片到图床&lt;/strong>：首先，你需要将图片上传到图床（例如GitHub等）。图床将为你提供一个图片的 URL。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>在 Hugo 内部引用图片&lt;/strong>：一旦图片上传到图床，就会生成URL，可在 Hugo 内部的 Markdown 文件或其他内容文件中使用该 URL 来引用图片。例如：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">图片描述&lt;/span>](&lt;span class="na">图片URL&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;strong>&lt;code>图片描述&lt;/code>&lt;/strong> 是你想要显示的图片的描述文字，&lt;strong>&lt;code>图片URL&lt;/code>&lt;/strong> 是你从图床获得的图片链接&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>这样，当 Hugo 构建网站时，它将会把图片复制到最终生成的网站目录中。&lt;/p>
+&lt;p>&lt;strong>一言以蔽之，使用图床的正确思路即：&lt;/strong>&lt;/p>
+&lt;img src="https://springcecilia.blog/images/jianzhan3.png" >
+&lt;h2 id="如何配置图床">如何配置图床&lt;/h2>
+&lt;h3 id="picgogithub参考">Picgo+GitHub参考&lt;/h3>
+&lt;p>&lt;a class="link" href="https://www.notion.so/2d16223d0c5f43fda0499fc65a88a99c?pvs=21" target="_blank" rel="noopener"
+>给博客配置图床&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;p>&lt;a class="link" href="https://zhuanlan.zhihu.com/p/553533337" target="_blank" rel="noopener"
+>2022【保姆级教程】手把手带你使用PicGo+Github搭建自己的免费图床&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;h3 id="jsdelivr加速教程参考">jsdelivr加速教程参考&lt;/h3>
+&lt;p>&lt;a class="link" href="https://zhuanlan.zhihu.com/p/350598351" target="_blank" rel="noopener"
+>https://zhuanlan.zhihu.com/p/350598351&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;h3 id="批量压缩图片的工具">批量压缩图片的工具&lt;/h3>
+&lt;p>&lt;a class="link" href="https://cn.eagle.cool/blog/post/26-best-free-image-optimization-tools-for-image-compression" target="_blank" rel="noopener"
+>最齐全！26个图片压缩工具推荐，轻松帮网站减重&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p></description></item><item><title>【通行禁止】夏花尚未凋零</title><link>https://springcecilia.blog/%E9%80%9A%E8%A1%8C%E7%A6%81%E6%AD%A2%E5%A4%8F%E8%8A%B1%E5%B0%9A%E6%9C%AA%E5%87%8B%E9%9B%B6/</link><pubDate>Thu, 13 Sep 2018 17:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E9%80%9A%E8%A1%8C%E7%A6%81%E6%AD%A2%E5%A4%8F%E8%8A%B1%E5%B0%9A%E6%9C%AA%E5%87%8B%E9%9B%B6/</guid><description>&lt;p>summary：我们从未知晓电极中断时的阿方能看见什么XD&lt;/p>
 &lt;p>—————————————————————————————————
                     &lt;/p>
 &lt;p>少年倒在细高红艳的盛夏之花下，在绿意与花影间，他瞥见那小小的少女天蓝色的裙裾，风吹动它，仿佛一面割裂的天幕，降落在原野上。&lt;/p>

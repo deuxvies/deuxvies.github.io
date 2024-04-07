@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom"><channel><title>建站记录 on Ceciliaの 小站</title><link>https://springcecilia.blog/categories/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/</link><description>Recent content in 建站记录 on Ceciliaの 小站</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 01 Jan 2020 17:34:26 +0800</lastBuildDate><atom:link href="https://springcecilia.blog/categories/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml"/><item><title>【建站2】在Hugo中发布内容（含图床使用教程）</title><link>https://springcecilia.blog/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/</link><pubDate>Wed, 01 Jan 2020 17:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/</guid><description>&lt;p>需要：git工具、VScode工具，少量&lt;a class="link" href="https://markdown.com.cn/basic-syntax/" target="_blank" rel="noopener"
+>markdown语法知识&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+  &lt;/p>
+&lt;h1 id="发布纯文字的文章">发布纯文字的文章&lt;/h1>
+&lt;br>
+&lt;h2 id="创建新文章">创建新文章&lt;/h2>
+&lt;p>导航到 Hugo 根目录，选中博客文件夹右键选中Open git bash here，运行以下代码：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">hugo&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">posts&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="nx">my&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">first&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">post&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">md&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这将在 content/posts/ 目录下创建一个名为 &lt;a class="link" href="http://my-first-post.md/" target="_blank" rel="noopener"
+>my-first-post.md&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+的 Markdown 文件。&lt;/p>
+&lt;br>
+&lt;h2 id="编辑文章">编辑文章&lt;/h2>
+&lt;p>选中content/posts/my-first-post.md 文件右键使用VSCode打开，然后编辑内容保存。&lt;/p>
+&lt;p>Markdown 文件的开头通常包括一些元数据，比如标题、日期、标签等。&lt;/p>
+&lt;br>
+&lt;p>&lt;strong>例如：&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">--&lt;/span> &lt;span class="nx">title&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s2">&amp;#34;我的第一篇博客&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">date&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">2023&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">11&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">30&lt;/span>&lt;span class="nx">T09&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="mi">00&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="mi">00&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">00&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="mi">00&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">draft&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">tags&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;Hugo&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;博客&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">categories&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;技术&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">---&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">这是我的第一篇博客文章&lt;/span>&lt;span class="err">，&lt;/span>&lt;span class="nx">使用&lt;/span> &lt;span class="nx">Hugo&lt;/span> &lt;span class="nx">搭建的博客系统&lt;/span>&lt;span class="err">。&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p> &lt;/p>
+&lt;br>
+&lt;br>
+&lt;h2 id="运行-hugo-本地服务器进行预览">运行 Hugo 本地服务器进行预览&lt;/h2>
+&lt;p>在git中输入以下代码：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">hugo&lt;/span> &lt;span class="nx">server&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="nx">D&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后，打开浏览器，访问 &lt;a class="link" href="http://localhost:xxxx/" target="_blank" rel="noopener"
+>http://localhost:xxxx/&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+（根据你自己的运行结果的网址）&lt;/p>
+&lt;p>能够在本地预览博客，包括新创建的文章。&lt;/p>
+&lt;p>如果预览一切正常，可以ctrl+c停止 Hugo 服务器，并输入以下代码来生成静态文件：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">hugo&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这会在博客的根目录生成一个 public/ 目录，里面包含了整个博客的静态文件。&lt;/p>
+&lt;p>你可以将这些文件托管到GitHub（见下篇教程），使其在互联网上可访问。    &lt;/p>
+&lt;br>
+&lt;h1 id="修改已经发布的-hugo-文章">修改已经发布的 Hugo 文章&lt;/h1>
+&lt;br>
+&lt;h2 id="找到文章">找到文章&lt;/h2>
+&lt;p>在 Hugo 项目的 content/posts/ 目录下找到你想修改的文章，以 .md 为扩展名格式。&lt;/p>
+&lt;br>
+&lt;h2 id="编辑文章内容">编辑文章内容&lt;/h2>
+&lt;p>使用VScode参考&lt;a class="link" href="https://markdown.com.cn/basic-syntax/" target="_blank" rel="noopener"
+>Markdown 官方教程&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+对内容进行修改。&lt;/p>
+&lt;br>
+&lt;h2 id="添加并提交修改的文件在git里输入以下代码">添加并提交修改的文件，在git里输入以下代码    &lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">git&lt;/span> &lt;span class="nx">add&lt;/span> &lt;span class="p">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">git&lt;/span> &lt;span class="nx">commit&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="nx">m&lt;/span> &lt;span class="s2">&amp;#34;这里随便填，可以注明你的修改记录&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后，再将 public/ 目录的内容部署到你的服务器上。&lt;/p>
+&lt;p>注意：输入””时要保证是英文输入法状态     &lt;/p>
+&lt;br>
+&lt;h2 id="运行以下代码在本地进行预览">运行以下代码，在本地进行预览&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">hugo&lt;/span> &lt;span class="nx">server&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="nx">D&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>打开浏览器，访问 &lt;a class="link" href="http://localhost:1313/" target="_blank" rel="noopener"
+>http://localhost:1313/&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;p>查看你的修改是否生效。在预览中确认无误后，你可以继续下一步部署。&lt;/p>
+&lt;br>
+&lt;br>
+&lt;h1 id="发布带图文章">发布带图文章&lt;/h1>
+&lt;p>如要在 Hugo 中发布有图片的文章，需要使用正确的Markdown语法来插入图片。&lt;/p>
+&lt;br>
+&lt;h2 id="准备图片">准备图片&lt;/h2>
+&lt;p>确保图片已经放置在博客文件里的 static 文件夹下。
+例如，图片 my-image.jpg放在 static/images/ 目录下。&lt;/p>
+&lt;br>
+&lt;h2 id="用-markdown-插入图片">用 Markdown 插入图片&lt;/h2>
+&lt;p>使用以下语法插入图片：&lt;/p>
+&lt;p>（注：输入下列代码两边要加英文输入法状态下的&amp;lt;&amp;gt;）
+imgsrc=&amp;quot;/img/hugo version.png&amp;quot;alt=&amp;ldquo;Alt Text&amp;quot;width=&amp;ldquo;50&amp;quot;height=&amp;ldquo;auto&amp;rdquo;&lt;/p>
+&lt;br>
+&lt;h2 id="运行-hugo-本地服务器进行预览-1">运行 Hugo 本地服务器进行预览&lt;/h2>
+&lt;p>在Git中运行以下命令：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">hugo&lt;/span> &lt;span class="nx">server&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="nx">D&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>打开浏览器，访问 &lt;a class="link" href="http://localhost:xxxx/" target="_blank" rel="noopener"
+>http://localhost:xxxx/&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;p>显示如下：&lt;/p>
+&lt;img src="https://springcecilia.blog/images/1.png" alt="Alt Text" style="width: 50px; height: auto;">
+&lt;br>
+&lt;h2 id="调整图片大小">调整图片大小&lt;/h2>
+&lt;p>如果需要设置图片的大小，可以修改代码里 width 和 height 的数值。&lt;/p>
+&lt;p>显示如下：&lt;/p>
+&lt;img src="https://springcecilia.blog/images/1.png" alt="Alt Text" style="width: 600px; height: auto;">
+&lt;p>查看修改是否生效。在预览中确认无误后，可继续下一步部署。&lt;/p>
+&lt;br>
+&lt;h1 id="使用图床picgogithubjsdelivr写带图博客">使用图床PicGo+GitHub+jsDelivr写带图博客&lt;/h1>
+&lt;br>
+&lt;p>在博客嵌入图片有两种形式：&lt;/p>
+&lt;h2 id="本地形式">本地形式&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>准备图片文件：&lt;/strong> 将图片文件放置在 Hugo 项目的 &lt;strong>&lt;code>/static&lt;/code>&lt;/strong> 文件夹中。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>编辑内容文件：&lt;/strong> 在需要插入图片的内容文件中，你可以使用 Markdown 格式或者 HTML 格式插入图片。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Markdown 格式：&lt;/strong> 如果使用 Markdown 编写内容，可以使用类似以下格式插入图片：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">替代文本&lt;/span>](&lt;span class="na">/路径/到/图片文件.jpg&lt;/span>)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">图片描述&lt;/span>](&lt;span class="na">/images/example.jpg&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这里的 &lt;strong>&lt;code>/路径/到/图片文件.jpg&lt;/code>&lt;/strong> 应该是相对于 &lt;strong>&lt;code>/static&lt;/code>&lt;/strong> 文件夹的路径。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>HTML 格式：&lt;/strong> 如果你更喜欢使用 HTML，可以使用 &lt;strong>&lt;code>&amp;lt;img&amp;gt;&lt;/code>&lt;/strong> 标签插入图片：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">img&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;/路径/到/图片文件.jpg&amp;#34;&lt;/span> &lt;span class="na">alt&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;替代文本&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>这个方法缺点是图片容易加载缓慢。&lt;/p>
+&lt;h2 id="图床cdn加速形式">图床CDN加速形式&lt;/h2>
+&lt;h3 id="图床的作用">图床的作用&lt;/h3>
+&lt;p>图床是一种用于存储和管理图片的在线服务，帮助用户将图片从本地上传到云端存储空间，生成图片链接供引用。&lt;/p>
+&lt;p>这样做的好处是：&lt;/p>
+&lt;ol>
+&lt;li>可将大量图片存储在云端网盘，节省本地存储空间。&lt;/li>
+&lt;li>提供稳定可靠的图片访问链接，可以一链接在多个网站、社交媒体或应用程序中分享。&lt;/li>
+&lt;li>减轻主服务器的压力。&lt;/li>
+&lt;/ol>
+&lt;h3 id="步骤">步骤&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>上传图片到图床&lt;/strong>：首先，你需要将图片上传到图床（例如GitHub等）。图床将为你提供一个图片的 URL。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>在 Hugo 内部引用图片&lt;/strong>：一旦图片上传到图床，就会生成URL，可在 Hugo 内部的 Markdown 文件或其他内容文件中使用该 URL 来引用图片。例如：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">![&lt;span class="nt">图片描述&lt;/span>](&lt;span class="na">图片URL&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>其中，&lt;strong>&lt;code>图片描述&lt;/code>&lt;/strong> 是你想要显示的图片的描述文字，&lt;strong>&lt;code>图片URL&lt;/code>&lt;/strong> 是你从图床获得的图片链接&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>这样，当 Hugo 构建网站时，它将会把图片复制到最终生成的网站目录中。&lt;/p>
+&lt;p>&lt;strong>一言以蔽之，使用图床的正确思路即：&lt;/strong>&lt;/p>
+&lt;img src="https://springcecilia.blog/images/jianzhan3.png" >
+&lt;h2 id="如何配置图床">如何配置图床&lt;/h2>
+&lt;h3 id="picgogithub参考">Picgo+GitHub参考&lt;/h3>
+&lt;p>&lt;a class="link" href="https://www.notion.so/2d16223d0c5f43fda0499fc65a88a99c?pvs=21" target="_blank" rel="noopener"
+>给博客配置图床&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;p>&lt;a class="link" href="https://zhuanlan.zhihu.com/p/553533337" target="_blank" rel="noopener"
+>2022【保姆级教程】手把手带你使用PicGo+Github搭建自己的免费图床&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;h3 id="jsdelivr加速教程参考">jsdelivr加速教程参考&lt;/h3>
+&lt;p>&lt;a class="link" href="https://zhuanlan.zhihu.com/p/350598351" target="_blank" rel="noopener"
+>https://zhuanlan.zhihu.com/p/350598351&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p>
+&lt;h3 id="批量压缩图片的工具">批量压缩图片的工具&lt;/h3>
+&lt;p>&lt;a class="link" href="https://cn.eagle.cool/blog/post/26-best-free-image-optimization-tools-for-image-compression" target="_blank" rel="noopener"
+>最齐全！26个图片压缩工具推荐，轻松帮网站减重&lt;/a>
+&lt;span style="white-space: nowrap;">&lt;svg width=".7em"
+height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
+&lt;path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+&lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+fill="currentColor">
+&lt;/svg>&lt;/span>
+&lt;/p></description></item></channel></rss>
