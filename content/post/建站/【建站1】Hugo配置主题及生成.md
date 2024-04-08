@@ -7,7 +7,6 @@ categories: 建站记录
 toc: true
 hidden: false
 comments: true
-draft: true
 license: false
 
 ---
