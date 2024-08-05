@@ -8,6 +8,7 @@ toc: true
 hidden: false
 comments: true
 license: false
+slug: hugo4
 
 ---
 

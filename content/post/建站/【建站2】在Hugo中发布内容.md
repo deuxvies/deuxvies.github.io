@@ -9,6 +9,7 @@ toc: true
 tags: 
     - 建站
 categories: 建站记录
+slug: hugo2
 license: false
 Wordcount: false
 ---

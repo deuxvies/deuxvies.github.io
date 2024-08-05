@@ -21,6 +21,8 @@ comments: true
 
 draft: false
 
+slug: DT-IF10-1
+
 password: “bg”
 password_hint: “【车票确认ing】这篇是bg/bl/gl/gb哪种类型?（输入2个小写字母）”
  

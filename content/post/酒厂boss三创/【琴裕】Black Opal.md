@@ -11,10 +11,12 @@ toc: true
 hidden: false
 comments: true
 draft: false
+slug: DT-Black Opal
 password: “bl”
 password_hint: “【车票确认ing】这篇是bg/bl/gl/gb哪种类型?（输入2个小写字母）”
 
 ---
+
 
 cp：琴酒x唐沢裕
 
