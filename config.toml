@@ -1,6 +1,6 @@
-baseURL = "https://springcecilia.blog"
+baseURL = "https://springcecilia.icu"
 languageCode = 'zh-cn'
-title = 'Ceciliaの 小站'
+title = '同人备用粮仓'
 theme = "hugo-theme-stack"
 summaryLength = 20
 paginate = 10
@@ -127,7 +127,7 @@ url = "https://peing.net/zh-CN/91e8000a0af399"
 [[menu.social]]
 identifier = "rss"
 name = "rss订阅"
-url = "https://springcecilia.blog/index.xml"
+url = "https://springcecilia.icu/index.xml"
 
   [menu.social.params]
   icon = "rss"
