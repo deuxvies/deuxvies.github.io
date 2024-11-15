@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom"><channel><title>建站记录 on Ceciliaの 小站</title><link>https://springcecilia.blog/categories/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/</link><description>Recent content in 建站记录 on Ceciliaの 小站</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 01 Jan 2020 17:34:26 +0800</lastBuildDate><atom:link href="https://springcecilia.blog/categories/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml"/><item><title>【建站1】Hugo配置主题及生成</title><link>https://springcecilia.blog/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/</link><pubDate>Wed, 01 Jan 2020 17:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/</guid><description>&lt;br>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom"><channel><title>建站记录 on 同人备用粮仓</title><link>https://springcecilia.icu/categories/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/</link><description>Recent content in 建站记录 on 同人备用粮仓</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 01 Jan 2020 17:34:26 +0800</lastBuildDate><atom:link href="https://springcecilia.icu/categories/%E5%BB%BA%E7%AB%99%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml"/><item><title>【建站1】Hugo配置主题及生成</title><link>https://springcecilia.icu/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/</link><pubDate>Wed, 01 Jan 2020 17:34:26 +0800</pubDate><guid>https://springcecilia.icu/%E5%BB%BA%E7%AB%991Hugo%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%94%9F%E6%88%90/</guid><description>&lt;br>
 &lt;p>&lt;a class="link" href="https://cloud.tencent.com/developer/article/1917500" target="_blank" rel="noopener"
 >hugo和其他各类博客类型了解&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
@@ -28,7 +28,7 @@ fill="currentColor">
 &lt;hr>
 &lt;p>先放个建站流程图，弄清楚一个静态博客搭建需要做什么：&lt;/p>
 &lt;p>hugo+github部署流程如下：&lt;/p>
-&lt;img src="https://springcecilia.blog/images/jianzhan1.png" >
+&lt;img src="https://springcecilia.icu/images/jianzhan1.png" >
 &lt;h1 id="前期准备">前期准备&lt;/h1>
 &lt;h2 id="安装-git">安装 Git&lt;/h2>
 &lt;br>
@@ -85,22 +85,22 @@ fill="currentColor">
 &lt;p>1）获取 Hugo 的执行文件路径：  &lt;/p>
 &lt;p>用wins+E快捷键打开 File Explorer（文件资源管理器），找到你解压 Hugo ZIP 文件的地方，找到 hugo.exe 文件；&lt;/p>
 &lt;p>鼠标点击上方的栏目，变成光标即可看到hugo.exe 的完整路径，比如 D:\Downloads\Hugo。&lt;/p>
-&lt;img src="https://springcecilia.blog/images/Untitled.png" alt="Alt Text" style="width: 600px; height: auto;">
-&lt;img src="https://springcecilia.blog/images/Untitled 1.png" alt="Alt Text" style="width: 600px; height: auto;">
+&lt;img src="https://springcecilia.icu/images/Untitled.png" alt="Alt Text" style="width: 600px; height: auto;">
+&lt;img src="https://springcecilia.icu/images/Untitled 1.png" alt="Alt Text" style="width: 600px; height: auto;">
 &lt;br>
 &lt;br>
 &lt;p>2）打开系统环境变量设置：  &lt;/p>
 &lt;p>右键点击计算机图标，选择 &amp;ldquo;属性&amp;rdquo;。&lt;/p>
-&lt;img src="https://springcecilia.blog/images/Untitled 2.png" alt="Alt Text" style="width: 600px; height: auto;">
+&lt;img src="https://springcecilia.icu/images/Untitled 2.png" alt="Alt Text" style="width: 600px; height: auto;">
 &lt;p>在面板中找到 &amp;ldquo;高级系统设置&amp;rdquo;。&lt;/p>
-&lt;img src="https://springcecilia.blog/images/Untitled 3.png" alt="Alt Text" style="width: 600px; height: auto;">
+&lt;img src="https://springcecilia.icu/images/Untitled 3.png" alt="Alt Text" style="width: 600px; height: auto;">
 &lt;p>在打开的窗口中，点击 &amp;ldquo;环境变量&amp;rdquo; 按钮。&lt;/p>
-&lt;img src="https://springcecilia.blog/images/Untitled 4.png" alt="Alt Text" style="width: 600px; height: auto;">
+&lt;img src="https://springcecilia.icu/images/Untitled 4.png" alt="Alt Text" style="width: 600px; height: auto;">
 &lt;br>
 &lt;br>
 &lt;p>3）编辑系统 PATH 变量：  &lt;/p>
 &lt;p>在环境变量的面板中，找到下方的 &amp;ldquo;系统变量&amp;rdquo; 部分，选中 &amp;ldquo;Path&amp;rdquo; 变量点击 &amp;ldquo;编辑&amp;rdquo; 按钮。&lt;/p>
-&lt;img src="https://springcecilia.blog/images/Untitled 5.png" alt="Alt Text" style="width: 600px; height: auto;">
+&lt;img src="https://springcecilia.icu/images/Untitled 5.png" alt="Alt Text" style="width: 600px; height: auto;">
 &lt;br>
 &lt;br>
 &lt;p>4）添加 Hugo 可执行文件路径：  &lt;/p>
@@ -112,9 +112,9 @@ fill="currentColor">
 &lt;p>5）验证是否添加成功：  &lt;/p>
 &lt;p>在Windows 操作系统中，在任务栏的搜索框中，键入
 &amp;ldquo;cmd&amp;rdquo; 或 &amp;ldquo;命令提示符&amp;rdquo;。
-&lt;img src="https://springcecilia.blog/images/Untitled 6.png" alt="Alt Text" style="width: 600px; height: auto;">
+&lt;img src="https://springcecilia.icu/images/Untitled 6.png" alt="Alt Text" style="width: 600px; height: auto;">
 或者是按下快捷键 Win + R ，打开运行面板，在里面输入cmd就可以弹出命令提示符的面板
-&lt;img src="https://springcecilia.blog/images/Untitled 7.png" alt="Alt Text" style="width: 600px; height: auto;">&lt;/p>
+&lt;img src="https://springcecilia.icu/images/Untitled 7.png" alt="Alt Text" style="width: 600px; height: auto;">&lt;/p>
 &lt;p>在命令提示符的面板输入 hugo version ，然后按回车。
 如果安装成功，你应该能够看到 Hugo 的版本信息，表示安装成功。&lt;/p>
 &lt;br>
@@ -154,7 +154,7 @@ fill="currentColor">
 &lt;h1 id="2创建博客">2.创建博客&lt;/h1>
 &lt;h2 id="打开git-bash">打开Git Bash&lt;/h2>
 &lt;p>新建一个你想要放博客内容和修改样式的文件，右键单击并选择 &amp;ldquo;Git Bash Here&amp;rdquo;。  
-&lt;img src="https://springcecilia.blog/images/Untitled 8.png" alt="Alt Text" style="width: 600px; height: auto;">&lt;/p>
+&lt;img src="https://springcecilia.icu/images/Untitled 8.png" alt="Alt Text" style="width: 600px; height: auto;">&lt;/p>
 &lt;br>
 &lt;ol>
 &lt;li>
@@ -219,8 +219,8 @@ fill="currentColor">
 &lt;p>方法2：SSH密钥法链接（坑： .gitmodules 文件中的行尾符 (line endings) 与系统默认设置不一致，可能导致在 Windows 系统上的一些问题，所以也不推荐！！）&lt;/p>
 &lt;br>
 &lt;p>&lt;strong>（所以推荐）方法3：直接点击绿色code按键下方的Download Zip，下载github仓库zip压缩包到你的博客文件夹的themes文件夹里。&lt;/strong>&lt;/p>
-&lt;img src="https://springcecilia.blog/images/Untitled 9.png" alt="Alt Text" style="width: 600px; height: auto;">
-&lt;img src="https://springcecilia.blog/images/Untitled 10.png" alt="Alt Text" style="width: 600px; height: auto;">
+&lt;img src="https://springcecilia.icu/images/Untitled 9.png" alt="Alt Text" style="width: 600px; height: auto;">
+&lt;img src="https://springcecilia.icu/images/Untitled 10.png" alt="Alt Text" style="width: 600px; height: auto;">
 &lt;br>
 &lt;h2 id="在博客目录中添加主题">在博客目录中添加主题&lt;/h2>
 &lt;p>将下载的 ZIP 文件在博客文件夹的themes 文件夹中右键解压&lt;/p>
@@ -259,7 +259,7 @@ fill="currentColor">
 &lt;p>在博客根目录运行 Hugo，右键点击你的博客根目录（博客文件），选择git bash here，在git里输入以下代码：&lt;/p>
 &lt;pre tabindex="0">&lt;code>hugo server -D
 &lt;/code>&lt;/pre>&lt;p>如果成功会显示如下：  
-&lt;img src="https://springcecilia.blog/images/Untitled 11.png" alt="Alt Text" style="width: 600px; height: auto;">&lt;/p>
+&lt;img src="https://springcecilia.icu/images/Untitled 11.png" alt="Alt Text" style="width: 600px; height: auto;">&lt;/p>
 &lt;p>比如，如上图所示，你可以在 &lt;a class="link" href="http://localhost:5090/%EF%BC%8C%E8%BF%99%E6%A0%B7%E5%8F%AF%E7%A1%AE%E4%BF%9D%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88%E3%80%82" target="_blank" rel="noopener"
 >http://localhost:5090/&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
@@ -269,7 +269,7 @@ height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 fill="currentColor">
 &lt;/svg>&lt;/span>
 中预览网站，查看是否成功应用了主题的配置和样式。（&lt;strong>http://localhost:后面的数字根据你自己运行的结果而改变&lt;/strong>）&lt;/p>
-&lt;br></description></item><item><title>【建站2】在Hugo中发布内容（含图床使用教程）</title><link>https://springcecilia.blog/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/</link><pubDate>Wed, 01 Jan 2020 17:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/</guid><description>&lt;p>需要：git工具、VScode工具，少量&lt;a class="link" href="https://markdown.com.cn/basic-syntax/" target="_blank" rel="noopener"
+&lt;br></description></item><item><title>【建站2】在Hugo中发布内容（含图床使用教程）</title><link>https://springcecilia.icu/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/</link><pubDate>Wed, 01 Jan 2020 17:34:26 +0800</pubDate><guid>https://springcecilia.icu/%E5%BB%BA%E7%AB%992%E5%9C%A8Hugo%E4%B8%AD%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9/</guid><description>&lt;p>需要：git工具、VScode工具，少量&lt;a class="link" href="https://markdown.com.cn/basic-syntax/" target="_blank" rel="noopener"
 >markdown语法知识&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
 height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
@@ -394,12 +394,12 @@ fill="currentColor">
 &lt;/svg>&lt;/span>
 &lt;/p>
 &lt;p>显示如下：&lt;/p>
-&lt;img src="https://springcecilia.blog/images/1.png" alt="Alt Text" style="width: 50px; height: auto;">
+&lt;img src="https://springcecilia.icu/images/1.png" alt="Alt Text" style="width: 50px; height: auto;">
 &lt;br>
 &lt;h2 id="调整图片大小">调整图片大小&lt;/h2>
 &lt;p>如果需要设置图片的大小，可以修改代码里 width 和 height 的数值。&lt;/p>
 &lt;p>显示如下：&lt;/p>
-&lt;img src="https://springcecilia.blog/images/1.png" alt="Alt Text" style="width: 600px; height: auto;">
+&lt;img src="https://springcecilia.icu/images/1.png" alt="Alt Text" style="width: 600px; height: auto;">
 &lt;p>查看修改是否生效。在预览中确认无误后，可继续下一步部署。&lt;/p>
 &lt;br>
 &lt;h1 id="使用图床picgogithubjsdelivr写带图博客">使用图床PicGo+GitHub+jsDelivr写带图博客&lt;/h1>
@@ -452,7 +452,7 @@ fill="currentColor">
 &lt;/ol>
 &lt;p>这样，当 Hugo 构建网站时，它将会把图片复制到最终生成的网站目录中。&lt;/p>
 &lt;p>&lt;strong>一言以蔽之，使用图床的正确思路即：&lt;/strong>&lt;/p>
-&lt;img src="https://springcecilia.blog/images/jianzhan3.png" >
+&lt;img src="https://springcecilia.icu/images/jianzhan3.png" >
 &lt;h2 id="如何配置图床">如何配置图床&lt;/h2>
 &lt;h3 id="picgogithub参考">Picgo+GitHub参考&lt;/h3>
 &lt;p>&lt;a class="link" href="https://www.notion.so/2d16223d0c5f43fda0499fc65a88a99c?pvs=21" target="_blank" rel="noopener"
@@ -492,7 +492,7 @@ height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p></description></item><item><title>【建站3】使用SSH密钥法将Hugo上传至Github</title><link>https://springcecilia.blog/%E5%BB%BA%E7%AB%993%E4%BD%BF%E7%94%A8SSH%E5%AF%86%E9%92%A5%E6%B3%95%E5%B0%86Hugo%E4%B8%8A%E4%BC%A0%E8%87%B3Github/</link><pubDate>Wed, 01 Jan 2020 17:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E5%BB%BA%E7%AB%993%E4%BD%BF%E7%94%A8SSH%E5%AF%86%E9%92%A5%E6%B3%95%E5%B0%86Hugo%E4%B8%8A%E4%BC%A0%E8%87%B3Github/</guid><description>&lt;br>
+&lt;/p></description></item><item><title>【建站3】使用SSH密钥法将Hugo上传至Github</title><link>https://springcecilia.icu/%E5%BB%BA%E7%AB%993%E4%BD%BF%E7%94%A8SSH%E5%AF%86%E9%92%A5%E6%B3%95%E5%B0%86Hugo%E4%B8%8A%E4%BC%A0%E8%87%B3Github/</link><pubDate>Wed, 01 Jan 2020 17:34:26 +0800</pubDate><guid>https://springcecilia.icu/%E5%BB%BA%E7%AB%993%E4%BD%BF%E7%94%A8SSH%E5%AF%86%E9%92%A5%E6%B3%95%E5%B0%86Hugo%E4%B8%8A%E4%BC%A0%E8%87%B3Github/</guid><description>&lt;br>
 &lt;p>需要：能访问GitHub的条件&lt;/p>
 &lt;br>
 &lt;h1 id="前期准备">前期准备&lt;/h1>
@@ -705,7 +705,7 @@ fill="currentColor">
 &lt;/svg>&lt;/span>
 ：这个是vercel+github托管，用GitHub Desktop推送，实在搞不懂上述教程的可以试试这个方法。&lt;/p>
 &lt;p>hugo+github+vercel部署流程如下：&lt;/p>
-&lt;img src="https://springcecilia.blog/images/jianzhan2.png" >
+&lt;img src="https://springcecilia.icu/images/jianzhan2.png" >
 &lt;p>&lt;a class="link" href="https://blog.csdn.net/ccviolett/article/details/124815319" target="_blank" rel="noopener"
 >Hugo 的使用&amp;amp;配置中有那些技巧与坑？&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
@@ -724,7 +724,7 @@ height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 fill="currentColor">
 &lt;/svg>&lt;/span>
 &lt;/p>
-&lt;br></description></item><item><title>【建站4】推送到GitHub Actions</title><link>https://springcecilia.blog/%E5%BB%BA%E7%AB%994%E6%8E%A8%E9%80%81%E5%88%B0GitHub-Actions/</link><pubDate>Wed, 01 Jan 2020 17:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E5%BB%BA%E7%AB%994%E6%8E%A8%E9%80%81%E5%88%B0GitHub-Actions/</guid><description>&lt;h1 id="基本介绍">基本介绍&lt;/h1>
+&lt;br></description></item><item><title>【建站4】推送到GitHub Actions</title><link>https://springcecilia.icu/%E5%BB%BA%E7%AB%994%E6%8E%A8%E9%80%81%E5%88%B0GitHub-Actions/</link><pubDate>Wed, 01 Jan 2020 17:34:26 +0800</pubDate><guid>https://springcecilia.icu/%E5%BB%BA%E7%AB%994%E6%8E%A8%E9%80%81%E5%88%B0GitHub-Actions/</guid><description>&lt;h1 id="基本介绍">基本介绍&lt;/h1>
 &lt;p>GitHub Actions是GitHub提供的一项自动化工作流服务。&lt;/p>
 &lt;p>使用 Git 推送到 GitHub 仓库通常需要手动运行 Hugo 构建命令，将生成的文件添加到 Git 仓库，并推送到 GitHub，&lt;/p>
 &lt;p>相比之下，GitHub Actions 提供了自动化的方式来构建和部署 Hugo 网站。在每次推送代码到 GitHub 仓库时，GitHub Actions 可以自动触发构建过程，并将生成的静态文件部署到指定的目标，如 GitHub Pages。&lt;/p>
@@ -861,8 +861,8 @@ fill="currentColor">
 &lt;br>
 &lt;h2 id="查看-github-actions-运行">查看 GitHub Actions 运行&lt;/h2>
 &lt;p>访问 GitHub 仓库页面，进入 &amp;ldquo;Actions&amp;rdquo; 标签页，能够看到 GitHub Actions 的运行。如果配置正确，工作流程应该会触发并开始运行。&lt;/p>
-&lt;img src="https://springcecilia.blog/images/jianzhan4.png" >
-&lt;br></description></item><item><title>【建站5】域名购买+DNS解析</title><link>https://springcecilia.blog/%E5%BB%BA%E7%AB%995%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0-DNS%E8%A7%A3%E6%9E%90/</link><pubDate>Wed, 01 Jan 2020 17:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E5%BB%BA%E7%AB%995%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0-DNS%E8%A7%A3%E6%9E%90/</guid><description>&lt;h1 id="域名购买与配置">域名购买与配置&lt;/h1>
+&lt;img src="https://springcecilia.icu/images/jianzhan4.png" >
+&lt;br></description></item><item><title>【建站5】域名购买+DNS解析</title><link>https://springcecilia.icu/%E5%BB%BA%E7%AB%995%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0-DNS%E8%A7%A3%E6%9E%90/</link><pubDate>Wed, 01 Jan 2020 17:34:26 +0800</pubDate><guid>https://springcecilia.icu/%E5%BB%BA%E7%AB%995%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0-DNS%E8%A7%A3%E6%9E%90/</guid><description>&lt;h1 id="域名购买与配置">域名购买与配置&lt;/h1>
 &lt;br>
 &lt;p>&lt;strong>域名对比，我选的是namesilo：&lt;/strong>&lt;/p>
 &lt;p>&lt;a class="link" href="https://shannote.com/archives/buy-foreign-domains.html" target="_blank" rel="noopener"
@@ -1107,7 +1107,7 @@ height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 fill="currentColor">
 &lt;/svg>&lt;/span>
 &lt;/p>
-&lt;br></description></item><item><title>【建站6】装修博客记录</title><link>https://springcecilia.blog/%E5%BB%BA%E7%AB%996%E8%A3%85%E4%BF%AE%E5%8D%9A%E5%AE%A2/</link><pubDate>Wed, 01 Jan 2020 17:34:26 +0800</pubDate><guid>https://springcecilia.blog/%E5%BB%BA%E7%AB%996%E8%A3%85%E4%BF%AE%E5%8D%9A%E5%AE%A2/</guid><description>&lt;br>
+&lt;br></description></item><item><title>【建站6】装修博客记录</title><link>https://springcecilia.icu/%E5%BB%BA%E7%AB%996%E8%A3%85%E4%BF%AE%E5%8D%9A%E5%AE%A2/</link><pubDate>Wed, 01 Jan 2020 17:34:26 +0800</pubDate><guid>https://springcecilia.icu/%E5%BB%BA%E7%AB%996%E8%A3%85%E4%BF%AE%E5%8D%9A%E5%AE%A2/</guid><description>&lt;br>
 &lt;p>注：博主使用的主题为stack。&lt;/p>
 &lt;p>官方文档参考：
 &lt;a class="link" href="https://stack.jimmycai.com/guide/getting-started" target="_blank" rel="noopener"
@@ -1496,7 +1496,7 @@ fill="currentColor">
 &lt;/blockquote>
 &lt;br>
 &lt;h2 id="插入图片">插入图片&lt;/h2>
-&lt;p>&lt;img src="https://springcecilia.blog/images/1.png"
+&lt;p>&lt;img src="https://springcecilia.icu/images/1.png"
 loading="lazy"
 alt="图1"
 >
@@ -1505,7 +1505,7 @@ alt="图1"
 &lt;/p>
 &lt;/p>
 &lt;p>调整大小：&lt;/p>
-&lt;img src="https://springcecilia.blog/images/1.png" alt="Alt Text" style="width: 100px; height: auto;">
+&lt;img src="https://springcecilia.icu/images/1.png" alt="Alt Text" style="width: 100px; height: auto;">
 &lt;h2 id="轮播图功能">轮播图功能&lt;/h2>
 &lt;p>前提是准备好图床。&lt;/p>
 &lt;p>短代码教程参考：&lt;/p>
@@ -1551,7 +1551,7 @@ Hermione Lee, Financial Times&lt;/div>
 &lt;div class="db-card-post">&lt;img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://neodb.social/m/item/doubanmovie/2023/08/02/c941e41c-5691-484f-be7b-d4f86ea2523b.jpg">&lt;/div>
 &lt;div class="db-card-content">
 &lt;div class="db-card-title">&lt;a href="https://neodb.social/tv/season/1UMEf2NuQxnWLWDyso8Pwm" class="cute" target="_blank" rel="noreferrer">戴洛奇小镇 第一季&lt;/a>&lt;/div>
-&lt;div class="rating">&lt;span class="allstardark">&lt;span class="allstarlight" style="width:89%">&lt;/span>&lt;/span>&lt;span class="rating_nums">8.9&lt;/span>&lt;/div>
+&lt;div class="rating">&lt;span class="allstardark">&lt;span class="allstarlight" style="width:90%">&lt;/span>&lt;/span>&lt;span class="rating_nums">9&lt;/span>&lt;/div>
 &lt;div class="db-card-abstract">《戴洛奇小镇》（Deadloch）是由亚马逊出品的澳大利亚犯罪悬疑黑色喜剧电视连续剧，由凯特·麦卡特尼和凯特·麦克伦南创作。
 《戴洛奇小镇》以塔斯马尼亚州的一个虚构小镇 Deadloch 为背景，做事严谨的当地高级警长Dulcie Collins正应妻子要求放慢工作节奏，以平衡生活。这时，一具男尸被冲上沙滩，Dulcie又被推回侦探工作中。高级调查员Eddie Redcliffe，从达尔文空降支援这起案件，但她粗鲁不羁的破案行事风格引起了Dulcie的不满。随着死亡人数的不断增多，她们必须化解分歧和矛盾，联手侦破这起目标为顺直白男的连环杀人案。&lt;/div>
 &lt;/div>
@@ -1642,7 +1642,7 @@ fill="currentColor">
 &lt;br>
 &lt;h2 id="添加waline评论">添加Waline评论&lt;/h2>
 &lt;p>参考：&lt;/p>
-&lt;p>&lt;a class="link" href="https://waline.js.org/guide/get-started/" target="_blank" rel="noopener"
+&lt;p>先参考&lt;a class="link" href="https://waline.js.org/guide/get-started/" target="_blank" rel="noopener"
 >Waline官方文档&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
 height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
@@ -1650,7 +1650,7 @@ height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 &lt;path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
 fill="currentColor">
 &lt;/svg>&lt;/span>
-&lt;/p>
+把LeanCloud 设置好。&lt;/p>
 &lt;p>&lt;a class="link" href="https://naturaleki.one/post/loadinghugo%E8%A3%85%E4%BF%AE%E6%97%A5%E5%BF%9702/" target="_blank" rel="noopener"
 >天堂错误文件-Loading hugo 装修日志 02&lt;/a>
 &lt;span style="white-space: nowrap;">&lt;svg width=".7em"
@@ -1669,7 +1669,151 @@ height=".7em" viewBox="0 0 21 21" xmlns="https://www.w3.org/2000/svg">
 fill="currentColor">
 &lt;/svg>&lt;/span>
 &lt;/p>
-&lt;p>结果：因vercel被墙需要额外解析dns，不魔法好像加载不出来，算了就这样吧。&lt;/p>
+&lt;p>在themes\hugo-theme-stack\config.yaml里修改代码：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">comments&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">enabled&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">provider&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">waline&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">disqusjs&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">shortname&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">apiUrl&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">apiKey&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">admin&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">adminLabel&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">utterances&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">repo&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">issueTerm&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">pathname&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">label&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">remark42&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">host&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">site&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">locale&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">vssue&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">platform&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">owner&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">repo&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">clientId&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">clientSecret&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">autoCreateIssue&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="err">#&lt;/span> &lt;span class="nx">Waline&lt;/span> &lt;span class="nx">client&lt;/span> &lt;span class="nx">configuration&lt;/span> &lt;span class="nx">see&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">https&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="c1">//waline.js.org/en/reference/client.html
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">waline&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">serverURL&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">你的comment域名&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">lang&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">visitor&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">avatar&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">monsterid&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">requiredMeta&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s1">&amp;#39;mail&amp;#39;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">el&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;#waline&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">reaction&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">false&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">emoji&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="nx">https&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="c1">//cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="nx">https&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="c1">//cdn.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan/
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">reaction&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">-&lt;/span> &lt;span class="nx">https&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="c1">//cdn.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan/017.png
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="nx">https&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="c1">//cdn.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan/029.png
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="nx">https&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="c1">//cdn.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan/026.png
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="nx">https&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="c1">//cdn.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan/008.png
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="o">-&lt;/span> &lt;span class="nx">https&lt;/span>&lt;span class="o">:&lt;/span>&lt;span class="c1">//cdn.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan/035.png
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">locale&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">admin&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">博主&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">placeholder&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="o">|&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">欢迎评论&lt;/span>&lt;span class="o">~&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">开魔法可食用小豆泥和blobcat表情包&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">左下第五个放大镜按键为评论预览功能&lt;/span>&lt;span class="err">（&lt;/span>&lt;span class="nx">可显示表情最终效果&lt;/span>&lt;span class="err">）&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">填写邮箱可收到博主的回复通知&lt;/span>&lt;span class="o">~&lt;/span>&lt;span class="nx">您的邮箱信息不会被公开&lt;/span>&lt;span class="err">。&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在layouts\partials\comments\provider里建立waline.html，添加代码：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">script&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#39;//unpkg.com/@waline/client@v2/dist/waline.js&amp;#39;&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">link&lt;/span> &lt;span class="na">href&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#39;//unpkg.com/@waline/client@v2/dist/waline.css&amp;#39;&lt;/span> &lt;span class="na">rel&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#39;stylesheet&amp;#39;&lt;/span>&lt;span class="p">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">id&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;waline&amp;#34;&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;waline-container&amp;#34;&lt;/span>&lt;span class="p">&amp;gt;&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">style&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">:&lt;/span>&lt;span class="nx">root&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">theme&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="mi">7&lt;/span>&lt;span class="nx">f6c46&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="cm">/*修改主题色，提交按钮*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">active&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="nx">f7b99a&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="cm">/*修改鼠标移到提交按钮上的颜色*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">badge&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="mi">7&lt;/span>&lt;span class="nx">f6c46&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="cm">/*修改博主徽章色*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">reaction&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="mi">7&lt;/span>&lt;span class="nx">f6c46&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">dark&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">grey&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="mi">020826&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="cm">/*修改ID颜色*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">bgcolor&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="nx">ffffff&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">bgcolor&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">light&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="nx">ffffff&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">border&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="mi">7&lt;/span>&lt;span class="nx">f6c46&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">text&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="mi">020826&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="cm">/* 修改亮色模式下文字颜色 */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/*夜间模式*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">:&lt;/span>&lt;span class="nx">root&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">data&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">scheme&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;dark&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">theme&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="nx">fafaf8&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">white&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="mi">020826&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="cm">/*修改按键字体颜色*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">active&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="nx">e6e5ab&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">light&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">grey&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="nx">ffffff&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">dark&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">grey&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="nx">ffffff&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="cm">/*修改ID颜色*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">badge&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="nx">ffffff&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="nx">important&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">text&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="nx">ffffff&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="nx">important&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="cm">/* 修改暗色模式下文字颜色 */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/* 布局颜色 */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">text&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="nx">ffffff&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">bgcolor&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="nx">A475C&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">bgcolor&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">light&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="nx">A475C&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="cm">/*修改选中文本颜色*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">border&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="nx">ffffff&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="nx">important&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">disable&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">bgcolor&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="nx">fdfdfd&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="nx">important&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">disable&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="mi">020826&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/* 特殊颜色 */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">bq&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="nx">e4e4e4&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="cm">/*修改quote颜色*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="cm">/* 其他颜色 */&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">info&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">bgcolor&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="nx">ffffff&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">info&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="err">#&lt;/span>&lt;span class="nx">ffffff&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">container&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">background&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kd">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="nx">card&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">background&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">border&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">radius&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kd">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="nx">card&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">border&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">radius&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">box&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">shadow&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kd">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="nx">shadow&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">l1&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">padding&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kd">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="nx">card&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">padding&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">--&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">font&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">size&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kd">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="nx">article&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">font&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">size&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="nx">waline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">container&lt;/span> &lt;span class="p">.&lt;/span>&lt;span class="nx">wl&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">count&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">color&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kd">var&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="nx">card&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">text&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">color&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">main&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">style&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{{&lt;/span>&lt;span class="o">-&lt;/span> &lt;span class="kd">with&lt;/span> &lt;span class="p">.&lt;/span>&lt;span class="nx">Site&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">Params&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">comments&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">waline&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{{&lt;/span>&lt;span class="o">-&lt;/span> &lt;span class="nx">$config&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="nx">dict&lt;/span> &lt;span class="s2">&amp;#34;el&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;#waline&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;dark&amp;#34;&lt;/span> &lt;span class="sb">`html[data-scheme=&amp;#34;dark&amp;#34;]`&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{{&lt;/span>&lt;span class="o">-&lt;/span> &lt;span class="nx">$replaceKeys&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="nx">dict&lt;/span> &lt;span class="s2">&amp;#34;serverurl&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;serverURL&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;requiredmeta&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;requiredMeta&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;wordlimit&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;wordLimit&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;pagesize&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;pageSize&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;imageuploader&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;imageUploader&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;texrenderer&amp;#34;&lt;/span> &lt;span class="s2">&amp;#34;texRenderer&amp;#34;&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{{&lt;/span>&lt;span class="o">-&lt;/span> &lt;span class="nx">range&lt;/span> &lt;span class="nx">$key&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">$val&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="p">.&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{{&lt;/span>&lt;span class="o">-&lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="nx">ne&lt;/span> &lt;span class="nx">$val&lt;/span> &lt;span class="nx">nil&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{{&lt;/span>&lt;span class="o">-&lt;/span> &lt;span class="nx">$replaceKey&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="nx">index&lt;/span> &lt;span class="nx">$replaceKeys&lt;/span> &lt;span class="nx">$key&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{{&lt;/span>&lt;span class="o">-&lt;/span> &lt;span class="nx">$k&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="k">default&lt;/span> &lt;span class="nx">$key&lt;/span> &lt;span class="nx">$replaceKey&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{{&lt;/span>&lt;span class="o">-&lt;/span> &lt;span class="nx">$config&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">merge&lt;/span> &lt;span class="nx">$config&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">dict&lt;/span> &lt;span class="nx">$k&lt;/span> &lt;span class="nx">$val&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{{&lt;/span>&lt;span class="o">-&lt;/span> &lt;span class="nx">end&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{{&lt;/span>&lt;span class="o">-&lt;/span> &lt;span class="nx">end&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">/// Waline client configuration see: https://waline.js.org/en/reference/client.html
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">Waline&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">init&lt;/span>&lt;span class="p">({{&lt;/span> &lt;span class="nx">$config&lt;/span> &lt;span class="o">|&lt;/span> &lt;span class="nx">jsonify&lt;/span> &lt;span class="o">|&lt;/span> &lt;span class="nx">safeJS&lt;/span> &lt;span class="p">}});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">script&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{{&lt;/span>&lt;span class="o">-&lt;/span> &lt;span class="nx">end&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在assets\scss\custom.scss里添加代码：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//WALINE
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nx">body&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="nx">wl&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">content&lt;/span> &lt;span class="p">.&lt;/span>&lt;span class="nx">vemoji&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">.&lt;/span>&lt;span class="nx">wl&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">content&lt;/span> &lt;span class="p">.&lt;/span>&lt;span class="nx">wl&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">emoji&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">display&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">inline&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">block&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">vertical&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nx">align&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">baseline&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">height&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mf">2.35&lt;/span>&lt;span class="nx">em&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">//调整表情包大小
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">margin&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mf">0.125&lt;/span>&lt;span class="nx">em&lt;/span> &lt;span class="mf">0.25&lt;/span>&lt;span class="nx">em&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>结果：因vercel被墙需要额外解析dns，不魔法好像加载不出来，算了就这样吧。&lt;/p>
 &lt;br>
 &lt;h2 id="添加arititalk说说界面">添加Arititalk说说界面&lt;/h2>
 &lt;p>有些代餐诗不打算单独在博客里弄成文章发，所以给博客添加一个类似空间说说的分区。&lt;/p>
