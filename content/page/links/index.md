@@ -135,6 +135,98 @@ links:
     description: 外语诗歌搜索2
     website: https://allpoetry.com/
 
+  - title: OldTimeMap
+    description: 时间轴上的世界地图
+    website: https://www.oldmapsonline.org/zh#position=3/40.55/-74.46
+
+  - title: 국립중앙도서관
+    description: 韩国古典综合
+    website: https://www.nl.go.kr/korcis/index.do
+
+  - title: Lezhin Comics
+    description: 韩文漫画租借网站
+    website: https://www.lezhin.com/ko
+
+  - title: 리디
+    description: 韩文漫画/小说租借网站
+    website: https://ridibooks.com/webtoon/recommendation
+
+  - title: 교보문고
+    description: 韩国最大的电子书平台
+    website: https://www.kyobobook.co.kr/
+
+  - title: Digital library of korean literature
+    description: 台译韩国文学
+    website: https://lti.overdrive.com/
+
+  - title: Abebooks
+    description: 英语二手书海淘平台
+    website: https://www.abebooks.com/
+
+  - title: AfricanbooksCollective
+    description: 非洲文学相关书籍汇总
+    website: https://www.africanbookscollective.com/
+
+  - title: Jstor
+    description: 外文文献检索
+    website: https://www.jstor.org/
+
+  - title: 中国民间故事全集
+    description: 中国民间故事全集(全40集打包)
+    website: http://mydbfx.com/?p=1256
+
+  - title: INK印刻文學
+    description: 杂志
+    website: https://www.inksudu.com.tw/front/bin/ptlist.phtml?Category=226049
+
+  - title: 微批
+    description: 书评网站
+    website: https://paratext.hk/
+
+  - title: MPlus 云閱讀
+    description: 影樂書年代誌
+    website: https://www.mplus.com.tw/
+
+  - title: Granta
+    description: The Home of New Writing
+    website: https://granta.com/
+
+  - title: Ndbooks
+    description: New Directions Publishing
+    website: https://www.ndbooks.com/
+
+  - title: The White Review 
+    description: An arts and literature magazine
+    website: https://www.thewhitereview.org/
+
+  - title: The White Review 
+    description: An arts and literature magazine
+    website: https://www.thewhitereview.org/
+
+  - title: Books, Arts & Culture 
+    description: Asian review of books
+    website: https://asianreviewofbooks.com/content/
+
+  - title: 九歌出版文學誌
+    description: 杂志
+    website: https://www.chiuko.com.tw/
+
+  - title: 逗點文創結社
+    description: 杂志
+    website: https://www.commabooks.com.tw/
+
+  - title: Openbook閱讀誌
+    description: 杂志
+    website: https://www.openbook.org.tw/
+
+  - title: 字花 | 別字
+    description: 杂志
+    website: https://zihua.org.hk/
+
+
+
+
+
 
 
 

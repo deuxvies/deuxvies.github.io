@@ -1,34 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
     <channel>
-        <title>Pages on Ceciliaの小站</title>
-        <link>https://springcecilia.blog/page/</link>
-        <description>Recent content in Pages on Ceciliaの小站</description>
+        <title>Pages on 同人备用粮仓</title>
+        <link>https://springcecilia.icu/page/</link>
+        <description>Recent content in Pages on 同人备用粮仓</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language><atom:link href="https://springcecilia.blog/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>zh-cn</language><atom:link href="https://springcecilia.icu/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Search</title>
-        <link>https://springcecilia.blog/search/</link>
+        <link>https://springcecilia.icu/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://springcecilia.blog/search/</guid>
+        <guid>https://springcecilia.icu/search/</guid>
         <description></description>
         </item>
         <item>
-        <title>关于本站</title>
-        <link>https://springcecilia.blog/about/</link>
+        <title>归档</title>
+        <link>https://springcecilia.icu/%E5%BD%92%E6%A1%A3/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://springcecilia.blog/about/</guid>
-        <description>&lt;h1&gt;&lt;img src=&#34;https://springcecilia.blog/images/014.png&#34; width=60px height=auto&gt;关于博主&lt;/h1&gt;
+        <guid>https://springcecilia.icu/%E5%BD%92%E6%A1%A3/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>收藏夹</title>
+        <link>https://springcecilia.icu/link/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://springcecilia.icu/link/</guid>
+        <description>&lt;img src=&#34;https://springcecilia.icu/images/020.png&#34; width=60px height=auto&gt;
+这里存搜书链接，部分需要魔法访问。
+</description>
+        </item>
+        <item>
+        <title>简介</title>
+        <link>https://springcecilia.icu/about/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://springcecilia.icu/about/</guid>
+        <description>&lt;h1&gt;&lt;img src=&#34;https://springcecilia.icu/images/014.png&#34; width=60px height=auto&gt;关于博主&lt;/h1&gt;
 &lt;p&gt;称呼随意。&lt;/p&gt;
 &lt;p&gt;当读者的时刻比当作者的时刻要长，同人是探索生活的方式之一但不是全部。&lt;/p&gt;
-&lt;p&gt;写文三分钟热度，随缘发电。
-&lt;h1&gt;&lt;img src=&#34;https://springcecilia.blog/images/006.png&#34; width=60px height=auto&gt;此站内容&lt;/h1&gt;
-&lt;p&gt;本站为博主的赛博存档地。&lt;p&gt;
-&lt;p&gt;如有内容无法显示，很可能是需要魔法上网。&lt;/p&gt;
-&lt;h1&gt;&lt;img src=&#34;https://springcecilia.blog/images/002.png&#34; width=60px height=auto&gt;联系方式&lt;/h1&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://peing.net/zh-CN/91e8000a0af399&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;（需魔法）匿名提问箱&lt;/a&gt;
+&lt;p&gt;写文三分钟热度，随缘发电，催更勿扰。
+&lt;h1&gt;&lt;img src=&#34;https://springcecilia.icu/images/006.png&#34; width=60px height=auto&gt;此站内容&lt;/h1&gt;
+&lt;p&gt;本站为博主的赛博存档地，主要放同人和一些杂七杂八的资料。&lt;p&gt;
+&lt;p&gt;使用非旧版的浏览器可正常访问看文。如有内容无法正常显示，很可能是所在地区需要魔法上网。&lt;/p&gt;
+&lt;p&gt;如要站内搜索，点击头像可返回主页。&lt;p&gt;
+&lt;h1&gt;&lt;img src=&#34;https://springcecilia.icu/images/002.png&#34; width=60px height=auto&gt;联系方式&lt;/h1&gt;
+&lt;p&gt;（需魔法）&lt;a class=&#34;link&#34; href=&#34;https://peing.net/zh-CN/91e8000a0af399&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;匿名提问箱&lt;/a&gt;
 
     
 &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
@@ -38,29 +57,22 @@
         fill=&#34;currentColor&#34;&gt;
 &lt;/svg&gt;&lt;/span&gt;
 
-s&lt;/p&gt;
-&lt;p&gt;（偶尔需要魔法）点击博客右下角的聊天小图标即可私聊&lt;p&gt;
+&lt;/p&gt;
+&lt;p&gt;（不需魔法）&lt;a class=&#34;link&#34; href=&#34;https://box.n3ko.cc/_/hana&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;匿名提问箱2&lt;/a&gt;
+
+    
+&lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34;
+    height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;https://www.w3.org/2000/svg&#34;&gt;
+    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34; /&gt;
+    &lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34;
+        fill=&#34;currentColor&#34;&gt;
+&lt;/svg&gt;&lt;/span&gt;
+
+&lt;/p&gt;
+&lt;p&gt;邮箱：springcecilia@tutamail.com&lt;/p&gt;
 &lt;p&gt;有空时会回复~ &lt;/p&gt;
-&lt;p&gt;补充：博客文章的评论区有时需要魔法才能显示出来。&lt;p&gt;
-&lt;p&gt;&lt;img src=&#34;https://springcecilia.blog/images/038.png&#34; width=70px height=auto &gt;&lt;img src=&#34;https://springcecilia.blog/images/039.png&#34; width=70px height=auto &gt;&lt;img src=&#34;https://springcecilia.blog/images/040.png&#34; width=70px height=auto &gt; &lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>归档</title>
-        <link>https://springcecilia.blog/%E5%BD%92%E6%A1%A3/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://springcecilia.blog/%E5%BD%92%E6%A1%A3/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>收藏夹</title>
-        <link>https://springcecilia.blog/%E6%94%B6%E8%97%8F%E5%A4%B9/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://springcecilia.blog/%E6%94%B6%E8%97%8F%E5%A4%B9/</guid>
-        <description>&lt;img src=&#34;https://springcecilia.blog/images/020.png&#34; width=60px height=auto&gt;
-这里存搜书链接，部分需要魔法访问。
+&lt;p&gt;&lt;img src=&#34;https://springcecilia.icu/images/038.png&#34; width=70px height=auto &gt;&lt;img src=&#34;https://springcecilia.icu/images/039.png&#34; width=70px height=auto &gt;&lt;img src=&#34;https://springcecilia.icu/images/040.png&#34; width=70px height=auto &gt; &lt;/p&gt;
 </description>
         </item>
         

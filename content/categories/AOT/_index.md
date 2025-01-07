@@ -1,6 +1,6 @@
 ---
 title: "AOT"
-description: "进击的巨人同人"
+description: 
 slug: "AOT"
 image: "R.jpg"
 style:
