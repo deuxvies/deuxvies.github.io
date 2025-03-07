@@ -106,20 +106,37 @@
 </script>
 
 
-<!-- Add blog running time -->
+<!-- layouts/partials/footer/custom.html -->
 <script>
-  let s1 = '2024-01-08'; //website start date
+  let s1 = '2023-3-18'; //website start date
   s1 = new Date(s1.replace(/-/g, "/"));
   let s2 = new Date();
-  let timeDifference = s2.getTime() - s1.getTime();
-
-  let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-  let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-
-  let result = days + "天" + hours + "小时" + minutes + "分钟";
+ 
+  // Calculate the difference
+  let diffInMilliseconds = s2.getTime() - s1.getTime();
+  let totalDays = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24));
+ 
+  // Create a new date object starting from the initial date
+  let years = s2.getFullYear() - s1.getFullYear();
+  let months = s2.getMonth() - s1.getMonth();
+  let days = s2.getDate() - s1.getDate();
+ 
+  // Adjust months and years if necessary
+  if (days < 0) {
+    months -= 1;
+    let prevMonth = new Date(s2.getFullYear(), s2.getMonth(), 0); // Get the last day of the previous month
+    days += prevMonth.getDate();
+  }
+  if (months < 0) {
+    years -= 1;
+    months += 12;
+  }
+ 
+  // Format the result
+  let result = `${years}年${months}月${days}天`;
   document.getElementById('runningdays').innerHTML = result;
-</script>
+ </script>
+ 
 
 <script>
   (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();

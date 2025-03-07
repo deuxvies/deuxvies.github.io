@@ -30,13 +30,13 @@ license: false
 <p>使用非旧版的浏览器可正常访问看文。如有内容无法正常显示，很可能是所在地区需要魔法上网。</p>
 <p>如要站内搜索，点击头像可返回主页。<p>
 
-
+**本站禁止任何形式的转载和无授权分享。**
 
 <h1><img src="/images/002.png" width=60px height=auto>联系方式</h1>
 
-（需魔法）[匿名提问箱](https://peing.net/zh-CN/91e8000a0af399)
+[匿名提问箱](https://peing.net/zh-CN/91e8000a0af399)
 
-（不需魔法）[匿名提问箱2](https://box.n3ko.cc/_/hana)
+[匿名提问箱2](https://box.n3ko.cc/_/hana)
 
 邮箱：springcecilia@tutamail.com
 

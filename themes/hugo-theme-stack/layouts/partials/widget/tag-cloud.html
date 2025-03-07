@@ -1,9 +1,11 @@
 {{- $context := .Context -}}
 {{- $limit := default 10 .Params.limit -}}
 <br>
+
 <section class="widget tagCloud">
     <div class="widget-icon">
         {{ partial "helper/icon" "tag" }}
+        
     </div>
     <h2 class="widget-title section-title">{{ T "widget.tagCloud.title" }}</h2>
 
@@ -15,3 +17,6 @@
         {{ end }}
     </div>
 </section>
+
+
+{{ .Page.Title }}<span class="tagCloud-count-main">{{ .Count }}</span>

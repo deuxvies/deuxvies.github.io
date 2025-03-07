@@ -124,13 +124,6 @@ url = "https://peing.net/zh-CN/91e8000a0af399"
   [menu.social.params]
   icon = "mail"
 
-[[menu.social]]
-identifier = "rss"
-name = "rss订阅"
-url = "https://springcecilia.icu/index.xml"
-
-  [menu.social.params]
-  icon = "rss"
 
 
 [related]
@@ -168,3 +161,5 @@ noClasses = false
 
 
 
+[outputs]
+home = ["HTML"]
