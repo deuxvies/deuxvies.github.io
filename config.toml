@@ -11,6 +11,7 @@ hasCJKLanguage = true
 enableEmoji = true
 disablePathToLower = true
 timeZone = "Asia/Shanghai"
+enableRobotsTXT = true
 
 [permalinks]
 post = "/:filename/"
@@ -44,8 +45,8 @@ favicon = "/favicon.ico "
   readingTime = true
   
     [params.article.license]
-    enabled = true
-    default = "Licensed under CC BY springceceilia"
+    enabled = false
+    default = "<small>All Right Reserved, Not for Reproduction.<br>作者保留所有权利，禁止转载。</small>a"
   
   [[params.widgets.homepage]]
   type = "search"
