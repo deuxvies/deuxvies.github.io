@@ -3,7 +3,7 @@ title: "【建站2】在Hugo中发布内容（含图床使用教程）"
 description: 
 date: 2020-01-01T17:34:26+08:00
 image: 
-hidden: false
+hidden: true
 comments: true
 toc: true
 tags: 

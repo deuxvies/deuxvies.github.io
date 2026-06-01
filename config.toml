@@ -1,9 +1,8 @@
-baseURL = "https://springcecilia.icu"
+baseURL = ""
 languageCode = 'zh-cn'
 title = '同人备用粮仓'
 theme = "hugo-theme-stack"
 summaryLength = 20
-paginate = 10
 disqusShortname = ''
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
@@ -13,6 +12,9 @@ disablePathToLower = true
 timeZone = "Asia/Shanghai"
 enableRobotsTXT = true
 
+[pagination]
+  pagerSize = 10
+  
 [permalinks]
 post = "/:filename/"
 page = "/:slug/"
@@ -104,7 +106,7 @@ weight = -100
 [[menu.social]]
 identifier = "Lofter"
 name = "Lofter"
-url = "https://springcecilia.lofter.com/"
+url = "https://troisvies.lofter.com/"
 
   [menu.social.params]
   icon = "Lofter"
@@ -112,7 +114,7 @@ url = "https://springcecilia.lofter.com/"
 [[menu.social]]
 identifier = "AO3"
 name = "AO3（需魔法）"
-url = "https://archiveofourown.org/users/Springcecilia/works"
+url = "https://archiveofourown.org/users/Yu_yeon/works"
 
   [menu.social.params]
   icon = "AO3"

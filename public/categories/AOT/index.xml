@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
-    <channel>
-        <title>AOT on 同人备用粮仓</title>
-        <link>https://springcecilia.icu/categories/AOT/</link>
-        <description>Recent content in AOT on 同人备用粮仓</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <lastBuildDate>Fri, 01 Jan 2021 17:34:26 +0800</lastBuildDate><atom:link href="https://springcecilia.icu/categories/AOT/index.xml" rel="self" type="application/rss+xml" />
-    </channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AOT on 同人备用粮仓</title>
+    <link>//localhost:1313/categories/AOT/</link>
+    <description>Recent content in AOT on 同人备用粮仓</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 01 Jan 2021 17:34:26 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/AOT/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【艾笠】此刻</title>
+      <link>//localhost:1313/%E8%89%BE%E7%AC%A0%E6%AD%A4%E5%88%BB/</link>
+      <pubDate>Fri, 01 Jan 2021 17:34:26 +0800</pubDate>
+      <guid>//localhost:1313/%E8%89%BE%E7%AC%A0%E6%AD%A4%E5%88%BB/</guid>
+      <description>&lt;br&gt;&#xA;&lt;p&gt;&lt;em&gt;“他的体内早已蕴含死亡，不论你怎么保护，他都无法逃离死亡的魔爪……”&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

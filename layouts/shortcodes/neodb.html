@@ -9,7 +9,15 @@
     {{ $dbApiUrl = "https://neodb.social/api/catalog/fetch?url=" }}
 {{ end }}
 
-{{ $dbFetch := getJSON $dbApiUrl $dbType }}
+{{ $dbFetch := dict }}
+{{ $dbRemoteUrl := print $dbApiUrl $dbType }}
+{{ with resources.GetRemote $dbRemoteUrl }}
+    {{ with .Err }}
+        {{ errorf "Error fetching neodb: %s" . }}
+    {{ else }}
+        {{ $dbFetch = . | transform.Unmarshal }}
+    {{ end }}
+{{ end }}
 
 {{ if $dbFetch }}
     {{ $itemRating := 0 }}{{ with $dbFetch.rating }}{{ $itemRating = . }}{{ end }}
